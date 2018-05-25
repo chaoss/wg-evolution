@@ -4,14 +4,15 @@
 Number of open issues
 
 ## 2. Use Cases
+Many people would like an at-a-glance visualization of all the open issues in a project, this visualization would provide that without having to look inside every sub-folder in the repository and sum the issues manually
  
-## 3. Sample Filter and Visualization
+ ## 3. Sample Filter and Visualization
 
-## 4. Sample Implementation
+![img](https://github.com/Illuminatian/Assets/blob/master/openIssues.PNG)
+ ## 4. Sample Implementation
 
-### [Augur: number of new issues opened each week](https://github.com/OSSHealth/ghdata/blob/master/ghdata/ghtorrent.py)
-	- def __single_table_count_by_date(self, table, repo_col='project_id', user_col='author_id', group_by="week"):
-	- https://osshealth.github.io/ghdata/api/index.html#api-Timeseries-Issues
+### GrimoireLab: Number of Open Issues 
+![img](https://github.com/Illuminatian/Assets/blob/master/OpenIssuesCreate.PNG)
 
 ### GHTorrent: Number of Open Issues (current)
 
