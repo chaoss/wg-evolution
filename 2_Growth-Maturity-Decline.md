@@ -47,7 +47,13 @@ Goal: Identify the size of the project community and whether it's growing, shrin
 Metric | Quesiton
 --- | ---
 [Contributors](activity-metrics/contributors.md) | What is the number of contributors?
-[New Contributors](activity-metrics/new-contributors.md) | What is the number of new contributors?
+[New Overall Contributors](activity-metrics/new-contributors.md) | What is the overall number of new contributors?
+[New Contributors of Commits](activity-metrics/new-contributors-commits.md) | What is the number of persons contributing with an accepted commit for the first time?
+[New Contributors of Opened Issues](activity-metrics/new-contributors-issues-opened.md) | What is the number of persons opening an issue for the first time?
+[New Contributors of Closed Issues](activity-metrics/new-contributors-issues-closed.md) | What is the number of persons closing an issue for the first time?
+[New Contributors of Initiated Code Reviews](activity-metrics/new-contributors-code-reviews-opened.md) | What is the number of persons initiating a code review for the first time?
+[New Contributors of Reviews for Code](activity-metrics/new-contributors-code-reviews.md) | What is the number of persons contributing with reviews of code for the first time?
+[New Contributors of Posted Messages](activity-metrics/new-contributors-posts.md) | What is the number of persons posting messages in mailing lists for the first time?
 [Contributing Organizations](activity-metrics/contributing-organizations.md) | What is the number of contributing organizations?
 [New Contributing Organizations](activity-metrics/new-contributing-organizations.md) | What is the number of new contributing organizations?
 [Sub-Projects](activity-metrics/sub-projects.md) | What is the number of sub-projects?
