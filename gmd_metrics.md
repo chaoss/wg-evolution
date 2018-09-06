@@ -12,19 +12,6 @@ Some of the language we use, and what we mean.
 [Add examples]
 
 
-## Activity Metrics
-
-1. [Open Issues](open-issues.md)
-2. Closed Issues
-3. Issue Resolution Efficiency
-4. Open Issue age
-6. First Response Issue Duration
-7. Closed Issue Duration
-8. closed Issue Resolution Duration
-9. Issue Resolution Efficiency
-
-[incomplete list]
-
 
 ## Goals of analysis
 

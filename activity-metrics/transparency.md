@@ -2,7 +2,7 @@
 
 ## 1. Description
 Number of comments per issue.
-Discussion is occuring openly - could also indicate level of agreement.
+Discussion is occurring openly - could also indicate level of agreement.
 
 ## 2. Use Cases
 
