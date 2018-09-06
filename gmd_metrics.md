@@ -17,6 +17,6 @@ Some of the language we use, and what we mean.
 
 The following are the areas of analysis:
 
-1. [Issue Resolution](./goal_issue_resolution.md)
+1. [Issue Resolution](./goal_Issue_resolution.md)
 2. [Code Development](./goal_code_development.md)
 3. [Community Growth](./goal_community_growth.md)
