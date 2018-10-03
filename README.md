@@ -8,7 +8,7 @@ The goal is to refine the metrics that inform [Growth-Maturity-Decline][gmd] and
 ## Meetings
 Every other Wednesday at 11am CDT. ([local time](http://www.thetimezoneconverter.com/?t=11am&tz=Chicago&)) in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288)
 
-**Next meeting** is September 12, 2018 at 11am CDT. 
+**Next meeting** is October 10, 2018 at 11am CDT. 
 - ([local time](http://www.thetimezoneconverter.com/?t=11am&tz=Chicago&)) in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288)
 - Agenda
   - Discuss possibly moving our project repository into a branch off of the metrics repository in order to facilitate easier long term integration
