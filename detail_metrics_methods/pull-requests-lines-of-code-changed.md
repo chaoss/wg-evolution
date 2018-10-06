@@ -11,7 +11,6 @@ What is the number of lines of code changed?
 
 ## 5. Sample Implementation
 
-
 ## 6. Known Implementations
 
 ## 7. Test Cases (Examples)

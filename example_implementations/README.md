@@ -1,4 +1,4 @@
-# Examples of implementations for metrics
+s# Examples of implementations for metrics
 
 Notebooks, built on top of data collected by Perceval,
 for illustrating how to compute metrics:

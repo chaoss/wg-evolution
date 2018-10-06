@@ -12,11 +12,18 @@ Some of the language we use, and what we mean.
 [Add examples]
 
 
+## Example Implementations
+
+Implementation [README](./example_implementations/README.md)
 
 ## Goals of analysis
 
-The following are the areas of analysis:
+The following are the areas of focus:
 
-1. [Issue Resolution](./goal_Issue_resolution.md)
-2. [Code Development](./goal_code_development.md)
-3. [Community Growth](./goal_community_growth.md)
+1. [Issue Resolution](./focus_areas/issue_resolution/goal_Issue_resolution.md)
+2. [Code Development](./focus_areas/code_development/goal_code_development.md)
+3. [Community Growth](./focus_areas/community_growth/goal_community_growth.md)
+
+## Focus Area Use Cases
+
+[Do not currently exist but will likely be located in the relevant focus area folder]
