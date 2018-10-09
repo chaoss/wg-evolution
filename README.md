@@ -1,5 +1,5 @@
 # What is this working group about?
-This Working Group focused on Growth-Maturity-Decline metrics and software. 
+This Working Group focused on Growth-Maturity-Decline metrics and software.
 
 The goal is to refine the metrics that inform [Growth-Maturity-Decline][gmd] and to work with software implementations.
 
@@ -50,3 +50,15 @@ Want to see if Kibble is aligned with GMD
 * We had some other meetings, see mailing list archives for agendas / minutes / links to videos.
   
 * April 19, 2018 (first meeting)
+
+## Mailing list
+We use the [CHAOSS mailing list](https://chaoss.community/participate/#user-content-join-the-mailing-list).
+Please append email subject with: [wg-gmd]
+
+How can you contribute? Start by introducing yourself on the [CHAOSS mailing list](https://chaoss.community/participate/#user-content-join-the-mailing-list) explaining your interest. Please see the CHAOSS [CONTRIBUTING.md](https://github.com/chaoss/governance/blob/master/CONTRIBUTING.md)
+
+We are committed to providing an inclusive and welcoming environment. Please see our [Code of Conduct.](https://github.com/chaoss/governance/blob/master/code-of-conduct.md)
+
+## Maintainers
+- [Jesus M. Gonzales-Barahona](https://github.com/jgbarah)
+- [Sean P. Goggins](https://github.com/sgoggins)

@@ -1,7 +1,7 @@
-# Add-on Products Availability
+# New Contributions of Initiated Code Reviews
 
 ## 1. Description
-Availability of 3rd party plug-ins, modules, utilities, etc. that provide additional functionality for the project's software.
+What is the number of persons initiating a code review for the first time?
 
 ## 2. Use Cases
 
