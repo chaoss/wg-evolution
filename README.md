@@ -10,14 +10,45 @@ Every other Wednesday at 11am CDT / 18:00 CET. ([local time](http://www.thetimez
 
 **Next meetings**:
 
-* October 10, 2018
-
 * October 24, 2018
 
 * November 7, 2018
 
+* November 21, 2018
+
 **Past meetings**:
 
+* October 10, 2018
+
+  - Attendees: Alberto García-Plaza, Jesus M. Gonzales-Barahona, Matt Germonprez,
+  Sean P. Goggins (lost connection), Kevin Lumbard.
+  - Video of the meeting: will be available in the
+  [CHAOSS Youtube channel](https://www.youtube.com/channel/UCrG-a3hIc_hCEUWloG0gm9A)
+  - Agenda:
+    - Discuss ordered list of metrics to work on defining. With some degree of prioritization (perhaps keep in a markdown document)
+    - Discuss [pending pull requests](https://github.com/chaoss/wg-gmd/pulls)
+    - New items to discuss or questions
+    - Action items
+
+  - Minutes:
+
+    - Pending approval from missing members, GMD will adopt the D&I Framework – goals, questions, and metrics  (top down approach)
+      - Moving to a top down approach starting with code development goals.md then move to questions documents.
+      - Example: Code Development Goal – Understand how code changes occur in repositories, Question - How many people are involved in a change?
+      - Document the process for defining metrics (Start with goals, create questions around goals, identify metrics that can answer questions, and define metrics and methods..
+      - Use cases may inform new goals and how we understand the questions
+
+    - Add Use Case Folder
+      - Collect use cases from members on how they use metrics and what questions they are trying to answer
+      - Rename use case header from detail metric pages to remove confusion
+
+    - Store meeting notes and past agendas on repository
+
+    - Quick Reference Links:
+      - [Focus Areas](https://github.com/chaoss/wg-gmd/tree/master/focus_areas)
+      - [Methods and Metrics Pages](https://github.com/chaoss/wg-gmd/tree/master/detail_metrics_methods)
+
+  
 * September 26, 2018
 
   - Attendees: Sharan, Jesus, Alpgarcia, Vinod, Kevin, Georg
