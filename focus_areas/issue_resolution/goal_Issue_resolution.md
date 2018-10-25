@@ -4,12 +4,12 @@ Goal: Identify how effective the community is at addressing issues identified by
 
 Metric | Question
 --- | ---
-[Open Issues](detail_metrics_methods/issue_resolution/issues-open.md) | What is the number of open issues?
-[Closed Issues](detail_metrics_methods/issue_resolution/issues-closed.md) | What is the number of closed issues?
-[Open Issue Age](detail_metrics_methods/issue_resolution/issues-open-age.md) | What is the the age of open issues?
-[First Response to Issue Duration](detail_metrics_methods/issue_resolution/issues-maintainer-response-duration.md) | What is the duration of time for a first response to an issue?
-[Closed Issue Resolution Duration](detail_metrics_methods/issue_resolution/issues-closed-resolution-duration.md) | What is the duration of time for issues to be resolved?
-[Issue Resolution Efficiency](detail_metrics_methods/issue_resolution/issues-closed-resolution-efficiency.md) |  What is the ratio of closed issues/number of abandoned issues?
+[Open Issues](../../detail_metrics_methods/issues-open.md) | What is the number of open issues?
+[Closed Issues](../../detail_metrics_methods/issues-closed.md) | What is the number of closed issues?
+[Open Issue Age](../../detail_metrics_methods/issues-open-age.md) | What is the the age of open issues?
+[First Response to Issue Duration](../../detail_metrics_methods/issues-maintainer-response-duration.md) | What is the duration of time for a first response to an issue?
+[Closed Issue Resolution Duration](../../detail_metrics_methods/issues-closed-resolution-duration.md) | What is the duration of time for issues to be resolved?
+[Issue Resolution Efficiency](../../detail_metrics_methods/issues-closed-resolution-efficiency.md) |  What is the ratio of closed issues/number of abandoned issues?
 
 **Disclaimer:**
 The name/question pairs listed are not meant to represent a fully comprehensive list. It is expected that this list will evolve as people have insights and thoughts about the name/question pairs that comprise Growth-Maturity-Decline.
