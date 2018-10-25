@@ -4,7 +4,7 @@ Goal: Identify how effective the community is at addressing issues identified by
 
 Metric | Question
 --- | ---
-[Open Issues](detail_metrics_methods/issues-open.md) | What is the number of open issues?
+[Open Issues](../../detail_metrics_methods/issues-open.md) | What is the number of open issues?
 [Closed Issues](detail_metrics_methods/issue_resolution/issues-closed.md) | What is the number of closed issues?
 [Open Issue Age](detail_metrics_methods/issue_resolution/issues-open-age.md) | What is the the age of open issues?
 [First Response to Issue Duration](detail_metrics_methods/issue_resolution/issues-maintainer-response-duration.md) | What is the duration of time for a first response to an issue?
