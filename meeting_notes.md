@@ -1,16 +1,21 @@
 ## GMD Past Meetings
 
 #### Connection Details:
+The Growth Maturity and Decline working group meets weekly on Wednesdays at 9:00 am PDT / 18:00 CEST
+
 Join: https://unomaha.zoom.us/j/720431288
 Or Telephone: 1-408-638-0968 (Meeting ID: 720-431-288)
 International Numbers: https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9
 
 #### Video of GMD Meetings:
 https://www.youtube.com/watch?v=A31mGjBM2Io&list=PL60k37cxI-HQ4HaF4iVuoByt5Qxw0ebRP
-Quick Reference Links:
-Focus Areas:
+
+### Quick Reference Links:
+
+#### Focus Areas:
 https://github.com/chaoss/wg-gmd/tree/master/focus_areas
-Methods and Metrics Pages:
+
+#### Methods and Metrics Pages:
 https://github.com/chaoss/wg-gmd/tree/master/detail_metrics_methods
 
 #### Mailing list
@@ -34,9 +39,9 @@ https://github.com/chaoss/wg-gmd/pulls
 3. New Items to Discuss or Questions
 4. Actionable Items
 
-#### Minutes
-##### Use Case Discussion:
-* How can expert users contribute use cases
+#### Oct-24 Minutes:
+##### Use Case Discussion
+How can expert users contribute use cases
 * Google doc (D&I) - Edit use cases in google docs?
 * Blog post?
 * Pull Requests to Repository
@@ -44,12 +49,12 @@ https://github.com/chaoss/wg-gmd/pulls
 * Need consistency
 * Keep use cases close to the user not necessarily aligned with the workgroup
 * Use Case Format?
-* Typically have 7 or 8 headings
-* Use case structure that SPDX uses
+  * Typically have 7 or 8 headings
+  * Use case structure that SPDX uses
 https://github.com/spdx/spdx-github/wiki/Webhook-Use-Case
 
-##### Workflow Discussion:
-* There should be consistency in work flows and should be documented.
+##### Workflow Discussion
+There should be consistency in work flows and should be documented.
 * Procedures file?
 * How to contribute document?
 https://github.com/chaoss/wg-diversity-inclusion/blob/master/CONTRIBUTING.md
@@ -59,25 +64,25 @@ https://github.com/chaoss/wg-diversity-inclusion/blob/master/CONTRIBUTING.md
 
 Last meeting we discussed moving from a bottom-up approach (defining metrics/methods then creating questions goals and use cases) to a top-down approach (defining questions then creating use cases and metrics/methods as needed). However discussions can still continue on metrics/methods.
 
-#### Metrics Methods Discussion:
+#### Metrics Methods Discussion
 * Issues are a little different in Bugzilla vs GitHub
-* How can we map to these ideas? Trying to be precise.
+  * How can we map to these ideas? Trying to be precise.
 * Discussion of issues.open.md
   * Time and Aggregation period?
-  * File name changed creating a merge conflict
+  * File name changed creating a merge conflict for pull request
 
 Add a description of what we consider a GMD metric to README.
 To avoid conflicts with other work groups. This is the kind of metrics we are talking about
 
-#### Proposed Meeting Time Change:
-* Move from bi-weekly to weekly meetings
-* Meet every Wednesday?
+#### Proposed Meeting Time Change
+Move from bi-weekly to weekly meetings
+* Meet every Wednesday
 * Open forum every week and monthly meeting where decisions are made
 * Deciding meeting/Formal meeting is last meeting of each month
 
-#### Risk work group will work with GMD group and share meeting times.
+#### Risk work group will work with GMD group and share meeting times
 
-#### Action Items:
+#### Action Items
 * Add pull request to website and GitHub. For new meeting times.
 * Remove notes from readme to separate file.
 * Create template and folder for Use Cases
@@ -85,6 +90,7 @@ To avoid conflicts with other work groups. This is the kind of metrics we are ta
 
 
 ----------------------------
+
 ### October 10, 2018
 
   - Attendees: Alberto García-Plaza, Jesus M. Gonzales-Barahona, Matt Germonprez,
