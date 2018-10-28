@@ -68,4 +68,4 @@ description of the metric, and which questions it helps to answer.
 
 ## Comments
 
-Any other relevant comment.
+Any other relevant comment. For example, specific threasholds for metrics could be provided, such as "if XXX metric reaches YYY value, the benefits for the project are clear".
