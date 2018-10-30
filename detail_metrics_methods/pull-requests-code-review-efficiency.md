@@ -1,8 +1,7 @@
-# New Contributors of Code Reviews
+# Code Review Efficiency
 
 ## 1. Description
-What is the number of persons contributing with reviews of code for the first time?
-**this is currently the same as pull-request-code-reviews-new**
+What is the number of merged code changes/number of abandoned code change requests?
 
 ## 2. Use Cases
 

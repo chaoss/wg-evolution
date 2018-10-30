@@ -1,8 +1,7 @@
-# New Contributors of Code Reviews
+# Code Review Iteration
 
 ## 1. Description
-What is the number of persons contributing with reviews of code for the first time?
-**this is currently the same as pull-request-code-reviews-new**
+What is the number of iterations that occur before a merge request is accepted or declined?
 
 ## 2. Use Cases
 
