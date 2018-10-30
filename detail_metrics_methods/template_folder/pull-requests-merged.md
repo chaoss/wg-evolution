@@ -1,7 +1,7 @@
-# Issue Resolution Efficiency
+# Pull Requests Merged
 
 ## 1. Description
-What is the number of closed issues/number of abandoned issues?
+What is the number of merged pull requests?
 
 ## 2. Use Cases
 
