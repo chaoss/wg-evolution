@@ -1,8 +1,7 @@
-# New Contributors of Code Reviews
+# Lines of Code Changed
 
 ## 1. Description
-What is the number of persons contributing with reviews of code for the first time?
-**this is currently the same as pull-request-code-reviews-new**
+What is the number of lines of code changed?
 
 ## 2. Use Cases
 
