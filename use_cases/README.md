@@ -32,7 +32,7 @@ usually related to the goal(s) it pursues).
 
 In the description of the issue, write one or more high level goals of the use case
 (the kind of learnings or take aways that are pursued in the use case),
-and if possible a list of the questions that could be relevant for
+and a list of the questions that could be relevant for
 reaching that goal.
 
 If you are not familiar with GitHub issues, you can
