@@ -15,7 +15,7 @@ Video recordings of GMD Meetings available in the
 ## October 31, 2018
 
 ## Attending
-Jesus (Bitergia)
+Jesus Gonzalez-Barahona
 Matt Germonprez
 Sean Goggins
 Georg Link
@@ -28,18 +28,20 @@ Jaice
 
 ### Minutes:
 
-#### Discussion of Pull Request: [README] Proposal for a more informative README.md ##36
+#### Discussion of Pull Request: [README] Proposal for a more informative README.md #36
 
 https://github.com/chaoss/wg-gmd/pull/36
 
 * In the past Perceval chosen for example reference implementation
-  * There may be some implementations that don’t use Perceval
+  * There may be some implementations that don’t use Perceval, but not reference implementations
+
 * Is there a relationship between use cases and goal question metrics?
   * Use cases may be used for the goal and questions at a later date but this may need refinement
 
 Decision to keep text as is with the understanding that the process may need refining
 
 #### Pull requests
+
 * Pull request 21 closed and resubmitted as 39
 * Merged - 39, 38, 37, 36, 34, and 32
 
@@ -62,13 +64,16 @@ A first-time contributor could be easily discouraged if no one reviews/acknowled
   * Example: what is a contributor?
   * Define terms in layman terms rather than metrics terms
 
+* Encouragement to all members of the working group to join the discussion in this issue
+(and later in the corresponding pull request).
+
 #### Discussion from General Meeting
 * Risk and Value aren’t getting much attention
 * Decision to move Risk and Value into GMD workgroup
-* List Risk and Value as Focus Areas with in GMD
+* List Risk and Value as Focus Areas within GMD
 
 ### Notes
-Please use tags in issues and pull requests
+Please use tags in issues and pull requests. New tag `use case`.
 
 ### Action items
 
