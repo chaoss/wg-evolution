@@ -1,46 +1,29 @@
-## GMD Past Meetings
+# GMD Working Group Meeting Notes
 
-#### Connection Details:
-The Growth Maturity and Decline working group meets weekly on Wednesdays at 9:00 am PDT / 18:00 CEST
+## Connection details for meetings, and recordings
 
-Join: https://unomaha.zoom.us/j/720431288
-Or Telephone: 1-408-638-0968 (Meeting ID: 720-431-288)
-International Numbers: https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9
+The CHAOOSS Growth Maturity and Decline working group meets every Wednesday at 11am CDT
+(usually 18:00 CET, but beware different switches to Summer time in EU and US, [check your local time](http://www.thetimezoneconverter.com/?t=11am&tz=Chicago&))
+in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288,
+use US phone number 1-408-638-0968 or [international numbers](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9))
 
-#### Video of GMD Meetings:
-https://www.youtube.com/watch?v=A31mGjBM2Io&list=PL60k37cxI-HQ4HaF4iVuoByt5Qxw0ebRP
+Video recordings of GMD Meetings available in the 
+[CHAOSS Youtube channel](https://www.youtube.com/watch?v=A31mGjBM2Io&list=PL60k37cxI-HQ4HaF4iVuoByt5Qxw0ebRP)
 
-### Quick Reference Links:
-
-#### Focus Areas:
-https://github.com/chaoss/wg-gmd/tree/master/focus_areas
-
-#### Methods and Metrics Pages:
-https://github.com/chaoss/wg-gmd/tree/master/detail_metrics_methods
-
-#### Mailing list
-We use the [CHAOSS mailing list](https://chaoss.community/participate/#user-content-join-the-mailing-list).
-Please append email subject with: [wg-gmd]
-
-#### How can you contribute?
-Start by introducing yourself on the [CHAOSS mailing list](https://chaoss.community/participate/#user-content-join-the-mailing-list) explaining your interest. Please see the CHAOSS [CONTRIBUTING.md](https://github.com/chaoss/governance/blob/master/CONTRIBUTING.md)
-
-We are committed to providing an inclusive and welcoming environment. Please see our [Code of Conduct.](https://github.com/chaoss/governance/blob/master/code-of-conduct.md)
-
---------------
-
-#### Wednesday, October 24th
+## Wednesday, October 24th
 9:00 am PDT / 18:00 CEST
 
-#### Oct-24 Agenda:
+### Agenda:
+
 1. Discuss meeting weekly on the agenda... maybe meeting weekly with a monthly meeting to make final decisions ...
 2. Discuss Pending Pull Requests
 https://github.com/chaoss/wg-gmd/pulls
 3. New Items to Discuss or Questions
 4. Actionable Items
 
-#### Oct-24 Minutes:
-##### Use Case Discussion
+### Minutes:
+
+#### Use Case Discussion
 How can expert users contribute use cases
 * Google doc (D&I) - Edit use cases in google docs?
 * Blog post?
@@ -53,7 +36,7 @@ How can expert users contribute use cases
   * Use case structure that SPDX uses
 https://github.com/spdx/spdx-github/wiki/Webhook-Use-Case
 
-##### Workflow Discussion
+#### Workflow Discussion
 There should be consistency in work flows and should be documented.
 * Procedures file?
 * How to contribute document?
@@ -91,7 +74,7 @@ Move from bi-weekly to weekly meetings
 
 ----------------------------
 
-### October 10, 2018
+## October 10, 2018
 
   - Attendees: Alberto García-Plaza, Jesus M. Gonzales-Barahona, Matt Germonprez,
   Sean P. Goggins (lost connection), Kevin Lumbard.
@@ -123,7 +106,7 @@ Move from bi-weekly to weekly meetings
 
 --------------
 
-### September 26, 2018
+## September 26, 2018
 
   - Attendees: Sharan, Jesus, Alpgarcia, Vinod, Kevin, Georg
   - Video of the meeting: https://youtu.be/A31mGjBM2Io
@@ -145,7 +128,7 @@ Want to see if Kibble is aligned with GMD
 
 -------------------
 
-### September 12, 2018
+## September 12, 2018
 
   - Agenda:
     - Discuss possibly moving our project repository into a branch off of the metrics repository in order to facilitate easier long term integration
@@ -157,4 +140,35 @@ Want to see if Kibble is aligned with GMD
 
 ----------------------
 
-### April 19, 2018 (first meeting)
+## April 19, 2018 (first meeting)
+
+Introduction of the working group meetings (no notes available).
+
+---------------------
+
+## Schema for notes for a meeting: Month day, year
+
+## Attending
+
+List of people attending
+
+### Agenda:
+
+1. First item
+2. Second...
+3. ...
+
+### Minutes:
+
+#### First item
+
+Notes abou the first item
+
+#### Second item
+
+...
+
+### Action items
+
+* Action 1: Description of action 1 (people responsible for it, if any; deadline, if any)
+* ...
