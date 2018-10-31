@@ -2,13 +2,81 @@
 
 ## Connection details for meetings, and recordings
 
-The CHAOOSS Growth Maturity and Decline working group meets every Wednesday at 11am CDT
+The CHAOSS Growth Maturity and Decline working group meets every Wednesday at 11am CDT
 (usually 18:00 CET, but beware different switches to Summer time in EU and US, [check your local time](http://www.thetimezoneconverter.com/?t=11am&tz=Chicago&))
 in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288,
 use US phone number 1-408-638-0968 or [international numbers](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9))
 
-Video recordings of GMD Meetings available in the 
+Video recordings of GMD Meetings available in the
 [CHAOSS Youtube channel](https://www.youtube.com/watch?v=A31mGjBM2Io&list=PL60k37cxI-HQ4HaF4iVuoByt5Qxw0ebRP)
+
+-----------
+
+## October 31, 2018
+
+## Attending
+Jesus (Bitergia)
+Matt Germonprez
+Sean Goggins
+Georg Link
+Kevin Lumbard
+Jaice
+
+### Agenda:
+1. Discuss Pull Requests
+2. New Items?
+
+### Minutes:
+
+#### Discussion of Pull Request: [README] Proposal for a more informative README.md ##36
+
+https://github.com/chaoss/wg-gmd/pull/36
+
+* In the past Perceval chosen for example reference implementation
+  * There may be some implementations that don’t use Perceval
+* Is there a relationship between use cases and goal question metrics?
+  * Use cases may be used for the goal and questions at a later date but this may need refinement
+
+Decision to keep text as is with the understanding that the process may need refining
+
+#### Pull requests
+* Pull request 21 closed and resubmitted as 39
+* Merged - 39, 38, 37, 36, 34, and 32
+
+https://github.com/chaoss/wg-gmd/pulls?q=is%3Apr+is%3Aclosed
+
+#### Discussion of Issue - Use Case: Efficiency in reviewing contributions from first-time contributors ##33
+
+https://github.com/chaoss/wg-gmd/issues/33
+
+A first-time contributor could be easily discouraged if no one reviews/acknowledges their work in a timely manner. Following are number of questions that can help evaluate responsiveness for first-time contributors.
+
+* New contributors vs everybody else or do we have to distinguish between and define what a core contributor is and etc…
+  * Easy to define if we focus on new contributors
+
+* What metrics are included? – Issues? Pull requests?
+  * Contributor often means issues and code
+
+* Need a section on vocabulary
+  * informal definitions
+  * Example: what is a contributor?
+  * Define terms in layman terms rather than metrics terms
+
+#### Discussion from General Meeting
+* Risk and Value aren’t getting much attention
+* Decision to move Risk and Value into GMD workgroup
+* List Risk and Value as Focus Areas with in GMD
+
+### Notes
+Please use tags in issues and pull requests
+
+### Action items
+
+* Edit use case template to include vocabulary section – assigned to Jesus
+* Explain GMD in README – assigned to Sean
+* Add Risk and Value as Focus Area –  assigned to Sean
+
+-------------
 
 ## Wednesday, October 24th
 9:00 am PDT / 18:00 CEST
