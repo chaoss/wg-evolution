@@ -26,6 +26,15 @@ Usually, it will start by "Understanding...", or
 "Having data for making informed decissions on...", or
 "Tracking...", or something like that.
 
+## Vocabulary
+
+If needed, specific terms that need to be defined so that the use
+casee can be understood in a precise way.
+For example, if the description of the case uses words such as
+`maintainer`, `contributor`, or `developer`, they should be defined
+so that it becomes clear to which specific roles they correspond.
+If convenient, definitions may include an example of use.
+
 ## Primary actor
 
 The role of the person(s) interested in the use case.
