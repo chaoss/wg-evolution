@@ -12,7 +12,7 @@ Video recordings of GMD Meetings available in the
 
 -----------
 
-## October 31, 2018
+## November 7th, 2018
 
 ## attending
 Sean Goggins
