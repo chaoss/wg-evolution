@@ -14,6 +14,59 @@ Video recordings of GMD Meetings available in the
 
 ## October 31, 2018
 
+## attending
+Sean Goggins
+Jesus Gonzalez-Barahona
+Georg Link
+Kevin Lumbard
+
+### Agenda
+1. Review in progress use cases
+2. Review any other pending pull request (if any)
+3. Review other pending issues (if any)
+4. Start discussion on defining, top-down, the first focus area.
+
+### Minutes:
+
+#### Use Case Discussion
+
+* Use Cases are not necessarily generalized. They should be specific to the individual or organizations that create it.
+* Where do use cases fit in the cycle?
+  * GMD work would be to generalize these use cases into goals and questions
+* Moving issue 33 from issue state to PR state and continue discussion
+  * https://github.com/chaoss/wg-gmd/issues/33
+
+
+#### Review Pull requests
+* Adding a new section to Use Cases
+  * Merged https://github.com/chaoss/wg-gmd/pull/40
+
+#### Review Pending issues
+* Issues are visited, but no specific action is needed on them.
+
+#### Focus Area Discussion
+We have decided to start working, with the top-down approach, on the "code development" focus area.
+Contribution is a broader topic
+
+* Narrow focus – code (this is about code)
+* Define scope & and identify goal
+* Question - We want to understand code contributions...
+* Factors related to code contributions
+  * Velocity
+  * Quality
+    * Processes for quality? – tests (signal of quality)
+    * Presence or absence of code reviews – converge of code reviews?
+
+### Action items
+* New Issue - fix metrics folder links - Assigned to Jesus
+* New issue – Create focus area (code development) and define scope/identify goals - Assigned to Jesus
+  *  Jesus [opens a
+  ticket to start the work](https://urldefense.proofpoint.com/v2/url?u=https-3A__github.com_chaoss_wg-2Dgmd_issues_44&d=DwICaQ&c=Cu5g146wZdoqVuKpTNsYHeFX_rg6kWhlkLF8Eft-wwo&r=Issqq6yO-ovFOx6PfTtqTsYMu1wiJPFnXztcE7Cv-Bs&m=BPrBDjch_6qLmghA7cYDfdtSKjk0vfjm6i2lYOLdpco&s=upCEUKq1Psn-hoEDe27q-GMwy691d5fXGpqg7ZIyZ0E&e=
+
+---------------
+
+## October 31, 2018
+
 ## Attending
 Jesus Gonzalez-Barahona
 Matt Germonprez
