@@ -14,7 +14,7 @@ Video recordings of GMD Meetings available in the
 
 ## November 7th, 2018
 
-## attending
+## Attending
 Sean Goggins
 Jesus Gonzalez-Barahona
 Georg Link
@@ -38,8 +38,7 @@ Kevin Lumbard
 
 
 #### Review Pull requests
-* Adding a new section to Use Cases
-  * Merged https://github.com/chaoss/wg-gmd/pull/40
+* [Adding a new section to Use Cases](https://github.com/chaoss/wg-gmd/pull/40) (merged).
 
 #### Review Pending issues
 * Issues are visited, but no specific action is needed on them.
@@ -60,8 +59,7 @@ Contribution is a broader topic
 ### Action items
 * New Issue - fix metrics folder links - Assigned to Jesus
 * New issue – Create focus area (code development) and define scope/identify goals - Assigned to Jesus
-  *  Jesus [opens a
-  ticket to start the work](https://urldefense.proofpoint.com/v2/url?u=https-3A__github.com_chaoss_wg-2Dgmd_issues_44&d=DwICaQ&c=Cu5g146wZdoqVuKpTNsYHeFX_rg6kWhlkLF8Eft-wwo&r=Issqq6yO-ovFOx6PfTtqTsYMu1wiJPFnXztcE7Cv-Bs&m=BPrBDjch_6qLmghA7cYDfdtSKjk0vfjm6i2lYOLdpco&s=upCEUKq1Psn-hoEDe27q-GMwy691d5fXGpqg7ZIyZ0E&e=
+  *  Jesus [opens a ticket to start the work](https://github.com/chaoss/wg-gmd/issues/44)
 
 ---------------
 
