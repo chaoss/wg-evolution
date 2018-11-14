@@ -1,22 +1,28 @@
 # What is this working group about?
 
-This is a [CHAOSS](https://chaoss.community) working group, 
-focused on the [Growth-Maturity-Decline][gmd] metrics category.
-Its aim is to coordinate the definition of the metrics, and
-the production of software for implementing them, in this area.
+_Growth, Maturity and Decline_ is a working group focused on the lifecycle of open source projects. We do not valence the stages, but seek to build awareness of those stages among consumers of these metrics. Decline can be ok when a project's utility is waning; or terrible if 20% of the entire internet relies on that project. Context matters, and we are not the arbiters of your context. The "valence" of "good/bad" emerges from use cases and YOUR context. 
+
+This is a [CHAOSS](https://chaoss.community) working group, focused on the [Growth-Maturity-Decline][gmd] metrics category. Its aim is to coordinate the definition of the metrics, and the production of software for implementing them, in this area.
+
+This group meets every Wednesday at 11am CST. [Connection Information and minutes from previous meetings are located here.](./meeting_notes.md)
+
+Focus areas for this working group include metrics related to ;
+1. [Code Code Development](./code_development/goals_code_development.md)
+2. [Community Growth](./communitiy_growth/goal_community_growth.md)
+3. [Issue Resolution](./issue_resolution/goal_issue_resolution.md)
+4. [Risk](./risk/risk.md)
+5. [Value](./value/value.md)
 
 [gmd]: gmd_metrics.md
 
 # How to participate
 
-You can start by introducing yourself on the CHAOSS mailing list (see below) explaining your interest.
-Then, you can have a look at the archives of the mailing lists, at the minutes of past meetings,
-and at the [issues](https://github.com/chaoss/wg-gmd/issues) and
-[pull requests](https://github.com/chaoss/wg-gmd/pulls) in
-[this repository](https://github.com/chaoss/wg-gmd).
+You can start by introducing yourself on the CHAOSS mailing list (see below) explaining your interest. Then, you can have a look at the archives of the mailing lists, at the minutes of past meetings, and at the
+- [issues](https://github.com/chaoss/wg-gmd/issues) and
+- [pull requests](https://github.com/chaoss/wg-gmd/pulls) in
+- [this repository](https://github.com/chaoss/wg-gmd).
 
-Then, of course you can participate in the mailing list,
-in online meetings, and in issues and pull requests.
+Then, of course you can participate in the mailing list, in online meetings, and in issues and pull requests. [Mailing lists can be subscribed to here.](https://lists.linuxfoundation.org/mailman/listinfo/chaoss)
 
 Currently, main lines of work are:
 
@@ -25,67 +31,12 @@ You can propose your use cases, and/or contribute to refine those that have been
 
 * Focus areas (definitions, goals, questions). Currently, in the [definition of GMD metrics] we strucuture
 it in the following focus areas: [Issue Resolution](focus_areas/issue_resolution.md), [Code Development](focus_areas/code_development.md), and [Community Growth](focus_areas/communitiy_growth.md).
+
 For each area of interest, we're following the [goal-question-metric methodology](https://en.wikipedia.org/wiki/GQM) defining questions and metrics that help to answer them.
+
 You can contribute by proposing new goals for a focus area, or new questions for learning about those goals,
-or new metrics for answering those questions. Or by helping to refine goals, and questions
-(see about metrics below).
+or new metrics for answering those questions. Or by helping to refine goals, and questions.
 
-* Metrics definition. For each metric, we have a document describing it,
-all of them in the [metrics directory](metrics).
-You can contribute by helping to refine those metrics definitions.
-
-* Reference implementations. For each metric, we intend to produce reference implementations,
-in the [implementations directory](implementations).
-They are based on data from real data sources,
-retrieved using [Perceval](https://github.com/chaoss/grimirelab-perceval).
-The idea is to first use a Python notebook to study how to produce the metric, and
-all the variations, parameters, etc, that are convenient to have into account.
-And then, produce a simple script that will compute the metric from a Perceval dump.
-These scripts would be used a reference implementations, both for informing other implementations,
-and for ensuring that, if they intend to implement CHAOSS metrics, they produce the same results
-on the same data sources.
-
-In any of these subjects, you can propose your ideas by opening an issue,
-proposing a pull request, introducing your concerns during a GMD meeting,
-or via a message to the mailing list. However, the usual procedure
-(meetings and general comments in the mailing list) is as follows:
-
-* If you think something should be done (including a contribution by yourself),
-please open an issue in this repository. That will allow others to learn that
-you think some work should be done, and can comment on that.
-If you intend to do the job yourself, please say that.
-
-* Everyone with an opinion on the matter should comment on the issue,
-explaining how they support the idea, propose some change to it,
-or think it is not worth / it is not the moment for doing it.
-
-* If comments are positive, and a certain consensus is achieved,
-propose a pull request with the changes to the repository
-(new document, changes to existing documents).
-
-* Everyone with an opinion on the pulll request should comment on
-it, and detailed reviews should be done, maybe asking for new
-versions of the pull requet. Once comments and reviews are positive,
-the change will be merged in the repository.
-
-* If consensus is not reached at any of these points, or the
-process stalls, it can be raised during one of the GMD meetings,
-or in the mailing list, to try to unblock it.
-
-* In some specific cases (eg, drafts for use cases), Google Docs
-or other means could be used, if that helps newcomers to contribute their ideas.
-But this will in general be the exception.
-
-We're also open to discuss the [Definition of GMD itself],
-but please refrain from this except that you have very good reasons for that,
-just because currently we're focused on the definition of GMD and its refining
-in focus areas
-
-For further information on how to collaborate in CHAOSS,
-please see the CHAOSS [CONTRIBUTING.md](https://github.com/chaoss/governance/blob/master/CONTRIBUTING.md).
-We are committed to providing an inclusive and welcoming environment. Please see our [Code of Conduct.](https://github.com/chaoss/governance/blob/master/code-of-conduct.md)
-
-Find below specific information about our meetings and mailing lists.
 
 ## Meetings
 
