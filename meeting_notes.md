@@ -15,11 +15,11 @@ Video recordings of GMD Meetings available in the
 ## November 14th, 2018
 
 ## Attending
-Alberto Garcia
-Matt Germonprez
-Sean Goggins
-Jesus Gonzalez-Barahona
-Georg Link
+Alberto Garcia  
+Matt Germonprez  
+Sean Goggins  
+Jesus Gonzalez-Barahona  
+Georg Link  
 Kevin Lumbard
 
 ### Agenda
