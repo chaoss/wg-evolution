@@ -12,6 +12,67 @@ Video recordings of GMD Meetings available in the
 
 -----------
 
+## November 14th, 2018
+
+## Attending
+Alberto Garcia
+Matt Germonprez
+Sean Goggins
+Jesus Gonzalez-Barahona
+Georg Link
+Kevin Lumbard
+
+### Agenda
+1. Review in progress use cases
+2. Review pending pull request (if any)
+3. Review pending issues (if any)
+
+### Minutes:
+
+**The GMD meeting for Wednesday November 21st 2018 is cancelled due to a large number of missing members (American Thanksgiving). The next meeting will be in 15 days on November 28 2018 at 11:00am CDT (18:00 CET).**
+
+#### Use Case Discussion
+
+Discussion of Issue 48 - Use case: Characterize a participant, both within a given project and across projects.
+https://github.com/chaoss/wg-gmd/issues/48
+* This could be one use case or split into two use cases
+* Doesn’t fit in current focus areas – community development/growth? Code development?
+  * More focus areas may be needed to handle this
+
+Discussion of Issue 50 - Use Case: Community Managers
+https://github.com/chaoss/wg-gmd/issues/50
+* use case is in early stage
+
+#### Review Pull requests
+value and risk: Adding Value and Risk
+https://github.com/chaoss/wg-gmd/pull/49
+* Reviewed and Merged
+
+[use_cases] First draft of "code contributions by new contributors" #47
+https://github.com/chaoss/wg-gmd/pull/47
+* missing metrics
+* accept to use as an example and review for edits
+* Please review and comment
+
+[focus_areas] Simplify file names #45
+https://github.com/chaoss/wg-gmd/pull/45
+* Reviewed and Merged
+
+#### Review Pending issues
+
+Refine code development focus area #44
+https://github.com/chaoss/wg-gmd/issues/44
+*	Start with goals
+* Please review and comment
+
+### Action items
+* GMD presentation for CHAOSScon – Assigned to Jesus
+* Issue 43 needs attention – Assigned to Kevin
+* **Attention needed - please review and comment on issue [44](https://github.com/chaoss/wg-gmd/issues/44)**
+* **Attention needed - please review and comment on pull request [47](https://github.com/chaoss/wg-gmd/pull/47)**
+
+----------
+
 ## November 7th, 2018
 
 ## Attending
