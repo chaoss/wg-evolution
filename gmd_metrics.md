@@ -20,9 +20,9 @@ Implementation [README](./example_implementations/README.md)
 
 The following are the areas of focus:
 
-1. [Issue Resolution](./focus_areas/issue_resolution/goal_Issue_resolution.md)
-2. [Code Development](./focus_areas/code_development/goal_code_development.md)
-3. [Community Growth](./focus_areas/community_growth/goal_community_growth.md)
+1. [Issue Resolution](./focus_areas/Issue_resolution.md)
+2. [Code Development](./focus_areas/code_development.md)
+3. [Community Growth](./focus_areas/community_growth.md)
 
 ## Focus Area Use Cases
 
