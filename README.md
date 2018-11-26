@@ -8,9 +8,9 @@ This group meets every Wednesday at 11am CST. [Connection Information and minute
 
 Focus areas for this working group include metrics related to ;
 1. Growth Maturity and Decline
-  1. [Code Code Development](./focus_areas/code_development.md)
-  2. [Community Growth](./focus_areas/community_growth.md)
-  3. [Issue Resolution](./focus_areas/issue_resolution.md)
+  * [Code Code Development](./focus_areas/code_development.md)
+  * [Community Growth](./focus_areas/community_growth.md)
+  * [Issue Resolution](./focus_areas/issue_resolution.md)
 2. [Risk](./focus_areas/risk/risk.md)
 3. [Value](./focus_areas/value/value.md)
 
