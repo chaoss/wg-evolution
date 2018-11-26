@@ -7,9 +7,9 @@ This is a [CHAOSS](https://chaoss.community) working group, focused on the [Grow
 This group meets every Wednesday at 11am CST. [Connection Information and minutes from previous meetings are located here.](./meeting_notes.md)
 
 Focus areas for this working group include metrics related to ;
-1. [Code Code Development](./focus_areas/goals_code_development.md)
-2. [Community Growth](./focus_areas/goal_community_growth.md)
-3. [Issue Resolution](./focus_areas/goal_issue_resolution.md)
+1. [Code Code Development](./focus_areas/code_development.md)
+2. [Community Growth](./focus_areas/community_growth.md)
+3. [Issue Resolution](./focus_areas/issue_resolution.md)
 4. [Risk](./focus_areas/risk/risk.md)
 5. [Value](./focus_areas/value/value.md)
 
