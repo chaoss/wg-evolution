@@ -4,12 +4,12 @@ Goal: Identify how effective the community is at addressing issues identified by
 
 Metric | Question
 --- | ---
-[Open Issues](../../metrics/issues-open.md) | What is the number of open issues?
-[Closed Issues](../../metrics/issues-closed.md) | What is the number of closed issues?
-[Open Issue Age](../../metrics/issues-open-age.md) | What is the the age of open issues?
-[First Response to Issue Duration](../../metrics/issues-maintainer-response-duration.md) | What is the duration of time for a first response to an issue?
-[Closed Issue Resolution Duration](../../metrics/issues-closed-resolution-duration.md) | What is the duration of time for issues to be resolved?
-[Issue Resolution Efficiency](../../metrics/issues-closed-resolution-efficiency.md) |  What is the ratio of closed issues/number of abandoned issues?
+[Open Issues](../metrics/issues-open.md) | What is the number of open issues?
+[Closed Issues](../metrics/issues-closed.md) | What is the number of closed issues?
+[Open Issue Age](../metrics/issues-open-age.md) | What is the the age of open issues?
+[First Response to Issue Duration](../metrics/issues-maintainer-response-duration.md) | What is the duration of time for a first response to an issue?
+[Closed Issue Resolution Duration](../metrics/issues-closed-resolution-duration.md) | What is the duration of time for issues to be resolved?
+[Issue Resolution Efficiency](../metrics/issues-closed-resolution-efficiency.md) |  What is the ratio of closed issues/number of abandoned issues?
 
 **Disclaimer:**
 The name/question pairs listed are not meant to represent a fully comprehensive list. It is expected that this list will evolve as people have insights and thoughts about the name/question pairs that comprise Growth-Maturity-Decline.
