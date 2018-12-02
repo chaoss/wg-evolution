@@ -11,6 +11,93 @@ Video recordings of GMD Meetings available in the
 [CHAOSS Youtube channel](https://www.youtube.com/watch?v=A31mGjBM2Io&list=PL60k37cxI-HQ4HaF4iVuoByt5Qxw0ebRP)
 
 -----------
+## November 28th, 2018
+
+## Attending
+Armstrong  
+Alberto Garcia  
+Matt Germonprez  
+Sean Goggins  
+Jesus Gonzalez-Barahona  
+Kevin Lumbard
+
+### Agenda
+
+1. Review pending issues (if any)
+2. Review pending pull request (if any)
+3. Discuss work group goals for the upcoming year
+4. Proposals for the Board
+5. (new) Alberto Grimoire Lab Pull Request https://github.com/chaoss/grimoirelab-sigils/issues/299
+6. (new) Discuss data sourcing
+
+### Minutes:
+
+#### Review Pending issues
+Prepare GSoC '18 Proposal [#51](https://github.com/chaoss/wg-gmd/issues/51)
+*	In-progress
+
+Use Case: Community Managers [#50](https://github.com/chaoss/wg-gmd/issues/50)
+* Related to [blog post](https://chaoss.community/news/2018/11/16/metrics-with-greater-utility-the-community-manager-use-case/)
+* In progress
+
+Use case: Characterize a participant, both within a given project and across projects. [#48](https://github.com/chaoss/wg-gmd/issues/48)
+*	Waiting on submission from Karl
+
+Refine code development focus area [#44](https://github.com/chaoss/wg-gmd/issues/44)
+*	Moving to top down approach
+*	Proposal of goals and basic discussion – better articulation of goals
+*	**Need Comments**
+
+Fix broken links [#43](https://github.com/chaoss/wg-gmd/issues/43)
+*	Resolved and Closed
+* Open new issue or PR if more are found
+
+Use Case: Efficiency in reviewing contributions from first-time contributors [#33](https://github.com/chaoss/wg-gmd/issues/33)
+*	Request to Merge pull request
+* Linked to https://github.com/chaoss/wg-gmd/pull/47
+
+#### Review Pull requests
+[use_cases] First draft of "code contributions by new contributors" [#47](https://github.com/chaoss/wg-gmd/pull/47)
+*	Request to Merge
+* Related to 33
+* **Review and Comment**
+
+#### Discuss work group goals for the upcoming year
+* Define goals
+*	Produce metrics for next CHAOSS con ( 1 to 2 focus areas)
+*	Make focus areas consistent with use cases.
+* Formal release of metrics version 1 – summer
+*	D&I example: https://docs.google.com/document/d/1_rwp6f0teAyXZFkJien7nsmV2FankZDhLk9UmrT48vw/edit
+
+1. Fully implemented focus area – from top to bottom by February (with reference implementations)
+2. Dashboard to show development of metrics and areas – Status System
+3. Second Focus area
+4. Grow the group (need to see results of goals)
+
+#### Proposals for the CHAOSS Board meeting (if any)
+* Role of prospector – dormant with no new commits
+*	Move to the attic?
+
+#### Alberto Grimoire Lab Pull Request https://github.com/chaoss/grimoirelab-sigils/issues/299
+
+"Kibana based dashboards on top of GrimoireLab data. As a first approach, I took Code Development metrics page [1] and built a first panel focused on Pull Request Merged. I opened a public issue [2] to share my progress. Please feel free to participate in the discussion there."
+
+#### Sourcing of Data
+Open an issue to discuss GitHub versions and GraphQL sourcing of data
+*	need clarity on sourcing of data
+* concrete implementation details
+*	Implementation notes with recommendations for implementations
+* Create tags for Implementation Details
+*	Move toward a document after discussion?
+
+### Action items
+* GMD presentation for CHAOSScon – Assigned to Jesus
+* **Attention needed - please review and comment on pull request [47](https://github.com/chaoss/wg-gmd/pull/47)**
+* Create google document for GMD goals - Assigned to Kevin
+* **Alberto request for comments on
+https://github.com/chaoss/grimoirelab-sigils/issues/299**
+
+-----------
 
 ## November 14th, 2018
 
