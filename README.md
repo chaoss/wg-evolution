@@ -1,8 +1,14 @@
 # What is this working group about?
 
+![banner](~/Desktop/icon.png)
+
+[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+
+## Introduction
+
 _Growth, Maturity and Decline_ is a working group focused on the lifecycle of open source projects. We do not valence the stages, but seek to build awareness of those stages among consumers of these metrics. Decline can be ok when a project's utility is waning; or terrible if 20% of the entire internet relies on that project. Context matters, and we are not the arbiters of your context. The "valence" of "good/bad" emerges from use cases and YOUR context.
 
-This is a [CHAOSS](https://chaoss.community) working group, focused on the [Growth-Maturity-Decline][gmd] metrics category. Its aim is to coordinate the definition of the metrics, and the production of software for implementing them, in this area.
+This is a [wg-diversity-inclusion](https://chaoss.community) working group, focused on the [Growth-Maturity-Decline][gmd] metrics category. Its aim is to coordinate the definition of the metrics, and the production of software for implementing them, in this area.
 
 This group meets every Wednesday at 11am CST. [Connection Information and minutes from previous meetings are located here.](./meeting_notes.md)
 
@@ -39,37 +45,54 @@ You can contribute by proposing new goals for a focus area, or new questions for
 or new metrics for answering those questions. Or by helping to refine goals, and questions.
 
 
-## Meetings
 
-We meet every Wednesday at 11am CDT (usually 18:00 CET, but beware different switches to Summer time in EU and US, [check your local time](http://www.thetimezoneconverter.com/?t=11am&tz=Chicago&)) in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288)
 
-Usually, we try to make decissions mainly during the last meeting of each month,
-so that decisions can be brought when convenient to the monthtly main CHAOSS meeting,
-which is the first meeting of each month. In all the meetings we may have an agenda,
-but random issues can be raised if time allows, after we're done with the agenda.
-Whenever possible, and specially if a decission needs to be made,
-ensure that issues / pull requests about the subject matter were opened some time before the meeting,
-so that anyone had the opportunity of commenting on them, and make up their mind about that subject matter.
+TODO: Fill out a short section that links to D&I metrics repo and explains how this repo fits into overall CHAOSS metrics effort.
+[D&I](https://github.com/chaoss/wg-diversity-inclusion)
 
-**Exceptions** (these days there will be no meeting): none for now
 
-[Meeting Notes](/meeting_notes.md) are available for past meetings.
+## Table of Contents
 
-## Mailing list
+- [Security](#security)
+- [Background](#background)
+- [Install](#install)
+- [Usage](#usage)
+- [API](#api)
+- [Maintainers](#maintainers)
+- [Contributing](#contributing)
+- [License](#license)
 
-We use the [CHAOSS mailing list](https://chaoss.community/participate/#user-content-join-the-mailing-list).
-Please prefix the message subject with \[wg-gmd\] if it is specific to this working group.
+## Security
 
-# Relationship with the chaoss/metrics repository
+## Background
+* Background - A lot of the current content at the top of the repo will be moved here and expanded on.
 
-This is a repository for the GMD working group.
-When this working group decides to "release" a version of its metrics,
-the relevant files will be dupmped to the
-[chaoss/metrics](https://github.com/chaoss/metrics) repository,
-as a pull request for updating the CHAOSS metriccs with
-"GMD metrics release x.y".
 
-# Maintainers
+## Install
+
+```
+```
+
+## Usage
+* Usage - Should contain the repository structure information with additional detail about the concepts behind focus areas, use cases, implementations and all other important elements of the repo with appropriate links.
+
+
+## API
+
+## Maintainers
 
 - [Jesus M. Gonzales-Barahona](https://github.com/jgbarah)
 - [Sean P. Goggins](https://github.com/sgoggins)
+
+## Contributing
+* Contribute - All of the content that references participation will be moved here and standardized with D&I repo
+See [the contributing file](contributing.md)!
+
+PRs accepted.
+
+Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
+
+## License
+* License - A simple statement of the license that will be standardized with D&I repo
+
+MIT © 2018 
