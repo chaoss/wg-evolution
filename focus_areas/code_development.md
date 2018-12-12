@@ -1,6 +1,19 @@
-## Code Development
+# Focus Area: Code Development
 
-Goal: Identify how effective the community is at merging new code into the codebase.
+Scope: Aspects related to how the source code changes over time, and the mechanisms that the project has to perform and control those changes.
+
+## Goals
+
+* Learning how effective new code is merged into the code base
+* Learning about the processes to improve/review quality that are used (for example: testing, code review)
+
+## Questions & metrics
+
+\[To be defined\]
+
+## Legacy metrics and questions
+
+We're in the process of discussing questions and metrics. Meanwhile, below is the former list of metrics, and their related questions.
 
 Metric | Question
 --- | ---
