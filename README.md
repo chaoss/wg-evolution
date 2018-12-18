@@ -73,7 +73,7 @@ TODO: Fill out a short section that links to D&I metrics repo and explains how t
 
 
 ## Usage
-* Repository structure 
+* Provisionary Repository structure 
 ```
 /wg-gmd
 ├── LICENSE
@@ -164,4 +164,4 @@ as a pull request for updating the CHAOSS metriccs with
 
 ## License
 - MIT License 
-Copyright © 2018 CHAOSS Projects
+Copyright © 2018 CHAOSS Projects See attached file LICENSE.md
