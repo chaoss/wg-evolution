@@ -11,6 +11,84 @@ Video recordings of GMD Meetings available in the
 [CHAOSS Youtube channel](https://www.youtube.com/watch?v=A31mGjBM2Io&list=PL60k37cxI-HQ4HaF4iVuoByt5Qxw0ebRP)
 
 -----------
+## Next Meeting
+**Wednesday December 19th, 2018**
+
+#### Agenda for next meeting
+
+1. Review in-progress use-cases
+1. Review pending issues (if any)
+2. Review pending pull request (if any)
+3. Discuss work group goals for the upcoming year
+4. Discussion about risk and value - (Seans Trip to Japan)
+5. Meeting Schedule over the holidays
+6. Open Forum
+7. Close with Actionable/Assigned Tasks and Agenda for next meeting
+
+-----------
+## December 12th, 2018
+
+## Attending
+Armstrong  
+Matt Germonprez  
+Sean Goggins  
+Georg Link  
+Kevin Lumbard  
+
+### Agenda
+
+1. Review in-progress use-cases
+1. Review pending issues (if any)
+2. Review pending pull request (if any)
+3. Discuss work group goals for the upcoming year
+4. Open Forum - (added Risk discussion)
+5. Close with Actionable/Assigned Tasks and Agenda for next meeting
+
+### Minutes:
+
+#### Review in Progress Use-cases
+**No New Discussions**
+
+#### Review Pending issues
+
+**No New Discussions**
+
+Make README.md consistent with D&I working group [#55](https://github.com/chaoss/wg-gmd/issues/55)
+
+Prepare GSoC '18 Proposal [#51](https://github.com/chaoss/wg-gmd/issues/51)
+
+Use Case: Community Managers [#50](https://github.com/chaoss/wg-gmd/issues/50)
+
+Use case: Characterize a participant, both within a given project and across projects. [#48](https://github.com/chaoss/wg-gmd/issues/48)
+
+Refine code development focus area [#44](https://github.com/chaoss/wg-gmd/issues/44)
+
+Use Case: Efficiency in reviewing contributions from first-time contributors [#33](https://github.com/chaoss/wg-gmd/issues/33)
+
+#### Review Pull requests
+
+[Focus areas] Scope and goals for code development []#59](https://github.com/chaoss/wg-gmd/pull/59)
+* Merged
+
+Suggesting a structural change in Readme [#58](https://github.com/chaoss/wg-gmd/pull/58)
+* In-progress
+* Move this document forward with minor edits
+* Armstrong, Nicole, and Ben collaborate to produce final document (Aligned for D&I and GMD)
+
+
+#### Discuss work group goals for the upcoming year
+Link to [Working Document](https://docs.google.com/document/d/1CkzlCT1hi9OI1SQf_GAZSsNv9o3Po25x8wC5G424d2U/edit)
+* [Issue #60 created](https://github.com/chaoss/wg-gmd/issues/60)
+
+#### Risk Focus Area (Sean's Japan Trip)
+* Time is a block for individuals working in Asia
+* Interest from Kate Stewart and individuals in Asian regions for compliance risk
+* Proposed - Focus area in growth maturity and decline with separate call.
+* Proposed - Compliance risk evening call 6pm central
+
+#### Action items
+* None discussed
+-----------
 ## November 28th, 2018
 
 ## Attending
@@ -98,7 +176,6 @@ Open an issue to discuss GitHub versions and GraphQL sourcing of data
 https://github.com/chaoss/grimoirelab-sigils/issues/299**
 
 -----------
-
 ## November 14th, 2018
 
 ## Attending
