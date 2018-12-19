@@ -4,12 +4,47 @@ Scope: Aspects related to how the source code changes over time, and the mechani
 
 ## Goals
 
-* Learning how effective new code is merged into the code base
-* Learning about the processes to improve/review quality that are used (for example: testing, code review)
+* Activity: Learning about hwo much activity in involved in changing (or adding) code
+* Efficiency: Learning how effective new code is merged into the code base
+* Quality: Learning about the processes to improve/review quality that are used (for example: testing, code review)
+
+Observations:
+
+* Usually these goals, which in general correspond to the evaluation of some processes,
+are consiedered over a certain time period. Therefore, questions and metrics will also refer, usually,
+to time periods.
+
+* Since the focus area is code development, goals (and therefore relevant questions and metrics) are specific for code development. Therefore, any metric related to these goals should be considered as fitering only data relevant to code development (for example, changes only to source code files). In any case, very likely these same goals could be applied to other artifacts (such as documentation) when it is developed in a similar way to source code.
+
+* For Quality, we assume that there are measurable processes to improve/review quaitly (testing, code review, etc.). If they don't exist, this goal cannot be satisfied.
 
 ## Questions & metrics
 
-\[To be defined\]
+\[Work in progress\]
+
+Goal **Activity**:
+
+* Question **Changes**: How many changes are happening to the code base, during a certain time period? 
+
+  * Metric **Changes_No**(Period): Number of changes to the code base
+  * Metric **Lines_No**(Period): Number of lines changed in the source code
+  * Metric **Change_Size**(Period): Number of lines of changes
+
+* ...
+
+Goal **Efficiency**:
+
+* Question **Proposals**: How efficient is the project in considering proposals for changes, for proposals proposed during a certain time period?
+
+  * Metric **Proposal_Duration**(Period): For how long proposed changes are discussed before they are accepted
+  * Metric **Proposal_Acceptance**(Period): How many proposals are finally accepted
+  * Metric **Proposal_Participants**(Period): How many 
+
+* ...
+
+Goal **Quality**:
+
+  * ...
 
 ## Legacy metrics and questions
 
