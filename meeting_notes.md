@@ -12,7 +12,7 @@ Video recordings of GMD Meetings available in the
 
 -----------
 ## Next Meeting
-**Wednesday December 19th, 2018**
+**Wednesday January 9th, 2018**
 
 #### Agenda for next meeting
 
@@ -20,10 +20,110 @@ Video recordings of GMD Meetings available in the
 1. Review pending issues (if any)
 2. Review pending pull request (if any)
 3. Discuss work group goals for the upcoming year
-4. Discussion about risk and value - (Seans Trip to Japan)
-5. Meeting Schedule over the holidays
+4. Discussion about risk and value
+5. Discussion of first full implementation for CHAOSScon
 6. Open Forum
 7. Close with Actionable/Assigned Tasks and Agenda for next meeting
+
+-----------
+## December 19th, 2018
+
+## Attending
+Armstrong  
+Jesus Gonzalez-Barahona  
+Matt Germonprez  
+Sean Goggins  
+Carter Landis  
+Georg Link  
+Kevin Lumbard  
+
+### Agenda
+
+1. Review in-progress use-cases
+1. Review pending issues (if any)
+2. Review pending pull request (if any)
+3. Discuss work group goals for the upcoming year
+4. Open Forum - (added Risk discussion)
+5. Close with Actionable/Assigned Tasks and Agenda for next meeting
+
+### Minutes:
+
+#### Review in Progress Use-cases
+No New Discussions
+
+#### Review Pending issues
+
+Use case: Characterize a bug reporter's past success at effectively reporting bugs.[#61](https://github.com/chaoss/wg-gmd/issues/61)
+- Opened by Karl Fogel
+
+GMD Goals for 2019 [#60](https://github.com/chaoss/wg-gmd/issues/60)
+- See working document
+- https://docs.google.com/document/d/1CkzlCT1hi9OI1SQf_GAZSsNv9o3Po25x8wC5G424d2U/edit#heading=h.x55g6k4psffg
+- convert to markdown and post to repo when done
+
+
+Make README.md consistent with D&I working group [#55](https://github.com/chaoss/wg-gmd/issues/55)
+* Pull Request in progress
+
+Prepare GSoC '18 Proposal [#51](https://github.com/chaoss/wg-gmd/issues/51)
+* In Progress
+
+Use Case: Community Managers [#50](https://github.com/chaoss/wg-gmd/issues/50)
+- In Progress
+
+Use case: Characterize a participant, both within a given project and across projects. [#48](https://github.com/chaoss/wg-gmd/issues/48)
+- In Progress
+
+Refine code development focus area [#44](https://github.com/chaoss/wg-gmd/issues/44)
+* New Pull Request
+* https://github.com/chaoss/wg-gmd/pull/65
+* Merged
+
+Use Case: Efficiency in reviewing contributions from first-time contributors [#33](https://github.com/chaoss/wg-gmd/issues/33)
+- In Progress
+
+#### Review Pull requests
+
+Suggesting a structural change in Readme [#58](https://github.com/chaoss/wg-gmd/pull/58)
+* In Progress
+* comments from Armstrong pending
+
+[focus_areas] Refining code development focus area [#65](https://github.com/chaoss/wg-gmd/pull/65)
+* Merged
+* Metrics names should be generic and platform specific naming can be discussed in detail in the document
+  * example naming conventions for Github, Gerrit and others may be different
+  * Include this information in the question documents
+* Structure of document is now hierarchical
+
+
+[focus_areas] Moving files to parent directory []#64](https://github.com/chaoss/wg-gmd/pull/64)
+* Merged
+
+[use_cases] First try at adding metrics to a use case [#63](https://github.com/chaoss/wg-gmd/pull/63)
+* **Please Comment**
+* Same questions as focus areas?
+* Use Cases are flexible to allow participants to pose questions relevant to them
+
+
+#### Discuss work group goals for the upcoming year
+Link to [Working Document](https://docs.google.com/document/d/1CkzlCT1hi9OI1SQf_GAZSsNv9o3Po25x8wC5G424d2U/edit)
+* [Issue #60 created](https://github.com/chaoss/wg-gmd/issues/60)
+* Convert document to Pull Request
+* Working on Problem Statement
+
+#### Risk Focus area
+* Proposed separate meeting time
+* need to make sure structure is similar
+
+
+#### Notes:
+Use Cases are the notes that can inform focus areas
+They Exist in the wild and may be classified within a focus area
+Candidate use cases may inspire work on focus area
+
+
+#### Action items
+* None discussed
 
 -----------
 ## December 12th, 2018
