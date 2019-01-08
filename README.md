@@ -1,17 +1,18 @@
 # What is this working group about?
 
-_Growth, Maturity and Decline_ is a working group focused on the lifecycle of open source projects. We do not valence the stages, but seek to build awareness of those stages among consumers of these metrics. Decline can be ok when a project's utility is waning; or terrible if 20% of the entire internet relies on that project. Context matters, and we are not the arbiters of your context. The "valence" of "good/bad" emerges from use cases and YOUR context. 
+_Growth, Maturity and Decline_ is a working group focused on the lifecycle of open source projects. We do not valence the stages, but seek to build awareness of those stages among consumers of these metrics. Decline can be ok when a project's utility is waning; or terrible if 20% of the entire internet relies on that project. Context matters, and we are not the arbiters of your context. The "valence" of "good/bad" emerges from use cases and YOUR context.
 
 This is a [CHAOSS](https://chaoss.community) working group, focused on the [Growth-Maturity-Decline][gmd] metrics category. Its aim is to coordinate the definition of the metrics, and the production of software for implementing them, in this area.
 
 This group meets every Wednesday at 11am CST. [Connection Information and minutes from previous meetings are located here.](./meeting_notes.md)
 
 Focus areas for this working group include metrics related to ;
-1. [Code Code Development](./code_development/goals_code_development.md)
-2. [Community Growth](./communitiy_growth/goal_community_growth.md)
-3. [Issue Resolution](./issue_resolution/goal_issue_resolution.md)
-4. [Risk](./risk/risk.md)
-5. [Value](./value/value.md)
+1. Growth Maturity and Decline
+  * [Code Code Development](./focus_areas/code_development.md)
+  * [Community Growth](./focus_areas/community_growth.md)
+  * [Issue Resolution](./focus_areas/issue_resolution.md)
+2. [Risk](./focus_areas/risk/risk.md)
+3. [Value](./focus_areas/value/value.md)
 
 [gmd]: gmd_metrics.md
 
