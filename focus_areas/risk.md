@@ -2,6 +2,8 @@
 
 **Question:** What are the sources of risk that need to be evaluated in the management of open source projects and open source project portfolios.
 
+**Note**: The risk focus area is operating administratively under the Growth, Maturity and Decline working group.  At the time these discussions evolve and include a larger community of participants this focus area may become its own CHAOSS working group. 
+
 
 ## 1. Description
 
