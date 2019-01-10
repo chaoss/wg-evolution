@@ -102,13 +102,13 @@ as a pull request for updating the CHAOSS metriccs with
 
 * "To be completed ..."
 
-* focus_areas: 
+#### focus_areas: 
 
-* metrics:
+#### metrics:
 
-* implementations: 
+#### implementations: 
 
-* use_cases: 
+#### use_cases: 
 
 
 
