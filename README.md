@@ -1,6 +1,5 @@
 # What is this working group about?
 
-![banner](~/Desktop/icon.png)
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
@@ -21,15 +20,16 @@
 
 _Growth, Maturity and Decline_ is a working group focused on the lifecycle of open source projects. We do not valence the stages, but seek to build awareness of those stages among consumers of these metrics. Decline can be ok when a project's utility is waning; or terrible if 20% of the entire internet relies on that project. Context matters, and we are not the arbiters of your context. The "valence" of "good/bad" emerges from use cases and YOUR context.
 
-* Need help on more content here ...
+"To be written ..."
 
 ## Background
-* need help on content here ...
+* "To be written ..."
 
 
 
 ## Meetings
-* We meet every Wednesday at 11am CDT (usually 18:00 CET, but beware different switches to Summer time in EU and US, [check your local time](http://www.thetimezoneconverter.com/?t=11am&tz=Chicago&)) in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288)
+* GMD working group meets every Wednesday at 11am CST (usually 18:00 CET, but beware different switches to Summer time in EU and US, [check your local time](http://www.thetimezoneconverter.com/?t=11am&tz=Chicago&)) in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288). 
+[Meeting Notes from previous meetings are available here.](./meeting_notes.md)
 
 Usually, we try to make decissions mainly during the last meeting of each month,
 so that decisions can be brought when convenient to the monthtly main CHAOSS meeting,
@@ -41,7 +41,6 @@ so that anyone had the opportunity of commenting on them, and make up their mind
 
 **Exceptions** (these days there will be no meeting): none for now
 
-* GMD working group meets every Wednesday at 11am CST. [Meeting Notes from previous meetings are available here.](./meeting_notes.md)
 
 Focus areas for this working group include metrics related to ;
 1. Growth Maturity and Decline
@@ -100,38 +99,16 @@ as a pull request for updating the CHAOSS metriccs with
 
 
 ## Usage
-* Provisionary Repository structure 
-```
-/wg-gmd
-├── LICENSE
-├── README.md
-├── contributing.md
-├── focus_areas
-│   ├── code_development.md
-│   ├── community_growth.md
-│   ├── issue_resolution.md
-│   ├── risk
-│   │   └── risk.md
-│   ├── templates
-│   │   └── question_template
-│   └── value
-│       └── value.md
-├── gmd_metrics.md
-├── implementations
-│   ├── Code_Commits.ipynb
-│   ├── README.md
-│   └── git-commits.json
-├── meeting_notes.md
-├── metrics
-│   ├── archived_metrics
-│   │   ├── apache-maturity-model.md
-│   └── template_folder
-│       ├── A-example-template.md
-├── repo_structure.md
-└── use_cases
-    ├── README.md
-    └── template.md
-```
+
+* "To be completed ..."
+
+* focus_areas: 
+
+* metrics:
+
+* implementations: 
+
+* use_cases: 
 
 
 
