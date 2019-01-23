@@ -26,9 +26,9 @@ Goal **Activity**:
 
 * Question **Changes**: How many changes are happening to the code base, during a certain time period? 
 
-  * Metric **Changes_No**(Period): Number of changes to the code base
-  * Metric **Lines_No**(Period): Number of lines changed in the source code
-  * Metric **Change_Size**(Period): Number of lines of changes
+  * Metric **Code_Changes_No**(Period): Number of changes to the code base (see [Code_Changes][../metrics/Code_Changes.md])
+  * Metric **Code_Lines_Changed_No**(Period): Number of lines changed in the source code
+  * Metric **Code_Changes_Lines_No**(Period): Aggregated number of lines touched in all changes.
 
 * ...
 
