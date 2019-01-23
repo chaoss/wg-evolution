@@ -12,7 +12,7 @@ in a way that is useful and actionable.
 GMD work group is developing metrics, methodologies, and software
 for expressing open source project health and sustainability.
 By measuring open source project health and sustainability,
-GMD (Growth-Matirity-Decline) seeks to improve the transparency of open source project
+GMD (Growth-Maturity-Decline) seeks to improve the transparency of open source project
 health and sustainability so that relevant stakeholders can
 make more informed decisions about open source project engagement.
 
@@ -42,7 +42,7 @@ by February, including reference implementations. Thus area will be code develop
 Use cases may not immediately apply to a specific area,
 so they can be specified without being in a focus area at first. 
 
-Focus areas already have into account some use cases,
+Focus areas already take into account some use cases,
 and this list of use cases that apply can be enumerated under
 the focus area (and cross referenced where applicable),
 and then elaborated as full use cases later. 
@@ -58,7 +58,7 @@ the focus areas will become more consistent with use cases and vice versa.
 
 ### Goal #3: System status document/dashboard
 
-We neeed a way to know which metrics are implemented by CHAOSS projects,
+We need a way to know which metrics are implemented by CHAOSS projects,
 a kind of a dashboard or tables in a document where people can quickly
 understand wich metrics are already implemented.
 
@@ -79,7 +79,7 @@ goal-question-metric analysis in the focus areas documents.
 
 ### Goal #5:  Grow the work group
 
-To make the work in the group sustainable, and representive of the CHAOSS project,
+To make the work in the group sustainable and representive of the CHAOSS project,
 we need to nurture and help the working group to grow.
 
 * We are aiming to recruit and engage more contributors.
