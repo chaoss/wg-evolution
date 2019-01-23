@@ -1,4 +1,4 @@
-# Contributing to the Growth, Maturity and Decline Working Group
+# Contributing to the GMD Working Group
 
 * Metrics definition. For each metric, we have a document describing it,
 all of them in the [metrics directory](metrics).

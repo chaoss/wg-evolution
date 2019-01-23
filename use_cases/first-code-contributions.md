@@ -91,16 +91,26 @@ on future contributions when they are no longer new contributors?
 
 ## Metrics
 
-\[Still to be defined\]
+\[Work in progress\]
 
-Metrics useful in this scenario.
-Each metric will have an identifier (which will be a link
-to the document with more details on the metric), and a short
-description of the metric, and which questions it helps to answer.
+> Metrics useful in this scenario.
+> Each metric will have an identifier (which will be a link
+> to the document with more details on the metric), and a short
+> description of the metric, and which questions it helps to answer.
 
-* MId1: Description of Metric 1 (QuestionId, QuestionId...)
-* MId2: Description of Metric 2 (QuestionId, QuestionId...)
-* ...
+> * MId1: Description of Metric 1 (QuestionId, QuestionId...)
+> * MId2: Description of Metric 2 (QuestionId, QuestionId...)
+> * ...
+
+[Change proposals](TODO).
+Change proposals for source code files can be used as a proxy for code contributions proposed.
+When filtered by new committers, it will give proposals by new contributors.
+Change proposals could be pull requests (GitHub), merge requests (GitLab), patches (Gerrit), etc.
+Question ids:
+* FractionAccepted: implemented as
+Change proposals (accepted, for new developers) / Change proposals (accepted, for all developers)
+
+
 
 ## Comments
 
