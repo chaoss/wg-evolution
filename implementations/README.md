@@ -15,7 +15,7 @@ You can run the notebooks directly in [Binder](https://mybinder.org):
 Just click on the "launch binder" logo.
 
 You can also run the notebooks locally in your computer.
-For that first of all, you need a Python3 environment with certain modules installed
+For that, you need a Python3 environment with certain modules installed
 (it is recommendable to use a virtual environment,
   see [Creation of virtual environments](https://docs.python.org/3/library/venv.html)).
 To install the modules, just use pip3:
