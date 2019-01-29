@@ -10,6 +10,7 @@ with a Perceval dump of a git repository, as data source.
 # How to run the notebooks
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chaoss/wg-gmd/master?filepath=implementations)
+
 You can run the notebooks directly in [Binder](https://mybinder.org):
 Just click on the "launch binder" logo.
 
