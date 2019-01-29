@@ -101,7 +101,8 @@ Each bar would represent a code changes during a certain period (eg, a month).
 
 ## 4. Reference Implementation
 
-See [reference implementation for git](../implementations/Code_Changes-Git.md)
+See [reference implementation for git](../implementations/Code_Changes-Git.ipynb)
+([see it in Binder](https://mybinder.org/v2/gh/chaoss/wg-gmd/master?filepath=implementations/Code_Changes-Git.ipynb)).
 
 ## 5. Known Implementations
 
