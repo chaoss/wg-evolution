@@ -12,7 +12,7 @@ Video recordings of GMD Meetings available in the
 
 -----------
 ## Next Meeting
-**Wednesday January 23rd, 2018**  
+**Wednesday January 23rd, 2019**  
 Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT (18:00 CET to 16:30 CET)
 
 #### Agenda for next meeting
@@ -25,7 +25,7 @@ Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT 
 7. Close with Actionable/Assigned Tasks and Agenda for next meeting
 
 ----------
-# January 16th, 2018
+# January 16th, 2019
 
 ## Attending
 Alberto Garcia  
@@ -67,7 +67,7 @@ Augur
 * None discussed
 
 ----------
-# January 9th, 2018
+# January 9th, 2019
 
 ## Attending
 Armstrong  
