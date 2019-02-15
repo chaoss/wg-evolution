@@ -1,4 +1,4 @@
-# Closed Issue Resolution Efficiency
+# Issue Resolution Efficiency
 
 ## 1. Description
 What is the number of closed issues/number of abandoned issues?
