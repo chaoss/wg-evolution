@@ -1,4 +1,4 @@
-# Open Issues Age
+# Open Issue Age
 
 ## 1. Description
 What is the the age of open issues?
