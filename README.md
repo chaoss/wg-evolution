@@ -65,7 +65,7 @@ Please prefix the message subject with \[wg-gmd\] if it is specific to this work
 The metrics dealt with in this focus group are organized in focus areas:
 
 * Growth Maturity and Decline
-  * [Code Code Development](./focus_areas/code_development.md)
+  * [Code Development](./focus_areas/code_development.md)
   * [Community Growth](./focus_areas/community_growth.md)
   * [Issue Resolution](./focus_areas/issue_resolution.md)
 * [Risk](./focus_areas/risk/risk.md)
