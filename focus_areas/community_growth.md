@@ -7,7 +7,7 @@ Metric | Quesiton
 [Contributors](../metrics/contributors.md) | What is the number of contributors?
 [New Contributors](../metrics/contributors-new.md) | What is the overall number of new contributors?
 [New Contributors of Commits](../metrics/pull-requests-merge-contributor-new.md) | What is the number of persons contributing with an accepted commit for the first time?
-[Open Issues New Contributors](../metrics/issues-first-time-opened.md) | What is the number of persons opening an issue for the first time?
+[New Constributors of Issues](../metrics/issues-first-time-opened.md) | What is the number of persons opening an issue for the first time?
 [Closed Issues New Contributors](../metrics/issues-first-time-closed.md) | What is the number of persons closing an issue for the first time?
 [New Contributors of Initiated Code Reviews]| What is the number of persons initiating a code review for the first time?
 [New Contributors of Code Reviews](../metrics/pull-requests-code-reviews-contributors-new.md) | What is the number of persons contributing with reviews of code for the first time?
