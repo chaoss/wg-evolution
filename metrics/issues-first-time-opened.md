@@ -1,4 +1,4 @@
-# Open Issues New Contributors
+# New Constributors of Issues
 
 ## 1. Description
 What is the number of persons opening an issue for the first time?
