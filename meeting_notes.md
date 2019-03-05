@@ -13,7 +13,7 @@ Video recordings of GMD Meetings available in the
 -----------
 ## Next Meeting
 
-**Wednesday February 20th, 2018**  
+**Wednesday March 6th, 2019**  
 
 Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT (18:00 CET to 16:30 CET)
 
@@ -26,7 +26,74 @@ Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT 
 
 ----------
 
-# February 13th, 2018
+# Febraury 27th, 2019
+
+## Agenda 
+
+* Working through Issues and Pull Requests
+* Google Summer of Code
+* Open Source Leadership Summit
+
+## Attendees
+
+Jesus Gonzalez-Barahona
+Sean Goggins
+Matt Germonprez
+Venu Vardhan 
+Armstrong Foundjem
+Alberto Pérez
+Matt Snell
+Kevin Lumbard
+
+## Video
+
+https://www.youtube.com/watch?v=d-AFmp8-oSw 
+
+## Notes
+
+### Issue Discussion
+
+* Issue #93 - Include Code of Conduct as Top Level Document.
+  Request for pull request on this issue- Help Wanted.
+
+* Issue #92 - Align Names of metrics.
+  Assigned to Sean.
+
+* Issue #89 - 404 error.
+  We are unable to replicate. Waiting for response.
+
+* Issue #83 - Update Readme.md headings to match standard for CHAOSS
+  Waiting for work from D&I to align work groups.
+
+* Issue #61 - Use case: Characterize a bug reporter's past success at effectively reporting bugs.
+  Waiting on feedback from Karl.
+
+### Google Summer Of Code
+
+Application has been accepted. We have at least one student. We are waiting on more news.
+
+### Open Source Summit Metrics Release
+
+* Code development focus area Release. Full description of focus area is needed.
+  We have a pull request about that:
+  Pull Request #90, [Refining Goals](https://github.com/chaoss/wg-gmd/pull/90)
+
+* Do the Metrics need to be fully developed?
+  What are the Minimum Standards we need for a release
+  List of metrics needed 
+
+* People are gravitating towards tables as a display mechanism.
+  Need to have metrics definitions for release.
+  Would like to have corresponding implementations for release
+
+* Versioning 
+  Conversation is happening at: https://github.com/chaoss/metrics/issues/125
+
+# Febraury 20th, 2019
+
+No notes were taken
+
+# February 13th, 2019
 
 ## Attending
 *   Alberto
@@ -128,36 +195,37 @@ Jesus Gonzalez-Barahona
 Sean Goggins    
 Kevin Lumbard
 
-### Agenda
+## Agenda
 1. Review pending issues (if any)
 2. Review pending pull request (if any)
 3. Open Forum - (added GSOC)
 4. Close with Actionable/Assigned Tasks and Agenda for next meeting
 
-### Minutes:
+## Minutes:
 
-#### Review Pending issues
-
-
-#### Review Pull requests
+### Review Pending issues
 
 
-#### Google Summer of Code (GSOC)
+### Review Pull requests
+
+
+### Google Summer of Code (GSOC)
 Deadline for GSOC is February 3rd – one week to submit PRs
 
-##### Ideas for Student Activities
-GrimoireLab
+Ideas for Student Activities:
+
+GrimoireLab:
 * Implement CHAOSS metrics in Perceval
   * Using Jupyter notebooks
 * Visualizing CHAOSS metrics with Kibana
   * elastic search data – building panels in Kibana
 * Adding code metrics to Grimoire Lab – evolution of codebase, license, dependencies,  …risk? (files without a license), CII badging ?
 
-Augur
+Augur:
 * Will submit something for Risk and Compliance?
 * GMD
 
-#### Action items
+### Action items
 * None discussed
 
 ----------
@@ -171,7 +239,7 @@ Sean Goggins
 Kevin Lumbard
 Roberto Sanchez
 
-### Agenda
+## Agenda
 
 1. Review pending issues (if any)
 2. Review pending pull request (if any)
@@ -179,9 +247,9 @@ Roberto Sanchez
 4. Open Forum - (added Fosdem/CHAOSScon Discussion and Risk Brief)
 5. Close with Actionable/Assigned Tasks and Agenda for next meeting
 
-### Minutes:
+## Minutes:
 
-#### Review Pending issues
+### Review Pending issues
 
 Use case: Characterize a bug reporter's past success at effectively reporting bugs.[#61](https://github.com/chaoss/wg-gmd/issues/61)
 - Need input from Karl Fogel
@@ -214,7 +282,7 @@ Refine code development focus area [#44](https://github.com/chaoss/wg-gmd/issues
 Use Case: Efficiency in reviewing contributions from first-time contributors [#33](https://github.com/chaoss/wg-gmd/issues/33)
 - Merged [PR #63](https://github.com/chaoss/wg-gmd/pull/63)
 
-#### Review Pull requests
+### Review Pull requests
 Update Risk Focus Area [#68](https://github.com/chaoss/wg-gmd/pull/68)
 * Merged
 
@@ -225,22 +293,22 @@ Suggesting a structural change in Readme [#58](https://github.com/chaoss/wg-gmd/
 * In Progress
 * Assigned to Armstrong
 
-#### Fosdem and CHAOSScon
+### Fosdem and CHAOSScon
 Present Current GMD processes and results
 * Need a Google Slides document
 * At CHAOSScon GMD has 4:50pm to 5:50pm time slot
 
-#### Risk workgroup
+### Risk workgroup
 * Add risk to the read me and meeting file
 * Open another section in this file and ...
 * Website information update
 * Meeting notes risk document needed
 
-#### Action items
+### Action items
 * None discussed
 
 -----------
-## December 19th, 2018
+# December 19th, 2018
 
 ## Attending
 Armstrong  
