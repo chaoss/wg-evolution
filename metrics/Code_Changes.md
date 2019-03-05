@@ -99,12 +99,12 @@ Some useful visualizations are:
 These could be represented as bar charts, with time running in the X axis.
 Each bar would represent a code changes during a certain period (eg, a month).
 
-## 4. Reference Implementation
+## Reference Implementation
 
 See [reference implementation for git](../implementations/Code_Changes-Git.ipynb)
 ([see it in Binder](https://mybinder.org/v2/gh/chaoss/wg-gmd/master?filepath=implementations/Code_Changes-Git.ipynb)).
 
-## 5. Known Implementations
+## Known Implementations
 
 * [Grimoirelab](https://chaoss.github.io/grimoirelab). Enriched index for git repositories is composed of
 one item per commit, which makes it basically correspond to this metric
@@ -114,4 +114,4 @@ when counted. The Git panel, available out of the box, provides exactly that.
 
 * [Gitdm](https://repo.or.cz/w/git-dm.git). Provides this metric out ob the box.
 
-## 6. External References (Literature)
+## External References (Literature)
