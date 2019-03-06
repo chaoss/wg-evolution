@@ -24,27 +24,64 @@ to time periods.
 
 Goal **Activity**:
 
-* Question **Changes**: How many changes are happening to the code base, during a certain time period? 
+* Question **Changes**: How many changes are happening to the source code, during a certain time period? 
 
-  * Metric **Code_Changes_No**(Period): Number of changes to the code base (see [Code_Changes](../metrics/Code_Changes.md))
-  * Metric **Code_Lines_Changed_No**(Period): Number of lines changed in the source code
-  * Metric **Code_Changes_Lines_No**(Period): Aggregated number of lines touched in all changes.
+  * Metric **Code_Changes**(Period): Number of changes to the source code
+  (see [Code_Changes](../metrics/Code_Changes.md))
+  * Metric **Code_Changes_Lines**(Period): Aggregated number of lines touched in all changes.
 
-* ...
+* Question **Proposals**: How many proposals for changes to the source code
+are happening during a certain time period?
+
+  * Metric **Proposals**(Period): Number of new proposals for changes
+  to the source code.
+  * Metric **Proposals_Accepted**(Period): Number of proposals for changes
+  to the source code that were accepted.
+  * Metric **Proposals_Declined**(Period): Number of proposals for changes
+  to the source code that were declined.
+
+* Question **Issues**: How many issues related to the source code
+are happening during a certain time period?
+
+  * Metric **Issues**(Period): Number of new issues related to the source code.
+  * Metric **Issues_Active**(Period): Number of issues related to
+  the source code that showed some activity during the period.
+  * Metric **Proposals_Closed**(Period): Number of issues related to
+  the source code that were closed.
 
 Goal **Efficiency**:
 
-* Question **Proposals**: How efficient is the project in considering proposals for changes, for proposals proposed during a certain time period?
+* Question **Proposals**: How efficient is the project in considering proposals for changes,
+made during a certain time period?
 
-  * Metric **Proposal_Duration**(Period): For how long proposed changes are discussed before they are accepted
-  * Metric **Proposal_Acceptance**(Period): How many proposals are finally accepted
-  * Metric **Proposal_Participants**(Period): How many 
+  * Metric **Proposal_Duration**(Period): For how long proposed changes are discussed
+  before they are accepted.
+  * Metric **Proposal_Acceptance**(Period): How many proposals are finally accepted.
+  * Metric **Proposal_Participants**(Period): How many persons participated in the discussion
+  of proposals.
+  * Metric: **Proposal_Backlog**(Period): How many proposals are still undecided
+  (they were neither accepted nor declined)?
+  * Summary metric: **Proposal_Acceptance_Ratio**(Period): Which fraction of new proposals
+  are finally accepted?
+  * Summary metric: **Proposal_Throughput**(Period): How many proposals are decided
+  (either accepted or declined) with respect to the number of proposals submitted?
+    
+* Question **Issues**: How efficient is the project in dealing with issues related to
+the source code, for issues proposed during a certain time period?
 
-* ...
+  * Metric **Issue_Duration**(Period): Time since an issue is proposed until it is closed.
+  * Metric **Issue_Participants**(Period): How many persons participated in the discussion
+  of issues.
+  * Metric: **Issue_Backlog**(Period): How many issues are still open?
+  * Summary metric: **Issue_Throughput**(Period): How many issues are closed
+  with respect to the number of issues opened?
+
 
 Goal **Quality**:
 
-  * ...
+* Question **Code_Review**: Which fraction of the code goes through code review?
+
+* Question **Testing**: Which fraction of the code is tested?
 
 ## Legacy metrics and questions
 
