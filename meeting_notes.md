@@ -12,20 +12,114 @@ Video recordings of GMD Meetings available in the
 
 -----------
 ## Next Meeting
-**Wednesday January 23rd, 2018**  
+
+**Wednesday February 20th, 2018**  
+
 Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT (18:00 CET to 16:30 CET)
 
 #### Agenda for next meeting
-
 1. Review pending issues (if any)
 2. Review pending pull request (if any)
 3. Risk and value updates or discussion
-5. GSOC
-6. Open Forum
-7. Close with Actionable/Assigned Tasks and Agenda for next meeting
+4. Open Forum
+5. Close with Actionable/Assigned Tasks and set Agenda for next meeting
 
 ----------
-# January 16th, 2018
+
+# February 13th, 2018
+
+## Attending
+*   Alberto
+*   Armstrong
+*   Andrea Gallo
+*   Matt Germonprez
+*   Sean Goggins
+*   Jesus M. Gonzalez-Barahona
+* Kevin Lumbard
+*   Matt Snell
+
+### Agenda
+1. Review pending issues (if any)
+2. Review pending pull request (if any)
+3. Open Forum - (added Release Discussion)
+4. Close with Actionable/Assigned Tasks and Agenda for next meeting
+
+### Minutes:
+
+#### Review Pending issues
+
+[Update Readme.md headings to match standard for CHAOSS](https://github.com/chaoss/wg-gmd/issues/83)
+*   #83
+*   GMD and D&I readmes appear to be aligned
+*   Road map needs to be merged with D&I README
+*   
+
+[GSoC Idea: Implementing CHAOSS Metrics in Augur](https://github.com/chaoss/wg-gmd/issues/82)
+*   #82
+*   Holding for acceptance
+
+[GSoC Idea: Implementing CHAOSS metrics with Perceval](https://github.com/chaoss/wg-gmd/issues/81)
+*   #81
+*   Holding for Acceptance
+
+[Use case: Characterize a bug reporter's past success at effectively reporting bugs. use case](https://github.com/chaoss/wg-gmd/issues/61)
+*   #61
+*   Waiting for Karl
+
+[Prepare GSoC '18 Proposal](https://github.com/chaoss/wg-gmd/issues/51)
+*   #51
+*   Closed
+
+[Use Case: Community Managers use case](https://github.com/chaoss/wg-gmd/issues/50)
+*   #50
+*   Jesus will create a PR based on this issue
+
+[Use case: Characterize a participant, both within a given project and across projects. use case](https://github.com/chaoss/wg-gmd/issues/48)
+*   #48
+*   Work in progress
+
+[Refine code development focus area enhancement focus area](https://github.com/chaoss/wg-gmd/issues/44)
+*   #44
+*   Work in progress
+
+#### Review Pull requests
+
+[Add requirements.txt file for Binder.](https://github.com/chaoss/wg-gmd/pull/80)
+*   #80
+*   Needed to run the notebooks
+*   No discussion needed
+*   Merged
+
+[Community Manager Use Case](https://github.com/chaoss/wg-gmd/pull/76)
+*   #76
+*   Work in progress
+
+#### Release Process
+
+*   What do we want to release?
+*   Deadline March 1st 2019
+*   Focus Area - metrics need to be written up and defined
+*   Define Goal Quality within Code Development
+    *   How many involved in code review (more eyeballs)
+    *   Percentage of code going through review
+    *   Pull request comments - approval feedback
+*   Preliminary mapping to legacy metrics - propose issue?
+*   New web page - chaoss.community/metrics
+*   Stable release is a snapshot of metrics/focus areas at a given point  
+
+Sean-
+    1. Pull request comment duration 
+    2. Maintainer response to merge duration 
+    3. Pull request comment diversity 
+    4. Pull request comments 
+    5. Pull requests open 
+    6. Forks 
+
+#### Action items
+*   Create release page - Kevin
+*   
+----------
+# January 16th, 2019
 
 ## Attending
 Alberto Garcia  
@@ -67,7 +161,7 @@ Augur
 * None discussed
 
 ----------
-# January 9th, 2018
+# January 9th, 2019
 
 ## Attending
 Armstrong  

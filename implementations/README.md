@@ -9,7 +9,13 @@ with a Perceval dump of a git repository, as data source.
 
 # How to run the notebooks
 
-First of all, you need a Python3 environment with certain modules installed
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chaoss/wg-gmd/master?filepath=implementations)
+
+You can run the notebooks directly in [Binder](https://mybinder.org):
+Just click on the "launch binder" logo.
+
+You can also run the notebooks locally in your computer.
+For that, you need a Python3 environment with certain modules installed
 (it is recommendable to use a virtual environment,
   see [Creation of virtual environments](https://docs.python.org/3/library/venv.html)).
 To install the modules, just use pip3:
@@ -22,16 +28,24 @@ $ pip install perceval
 
 (check at the begining of each notebook just in case more modules need to be installed).
 
-To run the notebook, once the modules above are installed, run:
+Clone this repository and change directory to where this notebook resides:
 
 ```
-jupyter notebook Code_Commits.ipynb
+$ git clone https://github.com/chaoss/wg-gmd
+$ cd wg-gmd/implementations
 ```
 
-Of course, instead of `Code_Commits.ipynb` you can load any other notebook.
+Then launch Jupyter from the command line...
+
+```
+$ jupyter notebook
+```
+
 This will launch the Jupyter kernel, and will open your default browser
-with the notebook loaded. More detailed instructions can be found in
-[Introducing the Notebook Server’s Command Line Options](Introducing the Notebook Server’s Command Line Options).
+with the directory with all the notebooks loaded.
+Click on the notebook you want to run, and you're ready to go.
+More detailed instructions can be found in
+[Introducing the Notebook Server’s Command Line Options](https://jupyter-notebook.readthedocs.io/en/stable/config.html).
 
 Once you have the notebook in your browser, you can execute the selected cell
 by clicking \[CTRL\]\[Enter\], or \[Shift\]\[Enter\]. In the latter case,
@@ -42,7 +56,7 @@ So, if you want to execute the whole dashboard, just select the first cell,
 and click \[Shift\]\[Enter\] until you're done.
 You can also click on the Cell menu, and select "Run All",
 which will also run all the cells in the notebook.
-More details can be found in [Executing a notebook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/execute.html#executing-a-notebook)
+More details can be found in [Executing a notebook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/stable/execute.html#executing-a-notebook)
 
 If you want to modify any cell, just click on it, look for the cursor,
 and start writing.
