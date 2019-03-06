@@ -4,11 +4,25 @@
 
 This use case deals with how a project's community manager might keep track of a collection of repositories. 
 
-## Main goals
+## Main goal
 
 Help a community manager maintain awareness of a repository collection. 
 
 Support and enhance communication about a repository collection to other stakeholders. In some cases these will be individuals who are funding the community manager's role. In other cases, and possibly simultaneously, they will be organizations with a shared interest in a particular community. 
+
+## Primary Actor
+An open source project(s) community manager. This individual or group of individuals will be responsible for one or more repositories connected together as a project. 
+
+## Stakeholders
+
+* Community manager: Responsible for developing a sense of community in the project. 
+* Contributors: Interested in contributed to projects that have some apparent indications of health. They want to invest time wisely. 
+* Organizations: This could be a company or companies, a foundation, academic unit or collection of cooperative developers who are, together, looking to ensure the health and sustainability of a community. 
+* Project community in general, for self-awareness about how the onboarding
+process is performing.
+* Prospective contributors, to make decisions on whether to
+invest their time and effort in joining a community,
+or in general, produce contributions for the project.
 
 ## Vocabulary
 * Community Manager: takes a variety of perspectives, depending on where their communities are in the lifecycle of growth, maturity and decline. 
@@ -19,59 +33,14 @@ Support and enhance communication about a repository collection to other stakeho
 
 * Others as defined in [First Code Contribution](./first-code-contributions.md) use case. 
 
-## Primary actor
-
-Person responsible for managing the community of repositories. 
-
-## Stakeholders
-
-* Community manager for the project, for tracking how the onboarding process is performing.
-
-* Project community in general, for self-awareness about how the onboarding
-process is performing.
-
-* Prospective contributors, to make decisions on whether to
-invest their time and effort in joining a community,
-or in general, produce contributions for the project.
 
 ## Preconditions
 
 * The community manager should have an interest in a broad perspective on many projects. 
 * The community manager should have a larger than 1 set of repositories they are interested in tracking collectively.  
+* A community must exist
 
 ## Questions
-
-* Embedded in Metrics Definition
-
-## Metrics
-
-\[Work in progress\]
-
-Right now, based on Augur prototypes and follow up discussions so far,
-we have the following observations that will inform our work both the
-the \"Growth Maturity and Decline\" working group and in Augur
-Development. There are a few things we have learned from prototyping
-Augur with community managers. These features in Augur are particularly
-valued:
-
-1.  Allowing comparisons with projects within a defined universe is
-    essential
-
-2.  Allow community managers to add and remove repositories that they
-    monitor from their repertoires periodically.
-
-3.  Downloadable graphics
-
-4.  Downloadable data (.csv or .json)
-
-5.  Availability of a \"Metrics API\", limiting the amount of software
-    infrastructure the CM needs to maintain for themselves. This is more
-    valued by program managers overseeing larger portfolios right now,
-    but we think has potential to grow as awareness of the relatively
-    light weight of this approach becomes more apparent. By apparent, we
-    really mean \"easy to use and understand\"; right now it is for a
-    programmer, but less so for a community manager without this
-    background or current interest.
 
 Date Summarized Comparison Metrics
 ==================================
@@ -207,6 +176,42 @@ source community managers:
     4.  New contributor to maintainer ratio?
 
 
+
+## Metrics
+
+\[Work in progress\]
+
+### Metrics Properties
+
+Right now, based on Augur prototypes and follow up discussions so far,
+we have the following observations that will inform our work both the
+the \"Growth Maturity and Decline\" working group and in Augur
+Development. There are a few things we have learned from prototyping
+Augur with community managers. These features in Augur are particularly
+valued:
+
+1.  Allowing comparisons with projects within a defined universe is
+    essential
+
+2.  Allow community managers to add and remove repositories that they
+    monitor from their repertoires periodically.
+
+3.  Downloadable graphics
+
+4.  Downloadable data (.csv or .json)
+
+5.  Availability of a \"Metrics API\", limiting the amount of software
+    infrastructure the CM needs to maintain for themselves. This is more
+    valued by program managers overseeing larger portfolios right now,
+    but we think has potential to grow as awareness of the relatively
+    light weight of this approach becomes more apparent. By apparent, we
+    really mean \"easy to use and understand\"; right now it is for a
+    programmer, but less so for a community manager without this
+    background or current interest.
+
+### Specific Metrics
+
+1. [Code Commits](../metrics/code-commits.md)
 
 ## Comments
 
