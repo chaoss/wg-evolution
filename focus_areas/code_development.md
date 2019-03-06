@@ -27,18 +27,25 @@ Goal **Activity**:
 * Question **Changes**: How many changes are happening to the source code, during a certain time period? 
 
   * Metric **Code_Changes**(Period): Number of changes to the source code
-  (see [Code_Changes](../metrics/Code_Changes.md))
-  * Metric **Code_Changes_Lines**(Period): Aggregated number of lines touched in all changes.
+  (see [Code_Changes](../metrics/Code_Changes.md)).
+  * Metric **Code_Changes_Lines**(Period): Aggregated number of lines touched in all changes
+  (see [Code_Changes_Lines](../metrics/Code_Changes_Lines.md)).
 
 * Question **Proposals**: How many proposals for changes to the source code
 are happening during a certain time period?
 
   * Metric **Proposals**(Period): Number of new proposals for changes
-  to the source code.
+  to the source code
+  (see [Proposals](../metrics/Proposals.md)).
+
   * Metric **Proposals_Accepted**(Period): Number of proposals for changes
-  to the source code that were accepted.
+  to the source code that were accepted
+  (see [Proposals_Accepted](../metrics/Proposals_Accepted.md)).
+
   * Metric **Proposals_Declined**(Period): Number of proposals for changes
-  to the source code that were declined.
+  to the source code that were declined
+  (see [Proposals_Declined](../metrics/Proposals_Declined.md)).
+
 
 * Question **Issues**: How many issues related to the source code
 are happening during a certain time period?
@@ -82,6 +89,21 @@ Goal **Quality**:
 * Question **Code_Review**: Which fraction of the code goes through code review?
 
 * Question **Testing**: Which fraction of the code is tested?
+
+## Summary of metrics
+
+This is the list of metrics that we consider as defined,
+even when some of them are still work in progress in some details:
+
+Goal | Question | Metric
+--- | --- | ---
+Activity | Changes | [Code_Changes](../metrics/Code_Changes.md)
+Activity | Changes | [Code_Changes_Lines](../metrics/Code_Changes_Lines.md)
+Activity | Proposals | [Proposals](../metrics/Proposals.md)
+Activity | Proposals | [Proposals_Accepted](../metrics/Proposals_Accepted.md)
+Activity | Proposals | [Proposals_Declined](../metrics/Proposals_Declined.md)
+
+
 
 ## Legacy metrics and questions
 
