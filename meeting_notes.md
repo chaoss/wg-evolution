@@ -13,18 +13,103 @@ Video recordings of GMD Meetings available in the
 -----------
 ## Next Meeting
 
-**Wednesday March 6th, 2019**  
+**Wednesday March 20th, 2019**  
 
 Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT (18:00 CET to 16:30 CET)
 
 #### Agenda for next meeting
-1. Review pending issues (if any)
-2. Review pending pull request (if any)
-3. Risk and value updates or discussion
-4. Open Forum
-5. Close with Actionable/Assigned Tasks and set Agenda for next meeting
+* Review pending issues (if any)
+* Review pending pull request (if any)
+* Open Forum
+* Close with Actionable/Assigned Tasks and set Agenda for next meeting
 
 ----------
+
+# March 6th, 2019
+
+## Agenda
+
+* Working through Issues and Pull Requests
+* Google Summer of Code Project microtask submission: Private? 
+
+## Attendees
+
+(If unknown, name taken by Zoom order and display name) 
+
+* Sean Goggins
+* Andrea Gallo
+* Jesus Gonzalez-Barahona
+* Alberto Perez
+* Vchrombie
+* Matt Germonprez
+* Kevin Lumbard
+
+## Notes
+
+### Meeting notes
+
+We discuss whether maitain notes about the weekly meetings on Google Docs,
+instead of in GitHub. 
+One long document with previous meeting notes included
+
+Options: make the document open for editing by everyone?
+
+Suggestion: create a Google group for controlled access with edit rights
+and make the doc open for view mode for everybody else
+Add link to GitHub Meeting notes file.
+
+We decide to open an issue, and follow up the discussion there.
+
+### Pull Requests
+
+* [Pull request #90](https://github.com/chaoss/wg-gmd/pull/90)
+  Closed
+  Comments in [issue #99](https://github.com/chaoss/wg-gmd/issues/99).
+  How to count open pull requests?
+  How to deal with reopened issues?
+  Challenging to count
+
+* [Focus area code development](https://github.com/chaoss/wg-gmd/blob/master/focus_areas/code_development.md)
+  in preparation for release.
+  Need to align with metrics repository.
+  Code changes versus code commits?
+  Need a process to change names 
+  Is there an obligation to stick with a name so as not to confuse users.
+  Versioning?
+  If the name is incorrect it should be changed.
+  If a name is changed, create an issue in the metrics repository.
+  Try not to change names.
+  Need a dictionary document for general naming conventions.
+  Consensus on release of focus area code development
+  Still working the metrics.
+  Table at the end of the document with metric release.
+
+* [Community Manager Use Case #76](https://github.com/chaoss/wg-gmd/pull/76)
+  Remove metrics?
+  Mention new name of metric (code changes?).
+  Keep use case - accept pull and make edits in a new version.
+  Ready to merged when the metrics file which it includes is removed.
+
+* Use case: [Hints for maintainership position #91](https://github.com/chaoss/wg-gmd/pull/91)
+  Hold for Karl
+
+* [Add new metric Code_Changed_Lines #95](https://github.com/chaoss/wg-gmd/pull/95)
+  Need feedback.
+  Merged after discussion.
+
+* [Minor changes to Code Changes #96](https://github.com/chaoss/wg-gmd/pull/96).
+  Merged
+
+* [Add metric related to the question Proposals #97](https://github.com/chaoss/wg-gmd/pulls).
+  To what extent should we use GHTorrent?
+  Specifics of data source with reference to the metric?
+  How to map the general ideas to data sources.
+  How discuss - github, gitlab, gerrit - in the document.
+  Reference implementations done in Perceval.
+  How it is implemented in Augur, or query for GHTorreny, could be in the "Known Implementations"
+  section.
+  Merged
+
 
 # Febraury 27th, 2019
 
