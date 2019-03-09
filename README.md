@@ -88,6 +88,6 @@ as a pull request for updating the CHAOSS metriccs with
 
 ## License
 
-The documents in this repositories are released undet the MIT License. See [LICENSE.md](LICENSE.md) for details.
+The documents in this repositories are released undet the MIT License. See [LICENSE](LICENSE) for details.
 
 Copyright © 2018-2019 CHAOSS Project
