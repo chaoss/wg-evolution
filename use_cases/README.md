@@ -35,8 +35,8 @@ In the description of the issue, write one or more high level goals of the use c
 and a list of the questions that could be relevant for
 reaching that goal.
 
-If you are not familiar with GitHub issues, you can
-[check the documentation about how to open a GitHub issue](https://help.github.com/articles/creating-an-issue/).
+If you are not familiar with GitHub issues, you can check the
+[documentation about how to open a GitHub issue](https://help.github.com/articles/creating-an-issue/).
 If you find it could help,
 use an auxiliary document in Google Docs with the description
 of the use case, and link it from the isssue. In this case, a part

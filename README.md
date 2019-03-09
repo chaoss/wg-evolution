@@ -20,7 +20,7 @@ _Growth, Maturity and Decline_ is a working group focused on the lifecycle of op
 
 ## Contributing
 
-You can start by introducing yourself on the CHAOSS mailing list (see below) explaining your interest. Then, you can have a look at the archives of the mailing lists, at the minutes of past meetings, and at the
+You can start by introducing yourself on the [CHAOSS mailing list](https://github.com/chaoss/wg-gmd#mailing-list) explaining your interest. Then, you can have a look at the archives of the mailing lists, at the minutes of past meetings, and at the
 
 * [issues](https://github.com/chaoss/wg-gmd/issues) and
 * [pull requests](https://github.com/chaoss/wg-gmd/pulls) in
@@ -33,7 +33,7 @@ Currently, main lines of work are:
 You can propose your use cases, and/or contribute to refine those that have been proposed already.
 
 * Focus areas (definitions, goals, questions). Currently, in the [definition of GMD metrics] we strucuture
-it in the following focus areas: [Issue Resolution](focus_areas/issue_resolution.md), [Code Development](focus_areas/code_development.md), and [Community Growth](focus_areas/communitiy_growth.md).
+it in the following focus areas: [Issue Resolution](focus_areas/issue_resolution.md), [Code Development](focus_areas/code_development.md), and [Community Growth](focus_areas/community_growth.md).
 
 For each area of interest, we're following the [goal-question-metric methodology](https://en.wikipedia.org/wiki/GQM) defining questions and metrics that help to answer them.
 
@@ -45,7 +45,7 @@ See more details in the [contributing file](CONTRIBUTING.md).
 ### Meetings
 
 The GMD working group meets frequently. Check details on when we meet, and minutes of past meetings
-in the [meetings document](./meeting_notes.md)
+in the [meetings document](./meeting_notes.md).
 
 Usually, we try to make decissions mainly during the last meeting of each month,
 so that decisions can be brought when convenient to the monthtly main CHAOSS meeting,
@@ -75,9 +75,9 @@ The metrics dealt with in this focus group are organized in focus areas:
 
 This is a repository for the GMD working group.
 When this working group decides to "release" a version of its metrics,
-the relevant files will be dupmped to the
+the relevant files will be dumped to the
 [chaoss/metrics](https://github.com/chaoss/metrics) repository,
-as a pull request for updating the CHAOSS metriccs with
+as a pull request for updating the CHAOSS metrics with
 "GMD metrics release x.y".
 
 
