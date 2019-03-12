@@ -25,7 +25,6 @@ to time periods.
 Goal **Activity**:
 
 * Question **Changes**: How many changes are happening to the source code, during a certain time period? 
-
   * Metric **Code_Changes**(Period): Number of changes to the source code
   (see [Code_Changes](../metrics/Code_Changes.md)).
   * Metric **Code_Changes_Lines**(Period): Aggregated number of lines touched in all changes
@@ -50,11 +49,14 @@ are happening during a certain time period?
 * Question **Issues**: How many issues related to the source code
 are happening during a certain time period?
 
-  * Metric **Issues**(Period): Number of new issues related to the source code.
+  * Metric **Issues**(Period): Number of new issues related to the source code
+  (see [Issues_New](../metrics/Issues_New.md)).
   * Metric **Issues_Active**(Period): Number of issues related to
-  the source code that showed some activity during the period.
-  * Metric **Proposals_Closed**(Period): Number of issues related to
-  the source code that were closed.
+  the source code that showed some activity during the period
+  (see [Issues_Active](../metrics/Issues_Active.md)).
+  * Metric **Issues_Closed**(Period): Number of issues related to
+  the source code that were closed
+  (see [Issues_Closed](../metrics/Issues_Closed.md)).
 
 Goal **Efficiency**:
 
@@ -102,6 +104,9 @@ Activity | Changes | [Code_Changes_Lines](../metrics/Code_Changes_Lines.md)
 Activity | Proposals | [Proposals](../metrics/Proposals.md)
 Activity | Proposals | [Proposals_Accepted](../metrics/Proposals_Accepted.md)
 Activity | Proposals | [Proposals_Declined](../metrics/Proposals_Declined.md)
+Activity | Issues    | [Issues_New](../metrics/Issues_New.md)
+Activity | Issues    | [Issues_Active](../metrics/Issues_Active.md)
+Activity | Issues    | [Issues_Closed](../metrics/Issues_Closed.md)
 
 
 
