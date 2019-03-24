@@ -23,13 +23,13 @@ Explanation: Some lines describing the use case, its context, etc.
 
 Main goal of the use case. In some cases, it could be more than one.
 Usually, it will start by "Understanding...", or
-"Having data for making informed decissions on...", or
+"Having data for making informed decisions on...", or
 "Tracking...", or something like that.
 
 ## Vocabulary
 
 If needed, specific terms that need to be defined so that the use
-casee can be understood in a precise way.
+case can be understood in a precise way.
 For example, if the description of the case uses words such as
 `maintainer`, `contributor`, or `developer`, they should be defined
 so that it becomes clear to which specific roles they correspond.
@@ -77,4 +77,4 @@ description of the metric, and which questions it helps to answer.
 
 ## Comments
 
-Any other relevant comment. For example, specific threasholds for metrics could be provided, such as "if XXX metric reaches YYY value, the benefits for the project are clear".
+Any other relevant comment. For example, specific thresholds for metrics could be provided, such as "if XXX metric reaches YYY value, the benefits for the project are clear".
