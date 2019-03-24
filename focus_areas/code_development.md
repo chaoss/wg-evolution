@@ -4,19 +4,19 @@ Scope: Aspects related to how the source code changes over time, and the mechani
 
 ## Goals
 
-* Activity: Learning about how much activity in involved in changing (or adding) code
+* Activity: Learning about how much activity involved in changing (or adding) code
 * Efficiency: Learning how effective new code is merged into the code base
 * Quality: Learning about the processes to improve/review quality that are used (for example: testing, code review)
 
 Observations:
 
 * Usually these goals, which in general correspond to the evaluation of some processes,
-are consiedered over a certain time period. Therefore, questions and metrics will also refer, usually,
+are considered over a certain time period. Therefore, questions and metrics will also refer, usually,
 to time periods.
 
-* Since the focus area is code development, goals (and therefore relevant questions and metrics) are specific for code development. Therefore, any metric related to these goals should be considered as fitering only data relevant to code development (for example, changes only to source code files). In any case, very likely these same goals could be applied to other artifacts (such as documentation) when it is developed in a similar way to source code.
+* Since the focus area is code development, goals (and therefore relevant questions and metrics) are specific for code development. Therefore, any metric related to these goals should be considered as filtering only data relevant to code development (for example, changes only to source code files). In any case, very likely these same goals could be applied to other artifacts (such as documentation) when it is developed in a similar way to the source code.
 
-* For Quality, we assume that there are measurable processes to improve/review quaitly (testing, code review, etc.). If they don't exist, this goal cannot be satisfied.
+* For Quality, we assume that there are measurable processes to improve/review quality (testing, code review, etc.). If they don't exist, this goal cannot be satisfied.
 
 ## Questions & metrics
 
@@ -132,7 +132,7 @@ The name/question pairs listed are not meant to represent a fully comprehensive 
 The name/question pairs are intended to be a starting point for CHAOSS-related software. It is expected that this list will evolve based on the ability (or inability) of software to successfully implement the specific name/question pairs.
 
 **Background:**
-The name/question pairs have been identified based CHAOSS-related outreach activities. We thank everyone who participated.
+The name/question pairs have been identified based on CHAOSS-related outreach activities. We thank everyone who participated.
 
 **How to contribute:**
 - To advance the document, fork the repo, make your changes and create a pull request.
