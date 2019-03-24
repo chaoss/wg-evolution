@@ -4,8 +4,8 @@ Notebooks, built on top of data collected by Perceval,
 for illustrating how to compute metrics:
 
 * [Code Commits](Code_Commits.ipynb),
-includes generation of file [git-commits.json],
-with a Perceval dump of a git repository, as data source.
+includes the generation of file [git-commits.json],
+with a Perceval dump of a git repository, as a data source.
 
 # How to run the notebooks
 
@@ -14,7 +14,7 @@ with a Perceval dump of a git repository, as data source.
 You can run the notebooks directly in [Binder](https://mybinder.org):
 Just click on the "launch binder" logo.
 
-You can also run the notebooks locally in your computer.
+You can also run the notebooks locally on your computer.
 For that, you need a Python3 environment with certain modules installed
 (it is recommendable to use a virtual environment,
   see [Creation of virtual environments](https://docs.python.org/3/library/venv.html)).
@@ -26,7 +26,7 @@ $ pip install pandas
 $ pip install perceval
 ```
 
-(check at the begining of each notebook just in case more modules need to be installed).
+(check at the beginning of each notebook just in case more modules need to be installed).
 
 Clone this repository and change directory to where this notebook resides:
 
