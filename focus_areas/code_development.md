@@ -16,7 +16,7 @@ to time periods.
 
 * Since the focus area is code development, goals (and therefore relevant questions and metrics) are specific for code development. Therefore, any metric related to these goals should be considered as fitering only data relevant to code development (for example, changes only to source code files). In any case, very likely these same goals could be applied to other artifacts (such as documentation) when it is developed in a similar way to source code.
 
-* For Quality, we assume that there are measurable processes to improve/review quaitly (testing, code review, etc.). If they don't exist, this goal cannot be satisfied.
+* For Quality, we assume that there are measurable processes to improve/review quality (testing, code review, etc.). If they don't exist, this goal cannot be satisfied.
 
 ## Questions & metrics
 
