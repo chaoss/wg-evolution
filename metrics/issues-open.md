@@ -10,7 +10,7 @@ Note: do not confuse this with the opened tickets in a specific period of time r
 
 Mandatory: 
 * Point in time. This is the time for which the snapshot of the open issues is computed.
-* Statuses. These are the statuses considered as open. Platform and project dependant.
+* Statuses. These are the statuses considered as open. Platform and project dependent.
 
 ### GitHub Case
 
@@ -20,11 +20,11 @@ Mandatory:
 ### Bugzilla Case
 
 * Platform: The platform provides several statuses and those depends on the configuration of each project. By default Bugzilla has a [workflow](https://www.bugzilla.org/docs/3.6/en/html/lifecycle.html) where the open statuses may be considered: all but *closed* and *resolved*.
-* Case Definition: Open issues need the statuses parameter to be defined. By default this may be all statuses but *closed* and *resolved*. 
+* Case Definition: Open issues need the statuses parameter to be defined. By default, this may be all statuses, except for  *closed* and *resolved*. 
 
 ## 2. Use Cases
 
-* Many people would like an at-a-glance visualization of all the open issues in a project, this visualization would provide that without having to look inside every sub-project in the repository and sum the issues manually
+* Many people would like an at-a-glance visualization of all the open issues in a project. This visualization would provide that without having to look inside every sub-project in the repository and sum the issues manually
 * First approach to measure the total effort to close all of the remaining open tickets.
 
  
