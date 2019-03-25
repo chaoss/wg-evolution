@@ -10,7 +10,7 @@ Note: do not confuse this with the opened tickets in a specific period of time r
 
 Mandatory: 
 * Point in time. This is the time for which the snapshot of the open issues is computed.
-* Statuses. These are the statuses considered as open. This component is platform and project dependent.
+* Statuses. These are the statuses considered as open. Platform and project dependent.
 
 ### GitHub Case
 
