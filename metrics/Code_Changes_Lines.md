@@ -65,7 +65,7 @@ Mandatory:
     and when it was committed to the repository.
     For deciding on the period, one of them has to be selected.
 
-* Include merge commits. Booelan. Default: True.
+* Include merge commits. Boolean. Default: True.
 
     Merge commits are
     those which merge a branch, and in some cases are not considered as
@@ -77,7 +77,7 @@ Mandatory:
 * Volume of coding activity:
 
   Although code changes can be a proxy to the coding activity of a project,
-  not all changes are the same. Consudering the aggregated number of
+  not all changes are the same. Considering the aggregated number of
   lines touched in all changes gives a complementary idea of how large
   the changes are, and in general, how large is the volume of coding
   activity.
