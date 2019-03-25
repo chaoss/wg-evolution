@@ -9,7 +9,7 @@ submitted to the code base, but are first proposed for discussion
 as "proposals for change to the source code".
 Each of these proposals are intended to be reviewed by other developers,
 who may suggest improvements that will lead to the original proposers
-sending new versions of their propoposals, until reviews are
+sending new versions of their proposals, until reviews are
 positive, and the code is accepted, or until it is decided that
 the proposal is declined.
 
