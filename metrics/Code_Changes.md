@@ -9,7 +9,7 @@ For "change" we consider what developers consider an atomic change to their code
 In other words, a change is some change to the source code which usually
 is accepted and merged as a whole, and if needed, reverted as a whole too.
 For example, in the case of git, each "change" corresponds to a "commit",
-or, to be more precice, "code change" corresponds to the part of a commit which
+or, to be more precise, "code change" corresponds to the part of a commit which
 touches files considered as source code.
 
 ### Parameters
@@ -56,7 +56,7 @@ Mandatory:
     and when it was committed to the repository.
     For deciding on the period, one of them has to be selected.
 
-* Include merge commits. Booelan. Default: True.
+* Include merge commits. Boolean. Default: True.
 
     Merge commits are
     those which merge a branch, and in some cases are not considered as
@@ -112,6 +112,6 @@ when counted. The Git panel, available out of the box, provides exactly that.
 
 * [Augur](https://chaoss.github.io/augur/). Provides this metric out of the box.
 
-* [Gitdm](https://repo.or.cz/w/git-dm.git). Provides this metric out ob the box.
+* [Gitdm](https://repo.or.cz/w/git-dm.git). Provides this metric out of the box.
 
 ## External References (Literature)
