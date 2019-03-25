@@ -24,7 +24,7 @@ Mandatory:
 
 ## 2. Use Cases
 
-* Many people would like an at-a-glance visualization of all the open issues in a project, this visualization would provide that without having to look inside every sub-project in the repository and sum the issues manually
+* Many people would like an at-a-glance visualization of all the open issues in a project. This visualization would provide that without having to look inside every sub-project in the repository and sum the issues manually
 * First approach to measure the total effort to close all of the remaining open tickets.
 
  
