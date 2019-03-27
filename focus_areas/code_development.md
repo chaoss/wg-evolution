@@ -30,20 +30,20 @@ Goal **Activity**:
   * Metric **Code_Changes_Lines**(Period): Aggregated number of lines touched in all changes
   (see [Code_Changes_Lines](../metrics/Code_Changes_Lines.md)).
 
-* Question **Proposals**: How many proposals for changes to the source code
+* Question **Reviews**: How many reviews to proposed changes to the source code
 are happening during a certain time period?
 
-  * Metric **Proposals**(Period): Number of new proposals for changes
+  * Metric **Reviews**(Period): Number of new review requests for changes
   to the source code
-  (see [Proposals](../metrics/Proposals.md)).
+  (see [Reviews](../metrics/Reviews.md)).
 
-  * Metric **Proposals_Accepted**(Period): Number of proposals for changes
-  to the source code that were accepted
-  (see [Proposals_Accepted](../metrics/Proposals_Accepted.md)).
+  * Metric **Reviews_Accepted**(Period): Number of reviews for changes
+  to the source code that ended accepting the change
+  (see [Reviews_Accepted](../metrics/Reviews_Accepted.md)).
 
-  * Metric **Proposals_Declined**(Period): Number of proposals for changes
-  to the source code that were declined
-  (see [Proposals_Declined](../metrics/Proposals_Declined.md)).
+  * Metric **Reviews_Declined**(Period): Number of reviews for changes
+  to the source code that ended declining the change
+  (see [Reviews_Declined](../metrics/Reviews_Declined.md)).
 
 
 * Question **Issues**: How many issues related to the source code
@@ -60,22 +60,22 @@ are happening during a certain time period?
 
 Goal **Efficiency**:
 
-* Question **Proposals**: How efficient is the project in considering proposals for changes,
-made during a certain time period?
+* Question **Reviews**: How efficient is the project in reviewing proposed
+ changes to the code, during a certain time period?
 
-  * Metric **Proposal_Duration**(Period): For how long proposed changes are discussed
-  before they are accepted.
-  * Metric **Proposals_Accepted**(Period): Number of proposals for changes
-  to the source code that were accepted
-  (see [Proposals_Accepted](../metrics/Proposals_Accepted.md)).
-  * Metric **Proposal_Participants**(Period): How many persons participated in the discussion
-  of proposals.
-  * Metric: **Proposal_Backlog**(Period): How many proposals are still undecided
-  (they were neither accepted nor declined)?
-  * Summary metric: **Proposal_Acceptance_Ratio**(Period): Which fraction of new proposals
-  are finally accepted?
-  * Summary metric: **Proposal_Throughput**(Period): How many proposals are decided
-  (either accepted or declined) with respect to the number of proposals submitted?
+  * Metric **Review_Duration**(Period): For how long proposed changes are
+  reviewed before they are accepted.
+  * Metric **Review_Acceptance**(Period): How many reviews end accepting
+  the code change.
+  * Metric **Review_Participants**(Period): How many persons participated in
+  reviews of code changes.
+  * Metric: **Review_Backlog**(Period): How many reviews are still undecided
+  (proposed changes were neither accepted nor declined)?
+  * Summary metric: **Review_Acceptance_Ratio**(Period): Which fraction of
+  new proposals for changes are finally accepted after a review process?
+  * Summary metric: **Review_Throughput**(Period): How many proposals for
+   changes are decided after code review
+   (either accepted or declined) with respect to the number of proposals submitted?
     
 * Question **Issues**: How efficient is the project in dealing with issues related to
 the source code, for issues proposed during a certain time period?
@@ -103,13 +103,12 @@ Goal | Question | Metric
 --- | --- | ---
 Activity | Changes | [Code_Changes](../metrics/Code_Changes.md)
 Activity | Changes | [Code_Changes_Lines](../metrics/Code_Changes_Lines.md)
-Activity | Proposals | [Proposals](../metrics/Proposals.md)
-Activity | Proposals | [Proposals_Accepted](../metrics/Proposals_Accepted.md)
-Activity | Proposals | [Proposals_Declined](../metrics/Proposals_Declined.md)
-Activity | Issues    | [Issues_New](../metrics/Issues_New.md)
-Activity | Issues    | [Issues_Active](../metrics/Issues_Active.md)
-Activity | Issues    | [Issues_Closed](../metrics/Issues_Closed.md)
-
+Activity | Issues  | [Issues_New](../metrics/Issues_New.md)
+Activity | Issues  | [Issues_Active](../metrics/Issues_Active.md)
+Activity | Issues  | [Issues_Closed](../metrics/Issues_Closed.md)
+Activity | Reviews | [Reviews](../metrics/Reviews.md)
+Activity | Reviews | [Reviews_Accepted](../metrics/Reviews_Accepted.md)
+Activity | Reviews | [Reviews_Declined](../metrics/Reviews_Declined.md)
 
 
 ## Legacy metrics and questions
