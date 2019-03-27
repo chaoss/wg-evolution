@@ -68,8 +68,6 @@ The metrics dealt with in this focus group are organized in focus areas:
   * [Code Development](./focus_areas/code_development.md)
   * [Community Growth](./focus_areas/community_growth.md)
   * [Issue Resolution](./focus_areas/issue_resolution.md)
-* [Risk](./focus_areas/risk.md)
-* [Value](./focus_areas/value.md)
 
 ## Usage
 
