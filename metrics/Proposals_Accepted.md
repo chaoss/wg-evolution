@@ -14,7 +14,7 @@ code, those corresponding to the changes proposed and finally merged.
 For example, in GitHub when a pull request is accepted, all the 
 commits included in it are merged (maybe squashed, maybe rebased)
 in the correspnding git repository. The same can be said of
-HitLab merge requests. In the case of Gerrit, a code review usually
+GitLab merge requests. In the case of Gerrit, a code review usually
 corresponds to a single commit. 
 
 ### Parameters
