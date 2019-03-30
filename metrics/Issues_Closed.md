@@ -6,7 +6,7 @@ during a certain period.
 ## Description
 
 Issues are defined as in [Issues](Issues.md).
-Issues clsed are those that changed to state closed
+Issues closed are those that changed to state closed
 during a certain period.
 
 In some cases or some projects, there are other states
