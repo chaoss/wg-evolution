@@ -13,7 +13,7 @@ For example, in GitHub when a pull request is closed without
 merging, and the commits referenced in it cannot be found
 in the git repository, it can be considered to be declined
 (but see detailed discussion below). The same can be said of
-HitLab merge requests. In the case of Gerrit, code reviews
+GitLab merge requests. In the case of Gerrit, code reviews
 can be formally "abandoned", which is the way of detecting
 declined proposals in this system. 
 
