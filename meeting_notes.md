@@ -13,9 +13,9 @@ Video recordings of GMD Meetings available in the
 -----------
 ## Next Meeting
 
-**Wednesday March 20th, 2019**  
+**Wednesday April 3rd, 2019**  
 
-Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT (18:00 CET to 16:30 CET)
+Please be aware the time of the meeting is now 9:30am CDT / 16:30 CET
 
 #### Agenda for next meeting
 * Review pending issues (if any)
@@ -24,6 +24,10 @@ Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT 
 * Close with Actionable/Assigned Tasks and set Agenda for next meeting
 
 ----------
+
+# March 27th, 2019
+
+Notes missing
 
 # March 6th, 2019
 
