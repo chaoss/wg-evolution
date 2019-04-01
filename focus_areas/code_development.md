@@ -118,7 +118,7 @@ We're in the process of discussing questions and metrics. Meanwhile, below is th
 
 Metric | Question
 --- | ---
-[Pull Requests Merged](../metrics/pull-requests-merged.md) | What is the number of code commits?
+[Pull Requests Merged](../metrics/pull-requests-merged.md) | What is the number of pull requests merged?
 [Lines of Code Changed](../metrics/code-lines-of-code-changed.md) | What is the number of lines of code changed?
 [Code Reviews](../metrics/pull-requests-code-reviews.md) | What is the number of code reviews?
 [Pull Request Merge Duration](../metrics/pull-requests-merge-duration.md) | What is the duration of time between code merge request and code commit?
