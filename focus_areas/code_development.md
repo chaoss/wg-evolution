@@ -65,7 +65,9 @@ made during a certain time period?
 
   * Metric **Proposal_Duration**(Period): For how long proposed changes are discussed
   before they are accepted.
-  * Metric **Proposal_Acceptance**(Period): How many proposals are finally accepted.
+  * Metric **Proposals_Accepted**(Period): Number of proposals for changes
+  to the source code that were accepted
+  (see [Proposals_Accepted](../metrics/Proposals_Accepted.md)).
   * Metric **Proposal_Participants**(Period): How many persons participated in the discussion
   of proposals.
   * Metric: **Proposal_Backlog**(Period): How many proposals are still undecided
