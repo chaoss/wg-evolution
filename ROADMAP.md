@@ -35,7 +35,7 @@ by February, including reference implementations. Thus area will be code develop
 
 * We are aiming to produce metrics for the next CHAOSSCon (February), in at least 2 focus areas.
 
-* We are aiming to release formally version 1 of the metrics by Summmer.
+* We are aiming to release formally version 1 of the metrics by Summer.
 
 ### Goal #2: Make focus areas consistent with use cases
 
@@ -60,7 +60,7 @@ the focus areas will become more consistent with use cases and vice versa.
 
 We need a way to know which metrics are implemented by CHAOSS projects,
 a kind of a dashboard or tables in a document where people can quickly
-understand wich metrics are already implemented.
+understand which metrics are already implemented.
 
 * We are aiming at lists of concrete implementations of CHAOSS metrics
 in Augur and GrimoireLab.
