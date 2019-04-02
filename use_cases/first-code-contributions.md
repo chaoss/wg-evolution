@@ -11,7 +11,7 @@ their work in a timely manner.
 Understanding how a project deals with first code contributions by newcomers.
 
 Having data for tracking the onboarding process for new code contributors,
-and making informed decissions on improving it.
+and making informed decisions on improving it.
 
 ## Vocabulary
 
@@ -40,7 +40,7 @@ or "contributor who is a part of the team producing 80% of the changes during a 
 
 ## Primary actor
 
-Person responsible for the onbaording process of the project.
+Person responsible for the onboarding process of the project.
 
 ## Stakeholders
 

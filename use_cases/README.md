@@ -22,7 +22,7 @@ to those answers, but that is not required in the first version of the use case
 
 Anyone who can define high level goals that could be answered, even partially,
 with GMD metrics, can propose a use case.
-There is no requirement of being a regular contributor of the working group.
+There is no requirement of being a regular contributor to the working group.
 
 ## How can I propose a use case?
 
@@ -31,15 +31,15 @@ with the title "Use case: XXX" (being XXX the name you want to give to the use c
 usually related to the goal(s) it pursues).
 
 In the description of the issue, write one or more high level goals of the use case
-(the kind of learnings or take aways that are pursued in the use case),
+(the kind of learnings or takeaways that are pursued in the use case),
 and a list of the questions that could be relevant for
 reaching that goal.
 
-If you are not familiar with GitHub issues, you can
-[check the documentation about how to open a GitHub issue](https://help.github.com/articles/creating-an-issue/).
+If you are not familiar with GitHub issues, you can check the
+[documentation about how to open a GitHub issue](https://help.github.com/articles/creating-an-issue/).
 If you find it could help,
 use an auxiliary document in Google Docs with the description
-of the use case, and link it from the isssue. In this case, a part
+of the use case, and link it from the issue. In this case, a part
 of the comments could be in the form of comments in the Google Docs document.
 
 ## How are use cases being discussed and eventually accepted?

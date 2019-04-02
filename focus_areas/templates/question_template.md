@@ -1,6 +1,6 @@
 # [Area of Analysis]: [Focal Concern]
 
-**Question:** placeholder for variety of channels (choice?)
+**Question:** placeholder for a variety of channels (choice?)
 
 
 ## 1. Description
@@ -23,12 +23,12 @@ _Example for how to use this template: [Documentation](./resources/project_place
 ## 4. Sample Success Metrics
 _Qualitative_
 
-- _This section provides detailed instructions for how to execute above listed methods and evaluate the results_
+- _This section provides detailed instructions for how to execute the above listed methods and evaluate the results_
 -
 
 _Quantitative_
 
-- _This section provides detailed instructions for how to execute above listed quantitative methods and evaluate the results_
+- _This section provides detailed instructions for how to execute the above listed quantitative methods and evaluate the results_
 -
 
 

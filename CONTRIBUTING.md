@@ -32,8 +32,28 @@ But this will in general be the exception.
 We're also open to discuss the [Definition of GMD itself], but please refrain from this except that you have very good reasons for that,
 just because currently we're focused on the definition of GMD and its refining in focus areas.
 
+## DCO and Sign-Off for contributions
+
+The [CHAOSS Charter](https://github.com/chaoss/governance/blob/master/project-charter.md) requires that contributions
+are accompanied by a [Developer Certificate of Origin](http://developercertificate.org) sign-off.
+For ensuring it, a bot checks all incoming commits.
+
+For users of the git command line interface, a sign-off is accomplished with the `-s` as part of the commit command: 
+
+```
+git commit -s -m 'This is a commit message'
+```
+
+For users of the GitHub interface (using the "edit" button on any file, and producing a commit from it),
+a sign-off is accomplished by writing
+
+```
+Signed-off-by: Your Name <YourName@example.org>
+```
+
+in a single line, into the commit comment field. This can be automated by using a browser plugin like
+[DCO GitHub UI](https://github.com/scottrigby/dco-gh-ui).
+
 ## More Information
 For further information on how to collaborate in CHAOSS, please see the CHAOSS [CONTRIBUTING.md](https://github.com/chaoss/governance/blob/master/CONTRIBUTING.md).
 We are committed to providing an inclusive and welcoming environment. Please see our [Code of Conduct.](https://github.com/chaoss/governance/blob/master/code-of-conduct.md)
-
-Find below specific information about our meetings and mailing lists.

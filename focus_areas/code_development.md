@@ -4,19 +4,19 @@ Scope: Aspects related to how the source code changes over time, and the mechani
 
 ## Goals
 
-* Activity: Learning about how much activity in involved in changing (or adding) code
+* Activity: Learning about how much activity involved in changing (or adding) code
 * Efficiency: Learning how effective new code is merged into the code base
 * Quality: Learning about the processes to improve/review quality that are used (for example: testing, code review)
 
 Observations:
 
 * Usually these goals, which in general correspond to the evaluation of some processes,
-are consiedered over a certain time period. Therefore, questions and metrics will also refer, usually,
+are considered over a certain time period. Therefore, questions and metrics will also refer, usually,
 to time periods.
 
-* Since the focus area is code development, goals (and therefore relevant questions and metrics) are specific for code development. Therefore, any metric related to these goals should be considered as fitering only data relevant to code development (for example, changes only to source code files). In any case, very likely these same goals could be applied to other artifacts (such as documentation) when it is developed in a similar way to source code.
+* Since the focus area is code development, goals (and therefore relevant questions and metrics) are specific for code development. Therefore, any metric related to these goals should be considered as filtering only data relevant to code development (for example, changes only to source code files). In any case, very likely these same goals could be applied to other artifacts (such as documentation) when it is developed in a similar way to the source code.
 
-* For Quality, we assume that there are measurable processes to improve/review quaitly (testing, code review, etc.). If they don't exist, this goal cannot be satisfied.
+* For Quality, we assume that there are measurable processes to improve/review quality (testing, code review, etc.). If they don't exist, this goal cannot be satisfied.
 
 ## Questions & metrics
 
@@ -24,27 +24,93 @@ to time periods.
 
 Goal **Activity**:
 
-* Question **Changes**: How many changes are happening to the code base, during a certain time period? 
+* Question **Changes**: How many changes are happening to the source code, during a certain time period? 
+  * Metric **Code_Changes**(Period): Number of changes to the source code
+  (see [Code_Changes](../metrics/Code_Changes.md)).
+  * Metric **Code_Changes_Lines**(Period): Aggregated number of lines touched in all changes
+  (see [Code_Changes_Lines](../metrics/Code_Changes_Lines.md)).
 
-  * Metric **Code_Changes_No**(Period): Number of changes to the code base (see [Code_Changes](../metrics/Code_Changes.md))
-  * Metric **Code_Lines_Changed_No**(Period): Number of lines changed in the source code
-  * Metric **Code_Changes_Lines_No**(Period): Aggregated number of lines touched in all changes.
+* Question **Proposals**: How many proposals for changes to the source code
+are happening during a certain time period?
 
-* ...
+  * Metric **Proposals**(Period): Number of new proposals for changes
+  to the source code
+  (see [Proposals](../metrics/Proposals.md)).
+
+  * Metric **Proposals_Accepted**(Period): Number of proposals for changes
+  to the source code that were accepted
+  (see [Proposals_Accepted](../metrics/Proposals_Accepted.md)).
+
+  * Metric **Proposals_Declined**(Period): Number of proposals for changes
+  to the source code that were declined
+  (see [Proposals_Declined](../metrics/Proposals_Declined.md)).
+
+
+* Question **Issues**: How many issues related to the source code
+are happening during a certain time period?
+
+  * Metric **Issues**(Period): Number of new issues related to the source code
+  (see [Issues_New](../metrics/Issues_New.md)).
+  * Metric **Issues_Active**(Period): Number of issues related to
+  the source code that showed some activity during the period
+  (see [Issues_Active](../metrics/Issues_Active.md)).
+  * Metric **Issues_Closed**(Period): Number of issues related to
+  the source code that were closed
+  (see [Issues_Closed](../metrics/Issues_Closed.md)).
 
 Goal **Efficiency**:
 
-* Question **Proposals**: How efficient is the project in considering proposals for changes, for proposals proposed during a certain time period?
+* Question **Proposals**: How efficient is the project in considering proposals for changes,
+made during a certain time period?
 
-  * Metric **Proposal_Duration**(Period): For how long proposed changes are discussed before they are accepted
-  * Metric **Proposal_Acceptance**(Period): How many proposals are finally accepted
-  * Metric **Proposal_Participants**(Period): How many 
+  * Metric **Proposal_Duration**(Period): For how long proposed changes are discussed
+  before they are accepted.
+  * Metric **Proposals_Accepted**(Period): Number of proposals for changes
+  to the source code that were accepted
+  (see [Proposals_Accepted](../metrics/Proposals_Accepted.md)).
+  * Metric **Proposal_Participants**(Period): How many persons participated in the discussion
+  of proposals.
+  * Metric: **Proposal_Backlog**(Period): How many proposals are still undecided
+  (they were neither accepted nor declined)?
+  * Summary metric: **Proposal_Acceptance_Ratio**(Period): Which fraction of new proposals
+  are finally accepted?
+  * Summary metric: **Proposal_Throughput**(Period): How many proposals are decided
+  (either accepted or declined) with respect to the number of proposals submitted?
+    
+* Question **Issues**: How efficient is the project in dealing with issues related to
+the source code, for issues proposed during a certain time period?
 
-* ...
+  * Metric **Issue_Duration**(Period): Time since an issue is proposed until it is closed.
+  * Metric **Issue_Participants**(Period): How many persons participated in the discussion
+  of issues.
+  * Metric: **Issue_Backlog**(Period): How many issues are still open?
+  * Summary metric: **Issue_Throughput**(Period): How many issues are closed
+  with respect to the number of issues opened?
+
 
 Goal **Quality**:
 
-  * ...
+* Question **Code_Review**: Which fraction of the code goes through code review?
+
+* Question **Testing**: Which fraction of the code is tested?
+
+## Summary of metrics
+
+This is the list of metrics that we consider as defined,
+even when some of them are still work in progress in some details:
+
+Goal | Question | Metric
+--- | --- | ---
+Activity | Changes | [Code_Changes](../metrics/Code_Changes.md)
+Activity | Changes | [Code_Changes_Lines](../metrics/Code_Changes_Lines.md)
+Activity | Proposals | [Proposals](../metrics/Proposals.md)
+Activity | Proposals | [Proposals_Accepted](../metrics/Proposals_Accepted.md)
+Activity | Proposals | [Proposals_Declined](../metrics/Proposals_Declined.md)
+Activity | Issues    | [Issues_New](../metrics/Issues_New.md)
+Activity | Issues    | [Issues_Active](../metrics/Issues_Active.md)
+Activity | Issues    | [Issues_Closed](../metrics/Issues_Closed.md)
+
+
 
 ## Legacy metrics and questions
 
@@ -73,7 +139,7 @@ The name/question pairs listed are not meant to represent a fully comprehensive 
 The name/question pairs are intended to be a starting point for CHAOSS-related software. It is expected that this list will evolve based on the ability (or inability) of software to successfully implement the specific name/question pairs.
 
 **Background:**
-The name/question pairs have been identified based CHAOSS-related outreach activities. We thank everyone who participated.
+The name/question pairs have been identified based on CHAOSS-related outreach activities. We thank everyone who participated.
 
 **How to contribute:**
 - To advance the document, fork the repo, make your changes and create a pull request.

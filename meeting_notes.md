@@ -13,20 +13,172 @@ Video recordings of GMD Meetings available in the
 -----------
 ## Next Meeting
 
-**Wednesday February 20th, 2018**  
+**Wednesday March 20th, 2019**  
 
 Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT (18:00 CET to 16:30 CET)
 
 #### Agenda for next meeting
-1. Review pending issues (if any)
-2. Review pending pull request (if any)
-3. Risk and value updates or discussion
-4. Open Forum
-5. Close with Actionable/Assigned Tasks and set Agenda for next meeting
+* Review pending issues (if any)
+* Review pending pull request (if any)
+* Open Forum
+* Close with Actionable/Assigned Tasks and set Agenda for next meeting
 
 ----------
 
-# February 13th, 2018
+# March 6th, 2019
+
+## Agenda
+
+* Working through Issues and Pull Requests
+* Google Summer of Code Project microtask submission: Private? 
+
+## Attendees
+
+(If unknown, name taken by Zoom order and display name) 
+
+* Sean Goggins
+* Andrea Gallo
+* Jesus Gonzalez-Barahona
+* Alberto Perez
+* Vchrombie
+* Matt Germonprez
+* Kevin Lumbard
+
+## Notes
+
+### Meeting notes
+
+We discuss whether maitain notes about the weekly meetings on Google Docs,
+instead of in GitHub. 
+One long document with previous meeting notes included
+
+Options: make the document open for editing by everyone?
+
+Suggestion: create a Google group for controlled access with edit rights
+and make the doc open for view mode for everybody else
+Add link to GitHub Meeting notes file.
+
+We decide to open an issue, and follow up the discussion there.
+
+### Pull Requests
+
+* [Pull request #90](https://github.com/chaoss/wg-gmd/pull/90)
+  Closed
+  Comments in [issue #99](https://github.com/chaoss/wg-gmd/issues/99).
+  How to count open pull requests?
+  How to deal with reopened issues?
+  Challenging to count
+
+* [Focus area code development](https://github.com/chaoss/wg-gmd/blob/master/focus_areas/code_development.md)
+  in preparation for release.
+  Need to align with metrics repository.
+  Code changes versus code commits?
+  Need a process to change names 
+  Is there an obligation to stick with a name so as not to confuse users.
+  Versioning?
+  If the name is incorrect it should be changed.
+  If a name is changed, create an issue in the metrics repository.
+  Try not to change names.
+  Need a dictionary document for general naming conventions.
+  Consensus on release of focus area code development
+  Still working the metrics.
+  Table at the end of the document with metric release.
+
+* [Community Manager Use Case #76](https://github.com/chaoss/wg-gmd/pull/76)
+  Remove metrics?
+  Mention new name of metric (code changes?).
+  Keep use case - accept pull and make edits in a new version.
+  Ready to merged when the metrics file which it includes is removed.
+
+* Use case: [Hints for maintainership position #91](https://github.com/chaoss/wg-gmd/pull/91)
+  Hold for Karl
+
+* [Add new metric Code_Changed_Lines #95](https://github.com/chaoss/wg-gmd/pull/95)
+  Need feedback.
+  Merged after discussion.
+
+* [Minor changes to Code Changes #96](https://github.com/chaoss/wg-gmd/pull/96).
+  Merged
+
+* [Add metric related to the question Proposals #97](https://github.com/chaoss/wg-gmd/pulls).
+  To what extent should we use GHTorrent?
+  Specifics of data source with reference to the metric?
+  How to map the general ideas to data sources.
+  How discuss - github, gitlab, gerrit - in the document.
+  Reference implementations done in Perceval.
+  How it is implemented in Augur, or query for GHTorreny, could be in the "Known Implementations"
+  section.
+  Merged
+
+
+# Febraury 27th, 2019
+
+## Agenda 
+
+* Working through Issues and Pull Requests
+* Google Summer of Code
+* Open Source Leadership Summit
+
+## Attendees
+
+Jesus Gonzalez-Barahona
+Sean Goggins
+Matt Germonprez
+Venu Vardhan 
+Armstrong Foundjem
+Alberto Pérez
+Matt Snell
+Kevin Lumbard
+
+## Video
+
+https://www.youtube.com/watch?v=d-AFmp8-oSw 
+
+## Notes
+
+### Issue Discussion
+
+* Issue #93 - Include Code of Conduct as Top Level Document.
+  Request for pull request on this issue- Help Wanted.
+
+* Issue #92 - Align Names of metrics.
+  Assigned to Sean.
+
+* Issue #89 - 404 error.
+  We are unable to replicate. Waiting for response.
+
+* Issue #83 - Update Readme.md headings to match standard for CHAOSS
+  Waiting for work from D&I to align work groups.
+
+* Issue #61 - Use case: Characterize a bug reporter's past success at effectively reporting bugs.
+  Waiting on feedback from Karl.
+
+### Google Summer Of Code
+
+Application has been accepted. We have at least one student. We are waiting on more news.
+
+### Open Source Summit Metrics Release
+
+* Code development focus area Release. Full description of focus area is needed.
+  We have a pull request about that:
+  Pull Request #90, [Refining Goals](https://github.com/chaoss/wg-gmd/pull/90)
+
+* Do the Metrics need to be fully developed?
+  What are the Minimum Standards we need for a release
+  List of metrics needed 
+
+* People are gravitating towards tables as a display mechanism.
+  Need to have metrics definitions for release.
+  Would like to have corresponding implementations for release
+
+* Versioning 
+  Conversation is happening at: https://github.com/chaoss/metrics/issues/125
+
+# Febraury 20th, 2019
+
+No notes were taken
+
+# February 13th, 2019
 
 ## Attending
 *   Alberto
@@ -128,36 +280,37 @@ Jesus Gonzalez-Barahona
 Sean Goggins    
 Kevin Lumbard
 
-### Agenda
+## Agenda
 1. Review pending issues (if any)
 2. Review pending pull request (if any)
 3. Open Forum - (added GSOC)
 4. Close with Actionable/Assigned Tasks and Agenda for next meeting
 
-### Minutes:
+## Minutes:
 
-#### Review Pending issues
-
-
-#### Review Pull requests
+### Review Pending issues
 
 
-#### Google Summer of Code (GSOC)
+### Review Pull requests
+
+
+### Google Summer of Code (GSOC)
 Deadline for GSOC is February 3rd – one week to submit PRs
 
-##### Ideas for Student Activities
-GrimoireLab
+Ideas for Student Activities:
+
+GrimoireLab:
 * Implement CHAOSS metrics in Perceval
   * Using Jupyter notebooks
 * Visualizing CHAOSS metrics with Kibana
   * elastic search data – building panels in Kibana
 * Adding code metrics to Grimoire Lab – evolution of codebase, license, dependencies,  …risk? (files without a license), CII badging ?
 
-Augur
+Augur:
 * Will submit something for Risk and Compliance?
 * GMD
 
-#### Action items
+### Action items
 * None discussed
 
 ----------
@@ -171,7 +324,7 @@ Sean Goggins
 Kevin Lumbard
 Roberto Sanchez
 
-### Agenda
+## Agenda
 
 1. Review pending issues (if any)
 2. Review pending pull request (if any)
@@ -179,9 +332,9 @@ Roberto Sanchez
 4. Open Forum - (added Fosdem/CHAOSScon Discussion and Risk Brief)
 5. Close with Actionable/Assigned Tasks and Agenda for next meeting
 
-### Minutes:
+## Minutes:
 
-#### Review Pending issues
+### Review Pending issues
 
 Use case: Characterize a bug reporter's past success at effectively reporting bugs.[#61](https://github.com/chaoss/wg-gmd/issues/61)
 - Need input from Karl Fogel
@@ -214,7 +367,7 @@ Refine code development focus area [#44](https://github.com/chaoss/wg-gmd/issues
 Use Case: Efficiency in reviewing contributions from first-time contributors [#33](https://github.com/chaoss/wg-gmd/issues/33)
 - Merged [PR #63](https://github.com/chaoss/wg-gmd/pull/63)
 
-#### Review Pull requests
+### Review Pull requests
 Update Risk Focus Area [#68](https://github.com/chaoss/wg-gmd/pull/68)
 * Merged
 
@@ -225,22 +378,22 @@ Suggesting a structural change in Readme [#58](https://github.com/chaoss/wg-gmd/
 * In Progress
 * Assigned to Armstrong
 
-#### Fosdem and CHAOSScon
+### Fosdem and CHAOSScon
 Present Current GMD processes and results
 * Need a Google Slides document
 * At CHAOSScon GMD has 4:50pm to 5:50pm time slot
 
-#### Risk workgroup
+### Risk workgroup
 * Add risk to the read me and meeting file
 * Open another section in this file and ...
 * Website information update
 * Meeting notes risk document needed
 
-#### Action items
+### Action items
 * None discussed
 
 -----------
-## December 19th, 2018
+# December 19th, 2018
 
 ## Attending
 Armstrong  
