@@ -62,21 +62,17 @@ To enable this plugin:
 - Alternatively, you could go to the [firefox addon page](https://addons.mozilla.org/en-US/firefox/addon/scott-rigby/) to add the extension to your browser.
 - Once you add the extension, right click on the extension in the toolbar of your browser and select `Options`. 
 - A dialog box will open up as shown below. Fill in your github name (not the handle) and email-id. 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/31214064/55411911-194c8500-5584-11e9-8b56-c8f94b6fa213.png" width="300">
-</p>
+
+ ![](https://user-images.githubusercontent.com/31214064/55411911-194c8500-5584-11e9-8b56-c8f94b6fa213.png)
 
 - Then, whenever you perform a commit on github, the line `Signed-off-by: Your Name <Youremail>` will automatically appear in the commit description while making changes to a file as shown in the example below. A commit message can be added to the lines above the auto-generated sign-off. 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/31214064/55412140-7ea07600-5584-11e9-8200-52cf068253ee.png" width="500">
-</p>     
+
+![image](https://user-images.githubusercontent.com/31214064/55422689-dac1c500-5599-11e9-8bf3-2ec08f2cd046.png)    
 
 - Once you perform the commit and send a pull request, the commit will be verified and approved by the DCO bot. 
 
+ ![Image](https://user-images.githubusercontent.com/31214064/55415829-5f591700-558b-11e9-93ae-07b0ed432a53.png)
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/31214064/55415829-5f591700-558b-11e9-93ae-07b0ed432a53.png" width="300">
-</p>
 
 ## More Information
 For further information on how to collaborate in CHAOSS, please see the CHAOSS [CONTRIBUTING.md](https://github.com/chaoss/governance/blob/master/CONTRIBUTING.md).
