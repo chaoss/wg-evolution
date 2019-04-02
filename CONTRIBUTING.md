@@ -55,15 +55,15 @@ in a single line, into the commit comment field. This can be automated by using 
 [DCO GitHub UI](https://github.com/scottrigby/dco-gh-ui).
 
 #### Steps to use the DCO browser plugin
-- Go to the plugin page on [chrome web store](https://chrome.google.com/webstore/detail/dco-github-ui/onhgmjhnaeipfgacbglaphlmllkpoijo).
-- You could also go to the [firefox page](https://addons.mozilla.org/en-US/firefox/addon/scott-rigby/)
+- Go to the plugin page on the [chrome web store](https://chrome.google.com/webstore/detail/dco-github-ui/onhgmjhnaeipfgacbglaphlmllkpoijo).
+- Alternatively, you could go to the [firefox addon page](https://addons.mozilla.org/en-US/firefox/addon/scott-rigby/) to add the extension to your browser.
 - Once you add the extension, right click on the extension in the toolbar of your browser and select `Options`. 
 - A dialog box will open up as shown below. Fill in your github name (not the handle) and email-id. 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/31214064/55411911-194c8500-5584-11e9-8b56-c8f94b6fa213.png" width="300">
 </p>
 
-- Then, whenever you perform a commit on github, the line `Signed-off-by: Your Name <Youremail>` will automatically appear in the commit description while making making changes to that file as shown in the example below.
+- Then, whenever you perform a commit on github, the line `Signed-off-by: Your Name <Youremail>` will automatically appear in the commit description while making changes to a file as shown in the example below.
 <p align="center">
   <img src="https://user-images.githubusercontent.com/31214064/55412140-7ea07600-5584-11e9-8200-52cf068253ee.png" width="500">
 </p>                                                                                                                         
