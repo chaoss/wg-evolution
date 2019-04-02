@@ -55,6 +55,9 @@ in a single line, into the commit comment field. This can be automated by using 
 [DCO GitHub UI](https://github.com/scottrigby/dco-gh-ui).
 
 #### Steps to use the DCO browser plugin
+The  [DCO browser plugin](https://github.com/scottrigby/dco-gh-ui) is a handy tool to automatically sign commits created using github. 
+To enable this plugin: 
+
 - Go to the plugin page on the [chrome web store](https://chrome.google.com/webstore/detail/dco-github-ui/onhgmjhnaeipfgacbglaphlmllkpoijo).
 - Alternatively, you could go to the [firefox addon page](https://addons.mozilla.org/en-US/firefox/addon/scott-rigby/) to add the extension to your browser.
 - Once you add the extension, right click on the extension in the toolbar of your browser and select `Options`. 
