@@ -63,7 +63,7 @@ in a single line, into the commit comment field. This can be automated by using 
   <img src="https://user-images.githubusercontent.com/31214064/55411911-194c8500-5584-11e9-8b56-c8f94b6fa213.png" width="300">
 </p>
 
-- Then, whenever you perform a commit on github, the line `Signed-off-by: Your Name <Youremail>` will automatically appear in the commit description while making changes to a file as shown in the example below.
+- Then, whenever you perform a commit on github, the line `Signed-off-by: Your Name <Youremail>` will automatically appear in the commit description while making changes to a file as shown in the example below. A commit message can be added to the lines above the auto-generated sign-off. 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/31214064/55412140-7ea07600-5584-11e9-8200-52cf068253ee.png" width="500">
 </p>                                                                                                                         
