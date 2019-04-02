@@ -3,6 +3,17 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
+## Join our Mailing List
+
+This CHAOSS working group is using the general [CHAOSS mailing list](https://lists.linuxfoundation.org/mailman/listinfo/chaoss).
+
+## Join our Weekly Calls
+The GMD Working Group meets every Monday from 7:30am - 8:30am Pacific Time every other Wednesday.  Our next meeting will be on 10th, 2019. All are welcome.
+
+The videoconference URL is https://unomaha.zoom.us/j/720431288.
+
+[You can also read our meeting notes.](https://docs.google.com/document/d/1Owsn8B7ciPPUHHypYiFAe0Bps58QGGYSVrqHNX2l8p8)
+
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -47,11 +58,11 @@ See more details in the [contributing file](CONTRIBUTING.md).
 The GMD working group meets frequently. Check details on when we meet, and minutes of past meetings
 in the [meetings document](./meeting_notes.md)
 
-Usually, we try to make decissions mainly during the last meeting of each month,
-so that decisions can be brought when convenient to the monthtly main CHAOSS meeting,
+Usually, we try to make decisions mainly during the last meeting of each month,
+so that decisions can be brought when convenient to the monthly main CHAOSS meeting,
 which is the first meeting of each month. In all the meetings we may have an agenda,
 but random issues can be raised if time allows, after we're done with the agenda.
-Whenever possible, and specially if a decission needs to be made,
+Whenever possible, and specially if a decision needs to be made,
 ensure that issues / pull requests about the subject matter were opened some time before the meeting,
 so that anyone had the opportunity of commenting on them, and make up their mind about that subject matter.
 
