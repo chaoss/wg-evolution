@@ -67,7 +67,7 @@ To enable this plugin:
 
 - Then, whenever you perform a commit on github, the line `Signed-off-by: Your Name <Youremail>` will automatically appear in the commit description while making changes to a file as shown in the example below. A commit message can be added to the lines above the auto-generated sign-off. 
 
-![image](https://user-images.githubusercontent.com/31214064/55422689-dac1c500-5599-11e9-8bf3-2ec08f2cd046.png)    
+![image2](https://user-images.githubusercontent.com/31214064/55423206-127d3c80-559b-11e9-9a5e-6300105b8858.png)
 
 - Once you perform the commit and send a pull request, the commit will be verified and approved by the DCO bot. 
 
