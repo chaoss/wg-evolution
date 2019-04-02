@@ -54,6 +54,26 @@ Signed-off-by: Your Name <YourName@example.org>
 in a single line, into the commit comment field. This can be automated by using a browser plugin like
 [DCO GitHub UI](https://github.com/scottrigby/dco-gh-ui).
 
+#### Steps to use the DCO browser plugin
+- Go to the plugin page on [chrome web store](https://chrome.google.com/webstore/detail/dco-github-ui/onhgmjhnaeipfgacbglaphlmllkpoijo).
+- You could also go to the [firefox page](https://addons.mozilla.org/en-US/firefox/addon/scott-rigby/)
+- Once you add the extension, right click on the extension in the toolbar of your browser and select `Options`. 
+- A dialog box will open up as shown below. Fill in your github name (not the handle) and email-id. 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/31214064/55411911-194c8500-5584-11e9-8b56-c8f94b6fa213.png" width="300">
+</p>
+
+- Then, whenever you perform a commit on github, the line `Signed-off-by: Your Name <Youremail>` will automatically appear in the commit description while making making changes to that file as shown in the example below.
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/31214064/55412140-7ea07600-5584-11e9-8200-52cf068253ee.png" width="500">
+</p>                                                                                                                         
+- Once you perform the commit and send a pull request, the commit will be verified and approved by the DCO bot. 
+
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/31214064/55415829-5f591700-558b-11e9-93ae-07b0ed432a53.png" width="300">
+</p>
+
 ## More Information
 For further information on how to collaborate in CHAOSS, please see the CHAOSS [CONTRIBUTING.md](https://github.com/chaoss/governance/blob/master/CONTRIBUTING.md).
 We are committed to providing an inclusive and welcoming environment. Please see our [Code of Conduct.](https://github.com/chaoss/governance/blob/master/code-of-conduct.md)
