@@ -63,15 +63,15 @@ To enable this plugin:
 - Once you add the extension, right click on the extension in the toolbar of your browser and select `Options`. 
 - A dialog box will open up as shown below. Fill in your github name (not the handle) and email-id. 
 
- ![](https://user-images.githubusercontent.com/31214064/55411911-194c8500-5584-11e9-8b56-c8f94b6fa213.png)
+ ![Screenshot of settings for DCO GitHub UI](https://user-images.githubusercontent.com/31214064/55411911-194c8500-5584-11e9-8b56-c8f94b6fa213.png)
 
 - Then, whenever you perform a commit on github, the line `Signed-off-by: Your Name <Youremail>` will automatically appear in the commit description while making changes to a file as shown in the example below. A commit message can be added to the lines above the auto-generated sign-off. 
 
-![image2](https://user-images.githubusercontent.com/31214064/55423206-127d3c80-559b-11e9-9a5e-6300105b8858.png)
+![Screenshot of GitHub UI with auto-generated sign-off in commit message](https://user-images.githubusercontent.com/31214064/55423206-127d3c80-559b-11e9-9a5e-6300105b8858.png)
 
 - Once you perform the commit and send a pull request, the commit will be verified and approved by the DCO bot. 
 
- ![Image](https://user-images.githubusercontent.com/31214064/55415829-5f591700-558b-11e9-93ae-07b0ed432a53.png)
+ ![Screenshot of successful DCO check](https://user-images.githubusercontent.com/31214064/55415829-5f591700-558b-11e9-93ae-07b0ed432a53.png)
 
 
 ## More Information
