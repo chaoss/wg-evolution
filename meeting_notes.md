@@ -2,7 +2,7 @@
 
 ## Connection details for meetings, and recordings
 
-The CHAOSS Growth Maturity and Decline working group meets every Wednesday at 9:30 am CDT
+The CHAOSS Growth Maturity and Decline working group meets every other Wednesday at 9:30 am CDT
 (usually 16:30 CET, but beware different switches to Summer time in EU and US, [check your local time](http://www.thetimezoneconverter.com/?t=11am&tz=Chicago&))
 in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288,
 use US phone number 1-408-638-0968 or [international numbers](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9))
@@ -13,7 +13,7 @@ Video recordings of GMD Meetings available in the
 -----------
 ## Next Meeting
 
-**Wednesday March 20th, 2019**  
+**Wednesday April 10th, 2019**  
 
 Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT (18:00 CET to 16:30 CET)
 
@@ -24,6 +24,40 @@ Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT 
 * Close with Actionable/Assigned Tasks and set Agenda for next meeting
 
 ----------
+# March 27th, 2019
+
+Agenda:
+* Meeting Cadence
+* Outstanding Pull Requests
+* Outstanding Issues
+* DCO 
+
+Attendees: Georg Link, Sean Goggins, Matt Gemronprez, Armstrong, Andreas
+
+Notes:
+
+* Meeting cadence moved to every other week. Next meeting, April 10, 2019
+* Merged pull request for minor formatting
+* Closed aged issues
+* DCO accepted into repository
+* Discussion about what to call the working group: Unresolved
+* Discussion about “reviews” instead of “pull request” or “merge request”: Unresolved. 
+
+# March 20th, 2019
+
+Attendees: (If unknown, name taken by Zoom order and display name) 
+* Kevin 
+* Georg
+* Alberto
+* Matt Germonprez
+
+Notes:
+* Google Summer of Code update
+* Alberto - collecting proposals, happy with interest students
+* Notes from Open Source Leadership Summit (Matt 
+* Manrique - getting more contributors to GrimoireLab
+* Need more participation in GMD - Perhaps we can funnel people from GrimoireLab over to GMD
+* Board has decided on the metrics release process 
 
 # March 6th, 2019
 
