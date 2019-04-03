@@ -55,17 +55,17 @@ in a single line, into the commit comment field. This can be automated by using 
 [DCO GitHub UI](https://github.com/scottrigby/dco-gh-ui).
 
 #### Steps to use the DCO browser plugin
-The  [DCO browser plugin](https://github.com/scottrigby/dco-gh-ui) is a handy tool to automatically sign commits created using github. 
+The  [DCO browser plugin](https://github.com/scottrigby/dco-gh-ui) is a handy tool to automatically sign commits created using GitHub. 
 To enable this plugin: 
 
 - Go to the plugin page on the [chrome web store](https://chrome.google.com/webstore/detail/dco-github-ui/onhgmjhnaeipfgacbglaphlmllkpoijo).
 - Alternatively, you could go to the [firefox addon page](https://addons.mozilla.org/en-US/firefox/addon/scott-rigby/) to add the extension to your browser.
 - Once you add the extension, right click on the extension in the toolbar of your browser and select `Options`. 
-- A dialog box will open up as shown below. Fill in your github name (not the handle) and email-id. 
+- A dialog box will open up as shown below. Fill in your GitHub name (not the handle) and email-id. 
 
  ![Screenshot of settings for DCO GitHub UI](https://user-images.githubusercontent.com/31214064/55411911-194c8500-5584-11e9-8b56-c8f94b6fa213.png)
 
-- Then, whenever you perform a commit on github, the line `Signed-off-by: Your Name <Youremail>` will automatically appear in the commit description while making changes to a file as shown in the example below. A commit message can be added to the lines above the auto-generated sign-off. 
+- Then, whenever you perform a commit on GitHub, the line `Signed-off-by: Your Name <Youremail>` will automatically appear in the commit description while making changes to a file as shown in the example below. A commit message can be added to the lines above the auto-generated sign-off. 
 
 ![Screenshot of GitHub UI with auto-generated sign-off in commit message](https://user-images.githubusercontent.com/31214064/55423206-127d3c80-559b-11e9-9a5e-6300105b8858.png)
 
