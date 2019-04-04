@@ -11,7 +11,7 @@
 _Growth, Maturity and Decline_ is a working group focused on the lifecycle of open source projects. We do not valence the stages, but seek to build awareness of those stages among consumers of these metrics. Decline can be ok when a project's utility is waning; or terrible if 20% of the entire internet relies on that project. Context matters, and we are not the arbiters of your context. The "valence" of "good/bad" emerges from use cases and YOUR context.
 
 ### Goal
-Currently, the goals are structured in the following focus areas : [Issue Resolution](./focus_areas/issue_resolution.md), [Code Development](./focus_areas/code_development.md) and [Community Growth](./focus_areas/community_growth.md).
+Currently, the goals are structured in the following focus areas : [Issue Resolution](focus_areas/issue_resolution.md), [Code Development](focus_areas/code_development.md) and [Community Growth](focus_areas/community_growth.md).
 
 ### Outcome
 
@@ -21,13 +21,20 @@ For each area of interest, we're following the [goal-question-metric](https://en
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Contributing](#contributing)
+<!---- [Background](#background)--->
+- [Roadmap for 2019](#roadmap-for-2019)
 - [Metrics](#metrics)
 - [Usage](#usage)
-- [Maintainers](#maintainers)
+- [Implementations](#implementations)
+<!---- [Software work](#software-work)--->
+- [Use Cases](#use-cases)
+<!---- [Related Works](#related-works)--->
+- [Contributing](#contributing)
+- [Communications](#communications)
+- [Contributors](#contributors)
 - [License](#license)
 
-## Background
+<!---## Background
 
 ### Problem Statement
 
@@ -39,20 +46,20 @@ To be updated
 
 ### Work To Date
 
-To be updated.
+To be updated. --->
 
 ## Roadmap for 2019
 
-Our key focus areas for 2019 are summarized [here](./ROADMAP.md).
+Our key focus areas for 2019 are summarized [here](ROADMAP.md).
 
 ## Metrics
 
 The metrics dealt with in this focus group are organized in focus areas:
 
 * Growth Maturity and Decline
-  * [Code Development](./focus_areas/code_development.md)
-  * [Community Growth](./focus_areas/community_growth.md)
-  * [Issue Resolution](./focus_areas/issue_resolution.md)
+  * [Code Development](focus_areas/code_development.md)
+  * [Community Growth](focus_areas/community_growth.md)
+  * [Issue Resolution](focus_areas/issue_resolution.md)
 
 ## Usage
 
@@ -65,19 +72,19 @@ as a pull request for updating the CHAOSS metrics with
 
 ## Implementations
 
-Example for implementaions can be found [here](./implementations)
+Example for implementaions can be found [here](implementations).
 
-## Software work
+<!---## Software work
 
-To be updated.
+To be updated. --->
 
 ## Use Cases
 
-The details for the GMD Working Group are present in [use_cases](./use_cases) 
+The details for the GMD Working Group are present in [use_cases](use_cases).
 
-## Related Works
+<!--## Related Works
 
-To be updated.
+To be updated. --->
 
 ## Contributing
 
@@ -98,7 +105,7 @@ See more details in the [contributing file](CONTRIBUTING.md).
 ### Meetings
 
 The GMD working group meets frequently. Check details on when we meet, and minutes of past meetings
-in the [meetings document](./meeting_notes.md).
+in the [meetings document](meeting_notes.md).
 
 Usually, we try to make decissions mainly during the last meeting of each month,
 so that decisions can be brought when convenient to the monthtly main CHAOSS meeting,
@@ -116,8 +123,11 @@ Please prefix the message subject with \[wg-gmd\] if it is specific to this work
 
 ## Contributors
 
+### Maintainers
+
 - [Jesus M. Gonzales-Barahona](https://github.com/jgbarah)
 - [Sean P. Goggins](https://github.com/sgoggins)
+
 
 ## License
 
