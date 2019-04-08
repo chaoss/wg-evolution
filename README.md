@@ -1,4 +1,4 @@
-# What is this working group about?
+# CHAOSS Growth-Maturity-Decline Working Group
 
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
