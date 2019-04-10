@@ -24,7 +24,6 @@ _Growth, Maturity and Decline_ is a working group focused on the lifecycle of op
 ### Goal
 Currently, the goals are structured in the following focus areas : [Issue Resolution](focus_areas/issue_resolution.md), [Code Development](focus_areas/code_development.md) and [Community Growth](focus_areas/community_growth.md).
 
-### Outcome
 
 ### Process
 For each area of interest, we're following the [goal-question-metric](https://en.wikipedia.org/wiki/GQM) methodology defining questions and metrics that help to answer them.
@@ -32,14 +31,11 @@ For each area of interest, we're following the [goal-question-metric](https://en
 ## Table of Contents
 
 - [Introduction](#introduction)
-<!---- [Background](#background)--->
 - [Roadmap for 2019](#roadmap-for-2019)
 - [Metrics](#metrics)
 - [Usage](#usage)
 - [Implementations](#implementations)
-<!---- [Software work](#software-work)--->
 - [Use Cases](#use-cases)
-<!---- [Related Works](#related-works)--->
 - [Contributing](#contributing)
 - [Communications](#communications)
 - [Contributors](#contributors)
