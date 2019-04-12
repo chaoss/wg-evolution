@@ -1,5 +1,5 @@
-# CHAOSS Growth-Maturity-Decline Working Group
-
+# CHAOSS Evolution Working Group
+Formerly known as the Growth Maturity and Decline Working Group
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
@@ -8,7 +8,7 @@
 This CHAOSS working group is using the general [CHAOSS mailing list](https://lists.linuxfoundation.org/mailman/listinfo/chaoss).
 
 ## Join our Weekly Calls
-The GMD Working Group meets every Monday from 7:30am - 8:30am Pacific Time every other Wednesday.  Our next meeting will be on 10th, 2019. All are welcome.
+The Evolution Working Group meets every Monday from 7:30am - 8:30am Pacific Time every other Wednesday.  Our next meeting will be on 10th, 2019. All are welcome.
 
 The videoconference URL is https://unomaha.zoom.us/j/720431288.
 
@@ -19,7 +19,7 @@ The videoconference URL is https://unomaha.zoom.us/j/720431288.
 
 ### Purpose
 
-_Growth, Maturity and Decline_ is a working group focused on the lifecycle of open source projects. We do not valence the stages, but seek to build awareness of those stages among consumers of these metrics. Decline can be ok when a project's utility is waning; or terrible if 20% of the entire internet relies on that project. Context matters, and we are not the arbiters of your context. The "valence" of "good/bad" emerges from use cases and YOUR context.
+_Evolution_ is a working group focused on the lifecycle of open source projects. We do not valence the stages, but seek to build awareness of those stages among consumers of these metrics. Decline can be ok when a project's utility is waning; or terrible if 20% of the entire internet relies on that project. Context matters, and we are not the arbiters of your context. The "valence" of "good/bad" emerges from use cases and YOUR context.
 
 ### Goal
 Currently, the goals are structured in the following focus areas : [Issue Resolution](focus_areas/issue_resolution.md), [Code Development](focus_areas/code_development.md) and [Community Growth](focus_areas/community_growth.md).
@@ -70,12 +70,12 @@ The metrics dealt with in this focus group are organized in focus areas:
 
 ## Usage
 
-This is a repository for the GMD working group.
+This is a repository for the Evolution working group.
 When this working group decides to "release" a version of its metrics,
 the relevant files will be dumped to the
 [chaoss/metrics](https://github.com/chaoss/metrics) repository,
 as a pull request for updating the CHAOSS metrics with
-"GMD metrics release x.y".
+"Evolution metrics release x.y".
 
 ## Implementations
 
@@ -87,7 +87,7 @@ To be updated. --->
 
 ## Use Cases
 
-The details for the GMD Working Group are present in [use_cases](use_cases).
+The details for the _Evolution_ Working Group are present in [use_cases](use_cases).
 
 <!--## Related Works
 
@@ -103,7 +103,7 @@ A few steps as good starting points for contributing to the GMD Working group:
     * [contents of this repository](https://github.com/chaoss/wg-gmd).
 * By proposing new goals for a focus area, or new questions for learning about those goals, or new metrics for answering those questions. Or by helping to refine goals, and questions.
 
-You can contribute 
+You can contribute
 See more details in the [contributing file](CONTRIBUTING.md).
 
 
@@ -111,7 +111,7 @@ See more details in the [contributing file](CONTRIBUTING.md).
 
 ### Meetings
 
-The GMD working group meets frequently. Check details on when we meet, and minutes of past meetings
+The Evolution working group meets frequently. Check details on when we meet, and minutes of past meetings
 in the [meetings document](meeting_notes.md).
 
 Usually, we try to make decisions mainly during the last meeting of each month,
@@ -135,9 +135,20 @@ Please prefix the message subject with \[wg-gmd\] if it is specific to this work
 - [Jesus M. Gonzales-Barahona](https://github.com/jgbarah)
 - [Sean P. Goggins](https://github.com/sgoggins)
 
+### Core Contributors
+
+- [Alberto Perez]()
+- [Armstrong Foundjem]()
+- [Georg Link](https://github.com/GeorgLink)
+- [Kevin Lumbard](https://github.com/klumb)
+- [Matt Germonprez](https://github.com/germonprez)
+
+The criteria for becoming a core contributor is to participate at least once per month over a period of 3 months. Participation could include providing feedback in the Evolution working group meetings, providing feedback on docs, or making other contributions on GitHub (commits / issues). People not participating over a 3 month period may be removed as core contributors.
+
+If you'd like to be on our squad, an easy way to start is by going through the issue list and fixing some or adding to the conversation.
 
 ## License
 
-The documents in this repositories are released undet the MIT License. See [LICENSE](LICENSE) for details.
+The documents in this repositories are released under the MIT License. See [LICENSE](LICENSE) for details.
 
 Copyright © 2018-2019 CHAOSS Project

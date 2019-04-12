@@ -1,4 +1,4 @@
-# GMD Working Group Meeting Notes
+# Evolution Working Group Meeting Notes
 
 ## Connection details for meetings, and recordings
 
@@ -13,7 +13,7 @@ Video recordings of GMD Meetings available in the
 -----------
 ## Next Meeting
 
-**Wednesday April 10th, 2019**  
+**Wednesday April 24th, 2019**  
 
 Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT (18:00 CET to 16:30 CET)
 
@@ -22,6 +22,65 @@ Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT 
 * Review pending pull request (if any)
 * Open Forum
 * Close with Actionable/Assigned Tasks and set Agenda for next meeting
+-----------
+# April 10, 2019
+
+### Agenda
+* Minute taking and sharing
+* Outstanding issues
+* Outstanding pull requests
+* Discussion of the CHAOSS working group structure
+* Renaming the working group
+
+Video: [https://youtu.be/lDIWJ63UmfU](https://youtu.be/lDIWJ63UmfU)
+
+Attendees: Sean Goggins, Matt Germonprez, Matt Snell, Jesus Gonzalez-Barahona, Kevin Lumbard, Pranjal, vchrombie, valcos, Alberto Pérez, Miguel-Angel, Harshal, Seerene rs, Armstrong
+
+## Notes:
+
+### Minute taking and sharing:
+* Meeting notes will be taken during the meeting in a Google Docs document.
+* Meeting notes will be sent to email list and pull request to GMD repo by designated note taker, after the meeting
+
+### Issues
+[https://github.com/chaoss/wg-gmd](https://github.com/chaoss/wg-gmd)
+[https://github.com/chaoss/wg-gmd/issues/](https://github.com/chaoss/wg-gmd/issues/)  \
+
+
+[#138 Feedback on how to measure efficiency](https://github.com/chaoss/wg-gmd/issues/138)
+* Any feedback about this would be great.
+
+[#136 Testing repositories based on reference implementations](https://github.com/chaoss/wg-gmd/issues/136)
+* Test if reference implementations are working as intended
+* CI - Everytime there is a commit to the notebook
+* Can this be part of the metrics definition process?
+* Creation of reference repositories. Static?
+* Create a pilot implementation - idea to reality
+* Continue discussion on issue forum
+
+[#134 Definition of "Abandoned Issues"](https://github.com/chaoss/wg-gmd/issues/134)
+* Join discussion on forum
+
+[#124 Deciding a new name for this working group](https://github.com/chaoss/wg-gmd/issues/124)
+*   Evolution appears to be the favorite -
+*   Consensus in meeting reached
+*   Changing name to wg-evolution
+*   Need to change website and repo
+
+[#110 "Reviews" instead of "Proposals"?](https://github.com/chaoss/wg-gmd/issues/110)
+* General consensus for changed
+* Add to change dictionary
+
+[#101 Maintain a dictionary file of metrics and historical names](https://github.com/chaoss/wg-gmd/issues/101)
+*   Add proposals and reviews
+
+### Pull Requests
+
+[#126 Sgoggins readme patch / Updates to community manager use case](https://github.com/chaoss/wg-gmd/pull/126)
+* Changes requested but merge approved
+
+### Discussion of the CHAOSS working group structure
+* We commented on the relationship between the metrics repository and the working groups repository.
 
 ----------
 # March 27th, 2019
