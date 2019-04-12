@@ -1,4 +1,4 @@
-# Pull Requests Merged/Closed (Contribution Acceptance)
+# Contribution Acceptance
 
 ## 1. Description
 Ratio of contributions accepted vs. closed without acceptance

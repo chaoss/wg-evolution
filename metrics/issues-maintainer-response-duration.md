@@ -1,4 +1,4 @@
-# Issue Response Rate
+# Issue Response Time
 
 ## 1. Description
 Time between a new issue is opened and a maintainer responds
