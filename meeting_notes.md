@@ -1,4 +1,4 @@
-# GMD Working Group Meeting Notes
+# Evolution Working Group Meeting Notes
 
 ## Connection details for meetings, and recordings
 
@@ -11,9 +11,10 @@ Video recordings of GMD Meetings available in the
 [CHAOSS Youtube channel](https://www.youtube.com/watch?v=A31mGjBM2Io&list=PL60k37cxI-HQ4HaF4iVuoByt5Qxw0ebRP)
 
 -----------
+
 ## Next Meeting
 
-**Wednesday April 10th, 2019**  
+**Wednesday April 24th, 2019**  
 
 Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT (18:00 CET to 16:30 CET)
 
@@ -23,14 +24,76 @@ Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT 
 * Open Forum
 * Close with Actionable/Assigned Tasks and set Agenda for next meeting
 
+-----------
+
+# April 10, 2019
+
+### Agenda
+* Minute taking and sharing
+* Outstanding issues
+* Outstanding pull requests
+* Discussion of the CHAOSS working group structure
+* Renaming the working group
+
+Video: [https://youtu.be/lDIWJ63UmfU](https://youtu.be/lDIWJ63UmfU)
+
+Attendees: Sean Goggins, Matt Germonprez, Matt Snell, Jesus Gonzalez-Barahona, Kevin Lumbard, Pranjal, vchrombie, valcos, Alberto Pérez, Miguel-Angel, Harshal, Seerene rs, Armstrong
+
+## Notes:
+
+### Minute taking and sharing:
+* Meeting notes will be taken during the meeting in a Google Docs document.
+* Meeting notes will be sent to email list and pull request to GMD repo by designated note taker, after the meeting
+
+### Issues
+[https://github.com/chaoss/wg-gmd](https://github.com/chaoss/wg-gmd)
+[https://github.com/chaoss/wg-gmd/issues/](https://github.com/chaoss/wg-gmd/issues/)  \
+
+
+[#138 Feedback on how to measure efficiency](https://github.com/chaoss/wg-gmd/issues/138)
+* Any feedback about this would be great.
+
+[#136 Testing repositories based on reference implementations](https://github.com/chaoss/wg-gmd/issues/136)
+* Test if reference implementations are working as intended
+* CI - Everytime there is a commit to the notebook
+* Can this be part of the metrics definition process?
+* Creation of reference repositories. Static?
+* Create a pilot implementation - idea to reality
+* Continue discussion on issue forum
+
+[#134 Definition of "Abandoned Issues"](https://github.com/chaoss/wg-gmd/issues/134)
+* Join discussion on forum
+
+[#124 Deciding a new name for this working group](https://github.com/chaoss/wg-gmd/issues/124)
+*   Evolution appears to be the favorite -
+*   Consensus in meeting reached
+*   Changing name to wg-evolution
+*   Need to change website and repo
+
+[#110 "Reviews" instead of "Proposals"?](https://github.com/chaoss/wg-gmd/issues/110)
+* General consensus for changed
+* Add to change dictionary
+
+[#101 Maintain a dictionary file of metrics and historical names](https://github.com/chaoss/wg-gmd/issues/101)
+*   Add proposals and reviews
+
+### Pull Requests
+
+[#126 Sgoggins readme patch / Updates to community manager use case](https://github.com/chaoss/wg-gmd/pull/126)
+* Changes requested but merge approved
+
+### Discussion of the CHAOSS working group structure
+* We commented on the relationship between the metrics repository and the working groups repository.
+
 ----------
+
 # March 27th, 2019
 
 Agenda:
 * Meeting Cadence
 * Outstanding Pull Requests
 * Outstanding Issues
-* DCO 
+* DCO
 
 Attendees: Georg Link, Sean Goggins, Matt Gemronprez, Armstrong, Andreas
 
@@ -41,12 +104,12 @@ Notes:
 * Closed aged issues
 * DCO accepted into repository
 * Discussion about what to call the working group: Unresolved
-* Discussion about “reviews” instead of “pull request” or “merge request”: Unresolved. 
+* Discussion about “reviews” instead of “pull request” or “merge request”: Unresolved.
 
 # March 20th, 2019
 
-Attendees: (If unknown, name taken by Zoom order and display name) 
-* Kevin 
+Attendees: (If unknown, name taken by Zoom order and display name)
+* Kevin
 * Georg
 * Alberto
 * Matt Germonprez
@@ -54,21 +117,21 @@ Attendees: (If unknown, name taken by Zoom order and display name)
 Notes:
 * Google Summer of Code update
 * Alberto - collecting proposals, happy with interest students
-* Notes from Open Source Leadership Summit (Matt 
+* Notes from Open Source Leadership Summit (Matt
 * Manrique - getting more contributors to GrimoireLab
 * Need more participation in GMD - Perhaps we can funnel people from GrimoireLab over to GMD
-* Board has decided on the metrics release process 
+* Board has decided on the metrics release process
 
 # March 6th, 2019
 
 ## Agenda
 
 * Working through Issues and Pull Requests
-* Google Summer of Code Project microtask submission: Private? 
+* Google Summer of Code Project microtask submission: Private?
 
 ## Attendees
 
-(If unknown, name taken by Zoom order and display name) 
+(If unknown, name taken by Zoom order and display name)
 
 * Sean Goggins
 * Andrea Gallo
@@ -83,7 +146,7 @@ Notes:
 ### Meeting notes
 
 We discuss whether maitain notes about the weekly meetings on Google Docs,
-instead of in GitHub. 
+instead of in GitHub.
 One long document with previous meeting notes included
 
 Options: make the document open for editing by everyone?
@@ -107,7 +170,7 @@ We decide to open an issue, and follow up the discussion there.
   in preparation for release.
   Need to align with metrics repository.
   Code changes versus code commits?
-  Need a process to change names 
+  Need a process to change names
   Is there an obligation to stick with a name so as not to confuse users.
   Versioning?
   If the name is incorrect it should be changed.
@@ -147,7 +210,7 @@ We decide to open an issue, and follow up the discussion there.
 
 # Febraury 27th, 2019
 
-## Agenda 
+## Agenda
 
 * Working through Issues and Pull Requests
 * Google Summer of Code
@@ -158,7 +221,7 @@ We decide to open an issue, and follow up the discussion there.
 Jesus Gonzalez-Barahona
 Sean Goggins
 Matt Germonprez
-Venu Vardhan 
+Venu Vardhan
 Armstrong Foundjem
 Alberto Pérez
 Matt Snell
@@ -166,7 +229,7 @@ Kevin Lumbard
 
 ## Video
 
-https://www.youtube.com/watch?v=d-AFmp8-oSw 
+https://www.youtube.com/watch?v=d-AFmp8-oSw
 
 ## Notes
 
@@ -199,13 +262,13 @@ Application has been accepted. We have at least one student. We are waiting on m
 
 * Do the Metrics need to be fully developed?
   What are the Minimum Standards we need for a release
-  List of metrics needed 
+  List of metrics needed
 
 * People are gravitating towards tables as a display mechanism.
   Need to have metrics definitions for release.
   Would like to have corresponding implementations for release
 
-* Versioning 
+* Versioning
   Conversation is happening at: https://github.com/chaoss/metrics/issues/125
 
 # Febraury 20th, 2019
