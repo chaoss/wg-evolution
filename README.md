@@ -68,6 +68,9 @@ The metrics dealt with in this focus group are organized in focus areas:
   * [Community Growth](focus_areas/community_growth.md)
   * [Issue Resolution](focus_areas/issue_resolution.md)
 
+
+NOTE: Please see that the work in the [focus_areas](/focus_areas) is still in progress.
+
 ## Usage
 
 This is a repository for the Evolution working group.
