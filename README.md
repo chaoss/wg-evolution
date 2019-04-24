@@ -61,12 +61,13 @@ Our key focus areas for 2019 are summarized [here](ROADMAP.md).
 
 ## Metrics
 
-The metrics dealt with in this focus group are organized in focus areas:
+The evolution metrics dealt with in this working group are organized in focus areas:
 
-* Growth Maturity and Decline
-  * [Code Development](focus_areas/code_development.md)
-  * [Community Growth](focus_areas/community_growth.md)
-  * [Issue Resolution](focus_areas/issue_resolution.md)
+Focus Area | Description
+--- | ---
+[Code Development](./focus_areas/code_development.md) | Scope: Aspects related to how the source code changes over time, and the mechanisms that the project has to perform and control those changes.
+[Community Growth](./focus_areas/community_growth.md) | Goal: Identify the size of the project community and whether it is growing, shrinking, or staying the same.
+[Issue Resolution](./focus_areas/issue_resolution.md) | Goal: Identify how effective the community is at addressing issues identified by community participants.
 
 ## Usage
 
