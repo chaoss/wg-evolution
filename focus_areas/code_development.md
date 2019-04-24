@@ -24,7 +24,7 @@ to time periods.
 
 Goal **Activity**:
 
-* Question **Changes**: How many changes are happening to the source code, during a certain time period?
+* Question **Changes**: How many changes are happening to the source code, during a certain time period? 
   * Metric **Code_Changes**(Period): Number of changes to the source code
   (see [Code_Changes](../metrics/Code_Changes.md)).
   * Metric **Code_Changes_Lines**(Period): Aggregated number of lines touched in all changes
