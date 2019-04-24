@@ -61,7 +61,7 @@ Our key focus areas for 2019 are summarized [here](ROADMAP.md).
 
 ## Metrics
 
-The evolution metrics dealt with in this focus group are organized in focus areas:
+The evolution metrics dealt with in this working group are organized in focus areas:
 
 Focus Area | Description
 --- | ---

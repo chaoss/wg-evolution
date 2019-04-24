@@ -1,6 +1,6 @@
 # Focus Areas
 
-The evolution metrics dealt with in this focus group are organized in focus areas:
+The evolution metrics dealt with in this working group are organized in focus areas:
 
 Focus Area | Description
 --- | ---
