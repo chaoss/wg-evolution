@@ -1,14 +1,14 @@
-# Proposals_Accepted
+# Reviews_Accepted
 
-Proposals for changes to the source code that were accepted
+Reviews for changes to the source code that ended accepting the change
 during a certain period.
 
 ## Description
 
-Proposals are defined as in [Proposals](Proposals.md).
-Accepted proposals are those that are finally merged into the code
-base of the project.
-Accepted proposals can be linked to one or more changes to the source
+Reviews are defined as in [Reviews](Reviews.md).
+Accepted reviews are those that end with the corresponding changes
+finally merged into the code base of the project.
+Accepted reviews can be linked to one or more changes to the source
 code, those corresponding to the changes proposed and finally merged.
 
 For example, in GitHub when a pull request is accepted, all the 
@@ -23,7 +23,7 @@ Mandatory:
 
 * Period of time. Start and finish date of the period. Default: forever.
 
-    Period during which accepted proposals are considered.
+    Period during which accepted reviews are considered.
     
 * Criteria for source code. Algorithm. Default: all files are source code.
 
@@ -34,15 +34,15 @@ Mandatory:
 
 Usual aggregators are:
 
-* Count. Total number of accepted proposals during the period.
+* Count. Total number of accepted reviews during the period.
 
 ## Specific description: GitHub
 
-In the case of GitHub, accepted proposals are defined as "pull requests
+In the case of GitHub, accepted reviews are defined as "pull requests
 whose changes are included in the git repository",
 as long as it proposes changes to source code files.
 
-Unfortunately, there are several ways of accepting proposals, not
+Unfortunately, there are several ways of accepting reviews, not
 all of them making it easy to identify that they were accepted.
 The easiest situation is when the pull request is accepted and
 merged (or rebased, or squashed and merged). In that case,
@@ -79,7 +79,7 @@ Mandatory:
 
 ## Specific description: GitLab
 
-In the case of GitLab, accepted proposals are defined as "merge requests
+In the case of GitLab, accepted reviews are defined as "merge requests
 whose changes are included in the git repository",
 as long as it proposes changes to source code files.
 
@@ -95,7 +95,7 @@ Mandatory:
 
 ## Specific description: Gerrit
 
-In the case of Gerrit, accepted proposals are defined as "changesets
+In the case of Gerrit, accepted reviews are defined as "changesets
 whose changes are included in the git repository",
 as long as they proposes changes to source code files.
 
@@ -113,8 +113,8 @@ None.
 
 * Volume of coding activity.
 
-    Accepted code proposals are a proxy for the activity in a project.
-    By counting accepted code proposals in the set of repositories corresponding
+    Accepted code reviews are a proxy for the activity in a project.
+    By counting accepted code reviews in the set of repositories corresponding
     to a project, you can have an idea of the overall coding activity in
     that project that leads to actual changes.
     Of course, this metric is not the only one that should be
@@ -138,7 +138,7 @@ Some useful visualizations are:
 * Count per group over time
 
 These could be represented as bar charts, with time running in the X axis.
-Each bar would represent accepted proposals to change the code
+Each bar would represent accepted reviews to change the code
 during a certain period (eg, a month).
 
 ## Reference Implementation
