@@ -69,6 +69,9 @@ Focus Area | Description
 [Community Growth](./focus_areas/community_growth.md) | Goal: Identify the size of the project community and whether it is growing, shrinking, or staying the same.
 [Issue Resolution](./focus_areas/issue_resolution.md) | Goal: Identify how effective the community is at addressing issues identified by community participants.
 
+
+NOTE: Please see that the work in the [focus_areas](/focus_areas) is still in progress.
+
 ## Usage
 
 This is a repository for the Evolution working group.
