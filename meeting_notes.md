@@ -7,22 +7,81 @@ The CHAOSS Growth Maturity and Decline working group meets every other Wednesday
 in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288,
 use US phone number 1-408-638-0968 or [international numbers](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9))
 
-Video recordings of GMD Meetings available in the
-[CHAOSS Youtube channel](https://www.youtube.com/watch?v=A31mGjBM2Io&list=PL60k37cxI-HQ4HaF4iVuoByt5Qxw0ebRP)
+Video recordings of Evolution Meetings available in the
+[CHAOSS Youtube channel](https://www.youtube.com/channel/UCrG-a3hIc_hCEUWloG0gm9A)
 
------------
+WG Repository: https://github.com/chaoss/wg-evolution
+Notes: https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit#
 
 ## Next Meeting
-
-**Wednesday April 24th, 2019**  
+**Wednesday May 8, 2019**  
 
 Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT (18:00 CET to 16:30 CET)
+Agenda For Next Meeting
+* Outstanding issues
+* Outstanding pull requests
+* TBA  
 
-#### Agenda for next meeting
-* Review pending issues (if any)
-* Review pending pull request (if any)
-* Open Forum
-* Close with Actionable/Assigned Tasks and set Agenda for next meeting
+# April 24, 2019
+### Agenda
+* Outstanding issues
+* Outstanding pull requests
+* Release metrics spreadsheet: [https://docs.google.com/spreadsheets/d/1_jwkwzs8s6SAm2vVY-8lzTQk3YT0YpOveTlKOwjd2eQ/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1_jwkwzs8s6SAm2vVY-8lzTQk3YT0YpOveTlKOwjd2eQ/edit?usp=sharing)
+
+Video: [https://youtu.be/EWn5jW0pMZk](https://youtu.be/EWn5jW0pMZk)
+
+Attendees: Sean Goggins, Matt Germonprez, Jesus Gonzalez-Barahona, Georg Link, Kevin Lumbard, Harshal, Andrea Gallo, Polaris000, Robert Sanchez
+
+## Notes:
+
+### Issues:
+
+[[metrics] Metric files are missing](https://github.com/chaoss/wg-evolution/issues/140)
+*   Close issue when pull request gets merged
+
+[[focus_areas] Feedback on how to measure efficiency](https://github.com/chaoss/wg-evolution/issues/138)
+*   Please comment on this issue for efficiency
+*   The process in this issue could be used for future evolution work
+
+[[feature] Testing repositories based on reference implementations](https://github.com/chaoss/wg-evolution/issues/136)
+*   Tabling issue - Leaving open
+*   Idea is well received but metrics may need to be built out first
+*   Keeping issue open with a comment to indicate that this will be addressed in more detail after the group gains a bit more experience with implementations.
+
+[Definition of "Abandoned Issues"](https://github.com/chaoss/wg-evolution/issues/134)
+*   Difficult to detect abandoned issues - easier to identify inactive issues
+*   Related to metric issue resolution efficiency
+*   Relevant to efficiency goal in code development
+*   Close abandoned issues metric
+    *   Add a sentence to inactive issues metric that describes abandoned issues as a parameter inactive issue.
+    *   Add a sentence to the "inactive issues" metric that some projects use the term "abandoned issues" ... explain the abandonment concept there. Optimize for SEO so that others can find it via search.
+
+[[metrics] "Reviews" instead of "Proposals"?](https://github.com/chaoss/wg-evolution/issues/110)
+*   Related to PR 119 and 101
+*   Closes automatically when PR 119 is merged
+
+[Address Refining Comments in Pull Request #90](https://github.com/chaoss/wg-evolution/issues/99)
+*   Consensus reached but leaving open as a reminder to create PR
+
+[GSoC Idea: Implementing CHAOSS Metrics in Augur](https://github.com/chaoss/wg-evolution/issues/82)
+[GSoC Idea: Implementing CHAOSS metrics with Perceval](https://github.com/chaoss/wg-evolution/issues/81)
+*   Keeping open to track questions on GSoC
+
+[Use case: Characterize a bug reporter's past success at effectively reporting bugs. ](https://github.com/chaoss/wg-evolution/issues/61)
+*   #61 opened on Dec 12, 2018 by[ kfogel](https://github.com/chaoss/wg-evolution/issues?q=is%3Aissue+is%3Aopen+author%3Akfogel)
+*   Merge and revise in repository
+*   Leave issues open for input
+
+### Pull Requests:
+
+[Display Focus Area overview as a table](https://github.com/chaoss/wg-evolution/pull/143)
+* Other pending pull requests were merged, see discussion above, in the corresponding issue.
+
+### Metrics Release:
+*   [https://docs.google.com/spreadsheets/d/1_jwkwzs8s6SAm2vVY-8lzTQk3YT0YpOveTlKOwjd2eQ/edit#gid=0](https://docs.google.com/spreadsheets/d/1_jwkwzs8s6SAm2vVY-8lzTQk3YT0YpOveTlKOwjd2eQ/edit#gid=0)
+*   Transfer list from code development to spreadsheet
+*   Code efficiency proposal is pending
+*   Georg produced a first version of the Evolution metrics as a spreadsheet
 
 -----------
 
