@@ -1,4 +1,4 @@
-# Contributing to the GMD Working Group
+# Contributing to the Evolution Working Group
 
 * Metrics definition. For each metric, we have a document describing it,
 all of them in the [metrics directory](metrics).
@@ -29,7 +29,7 @@ or in the mailing list, to try to unblock it.
 * In some specific cases (eg, drafts for use cases), Google Docs or other means could be used, if that helps newcomers to contribute their ideas.
 But this will, in general, be the exception.
 
-We're also open to discuss the [Definition of GMD itself], but please refrain from this except that you have very good reasons for that,
+We're also open to discuss the [Definition of the matters considered by the Evolution working group], but please refrain from this except that you have very good reasons for that,
 just because currently we're focused on the definition of GMD and its refining in focus areas.
 
 ## DCO and Sign-Off for contributions
