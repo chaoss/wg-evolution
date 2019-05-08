@@ -12,7 +12,7 @@ The Evolution Working Group meets every Monday from 7:30am - 8:30am Pacific Time
 
 The videoconference URL is https://unomaha.zoom.us/j/720431288.
 
-[You can also read our meeting notes.](https://docs.google.com/document/d/1Owsn8B7ciPPUHHypYiFAe0Bps58QGGYSVrqHNX2l8p8)
+[You can also read our meeting notes.](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit#heading=h.eqofqt9ml5ad)
 
 
 ## Introduction
