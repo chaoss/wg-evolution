@@ -11,7 +11,8 @@ Video recordings of Evolution Meetings available in the
 [CHAOSS Youtube channel](https://www.youtube.com/channel/UCrG-a3hIc_hCEUWloG0gm9A)
 
 WG Repository: https://github.com/chaoss/wg-evolution
-Notes: https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit#
+
+We use [Google Notes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit#) to take the meeting minutes. Notes are captured by the entire group and a volunteer acting as the primary scribe.
 
 ## Next Meeting
 **Wednesday, May 22, 2019**  
