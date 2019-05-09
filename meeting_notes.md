@@ -14,13 +14,49 @@ WG Repository: https://github.com/chaoss/wg-evolution
 Notes: https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit#
 
 ## Next Meeting
-**Wednesday May 8, 2019**  
+**Wednesday, May 22, 2019**  
 
 Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT (18:00 CET to 16:30 CET)
-Agenda For Next Meeting
+
+## Agenda For Next Meeting
 * Outstanding issues
 * Outstanding pull requests
 * TBA  
+
+-------------
+
+# May 8, 2019
+## Agenda
+*   Outstanding issues
+*   Outstanding pull requests
+*   Metrics release
+
+Video: [https://youtu.be/uLvPmmzUy8Q](https://youtu.be/uLvPmmzUy8Q)
+
+Attendees: Sean Goggins, Matt Germonprez, Jesus Gonzalez-Barahona, Armstrong, Kevin Lumbard
+
+## Notes:
+* Link to meeting notes on README is incorrect - Assigned to Kevin
+* No Open Pull Requests
+
+### Issues
+* Many are simply ongoing issues
+* 134 - Abandoned Issues
+    * [https://github.com/chaoss/wg-evolution/issues/134](https://github.com/chaoss/wg-evolution/issues/134)
+    * Labeled as Good First Issue
+* 99 - Refining Comments
+    * [https://github.com/chaoss/wg-evolution/issues/99](https://github.com/chaoss/wg-evolution/issues/99)
+* 81 and 82 -- GSoC related
+    * These will be closed now that GSoC students have been selected
+* 61 and 48 - Use Case related
+    * Need more work but keeping open so that they are visible to all
+
+### Metrics Release
+* [https://docs.google.com/spreadsheets/d/1_jwkwzs8s6SAm2vVY-8lzTQk3YT0YpOveTlKOwjd2eQ/edit#gid=0](https://docs.google.com/spreadsheets/d/1_jwkwzs8s6SAm2vVY-8lzTQk3YT0YpOveTlKOwjd2eQ/edit#gid=0)
+* Add details as to what constitutes a ‘release’ to the main page.
+* The process up to know to decide that a metric description is ready for release has been, after discussion in the corresponding issue and pull requests, and if needed in pull requests, consensus is reached. Up to now, we didn’t need to decide by voting.
+
+-------------
 
 # April 24, 2019
 ### Agenda
