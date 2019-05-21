@@ -14,4 +14,5 @@ to easy transitions, and mapping from "old" names to current ones.
 | Proposals_Backlog         | Reviews_Backlog         | 2019-04        | Proposals to reviews |
 | Proposal_Acceptance_Ratio | Review_Acceptance_Ratio | 2019-04        | Proposals to reviews |
 | Proposal_Throughput       | Review_Throughput       | 2019-04        | Proposals to reviews |
+| Code Merge Duration       | Review_Duration         | 2019-05        |
 
