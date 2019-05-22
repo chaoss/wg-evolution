@@ -15,16 +15,44 @@ WG Repository: https://github.com/chaoss/wg-evolution
 We use [Google Notes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit#) to take the meeting minutes. Notes are captured by the entire group and a volunteer acting as the primary scribe.
 
 ## Next Meeting
-**Wednesday, May 22, 2019**  
+**Wednesday, June 5, 2019**  
 
 Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT (18:00 CET to 16:30 CET)
 
 ## Agenda For Next Meeting
+
 * Outstanding issues
 * Outstanding pull requests
 * TBA  
 
 -------------
+
+## May 22, 2019
+
+# Agenda
+
+* Outstanding issues
+* Outstanding pull requests
+
+Attendees: Jesus Gonzalez-Barahona, Parth Sharma.
+
+## Notes
+
+We went, as usual, through pending issues and pull requests. Since we were only two people, there was little discussion.
+
+Some notes on issues:
+
+* [134](https://github.com/chaoss/wg-evolution/issues/134), Definition of Abandoned Issue. It was closed, because the pull request implementing it was already merged.
+* [138](https://github.com/chaoss/wg-evolution/issues/138). We’re discussing a new goal (Efficiency) in the Code Development focus area. Comments and ideas are welcome.
+* [136](https://github.com/chaoss/wg-evolution/issues/136). We still need to define testing for reference implementations. Very likely we will do this as a part of the tasks during GSoC.
+* [61](https://github.com/chaoss/wg-evolution/issues/61) and [48](https://github.com/chaoss/wg-evolution/issues/48). We have this two use cases still open, just in case somebody wants to elaborate on them. Please, anyone, feel free to submit more uses cases.
+
+Some notes on pull requests:
+
+* [151](https://github.com/chaoss/wg-evolution/pull/151). This is the first proposed metric for the Efficiency goal in the Code Development focus area. Reviews are welcome.
+* [148](https://github.com/chaoss/wg-evolution/pull/148). Minor fix due to the change in name of the working group. Please, anyone, review.
+* [147](https://github.com/chaoss/wg-evolution/pull/147). Discussion on the criteria to release metrics. Likely addressed by the new contributing file in the metrics repository. We propose to close this pull request, and refer to that file.
+
 
 # May 8, 2019
 ## Agenda
