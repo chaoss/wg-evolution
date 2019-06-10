@@ -1,23 +1,20 @@
-import json
-import datetime
 import pandas as pd
-from .Metric import Metric
-from . import utils
-from .SourceCode import SourceCode
+from Metric import Metric
+import utils
 
 
 class Issue(Metric):
 
     def __init__(self, data_list, date_range=(None, None)):
         """
-        Initilizes self.df, the dataframe with one commit per row. 
-        
-        :param data_list: A list of dictionaries, each element a line from the JSON file
-        :param date_range: A tuple which represents the start and end date of interest
-        :param source_code_obj: An object of SourceCode, to be used to determine what comprises
-            source code.
+        Initilizes self.df, the dataframe with one commit per row.
+
+        :param data_list: A list of dictionaries, each element a
+            line from the JSON file
+        :param date_range: A tuple which represents the start and
+            end date of interest
         """
-                
+
         super().__init__(data_list)
 
         clean_data_list = list()
@@ -27,33 +24,32 @@ class Issue(Metric):
         for line in self.raw_df.iterrows():
             issue = line[1].to_dict()
             issue = self._clean_issue(issue)
-            
+
             clean_data_list.append(issue)
 
         self.df = pd.DataFrame(clean_data_list)
         if self.since:
             for df in self.clean_dict.values():
-                df = df[df['created_date'] >= utils.str_to_dt_other(self.since)]
-        else: 
+                df = df[df['created_date']
+                        >= utils.str_to_dt_other(self.since)]
+        else:
             self.since = utils.get_date(self.df, "since")
-            
+
         if self.until:
             for df in self.clean_dict.values():
-                df = df[df['created_date'] < utils.str_to_dt_other(self.until)]
-        else: 
+                df = df[df['created_date']
+                        < utils.str_to_dt_other(self.until)]
+        else:
             self.until = utils.get_date(self.df, "until")
 
-def _clean_issue(line):
-        cleaned_line =  \
-        {
+    def _clean_issue(line):
+        cleaned_line = {
             'repo': line['origin'],
             'hash': line['data_id'],
             'category': "issue",
             'author': line['data_user']['login'],
             'created_date': line['data_created_at'],
-            'current_status': line['data_state']   
+            'current_status': line['data_state']
         }
-        
+
         return cleaned_line
-        
-    

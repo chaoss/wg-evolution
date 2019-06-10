@@ -1,27 +1,22 @@
-import json
-import datetime
 import pandas as pd
-from .Metric import Metric
-from . import utils
-from .SourceCode import SourceCode
+from Metric import Metric
+import utils
+import math
 
 
 class Commit(Metric):
 
-    def __init__(self, data_list, date_range=(None, None), source_code_obj=None):
+    def __init__(self, data_list, date_range=(None, None), src_code_obj=None):
         """
         Initilizes self.df, the dataframe with one commit per row.
-        The source_code_exclude_list parameter is a list which contains file extensions
-        which are to be ignored. All possible file extensions are allowed. 
-        For files without a standard ".xyz" extension, like LICENCE or AUTHORS, the "others" 
-        extension is used. 
-        
-        :param data_list: A list of dictionaries, each element a line from the JSON file
-        :param date_range: A tuple which represents the start and end date of interest
-        :param source_code_obj: An object of SourceCode, to be used to determine what comprises
-            source code.
+
+        :param data_list: A list of dictionaries.
+            Each element a line from the JSON file
+        :param date_range: A tuple which represents the period of interest
+        :param src_code_obj: An object of SourceCode.
+            It is used to determine what comprises source code.
         """
-                
+
         super().__init__(data_list)
 
         clean_data_list = list()
@@ -31,33 +26,33 @@ class Commit(Metric):
         for line in self.raw_df.iterrows():
             commit = line[1].to_dict()
             commit = self._clean_commit(commit)
-            if source_code_obj is None or source_code_obj.is_source_code(commit):
+            if src_code_obj is None  \
+                    or src_code_obj.is_source_code(commit):
                 clean_data_list.append(commit)
 
         self.df = pd.DataFrame(clean_data_list)
         if self.since:
-            for df in self.clean_dict.values():
-                df = df[df['created_date'] >= utils.str_to_dt_other(self.since)]
-        else: 
+            self.df = self.df[self.df['created_date']
+                              >= utils.str_to_dt_other(self.since)]
+        else:
             self.since = utils.get_date(self.df, "since")
-            
+
         if self.until:
-            for df in self.clean_dict.values():
-                df = df[df['created_date'] < utils.str_to_dt_other(self.until)]
-        else: 
+            self.df = self.df[self.df['created_date']
+                              < utils.str_to_dt_other(self.until)]
+        else:
             self.until = utils.get_date(self.df, "until")
 
     def _clean_commit(self, line):
         """
-        This method is for cleaning a raw commit fetched by Perceval. 
-        Since all attributes of the data are not of our importance, it is 
+        This method is for cleaning a raw commit fetched by Perceval.
+        Since all attributes of the data are not of our importance, it is
         better to just keep the ones which are required.
 
         :param line: a raw line fetched by Perceval, present in the JSON file
             It is a dictionary.
         """
-        cleaned_line =  \
-        {
+        cleaned_line = {
             'repo': line['origin'],
             'hash': line['data_commit'],
             'author': line['data_Author'],
@@ -77,11 +72,11 @@ class Commit(Metric):
                 actions += 1
         cleaned_line['files_action'] = actions
 
-        if 'data_Merge' in line:
-            cleaned_line['merge'] = True
-        else:
-            cleaned_line['merge'] = False
+        try:
+            non_merge = math.isnan(line['data_Merge'])
 
+        except (TypeError, KeyError):
+            non_merge = False
+
+        cleaned_line['merge'] = not non_merge
         return cleaned_line
-        
-    
