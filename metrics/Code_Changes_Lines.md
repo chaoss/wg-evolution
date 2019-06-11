@@ -108,11 +108,16 @@ Each bar would represent a code changes during a certain period (eg, a month).
 
 ## Known Implementations
 
-* [Grimoirelab](https://chaoss.github.io/grimoirelab). Enriched index for git repositories is composed of
-one item per commit. Each of these items include the number of lines added
- and removed, which makes it basically correspond to this metric
-when aggregated counted.
-The Git panel, available out of the box, provides exactly that.
+* [Grimoirelab](https://chaoss.github.io/grimoirelab) provides this metric out of the box. 
+  - View an example on the [CHAOSS instance of Bitergia Analytics](https://chaoss.biterg.io/app/kibana#/dashboard/f13af0e0-18e5-11e9-ba47-d5cbef43f8d3).  
+  - Download and import a ready-to-go dashboard containing examples for this metric visualization from the [GrimoireLab Sigils panel collection](https://chaoss.github.io/grimoirelab-sigils/chaoss-gmd-cde/lines_of_code_changed/).
+  - Add a sample visualization to any GrimoreLab Kibiter dashboard following these instructions:
+    * Create a new `Area` chart
+    * Select the `git` index
+    * Y-axis 1: `Sum` Aggregation, `lines_added` Field, `Lines Added` Custom Label
+    * Y-axis 2: `Sum` Aggregation, `painless_inverted_lines_removed_git` Field, `Lines Removed` Custom Label
+    * X-axis: `Date Histogram` Aggregation, `grimoire_creation_date` Field, `Auto` Interval, `Time` Custom Label
+  - Example screenshot: ![GrimoireLab screenshot of metric Code_Changes_Lines](./images/code_changes_lines-GrimoireLab.png)
 
 
 ## External References (Literature)
