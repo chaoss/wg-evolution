@@ -63,8 +63,9 @@ Goal **Efficiency**:
 * Question **Reviews**: How efficient is the project in reviewing proposed
  changes to the code, during a certain time period?
 
-  * Metric **Review_Duration**(Period): For how long proposed changes are
-  reviewed before they are accepted.
+  * Metric **Reviews_Duration**(Period): For how long proposed changes are
+  reviewed before they are accepted
+  (see [Reviews_Duration](../metrics/Reviews_Duration.md)).
   * Metric **Review_Acceptance**(Period): How many reviews end accepting
   the code change.
   * Metric **Review_Participants**(Period): How many persons participated in
@@ -109,6 +110,7 @@ Activity | Issues  | [Issues_Closed](../metrics/Issues_Closed.md)
 Activity | Reviews | [Reviews](../metrics/Reviews.md)
 Activity | Reviews | [Reviews_Accepted](../metrics/Reviews_Accepted.md)
 Activity | Reviews | [Reviews_Declined](../metrics/Reviews_Declined.md)
+Efficiency | Reviews | [Reviews_Duration](../metrics/Reviews_Duration.md)
 
 
 ## Legacy metrics and questions
