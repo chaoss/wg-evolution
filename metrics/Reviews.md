@@ -24,12 +24,12 @@ Mandatory:
 * Period of time. Start and finish date of the period. Default: forever.
 
     Period during which reviews are considered.
-    
+
 * Criteria for source code. Algorithm. Default: all files are source code.
 
     If we are focused on source code, we need a criteria for deciding
     whether a file is a part of the source code or not.
-    
+
 ### Aggregators
 
 Usual aggregators are:
@@ -114,11 +114,16 @@ during a certain period (eg, a month).
 
 ## Known Implementations
 
-* [Grimoirelab](https://chaoss.github.io/grimoirelab). Enriched index for
-GitHub Pull Requests, GitLab Merge Requests,
-and Gerrit repositories is composed of one item per review,
-which makes it basically correspond to this metric when counted.
-The GitHub Pull Requests, GitLab Merge Requests, and Gerrit summary panels,
-available out of the box, provide exactly that.
+* [Grimoirelab](https://chaoss.github.io/grimoirelab) provides this metric out of the box for GitHub Pull Requests, GitLab Merge Requests and Gerrit Changesets.  
+  - View an example on the [CHAOSS instance of Bitergia Analytics](https://chaoss.biterg.io/app/kibana#/dashboard/GitHub-Pull-Requests).  
+  - Download and import a ready-to-go dashboard containing examples for this metric visualization based on GitHub Pull Requests data from the [GrimoireLab Sigils panel collection](https://chaoss.github.io/grimoirelab-sigils/panels/github-pullrequests/).
+  - Add a sample visualization for GitHub Pull requests to any GrimoreLab Kibiter dashboard following these instructions:
+    * Create a new `Vertical Bar` chart.
+    * Select the `github_issues` index.
+    * Filter: `pull_request` is `true`.
+    * Metrics Y-axis: `Count` Aggregation, `# Pull Requests` Custom Label.
+    * X-axis: `Date Histogram` Aggregation, `grimoire_creation_date` Field, `Auto` Interval, `Time` Custom Label.
+    * Buckets Split Series: `Terms` Sub Aggregation, `state` Field, `metric: # Pull Requests` Order By, `Descending` Order, `1000` Size, `State` Custom Label. Notice this visualization is based on Pull Requests creation date, so items are counted at the date they were created and its state, as set here, would be their current state at the moment of visualizing the data, e.g. `n` Pull Requests created at a give time range are currently `open` or `closed`.
+  - Example screenshot: ![GrimoireLab screenshot of metric Reviews](./images/reviews-GrimoireLab.png)
 
 ## External References (Literature)
