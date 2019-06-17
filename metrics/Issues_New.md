@@ -154,7 +154,7 @@ during a certain period (eg, a month).
 
 ## Known Implementations
 
-* [GrimoireLab](https://chaoss.github.io/grimoirelab) provides this metric out of the box for GitHub Issues, GitLab issues, Jira, Bugzilla, and Launchpad.
+* [GrimoireLab](https://chaoss.github.io/grimoirelab) provides this metric out of the box for GitHub Issues, GitLab issues, Jira, Bugzilla, Maniphest, and Redmine.
   - View an example on the [CHAOSS instance of Bitergia Analytics](https://chaoss.biterg.io/app/kibana#/dashboard/GitHub-Issues).  
   - Download and import a ready-to-go dashboard containing examples for this metric visualization from the [GrimoireLab Sigils panel collection](https://chaoss.github.io/grimoirelab-sigils/panels/github-issues/).
   - Add a sample visualization to any GrimoreLab Kibiter dashboard following these instructions:
