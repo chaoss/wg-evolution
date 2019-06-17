@@ -30,7 +30,7 @@ Mandatory:
 * Period of time. Start and finish date of the period. Default: forever.
 
     Period during which issues are considered.
-    
+
 * Criteria for source code. Algorithm. Default: all issues are related to
   source code.
 
@@ -45,7 +45,7 @@ Mandatory:
 
 * Criteria for closed. Algorithm. Default: having a closing event during
   the period of interest.
-    
+
 ### Aggregators
 
 Usual aggregators are:
@@ -131,6 +131,14 @@ during a certain period (eg, a month).
 
 ## Known Implementations
 
-[ To be done. ]
+* [GrimoireLab](https://chaoss.github.io/grimoirelab) provides data for computing this metric for GitHub Issues, GitLab issues, Jira, Bugzilla and Redmine. Current dashboards show information based on creation date, that means they show current status of the issues that were created during a time period (e.g. [GitHub Issues dashboard](https://chaoss.github.io/grimoirelab-sigils/panels/github-issues/), you can [see it in action](https://chaoss.biterg.io/app/kibana#/dashboard/GitHub-Issues)). Nevertheless, it is easy to build a visualization that shows issues based on closing date by following the next steps:
+  - Add a sample visualization to any GrimoreLab Kibiter dashboard following these instructions:
+    * Create a new `Vertical Bar` chart.
+    * Select the `github_issues` index.
+    * Filter: `pull_request` is `false`.
+    * Filter: `state` is `closed`.
+    * Metrics Y-axis: `Count` Aggregation, `# Closed Issues` Custom Label.
+    * Buckets X-axis: `Date Histogram` Aggregation, `closed_at` Field, `Weekly` Interval (or whatever interval may fit your needs, depending on the whole time range you wish to visualize in the chart), `Time` Custom Label.
+  - Example screenshot: ![GrimoireLab screenshot of metric issues_closed](./images/issues_closed_GrimoireLab.png).
 
 ## External References (Literature)
