@@ -11,11 +11,11 @@ finally merged into the code base of the project.
 Accepted reviews can be linked to one or more changes to the source
 code, those corresponding to the changes proposed and finally merged.
 
-For example, in GitHub when a pull request is accepted, all the 
+For example, in GitHub when a pull request is accepted, all the
 commits included in it are merged (maybe squashed, maybe rebased)
 in the correspnding git repository. The same can be said of
 GitLab merge requests. In the case of Gerrit, a code review usually
-corresponds to a single commit. 
+corresponds to a single commit.
 
 ### Parameters
 
@@ -24,12 +24,12 @@ Mandatory:
 * Period of time. Start and finish date of the period. Default: forever.
 
     Period during which accepted reviews are considered.
-    
+
 * Criteria for source code. Algorithm. Default: all files are source code.
 
     If we are focused on source code, we need a criteria for deciding
     whether a file is a part of the source code or not.
-    
+
 ### Aggregators
 
 Usual aggregators are:
@@ -147,5 +147,29 @@ during a certain period (eg, a month).
 
 ## Known Implementations
 
+* [Grimoirelab](https://chaoss.github.io/grimoirelab) provides this metric out of the box for GitHub Pull Requests and also provides data to build similar visualizations for GitLab Merge Requests and Gerrit Changesets.
+  - View an example on the [CHAOSS instance of Bitergia Analytics](https://chaoss.biterg.io/app/kibana#/dashboard/a7b3fd70-ef16-11e8-9be6-c962f0cee9ae).  
+  - Download and import a ready-to-go dashboard containing examples for this metric visualization based on GitHub Pull Requests data from the [GrimoireLab Sigils panel collection](https://chaoss.github.io/grimoirelab-sigils/panels/github-pullrequests/).
+  - Add a sample visualization for GitHub Pull requests to any GrimoreLab Kibiter dashboard following these instructions:
+    * Create a new `Timelion` visualization.
+    * Select `Auto` as Interval.
+    * Paste the following Timelion Expression:
+    ```
+    .es(index=git, q="title:Merge* OR files:0", timefield=grimoire_creation_date).bars().color(#94c3af).label("Pull Requests Merged")
+    ```
+    * The expression, step by step:
+      * `.es()`: used to define an ElasticSearch query.
+        * `index=git`: use git index.
+        * `q="title:Merge* OR files:0"`: heuristic to filter in merges.
+        * `timefield=grimoire_creation_date`: time will be based on commit creation date (as our query looks for merge commits, it should be the date in which the merge was effectively done).
+      * `.bars()`: draw bars instead of lines.
+      * `.color()` and `.label()`: some formatting options.
+    * If you wish to get also the trend, use this instead (i.e. repeating the same expression twice and calling `trend()` the second time):
+    ```
+    .es(index=git, q="title:Merge* OR files:0", timefield=grimoire_creation_date).bars().color(#94c3af).label("Pull Requests Merged"),
+    .es(index=git, q="title:Merge* OR files:0", timefield=grimoire_creation_date).trend().color(#ffb745).label("Trend")
+    ```
+    * As discussed [above for GitHub case](#specific-description-github), sometimes is not easy to identify merges. As you probably noticed, in this example we based our expression on GrimoireLab Git index. Besides, it could be applied to any other similar environment using Git repositories, not only to GitHub.
+  - Example screenshot: ![GrimoireLab screenshot of metric Reviews Accepted](./images/reviews_accepted_GrimoireLab.png)
 
 ## External References (Literature)
