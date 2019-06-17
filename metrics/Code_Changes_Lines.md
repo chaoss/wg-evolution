@@ -108,7 +108,7 @@ Each bar would represent a code changes during a certain period (eg, a month).
 
 ## Known Implementations
 
-* [GrimoireLab](https://chaoss.github.io/grimoirelab) provides this metric out of the box.
+* [Grimoirelab](https://chaoss.github.io/grimoirelab) provides this metric out of the box.
   - View an example on the [CHAOSS instance of Bitergia Analytics](https://chaoss.biterg.io/app/kibana#/dashboard/f13af0e0-18e5-11e9-ba47-d5cbef43f8d3).  
   - Download and import a ready-to-go dashboard containing examples for this metric visualization from the [GrimoireLab Sigils panel collection](https://chaoss.github.io/grimoirelab-sigils/chaoss-gmd-cde/lines_of_code_changed/).
   - Add a sample visualization to any GrimoreLab Kibiter dashboard following these instructions:
