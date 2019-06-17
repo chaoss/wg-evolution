@@ -20,13 +20,13 @@ Mandatory:
 * Period of time. Start and finish date of the period. Default: forever.
 
     Period during which issues are considered.
-    
+
 * Criteria for source code. Algorithm. Default: all issues are related to
   source code.
 
     If we are focused on source code, we need a criteria for deciding
     whether an issues is related to the source code or not.
-    
+
 ### Aggregators
 
 Usual aggregators are:
@@ -116,6 +116,14 @@ during a certain period (eg, a month).
 
 ## Known Implementations
 
-[ To be done. ]
+* [GrimoireLab](https://chaoss.github.io/grimoirelab) provides data for computing this metric for GitHub Issues, GitLab issues, Jira, Bugzilla and Redmine. Depending on the source API, the definition of what is considered an update on the issue could vary. GrimoireLab uses `metadata__updated_on` to store latest issue update, please check [Perceval documentation](https://perceval.readthedocs.io/en/latest/search.html?q=metadata_updated_on&check_keywords=yes&area=default) to look for the specific API field being used in each case and understand its limitations, if any.
+  - Currently, there is no dashboard showing this kind of metric. Nevertheless, it is easy to build a visualization that shows issues based on latest update (we'll do it for GitHub Issues here).
+  - Add a sample visualization to any GrimoreLab Kibiter dashboard following these instructions:
+    * Create a new `Vertical Bar` chart.
+    * Select the `github_issues` index.
+    * Filter: `pull_request` is `false`.
+    * Metrics Y-axis: `Count` Aggregation, `# Issues Active` Custom Label.
+    * Buckets X-axis: `Date Histogram` Aggregation, `metadata__updated_on` Field, `Weekly` Interval (or whatever interval may fit your needs, depending on the whole time range you wish to visualize in the chart), `Time` Custom Label.
+  - Example screenshot: ![GrimoireLab screenshot of metric issues_active](./images/issues_active_GrimoireLab.png).
 
 ## External References (Literature)
