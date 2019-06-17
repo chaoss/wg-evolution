@@ -19,12 +19,12 @@ Mandatory:
 * Period of time. Start and finish date of the period. Default: forever.
 
     Period during which changes are considered.
-    
+
 * Criteria for source code. Algorithm. Default: all files are source code.
 
     If we are focused on source code, we need a criteria for deciding
     whether a file is a part of the source code or not.
-    
+
 ### Aggregators
 
 Usual aggregators are:
@@ -106,9 +106,15 @@ See [reference implementation for git](../implementations/Code_Changes-Git.ipynb
 
 ## Known Implementations
 
-* [Grimoirelab](https://chaoss.github.io/grimoirelab). Enriched index for git repositories is composed of
-one item per commit, which makes it basically correspond to this metric
-when counted. The Git panel, available out of the box, provides exactly that.
+* [GrimoireLab](https://chaoss.github.io/grimoirelab) provides this metric out of the box.
+  - View an example on the [CHAOSS instance of Bitergia Analytics](https://chaoss.biterg.io/app/kibana#/dashboard/Git).  
+  - Download and import a ready-to-go dashboard containing examples for this metric visualization from the [GrimoireLab Sigils panel collection](https://chaoss.github.io/grimoirelab-sigils/panels/git/).
+  - Add a sample visualization to any GrimoreLab Kibiter dashboard following these instructions:
+    * Create a new `Vertical Bar` chart
+    * Select the `git` index
+    * Y-axis: `Unique Count` Aggregation, `hash` Field, `# Commits` Custom Label
+    * X-axis: `Date Histogram` Aggregation, `grimoire_creation_date` Field, `Auto` Interval, `Time` Custom Label
+  - Example screenshot: ![GrimoireLab screenshot of metric Code_Changes](./images/code_changes-GrimoireLab.png)
 
 * [Augur](https://chaoss.github.io/augur/). Provides this metric out of the box.
 
