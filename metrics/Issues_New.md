@@ -39,7 +39,7 @@ as opening a new issue (see parameters, below).
 
 For example, "issues" correspond to "issues" in the case of GitHub,
 GitLab or Jira, to "bug reports" in the case of Bugzilla, and to
-"issues" or "tickets" in other systems. 
+"issues" or "tickets" in other systems.
 
 ### Parameters
 
@@ -48,7 +48,7 @@ Mandatory:
 * Period of time. Start and finish date of the period. Default: forever.
 
     Period during which issues are considered.
-    
+
 * Criteria for source code. Algorithm. Default: all issues are related to
   source code.
 
@@ -56,10 +56,10 @@ Mandatory:
     whether an issues is related to the source code or not.
 
 * Reopen as new. Boolean. Default: False.
- 
+
     Criteria for defining whether reopened issues are considered
     as new issues.
-    
+
 ### Aggregators
 
 Usual aggregators are:
@@ -154,12 +154,17 @@ during a certain period (eg, a month).
 
 ## Known Implementations
 
-* [Grimoirelab](https://chaoss.github.io/grimoirelab). Enriched index for
-GitHub Issues, GitLab issues, Jira, Bugzilla, and
-Launchpad are composed of one item per issue,
-which makes it basically correspond to this metric when counted.
-The GitHub Issues, GitLab issues, Jira, Bugzilla, and
-Launchpad summary panels,
-available out of the box, provide exactly that.
+* [GrimoireLab](https://chaoss.github.io/grimoirelab) provides this metric out of the box for GitHub Issues, GitLab issues, Jira, Bugzilla, and Launchpad.
+  - View an example on the [CHAOSS instance of Bitergia Analytics](https://chaoss.biterg.io/app/kibana#/dashboard/GitHub-Issues).  
+  - Download and import a ready-to-go dashboard containing examples for this metric visualization from the [GrimoireLab Sigils panel collection](https://chaoss.github.io/grimoirelab-sigils/panels/github-issues/).
+  - Add a sample visualization to any GrimoreLab Kibiter dashboard following these instructions:
+    * Create a new `Vertical Bar` chart
+    * Select the `github_issues` index
+    * Filter: `pull_request` is `false`
+    * Metrics Y-axis: `Count` Aggregation, `# Issues` Custom Label
+    * Buckets X-axis: `Date Histogram` Aggregation, `grimoire_creation_date` Field, `Auto` Interval, `Time` Custom Label
+    * Buckets Split Series: `Terms` Sub Aggregation, `state` Field, `metric: # Issues` Order By, `Descending` Order, `1000` Size, `State` Custom Label
+  - Example screenshot: ![GrimoireLab screenshot of metric issues_new](./images/issues_new-GrimoireLab.png)
+
 
 ## External References (Literature)
