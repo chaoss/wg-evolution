@@ -2,8 +2,8 @@ from datetime import datetime
 
 import pandas as pd
 
+import conditions
 import utils
-from is_source_code import IsSourceCode, Naive
 from commit import Commit
 
 
@@ -139,8 +139,14 @@ class CodeChangesGit(Commit):
 
 if __name__ == "__main__":
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
-    issourcecode = IsSourceCode(["tests/"], Naive)
     items = utils.read_JSON_file('../git-commits.json')
+    changes = CodeChangesGit(items, date_range=(date_since, None))
+    print("Code_Changes, total:", changes.compute())
     changes = CodeChangesGit(items, date_range=(date_since, None),
-                             issrccode_obj=issourcecode)
-    print(changes.compute())
+                             is_code=[conditions.DirExclude(['tests']),
+                                      conditions.PostfixExclude(['.md', 'COPYING'])])
+    print("Code_Changes, excluding some files:", changes.compute())
+    changes = CodeChangesGit(items, date_range=(date_since, None),
+                                    conds=[conditions.MasterInclude()])
+    print("Code_Changes, only for master:", changes.compute())
+

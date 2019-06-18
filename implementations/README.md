@@ -18,7 +18,7 @@ The three category modules are:
 - **Individual Metric modules**:  
 These are python scripts converted from the reference implementation notebooks. They inherit from the Category modules, but have the most important function of all --- to calculate values for the metrics they represent.   
 
-- **source code check ([module](./code_df/is_source_code.py))**:  
+- **source code check ([module](code_df/conditions.py))**:  
 An important aspect of several metrics is how source code is defined. The `is_source_code` module provides several algorithms. Currently, the following are provided:
 
     + Naive
