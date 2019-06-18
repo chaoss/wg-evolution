@@ -23,6 +23,7 @@ Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT 
 
 * Outstanding issues
 * Outstanding pull requests
+* List of metrics considered ready for release
 * TBA  
 
 -------------
