@@ -41,11 +41,11 @@ def get_date(df, option='since'):
 
     :raises ValueError:
     """
-    if option == 'since':
-        return min(df['created_date'])
 
+    if option == 'since':
+        return df['created_date'].min()
     elif option == 'until':
-        return max(df['created_date'])
+        return df['created_date'].max()
     else:
         raise ValueError("option parameter can take only 'since' or 'until'")
 

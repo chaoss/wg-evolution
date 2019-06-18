@@ -1,5 +1,7 @@
-import pandas as pd
 from datetime import datetime
+
+import pandas as pd
+
 import utils
 from is_source_code import IsSourceCode, Naive
 from commit import Commit
@@ -15,10 +17,6 @@ class CodeChangesGit(Commit):
     :param issrccode_obj: An object of IsSourceCode, used to determine
         what comprises source code.
     """
-
-    def __init__(self, items, date_range=(None, None), issrccode_obj=None):
-
-        super().__init__(items, date_range, issrccode_obj)
 
     def compute(self, incl_empty=True, incl_merge=True, master_only=False):
         """Count number of commits of different types, like including empty commits
