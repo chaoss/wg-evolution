@@ -116,14 +116,16 @@ during a certain period (eg, a month).
 
 ## Known Implementations
 
-* [GrimoireLab](https://chaoss.github.io/grimoirelab) provides data for computing this metric for GitHub Issues, GitLab issues, Jira, Bugzilla and Redmine. Depending on the source API, the definition of what is considered an update on the issue could vary. GrimoireLab uses `metadata__updated_on` to store latest issue update, please check [Perceval documentation](https://perceval.readthedocs.io/en/latest/search.html?q=metadata_updated_on&check_keywords=yes&area=default) to look for the specific API field being used in each case and understand its limitations, if any.
-  - Currently, there is no dashboard showing this kind of metric. Nevertheless, it is easy to build a visualization that shows issues based on latest update (we'll do it for GitHub Issues here).
+* [GrimoireLab](https://chaoss.github.io/grimoirelab) provides data for computing a metric close to the one described in this page for GitHub Issues, GitLab issues, Jira, Bugzilla and Redmine. In terms of the metric, **GrimoireLab data have only the date of the last update of each item, which limits computing this metric to time ranges ending on the current date**.
+  - Depending on the source API, the definition of what is considered an update on the issue could vary. GrimoireLab uses `metadata__updated_on` to store latest issue update, please check [Perceval documentation](https://perceval.readthedocs.io/en/latest/search.html?q=metadata_updated_on&check_keywords=yes&area=default) to look for the specific API field being used in each case and understand its limitations, if any. 
+  - Currently, there is no dashboard showing this in action. Nevertheless, it is easy to build a visualization that shows the number uses which last activity occurred at some point between a date and current date (we'll do it for GitHub Issues here).
   - Add a sample visualization to any GrimoreLab Kibiter dashboard following these instructions:
-    * Create a new `Vertical Bar` chart.
+    * Create a new `Metric` visualization.
     * Select the `github_issues` index.
     * Filter: `pull_request` is `false`.
-    * Metrics Y-axis: `Count` Aggregation, `# Issues Active` Custom Label.
-    * Buckets X-axis: `Date Histogram` Aggregation, `metadata__updated_on` Field, `Weekly` Interval (or whatever interval may fit your needs, depending on the whole time range you wish to visualize in the chart), `Time` Custom Label.
+    * Metric: `Count` Aggregation, `# Issues Active` Custom Label.
+    * Buckets: `Date Range` Aggregation, `metadata__updated_on` Field, `now-1M` From (or whatever interval may fit your needs), `now` To, leave Custom Label empty to see the specific dates in the legend.
+    * Have a look at the time picker on the top right corner to make sure it is set to include the whole story of the data so we are not excluding any item based on its creation date.
   - Example screenshot: ![GrimoireLab screenshot of metric issues_active](./images/issues_active_GrimoireLab.png).
 
 ## External References (Literature)
