@@ -15,10 +15,10 @@ class Commit(Metric):
         It is of the form (since, until), where since and until are strings.
         Either, or both can be None. If, for example, since is None, that
         would mean that all commits from the first commit to the commit
-        who last falls inside the until range will be included.
+        which last falls inside the until range will be included.
 
     :param issrccode_obj: A reference to IsSourceCode class.
-        It is used to determine what comprises source code.
+        It is used to determine what comprises of source code.
         """
 
     def __init__(self, items, date_range=(None, None), issrccode_obj=None):
@@ -40,50 +40,49 @@ class Commit(Metric):
         if self.until is None:
             self.until = utils.get_date(self.df, 'until')
 
-    def _flatten_data(self, line):
+    def _flatten_data(self, item):
         """
         This method is for cleaning a raw commit fetched by Perceval.
         Since all attributes of the data are not of importance, it is
         better to just keep the ones which are required.
 
-        :param line: a raw line fetched by Perceval, present in the JSON file
-            It is a dictionary.
+        :param item: a raw item (of type dict) fetched by Perceval,
+        present in the JSON file (items object)
 
-        :returns cleaned_line: A clean, flattened commit, which is a dictionary
+        :returns cleaned_item: A clean, flattened commit, of type dict
         """
-        creation_date = utils.str_to_date(line['data']['AuthorDate'])
-        if self.since:
-            if self.since > creation_date:
-                return None
+        creation_date = utils.str_to_date(item['data']['AuthorDate'])
 
-        if self.until:
-            if self.until < creation_date:
-                return None
-
-        if all(not self.issrccode_obj.check(file)
-                for file in line['data']['files']):
+        if self.since and self.since > creation_date:
             return None
 
-        cleaned_line = {
-            'repo': line['origin'],
-            'hash': line['data']['commit'],
-            'author': line['data']['Author'],
+        if self.until and self.until < creation_date:
+            return None
+
+        if all(not self.issrccode_obj.check(file)
+               for file in item['data']['files']):
+            return None
+
+        cleaned_item = {
+            'repo': item['origin'],
+            'hash': item['data']['commit'],
+            'author': item['data']['Author'],
             'category': "commit",
             'created_date': creation_date,
-            'commit': line['data']['Commit'],
-            'commit_date': utils.str_to_date(line['data']['CommitDate']),
-            'files_no': len(line['data']['files']),
-            'refs': line['data']['refs'],
-            'parents': line['data']['parents'],
-            'files': line['data']['files']
+            'commit': item['data']['Commit'],
+            'commit_date': utils.str_to_date(item['data']['CommitDate']),
+            'files_no': len(item['data']['files']),
+            'refs': item['data']['refs'],
+            'parents': item['data']['parents'],
+            'files': item['data']['files']
         }
 
         actions = 0
-        for file in line['data']['files']:
+        for file in item['data']['files']:
             if 'action' in file:
                 actions += 1
-        cleaned_line['files_action'] = actions
+        cleaned_item['files_action'] = actions
 
-        if 'Merge' in line['data']:
-            cleaned_line['merge'] = True
-        return cleaned_line
+        if 'Merge' in item['data']:
+            cleaned_item['merge'] = True
+        return cleaned_item

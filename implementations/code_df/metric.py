@@ -15,5 +15,5 @@ class Metric():
         flat_items = self._flatten_data(items)
         self.raw_df = pd.DataFrame(flat_items)
 
-    def _flatten_data(self, items):
+    def _flatten_data(self, item):
         raise NotImplementedError

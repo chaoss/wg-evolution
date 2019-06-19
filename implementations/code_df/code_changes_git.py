@@ -6,7 +6,8 @@ from commit import Commit
 
 
 class CodeChangesGit(Commit):
-    """Class for Code_Changes for Git repositories.
+    """
+    Class for Code_Changes for Git repositories.
 
     :param items: A list of dictionaries, each element a line from the
         JSON file with Perceval data
@@ -17,11 +18,11 @@ class CodeChangesGit(Commit):
     """
 
     def __init__(self, items, date_range=(None, None), issrccode_obj=None):
-
         super().__init__(items, date_range, issrccode_obj)
 
     def compute(self, incl_empty=True, incl_merge=True, master_only=False):
-        """Count number of commits of different types, like including empty commits
+        """
+        Count number of commits of different types. Ex: including empty commits
         or counting only those commits made on the master branch.
 
         :param incl_empty: Include empty commits
@@ -67,8 +68,8 @@ class CodeChangesGit(Commit):
                 .agg('count')
 
             all_periods = pd.DataFrame(
-                            pd.date_range(self.since, self.until, freq='M'),
-                            columns=['Dates'])
+                pd.date_range(self.since, self.until, freq='M'),
+                columns=['Dates'])
             all_periods = pd.DataFrame(
                 [all_periods['Dates'].dt.year.rename('year'),
                  all_periods['Dates'].dt.month.rename("month")]).T
@@ -76,12 +77,12 @@ class CodeChangesGit(Commit):
         elif period == 'week':
             timeseries_series = df['created_date'] \
                 .groupby([df['created_date'].dt.year.rename('year'),
-                          df['created_date'].dt.week.rename('week')])   \
+                          df['created_date'].dt.week.rename('week')]) \
                 .agg('count')
 
             all_periods = pd.DataFrame(
-                            pd.date_range(self.since, self.until, freq='W'),
-                            columns=['Dates'])
+                pd.date_range(self.since, self.until, freq='W'),
+                columns=['Dates'])
             all_periods = pd.DataFrame(
                 [all_periods['Dates'].dt.year.rename('year'),
                  all_periods['Dates'].dt.week.rename('week')]).T
@@ -142,7 +143,7 @@ class CodeChangesGit(Commit):
 if __name__ == "__main__":
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
     issourcecode = IsSourceCode(["tests/"], Naive)
-    items = utils.read_JSON_file('../git-commits.json')
+    items = utils.read_json_file('../git-commits.json')
     changes = CodeChangesGit(items, date_range=(date_since, None),
                              issrccode_obj=issourcecode)
     print(changes.compute())

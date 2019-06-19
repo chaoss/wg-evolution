@@ -1,6 +1,7 @@
 class IsSourceCode():
     """
-    A IsSourceCode object is used to help define source code.
+    An IsSourceCode object is used to help define source code.
+
     :param source_code_exclude_list: a list of either
         file extensions or directories to exclude
         For example,
@@ -9,6 +10,7 @@ class IsSourceCode():
     :param algorithm_class: A reference to the
         algorithm class to be used
     """
+
     def __init__(self, source_code_exclude_list=None, algorithm_class=None):
         self.source_code_exclude_list = source_code_exclude_list
         self.algorithm_class = algorithm_class
@@ -16,6 +18,7 @@ class IsSourceCode():
     def check(self, file):
         """
         Returns the check method of the algorithm to be used.
+
         :param file: a dictionary, an element of commit['files'] list
             where commit is a structure returned by commit._flatten_data
 
@@ -29,6 +32,7 @@ class Algorithm:
     """
     Parent class to all algorithms.
     """
+
     def __init__(self):
         pass
 
@@ -39,9 +43,10 @@ class Algorithm:
 
 class Naive(Algorithm):
     """
-    Instantiates an object of Naive. It is one of several
+    Instantiates an object of Naive. It is one of the several
     "algorithms" used to define source code.
     """
+
     def __init__(self):
         super().__init__()
 
@@ -49,7 +54,7 @@ class Naive(Algorithm):
     def check(source_code_exclude_list, file):
         """
         This implementation is naive, meaning that is assumes that
-        all the files a commit deal with are part of the source code,
+        all the files, a commit deals with, are a part of the source code
         irrespective of how the source code is defined.
 
         :param source_code_exclude_list: a list of either
@@ -72,6 +77,7 @@ class FolderExclude(Algorithm):
     Instantiates an object of FolderExclude. It is one of several
     "algorithms" used to define source code.
     """
+
     def __init__(self):
         super().__init__()
 
@@ -79,7 +85,7 @@ class FolderExclude(Algorithm):
     def check(source_code_exclude_list, file):
         """
         This implementation is based on the directory a file
-        is present in, like "tests/" or "bin/".
+        is present in, such as "tests/" or "bin/".
         If all the files affected by a commit are present
         in directories which are mentioned source_code_exclude_list,
         that commit will not be considered for analysis.
@@ -110,6 +116,7 @@ class ExtensionExclude(Algorithm):
     Instantiates an object of ExtensionExclude. It is one of several
     "algorithms" used to define source code.
     """
+
     def __init__(self):
         super().__init__()
 
@@ -120,7 +127,7 @@ class ExtensionExclude(Algorithm):
         in a commit, like "py", "json", etc.
         If all the files affected by a commit have extensions which are
         present in the source_code_exclude_list parameter, that commit will
-        not be considered for the analysis.
+        not be considered for analysis.
 
         :param source_code_exclude_list: a list of either
             file extensions or directories to exclude
