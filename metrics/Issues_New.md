@@ -27,10 +27,10 @@ used to identify an issue as "open" or "closed" is to some extent
 dependent on the issue tracking system, and on how a given project
 uses it.
 
-In real projects, filtering the issues that are directly releated to
+In real projects, filtering the issues that are directly related to
 source code is difficult, since the issue tracking system may be
 used for many kinds of information, from fixing bugs and discussing
-implementation of new features, to organizig a project event or
+implementation of new features, to organizing a project event or
 to ask questions about how to use the results of the project.
 
 In most issue trackers, issues can be reopened after being closed.
@@ -164,7 +164,7 @@ during a certain period (eg, a month).
     * Metrics Y-axis: `Count` Aggregation, `# Issues` Custom Label
     * Buckets X-axis: `Date Histogram` Aggregation, `grimoire_creation_date` Field, `Auto` Interval, `Time` Custom Label
     * Buckets Split Series: `Terms` Sub Aggregation, `state` Field, `metric: # Issues` Order By, `Descending` Order, `1000` Size, `State` Custom Label
-  - Example screenshot: ![GrimoireLab screenshot of metric issues_new](./images/issues_new-GrimoireLab.png)
+  - Example screenshot: ![GrimoireLab screenshot of metric issues_new](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/issues_new-GrimoireLab.png)
 
 
 ## External References (Literature)

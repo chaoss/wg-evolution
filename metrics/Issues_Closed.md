@@ -139,6 +139,6 @@ during a certain period (eg, a month).
     * Filter: `state` is `closed`.
     * Metrics Y-axis: `Count` Aggregation, `# Closed Issues` Custom Label.
     * Buckets X-axis: `Date Histogram` Aggregation, `closed_at` Field, `Weekly` Interval (or whatever interval may fit your needs, depending on the whole time range you wish to visualize in the chart), `Time` Custom Label.
-  - Example screenshot: ![GrimoireLab screenshot of metric issues_closed](./images/issues_closed_GrimoireLab.png).
+  - Example screenshot: ![GrimoireLab screenshot of metric issues_closed](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/issues_closed_GrimoireLab.png).
 
 ## External References (Literature)

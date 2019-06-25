@@ -21,7 +21,7 @@ it will count as six different changes (three removals,
 and three additions).
 
 For this matter, we consider changes to the source code as
-defined in [Code_Changes](Code_Changes.md). Lines of code will
+defined in [Code_Changes](https://github.com/chaoss/wg-evolution/blob/master/metrics/Code_Changes.md). Lines of code will
 be any line of a source code file, including comments and blank lines.
 
 ### Parameters
@@ -46,9 +46,9 @@ Usual aggregators are:
 ## Specific description: git
 
 In the cases of git, we define "code change" and "date of a change"
-as we detail in [Code_Changes](Code_Changes.md).
+as we detail in [Code_Changes](https://github.com/chaoss/wg-evolution/blob/master/metrics/Code_Changes.md).
 The date of a change can be defined (for considering it in a period or not)
-as the author date or the commiter date of the corresponding git commit.
+as the author date or the committer date of the corresponding git commit.
 
 Since git provides changes as diff patches (list of lines added and removed),
 each of those lines mentioned as a lines added or a line removed in the diff
@@ -117,7 +117,7 @@ Each bar would represent a code changes during a certain period (eg, a month).
     * Y-axis 1: `Sum` Aggregation, `lines_added` Field, `Lines Added` Custom Label
     * Y-axis 2: `Sum` Aggregation, `painless_inverted_lines_removed_git` Field, `Lines Removed` Custom Label
     * X-axis: `Date Histogram` Aggregation, `grimoire_creation_date` Field, `Auto` Interval, `Time` Custom Label
-  - Example screenshot: ![GrimoireLab screenshot of metric Code_Changes_Lines](./images/code_changes_lines-GrimoireLab.png)
+  - Example screenshot: ![GrimoireLab screenshot of metric Code_Changes_Lines](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/code_changes_lines-GrimoireLab.png)
 
 
 ## External References (Literature)

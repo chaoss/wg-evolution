@@ -40,7 +40,7 @@ deletions or additions of lines to files that are considered source code
 will be considered as the code change.
 
 The date of a change can be defined (for considering it in a period or not)
-as the author date or the commiter date of the corresponding git commit.
+as the author date or the committer date of the corresponding git commit.
 
 In a set of repositories, the same commit may be present in more than one
 of them. Therefore, for counting unique changes,
@@ -114,7 +114,7 @@ See [reference implementation for git](../implementations/Code_Changes-Git.ipynb
     * Select the `git` index
     * Y-axis: `Unique Count` Aggregation, `hash` Field, `# Commits` Custom Label
     * X-axis: `Date Histogram` Aggregation, `grimoire_creation_date` Field, `Auto` Interval, `Time` Custom Label
-  - Example screenshot: ![GrimoireLab screenshot of metric Code_Changes](./images/code_changes-GrimoireLab.png)
+  - Example screenshot: ![GrimoireLab screenshot of metric Code_Changes](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/code_changes-GrimoireLab.png)
 
 * [Augur](https://chaoss.github.io/augur/). Provides this metric out of the box.
 
