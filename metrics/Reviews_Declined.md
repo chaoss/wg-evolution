@@ -5,7 +5,7 @@ during a certain period.
 
 ## Description
 
-Reviews are defined as in [Reviews](Reviews.md).
+Reviews are defined as in [Reviews](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews.md).
 Declined reviews are those that are finally closed without
 being merged into the code base of the project.
 
@@ -15,7 +15,7 @@ in the git repository, it can be considered to be declined
 (but see detailed discussion below). The same can be said of
 GitLab merge requests. In the case of Gerrit, code reviews
 can be formally "abandoned", which is the way of detecting
-declined reviews in this system. 
+declined reviews in this system.
 
 ### Parameters
 
@@ -24,12 +24,12 @@ Mandatory:
 * Period of time. Start and finish date of the period. Default: forever.
 
     Period during which declined reviews are considered.
-    
+
 * Criteria for source code. Algorithm. Default: all files are source code.
 
     If we are focused on source code, we need a criteria for deciding
     whether a file is a part of the source code or not.
-    
+
 ### Aggregators
 
 Usual aggregators are:
@@ -43,14 +43,13 @@ that are closed with their changes not being included in the git repository",
 as long as it proposes changes to source code files.
 
 See the discussion in the specific description for GitHub in
-[Reviews_Accepted](Reviews_Accepted.md), since it applies here
-as well.
+[Reviews_Accepted](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews_Accepted.md), since it applies here as well.
 
 ### GitHub parameters
 
 Mandatory:
 
-* Heuristic for detecting declined pull requests, telling appart
+* Heuristic for detecting declined pull requests, telling apart
   those cases where the pull request was closed, but the
   changes were included in the git repository manually.
   Default: None.
@@ -67,7 +66,7 @@ as long as it proposes changes to source code files.
 
 Mandatory:
 
-* Heuristic for detecting declined merge requests, telling appart
+* Heuristic for detecting declined merge requests, telling apart
   those cases where the merge request was closed, but the
   changes were included in the git repository manually.
   Default: None.
@@ -75,7 +74,7 @@ Mandatory:
 ## Specific description: Gerrit
 
 In the case of Gerrit, declined reviews are defined as "changesets
-absndoned", as long as they propose changes to source code files.
+abandoned", as long as they propose changes to source code files.
 
 [ Details to be done ]
 

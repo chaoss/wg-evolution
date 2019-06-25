@@ -124,6 +124,6 @@ during a certain period (eg, a month).
     * Metrics Y-axis: `Count` Aggregation, `# Pull Requests` Custom Label.
     * X-axis: `Date Histogram` Aggregation, `grimoire_creation_date` Field, `Auto` Interval, `Time` Custom Label.
     * Buckets Split Series: `Terms` Sub Aggregation, `state` Field, `metric: # Pull Requests` Order By, `Descending` Order, `1000` Size, `State` Custom Label. Notice this visualization is based on Pull Requests creation date, so items are counted at the date they were created and its state, as set here, would be their current state at the moment of visualizing the data, e.g. `n` Pull Requests created at a give time range are currently `open` or `closed`.
-  - Example screenshot: ![GrimoireLab screenshot of metric Reviews](./images/reviews-GrimoireLab.png)
+  - Example screenshot: ![GrimoireLab screenshot of metric Reviews](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/reviews-GrimoireLab.png)
 
 ## External References (Literature)

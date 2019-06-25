@@ -5,8 +5,8 @@ and the moment it is accepted.
 
 ## Description
 
-Reviews are defined as in [Reviews](Reviews.md).
-Accepted reviews are defined in [Reviews_Accepted](Reviews_Accepted).
+Reviews are defined as in [Reviews](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews.md).
+Accepted reviews are defined in [Reviews_Accepted](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews_Accepted.md).
 
 The review duration is the duration of the period since the
 code review started, to the moment it ended (by being accepted
@@ -19,7 +19,7 @@ It finishes when the proposal is finally accepted and merged
 in the code base, closing the merge request.
 
 In case there are comments or other events after the code is
-merged, they are not consdiered for measuring the duration of
+merged, they are not considered for measuring the duration of
 the code review.
 
 ### Parameters
@@ -29,9 +29,9 @@ Mandatory:
 * Period of time. Start and finish date of the period. Default: forever.
 
     Period during which accepted reviews are considered.
-    An accepted review is consdiered to be in the period if
+    An accepted review is considered to be in the period if
     its creation event is in the period.
-    
+
 * Criteria for source code. Algorithm. Default: all files are source code.
 
     If we are focused on source code, we need a criteria for deciding
@@ -43,7 +43,7 @@ Usual aggregators are:
 
 * Median. Median (50% percentile) of review duration for all
   accepted reviews in the considered period of time.
-  
+
 ## Specific description: GitHub
 
 In the case of GitHub, duration is considered for
@@ -125,5 +125,3 @@ X axis, and number of reviews in the Y axis.
 
 
 ## External References (Literature)
-
-

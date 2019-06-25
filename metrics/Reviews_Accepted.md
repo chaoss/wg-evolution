@@ -5,7 +5,7 @@ during a certain period.
 
 ## Description
 
-Reviews are defined as in [Reviews](Reviews.md).
+Reviews are defined as in [Reviews](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews.md).
 Accepted reviews are those that end with the corresponding changes
 finally merged into the code base of the project.
 Accepted reviews can be linked to one or more changes to the source
@@ -13,7 +13,7 @@ code, those corresponding to the changes proposed and finally merged.
 
 For example, in GitHub when a pull request is accepted, all the
 commits included in it are merged (maybe squashed, maybe rebased)
-in the correspnding git repository. The same can be said of
+in the corresponding git repository. The same can be said of
 GitLab merge requests. In the case of Gerrit, a code review usually
 corresponds to a single commit.
 
@@ -63,7 +63,7 @@ the git repository.
 From the point of view of knowing if they were accepted, the
 problem is that if they are included in the git repository manually,
 the only way of knowing that the pull request was accepted is
-finding the corresponding commits in the git repositoriy.
+finding the corresponding commits in the git repository.
 
 In some cases, projects have policies of mentioning the commits
 when the pull request is closed (such as "closing by accepting commits
@@ -170,6 +170,6 @@ during a certain period (eg, a month).
     .es(index=git, q="title:Merge* OR files:0", timefield=grimoire_creation_date).trend().color(#ffb745).label("Trend")
     ```
     * As discussed [above for GitHub case](#specific-description-github), sometimes is not easy to identify merges. As you probably noticed, in this example we based our expression on GrimoireLab Git index. Besides, it could be applied to any other similar environment using Git repositories, not only to GitHub.
-  - Example screenshot: ![GrimoireLab screenshot of metric Reviews Accepted](./images/reviews_accepted_GrimoireLab.png)
+  - Example screenshot: ![GrimoireLab screenshot of metric Reviews Accepted](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/reviews_accepted_GrimoireLab.png)
 
 ## External References (Literature)
