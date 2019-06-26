@@ -5,6 +5,7 @@ import json
 def str_to_date(date):
     """
     Converts date, of type string, to a datetime object
+
     :param date: a date, of type string
         Note: the string format for the date in the json file is either:
          - %a %b %d %H:%M:%S %Y %z --> for commits
@@ -25,32 +26,7 @@ def str_to_date(date):
         return datetimeobj
 
 
-def get_date(df, option='since'):
-    """
-    For certain metrics, computing a value for a repeated interval of time
-    if important. For this, an initial and final date is necessary. This
-    can become a problem since `since` and `until` date parameters to __init__
-    are optional.
-    Thus, if unspecified, since and until are set to the earliest and latest
-    date of all data points respectively.
-
-    :param df:
-    :param option:
-
-    :returns:
-
-    :raises ValueError:
-    """
-
-    if option == 'since':
-        return df['created_date'].min()
-    elif option == 'until':
-        return df['created_date'].max()
-    else:
-        raise ValueError("option parameter can take only 'since' or 'until'")
-
-
-def read_JSON_file(path):
+def read_json_file(path):
     """
     Given a line-by-line JSON file, this function converts it to
     a Python dict and returns all such lines as a list.
@@ -66,3 +42,15 @@ def read_JSON_file(path):
 
             items.append(line)
     return items
+
+
+def rename_function(new_name):
+    """
+    Rename a function by modifying __name__
+    :param new_name: A new name for the function (string)
+    :returns: decorator
+    """
+    def decorator(f):
+        f.__name__ = new_name
+        return f
+    return decorator

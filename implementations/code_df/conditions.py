@@ -1,4 +1,3 @@
-
 """
 Conditions for filtering in or out some items coming from Perceval.
 
@@ -8,21 +7,28 @@ We have two kinds of conditions:
   are source code, and which ones are not. They provide a
   check() method which checks if a filename corresponds to
   source code.
-* Those rooted at
+
+* Those rooted at Commit, which are for conditionally filtering
+  the DataFrame of items. They provide a set_commits() method,
+  which selects those commits satisfying a given condition,
+  as well as a check() method which checks whether a commit in
+  the DataFrame has been selected by set_commits() or not.
 """
+
 
 class Code():
     """
     Root of the hierarchy for deciding if a commit touches source code.
 
     """
-    def __init__(self):
 
+    def __init__(self):
         pass
 
     def check(self, file):
         """
         Returns the check method of the algorithm to be used.
+
         :param file: a dictionary, an element of commit['files'] list
             where commit is a structure returned by commit._flatten_data
 
@@ -40,9 +46,9 @@ class Naive(Code):
 
     def check(self, file):
         """
-        Check is file is consdiered as a source code file.
+        Check if file is considered as a source code file.
 
-        This naive implemetation always return True.
+        The naive implementation always returns True.
 
         :param file: file name to check (full path)
         :returns: Always True in this case (Boolean)
@@ -68,6 +74,7 @@ class DirExclude(Code):
         return False. True otherwise.
 
         :param file: file name to check (full path)
+
         :returns:    False if in the list of directories (Boolean)
         """
 
@@ -94,6 +101,7 @@ class PostfixExclude(Code):
         of postfixes, consider it is not source code.
 
         :param file: file name to check (full path)
+
         :returns:    False if in the list of postfixes (Boolean)
         """
 
@@ -111,9 +119,9 @@ class Commit():
 
     def set_commits(self, commits):
         """
-        Set the dataframe with commits to be analyzed for condition
+        Set the DataFrame with commits to be analyzed for condition
 
-        :param commits: commits (dataframe)
+        :param commits: commits (DataFrame)
         """
 
         raise NotImplementedError
@@ -126,6 +134,7 @@ class Commit():
         False, otherwise.
 
         :param commit: commit to check (hash as a string)
+
         :returns:      True if included (Boolean)
         """
 
@@ -142,7 +151,7 @@ class MasterInclude(Commit):
 
     def set_commits(self, commits):
         """
-        Set the dataframe with commits to be analyzed for condition
+        Set the DataFrame with commits to be analyzed for condition
 
         This method also prepares the set of included commits
         (those in master), so that the check can be done quickly later.
@@ -151,8 +160,8 @@ class MasterInclude(Commit):
         the commit annotated with the ref 'HEAD -> refs/heads/master',
         and then goes back, following parents for each commit,
         until the first one present in the data frame.
-        
-        :param commits: commits (dataframe)
+
+        :param commits: commits (DataFrame)
         """
 
         self.commits = commits
@@ -171,3 +180,57 @@ class MasterInclude(Commit):
                 for parent in df[df['hash'] == current]['parents'].iloc[0]:
                     if parent not in self.included:
                         todo.add(parent)
+
+
+class EmptyExclude(Commit):
+    """
+    Consider as excluded empty commits
+    """
+
+    def set_commits(self, commits):
+        """
+        Set the DataFrame with commits to be analyzed for condition
+
+        This method also prepares the set of included commits
+        (those which are not empty commits), so that the check
+        can be done quickly later.
+
+        To check for empty commits, this method checks the value of
+        the `files_action` field which is a count of the number of
+        files a commit affects. If this is 0, the commit is an empty
+        commit.
+
+        :param commits: commits (DataFrame)
+        """
+
+        self.commits = commits
+        df = self.commits
+        df = df[df['files_action'] != 0]
+        self.included = set(df['hash'].tolist())
+
+
+class MergeExclude(Commit):
+    """
+    Consider as excluded merge commits
+    """
+
+    def set_commits(self, commits):
+        """
+        Set the DataFrame with commits to be analyzed for condition
+
+        This method also prepares the set of included commits
+        (those which are not merge commits), so that the check
+        can be done quickly later.
+
+        To check for merge commits, this method checks value of the
+        boolean field 'merge' of each commit. If True, the commit is
+        a merge commit.
+
+        :param commits: commits (DataFrame)
+        """
+
+        self.commits = commits
+        df = self.commits
+        df = df[~df['merge']]
+
+        self.included = set(df['hash'].tolist())

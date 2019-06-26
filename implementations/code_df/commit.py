@@ -1,5 +1,3 @@
-import pandas as pd
-
 import conditions
 from metric import Metric
 import utils
@@ -23,19 +21,14 @@ class Commit(Metric):
         It is used to determine what comprises source code.
         """
 
-    def __init__(self, items, date_range=(None, None), is_code=[conditions.Naive()],
-                 conds=[]):
+    def __init__(self, items, date_range=(None, None),
+                 is_code=[conditions.Naive()], conds=[]):
 
         (self.since, self.until) = date_range
         self.is_code = is_code
         self.conds = conds
 
         super().__init__(items)
-
-        if self.since is None:
-            self.since = utils.get_date(self.df, 'since')
-        if self.until is None:
-            self.until = utils.get_date(self.df, 'until')
 
         # Initialize conditions
         for condition in self.conds:
@@ -73,8 +66,8 @@ class Commit(Metric):
             return []
 
         code_files = [file['file'] for file in item['data']['files'] if
-                           all(condition.check(file['file'])
-                               for condition in self.is_code)]
+                      all(condition.check(file['file'])
+                          for condition in self.is_code)]
 
         if len(code_files) > 0:
             flat = {
