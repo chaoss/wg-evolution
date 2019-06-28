@@ -22,31 +22,46 @@ class CodeChangesGit(Commit):
 
         return len(self.df['hash'].unique())
 
-    @utils.rename_function('count')
-    def _aggregate(self, series):
+    def _agg(self, df, period):
         """
-        Perform an aggregation operation on a DataFrame or Series.
+        Perform an aggregation operation on a DataFrame or Series
+        to count the number of commits created in a every interval
+        of the period specified in the time_series method, like
+        'M', 'W',etc.
 
-        :param series: A pandas.Series object passed implicitly during
-        aggregation operations.
+        It simply counts the number of rows in the series, excluding
+        NaN values.
 
-        :returns: aggregation value, like mean, sum or count.
+        :param df: A pandas DataFrame on which to apply the aggregation
+
+        :param period: A string which can be any one of the pandas time
+        series rules:
+            'W': week
+            'M': month
+            'D': day
+
+        :returns count: the number of commits in the given series.
         """
 
-        return series.count()
+        df = df.resample(period)['category'].agg(['count'])
+        return df
 
 
 if __name__ == "__main__":
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
     items = utils.read_json_file('../git-commits.json')
+
     changes = CodeChangesGit(items, date_range=(date_since, None))
     print("Code_Changes, total:", changes.compute())
+
     changes = CodeChangesGit(items, date_range=(date_since, None),
                              is_code=[conditions.DirExclude(['tests']),
                                       conditions.PostfixExclude(['.md', 'COPYING'])])
     print("Code_Changes, excluding some files:", changes.compute())
+
     changes = CodeChangesGit(items, date_range=(date_since, None),
                              conds=[conditions.MasterInclude()])
     print("Code_Changes, only for master:", changes.compute())
+
     print("The number of commits created on a monthly basis is:")
-    print(changes.compute_time_series(period='M'))
+    print(changes.time_series(period='M'))

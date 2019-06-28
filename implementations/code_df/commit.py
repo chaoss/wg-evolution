@@ -92,6 +92,8 @@ class Commit(Metric):
 
             if 'Merge' in item['data']:
                 flat['merge'] = True
+            else:
+                flat['merge'] = False
 
             return [flat]
         else:
