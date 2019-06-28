@@ -43,14 +43,3 @@ def read_json_file(path):
             items.append(line)
     return items
 
-
-def rename_function(new_name):
-    """
-    Rename a function by modifying __name__
-    :param new_name: A new name for the function (string)
-    :returns: decorator
-    """
-    def decorator(f):
-        f.__name__ = new_name
-        return f
-    return decorator
