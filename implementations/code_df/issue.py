@@ -3,22 +3,22 @@ import utils
 
 
 class Issue(Metric):
+    """
+    Initilizes self.df, the DataFrame, with one issue per row.
+
+    :param items: A list of dictionaries.
+        Each item is a Perceval dictionary, obtained from a JSON
+        file or from Perceval directly.
+
+    :param date_range: A tuple which represents the period of interest
+        It is of the form (since, until), where since and until are
+        strings. Either, or both can be None. If, for example, since
+        is None, that would mean that all issues from the first issue
+        to the issue which last falls inside the until range will be
+        included.
+    """
 
     def __init__(self, items, date_range=(None, None)):
-        """
-        Initilizes self.df, the dataframe with one commit per row.
-
-        :param items: A list of dictionaries.
-            Each item is a Perceval dictionary, obtained from a JSON
-            file or from Perceval directly.
-
-        :param date_range: A tuple which represents the period of interest
-            It is of the form (since, until), where since and until are
-            strings. Either, or both can be None. If, for example, since
-            is None, that would mean that all commits from the first commit
-            to the commit who last falls inside the until range will be
-            included.
-        """
 
         self.since, self.until = date_range
         super().__init__(items)
@@ -29,7 +29,7 @@ class Issue(Metric):
 
         A list with a single flat directory will be returned.
         That dictionary will have the elements we need for computing metrics.
-        The list may be empty, if for some reason the commit should not
+        The list may be empty, if for some reason the issue should not
         be considered.
 
         :param item: raw item fetched by Perceval (dictionary)
