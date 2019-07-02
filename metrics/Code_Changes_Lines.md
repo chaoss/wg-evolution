@@ -2,7 +2,7 @@
 
 [Comment on Release Candidate](https://github.com/chaoss/wg-evolution/issues/182)
 
-All lines touched (added / removed)
+Sum of the number of lines touched (lines added plus lines removed)
 in all changes to the source code during a certain period.
 
 ## Description
@@ -53,9 +53,9 @@ The date of a change can be defined (for considering it in a period or not)
 as the author date or the committer date of the corresponding git commit.
 
 Since git provides changes as diff patches (list of lines added and removed),
-each of those lines mentioned as a lines added or a line removed in the diff
-will be considered as a lines changed (touched).
-If a line is removed and added, it will be considered as to "changes to a line".
+each of those lines mentioned as a line added or a line removed in the diff
+will be considered as a line changed (touched).
+If a line is removed and added, it will be considered as two "changes to a line".
 
 ### Git parameters
 
