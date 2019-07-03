@@ -1,6 +1,6 @@
 # Reviews_Accepted
 
-https://github.com/chaoss/wg-evolution/issues/184)
+[Comment on Release Candidate](https://github.com/chaoss/wg-evolution/issues/184)
 
 Reviews for changes to the source code that ended accepting the change
 during a certain period.
