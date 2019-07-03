@@ -7,7 +7,7 @@ during a certain period.
 
 ## Description
 
-Issues are defined as in [Issues](Issues.md).
+Issues are defined as in [Issues_New](https://github.com/chaoss/wg-evolution/blob/master/metrics/Issues_New.md).
 Issues closed are those that changed to state closed
 during a certain period.
 
