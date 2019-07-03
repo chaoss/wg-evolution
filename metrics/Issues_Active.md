@@ -7,7 +7,7 @@ during a certain period.
 
 ## Description
 
-Issues are defined as in [Issues](Issues.md).
+Issues are defined as in [Issues_New](https://github.com/chaoss/wg-evolution/blob/master/metrics/Issues_New.md).
 Issues showing some activity are those that had some comment,
 or some change in state (including closing the issue),
 during a certain period.
