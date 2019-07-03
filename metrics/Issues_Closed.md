@@ -1,5 +1,7 @@
 # Issues Closed
 
+https://github.com/chaoss/wg-evolution/issues/188)
+
 Issues related to the source code that were closed
 during a certain period.
 
