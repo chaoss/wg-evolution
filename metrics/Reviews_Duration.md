@@ -1,6 +1,6 @@
 # Reviews_Duration
 
-https://github.com/chaoss/wg-evolution/issues/189)
+[Comment on Release Candidate](https://github.com/chaoss/wg-evolution/issues/189)
 
 Duration of the period between the moment a code review starts,
 and the moment it is accepted.

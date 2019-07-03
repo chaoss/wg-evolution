@@ -1,6 +1,6 @@
 # Issues Active
 
-https://github.com/chaoss/wg-evolution/issues/187)
+[Comment on Release Candidate](https://github.com/chaoss/wg-evolution/issues/187)
 
 Issues related to the source code that showed some activity
 during a certain period.
