@@ -1,5 +1,7 @@
 # GMD Working group use cases
 
+-- Still using GMD?
+
 This directory is for describing use cases related
 to the use of GMD (growth-maturity-decline) metrics.
 The main aim of these use cases is to provide information on
@@ -43,7 +45,7 @@ of the use case, and link it from the issue. In this case, a part
 of the comments could be in the form of comments in the Google Docs document.
 
 ## How are use cases being discussed and eventually accepted?
-
+Still 
 Anyone can comment on the issue proposing a use case.
 Some regular contributor of the working group will try to summarize
 and facilitate the discussion, and at some point will either close the issue
