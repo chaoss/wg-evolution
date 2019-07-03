@@ -1,11 +1,11 @@
-# GMD Working group use cases
+# Evolution Working Group use cases
 
 This directory is for describing use cases related
-to the use of GMD (growth-maturity-decline) metrics.
+to the use of Evolution (formerly growth-maturity-decline) metrics.
 The main aim of these use cases is to provide information on
-how people are using, or intending to use, GMD metrics.
+how people are using, or intending to use, Evolution metrics.
 
-The CHAOSS GMD working group has identified this kind of use cases as one of its key
+The CHAOSS Evolution Working Group has identified this kind of use cases as one of its key
 goals, so that we can define metrics that are useful in the real world.
 
 ## What is a use case in this context?
@@ -21,12 +21,12 @@ to those answers, but that is not required in the first version of the use case
 ## Who can propose a use case?
 
 Anyone who can define high level goals that could be answered, even partially,
-with GMD metrics, can propose a use case.
+with Evolution metrics, can propose a use case.
 There is no requirement of being a regular contributor to the working group.
 
 ## How can I propose a use case?
 
-[Open an issue in the repository for this GMD working group](https://github.com/chaoss/wg-gmd/issues/new),
+[Open an issue in the repository for this Evolution working group](https://github.com/chaoss/wg-evolution/issues/new),
 with the title "Use case: XXX" (being XXX the name you want to give to the use case,
 usually related to the goal(s) it pursues).
 
@@ -56,7 +56,7 @@ and anyone else. Finally, based on the reviews, the use case will be
 finally approved or not.
 
 Issues and pull requests can also be discussed during the regular meetings of the working group,
-and in the CHAOSS mailing list (remember to use the "\[wg-gmd\]" tag in the subject of the message).
+and in the CHAOSS mailing list (remember to use the "\[wg-evolution\]" tag in the subject of the message).
 
 ## Examples of goals and questions
 
