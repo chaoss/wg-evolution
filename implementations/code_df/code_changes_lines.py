@@ -8,47 +8,94 @@ from commit import Commit
 class CodeChangesLines(Commit):
     """
     Class for Code_Changes_Lines
-
-    :param items: A list of dictionaries, each element a line from the
-        JSON file with Perceval data
-
-    :param date_range: A tuple which represents the start and end date of
-        interest
-
-    :param is_code:  list of CodeCondition objects
-        It is used to determine what comprises source code.
-
-    :param conds: A list of Commit objects. It is used to
-        exclude or include different kinds of commits, like
-        empty or merge commits, or commits made on the master
-        branch.
     """
 
-    def __init__(self, items, date_range=(None, None),
-                 is_code=[conditions.Naive()], conds=[]):
-        super().__init__(items, date_range, is_code, conds)
+    def _flatten(self, item):
+        """
+        Flatten a raw commit fetched by Perceval into a flat dictionary.
 
-        self.df = self._add_lines_modified_cols(self.df)
+        A list with a single flat directory will be returned.
+        That dictionary will have the elements we need for computing metrics.
+        The list may be empty, if for some reason the commit should not
+        be considered.
+
+        :param item: raw item fetched by Perceval (dictionary)
+        :returns:    list of a single flat dictionary
+        """
+
+        creation_date = utils.str_to_date(item['data']['AuthorDate'])
+        if self.since and (self.since > creation_date):
+            return []
+
+        if self.until and (self.until < creation_date):
+            return []
+
+        code_files = [file['file'] for file in item['data']['files'] if
+                      all(condition.check(file['file'])
+                          for condition in self.is_code)]
+
+        if len(code_files) > 0:
+            flat = {
+                'repo': item['origin'],
+                'hash': item['data']['commit'],
+                'author': item['data']['Author'],
+                'category': "commit",
+                'created_date': creation_date,
+                'committer': item['data']['Commit'],
+                'commit_date': utils.str_to_date(item['data']['CommitDate']),
+                'files_no': len(item['data']['files']),
+                'refs': item['data']['refs'],
+                'parents': item['data']['parents'],
+                'files': item['data']['files']
+            }
+
+            # actions
+            actions = 0
+            for file in item['data']['files']:
+                if 'action' in file:
+                    actions += 1
+            flat['files_action'] = actions
+
+            # Merge commit check
+            if 'Merge' in item['data']:
+                flat['merge'] = True
+            else:
+                flat['merge'] = False
+
+            # modifications
+            modified_lines = 0
+            for file in item['data']['files']:
+                if 'added' and 'removed' in file:
+                    try:
+                        modified_lines += int(file['added']) + int(file['removed'])
+
+                    except ValueError:
+                        # in case of compressed files,
+                        # additions and deletions are "-"
+                        pass
+
+            flat['modifications'] = modified_lines
+
+            return [flat]
+        else:
+            return []
 
     def compute(self):
         """
-        Count the number of lines added or deleted in the data fetched
+        Compute the number of lines modified in the data fetched
         by Perceval.
 
-        It computes the sums of the 'additions' and 'deletions' columns
+        It computes the sum of the 'modifications' column
         in the DataFrame.
 
-        :returns modified: A tuple representing the number of lines
-            modified. modified -> (additions, deletions)
+        :returns modifications_count: The total number of
+            lines modified (int)
         """
 
         df = self.df
-        additions = df['additions'].sum()
-        deletions = df['deletions'].sum()
+        modifications_count = df['modifications'].sum()
 
-        modified = (additions, deletions)
-
-        return modified
+        return modifications_count
 
     def _agg(self, df, period):
         """
@@ -70,40 +117,10 @@ class CodeChangesLines(Commit):
             'D': day
 
         :returns df: The aggregated dataframe, where aggregations have
-            been perform on "additions" and "deletions" columns
+            been performed on the "modifications"
         """
 
-        df = df.resample(period).agg({"additions": 'sum', "deletions": 'sum'})
-
-        return df
-
-    def _add_lines_modified_cols(self, df):
-
-        if len(df) == 0:
-            raise ValueError("DataFrame empty. "
-                             "Please check instantiation parameters")
-
-        additions = list()
-        deletions = list()
-        for _, commit in df.iterrows():
-            added_lines = 0
-            removed_lines = 0
-            for file in commit['files']:
-                if 'added' and 'removed' in file:
-                    try:
-                        added_lines += int(file['added'])
-                        removed_lines += int(file['removed'])
-
-                    except ValueError:
-                        # in case of compressed files,
-                        # additions and deletions are "-"
-                        pass
-
-            additions.append(added_lines)
-            deletions.append(removed_lines)
-
-        df['additions'] = additions
-        df['deletions'] = deletions
+        df = df.resample(period)['modifications'].agg(['sum'])
 
         return df
 
@@ -124,5 +141,5 @@ if __name__ == "__main__":
                                conds=[conditions.MasterInclude()])
     print("Code_Changes_Lines, only for master:", changes.compute())
 
-    print("The number of lines modified over several months is: ")
+    print("The number of lines modified each month is: ")
     print(changes.time_series())
