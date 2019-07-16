@@ -33,7 +33,7 @@ Usual aggregators are:
 
 * Count. Total number of changes during the period.
 
-## Specific description: git
+### Specific description: git
 
 In the cases of git, a code change is defined as the part of
 a git commit that "touches" a source file.
@@ -48,7 +48,7 @@ In a set of repositories, the same commit may be present in more than one
 of them. Therefore, for counting unique changes,
 repeated commits should be counted only once.
 
-### Git parameters
+#### Git parameters
 
 Mandatory:
 
@@ -70,7 +70,7 @@ Mandatory:
     those which do not touch files, and in some cases are not considered as
     reflecting a coding activity.
 
-## Use Cases
+## Objectives
 
 * Volume of coding activity.
 
@@ -81,7 +81,9 @@ Mandatory:
     Of course, this metric is not the only one that should be
     used to track volume of coding activity.
 
-## Filters
+## Sample Filter and Visualization
+
+### Filters
 
 Usual filters and bucketing are:
 
@@ -91,7 +93,7 @@ Usual filters and bucketing are:
 * By groups of actors (employer, gender...). Requires actor grouping,
 and likely, actor merging.
 
-## Visualizations
+### Visualizations
 
 Some useful visualizations are:
 
@@ -101,7 +103,7 @@ Some useful visualizations are:
 These could be represented as bar charts, with time running in the X axis.
 Each bar would represent a code changes during a certain period (eg, a month).
 
-## Reference Implementation
+## Sample Implementation
 
 See [reference implementation for git](../implementations/Code_Changes-Git.ipynb)
 ([see it in Binder](https://mybinder.org/v2/gh/chaoss/wg-gmd/master?filepath=implementations/Code_Changes-Git.ipynb)).
@@ -122,4 +124,4 @@ See [reference implementation for git](../implementations/Code_Changes-Git.ipynb
 
 * [Gitdm](https://repo.or.cz/w/git-dm.git). Provides this metric out of the box.
 
-## External References (Literature)
+## Resources
