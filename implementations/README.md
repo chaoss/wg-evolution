@@ -1,9 +1,45 @@
-# Examples of implementations for metrics
+# Reference implementations
 
-Notebooks, built on top of data collected by Perceval,
-for illustrating how to compute different metrics of the Evolution Working Group. The notebooks will be explanatory in regard to the analysis performed. They should help the user understand how to calculate these metrics, as well as to understand how the metric is defined.
+This directory provides reference implementations for the metrics defined by the
+working group. All these reference implementations use data produced by
+[Perceval](https://github.com/chaoss/grimoirelab-perceval) to show how the
+metric could be implemented in detail.
+All of these reference implementations are not intended to be specially good
+in performance, or ready for production, but good and easy to follow examples
+of how the intended metrics can be computed.
 
-The contents of this directory are the notebooks(present in [notebooks_df](./notebooks_df/), as well as some scripts in the [code_df](./code_df/) package. The "_df" suffix is to show that these scripts and notebooks make use of the Pandas library. `code_df` contains the following modules:
+## List of reference implementations
+
+* **Code Changes ([module](./code_df/code_changes_git.py) • [notebook](./notebooks_df/code_changes_git.ipynb) • [description](https://github.com/chaoss/wg-evolution/blob/master/metrics/Code_Changes.md))**  
+    This metric is computed for the data in the file `git-commits.json`.
+
+## Contents of this directory
+
+We use Python Jupyter notebooks
+as the framework for producing the implemenations
+that will be explanatory in regard to the analysis performed. These notebooks
+come in two flavors:
+
+* [notebooks](./notebooks/) are reference implementations using
+plain Python for computing the metrics.
+In these cases, the data produced by Perceval is processed as
+a Python list, using as much as possible plain Python mechanisms.
+
+* [notebooks_df](./notebooks_df/) are reference implementations
+using Pandas data frames as the base for computing the metrics.
+In these cases, the data produced by Perceval is converted to a Pandas
+dataframe, and then processed to produce the metrics.
+
+Notebooks are also exported as Python modules. These are more useful
+if you intend to look only at the code:
+
+* [code](./code/) are notebooks in the [notebooks](./notebooks/)
+directory exported as Python modules
+
+* [code_df](./code_df/) are notebooks in the [notebooks_df](./notebooks_df/)
+directory exported as Python modules
+
+For the implementations with data frames, you can find the following modules:
 
 - **Root module ([module](./code_df/metric.py))**:     
 This file contains the root class, `Metric`. All other classes inherit from it. It takes JSON data collected by Perceval and converts it into a form easier to analyze: like a dataframe, or a list of dictionaries.  
@@ -33,15 +69,7 @@ To summarize, the class heirarchy is:
 Root class (metric.py) <- Category classes (commit.py, for example) <- Metric classes
 ```
 
-### Note
-- Every metric is calculated for the data structures of items as a whole. If a data structure contains items of only one repository, only that will be considered for calculating the metric. Likewise, using the data of an entire project, (consisting of several repositories) will result in the metric being computed for the entire project and not for each individual repository. 
-- Another assumption is that the JSON data file has items of the same kind, for example, commits, issues or pull requests.
-    
-## A list of implementations
-* **Code Changes ([module](./code_df/code_changes_git.py) • [notebook](./notebooks_df/code_changes_git.ipynb) • [description](https://github.com/chaoss/wg-evolution/blob/master/metrics/Code_Changes.md))**  
-    This metric is computed for the data in the file `git-commits.json`.
-
-# How to run the notebooks
+## How to run the notebooks
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chaoss/wg-gmd/master?filepath=implementations)
 
@@ -97,3 +125,17 @@ and start writing.
 
 If you want more details and context about Jupyter notebooks, have a look at
 [Jupyter Notebook Tutorial](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook).
+
+
+## Notes
+
+* Every metric is computed for all the items in the data structure used to instantiate the
+corresponding class.
+If a data structure contains items of a single repository,
+only that repository will be considered for calculating the metric.
+Likewise, using the data of an entire project,
+(consisting of several repositories)
+will result in the metric being computed for the entire project and not for each individual repository. 
+
+* Another assumption is that the JSON data file has items of the same kind, for example: commits, issues or pull requests.
+    
