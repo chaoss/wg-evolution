@@ -103,7 +103,7 @@ Some useful visualizations are:
 These could be represented as bar charts, with time running in the X axis.
 Each bar would represent a code changes during a certain period (eg, a month).
 
-## Sample Implementation
+## Reference Implementation
 
 See [reference implementation for git](../implementations/Code_Changes-Git.ipynb)
 ([see it in Binder](https://mybinder.org/v2/gh/chaoss/wg-gmd/master?filepath=implementations/Code_Changes-Git.ipynb)).
