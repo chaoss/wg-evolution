@@ -4,7 +4,7 @@ Scope: Aspects related to how the source code changes over time, and the mechani
 
 ## Goals
 
-* Activity: Learning about how much activity involved in changing (or adding) code
+* Activity: Learning about activity involved in developing (e.g. adding/changing) code
 * Efficiency: Learning how effective new code is merged into the code base
 * Quality: Learning about the processes to improve/review quality that are used (for example: testing, code review)
 
@@ -46,8 +46,8 @@ are happening during a certain time period?
   (see [Reviews_Declined](../metrics/Reviews_Declined.md)).
 
 
-* Question **Issues**: How many issues related to the source code
-are happening during a certain time period?
+* Question **Issues**: How many issues related to the source code are there
+  during a certain time period?
 
   * Metric **Issues**(Period): Number of new issues related to the source code
   (see [Issues_New](../metrics/Issues_New.md)).
