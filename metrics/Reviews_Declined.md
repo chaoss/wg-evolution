@@ -38,7 +38,7 @@ Usual aggregators are:
 
 * Count. Total number of declined reviews during the period.
 
-## Specific description: GitHub
+### Specific description: GitHub
 
 In the case of GitHub, accepted reviews are defined as "pull requests
 that are closed with their changes not being included in the git repository",
@@ -47,7 +47,7 @@ as long as it proposes changes to source code files.
 See the discussion in the specific description for GitHub in
 [Reviews_Accepted](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews_Accepted.md), since it applies here as well.
 
-### GitHub parameters
+#### GitHub parameters
 
 Mandatory:
 
@@ -56,7 +56,7 @@ Mandatory:
   changes were included in the git repository manually.
   Default: None.
 
-## Specific description: GitLab
+### Specific description: GitLab
 
 In the case of GitLab, accepted reviews are defined as "merge requests
 that are closed with their changes not being included in the git repository",
@@ -64,7 +64,7 @@ as long as it proposes changes to source code files.
 
 [ Details to be done ]
 
-### GitLab parameters
+#### GitLab parameters
 
 Mandatory:
 
@@ -73,20 +73,18 @@ Mandatory:
   changes were included in the git repository manually.
   Default: None.
 
-## Specific description: Gerrit
+### Specific description: Gerrit
 
 In the case of Gerrit, declined reviews are defined as "changesets
 abandoned", as long as they propose changes to source code files.
 
 [ Details to be done ]
 
-
-### Gerrit parameters
+#### Gerrit parameters
 
 None.
 
-
-## Use Cases
+## Objectives
 
 * Volume of coding activity.
 
@@ -97,7 +95,9 @@ None.
     Of course, this metric is not the only one that should be
     used to track volume of coding activity.
 
-## Filters
+## Filters and Visualizations 
+
+### Filters
 
 Usual filters and bucketing are:
 
@@ -107,7 +107,7 @@ Usual filters and bucketing are:
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
-## Visualizations
+### Visualizations
 
 Some useful visualizations are:
 
@@ -120,9 +120,6 @@ Each bar would represent declined reviews during a certain period
 
 ## Reference Implementation
 
-[ To be done. ]
-
 ## Known Implementations
 
-
-## External References (Literature)
+## Resources
