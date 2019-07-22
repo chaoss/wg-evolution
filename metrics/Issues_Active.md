@@ -35,51 +35,51 @@ Usual aggregators are:
 
 * Count. Total number of active issues during the period.
 
-## Specific description: GitHub
+### Specific description: GitHub
 
 In the case of GitHub, active issues are defined as "issues
 which get a comment, a change in tags, a change in assigned
 person, or are closed",
 as long as they are related to source code files.
 
-### GitHub parameters
+#### GitHub parameters
 
 None.
 
-## Specific description: GitLab
+### Specific description: GitLab
 
 In the case of GitLab, active issues are defined as "issues
 which get a comment, a change in tags, a change in assigned
 person, or are closed",
 as long as they are related to source code files.
 
-### GitLab parameters
+#### GitLab parameters
 
 None.
 
-## Specific description: Jira
+### Specific description: Jira
 
 In the case of Jira, active issues are defined as "issues
 which get a comment, a change in state, a change in assigned
 person, or are closed",
 as long as they are related to source code files.
 
-### Jira parameters
+#### Jira parameters
 
 None.
 
-## Specific description: Bugzilla
+### Specific description: Bugzilla
 
 In the case of Bugzilla, active issues are defined as "bug reports
 which get a comment, a change in state, a change in assigned
 person, or are closed",
 as long as they are related to source code files.
 
-### Bugzilla parameters
+#### Bugzilla parameters
 
 None.
 
-## Use Cases
+## Objectives
 
 * Volume of active issues in a project.
 
@@ -90,8 +90,9 @@ None.
     Of course, this metric is not the only one that should be
     used to track volume of coding activity.
 
+## Filters and Visualizations
 
-## Filters
+### Filters
 
 Usual filters and bucketing are:
 
@@ -101,7 +102,7 @@ Usual filters and bucketing are:
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
-## Visualizations
+### Visualizations
 
 Some useful visualizations are:
 
@@ -113,8 +114,6 @@ Each bar would represent proposals to change the code
 during a certain period (eg, a month).
 
 ## Reference Implementation
-
-[ To be done. ]
 
 ## Known Implementations
 
@@ -130,4 +129,4 @@ during a certain period (eg, a month).
     * Have a look at the time picker on the top right corner to make sure it is set to include the whole story of the data so we are not excluding any item based on its creation date.
   - Example screenshot: ![GrimoireLab screenshot of metric issues_active](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/issues_active_GrimoireLab.png).
 
-## External References (Literature)
+## Resources
