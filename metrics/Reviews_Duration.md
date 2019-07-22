@@ -46,7 +46,7 @@ Usual aggregators are:
 * Median. Median (50% percentile) of review duration for all
   accepted reviews in the considered period of time.
 
-## Specific description: GitHub
+### Specific description: GitHub
 
 In the case of GitHub, duration is considered for
 pull requests that are accepted and merged in the code base.
@@ -54,11 +54,11 @@ For an individual pull request, duration starts when it
 is opened, and finishes when the commits it includes
 are merged into the code base.
 
-### GitHub parameters
+#### GitHub parameters
 
 None.
 
-## Specific description: GitLab
+### Specific description: GitLab
 
 In the case of GitLab, duration is considered for
 merge requests that are accepted and merged in the code base.
@@ -66,11 +66,11 @@ For an individual merge request, duration starts when it
 is opened, and finishes when the commits it includes
 are merged into the code base.
 
-### GitLab parameters
+#### GitLab parameters
 
 None.
 
-## Specific description: Gerrit
+### Specific description: Gerrit
 
 In the case of Gerrit, duration is considered for
 code reviews that are accepted and merged in the code base.
@@ -78,11 +78,11 @@ For an individual cod review, duration starts when it is opened,
 and finishes when the commits it includes
 are merged into the code base.
 
-### Gerrit parameters
+#### Gerrit parameters
 
 None.
 
-## Use Cases
+## Objectives
 
 * Duration of acceptance of contributions processes.
 
@@ -92,7 +92,9 @@ None.
     Of course, this metric is not the only one that should be
     used to track volume of coding activity.
 
-## Filters
+## Filters and Visualizations
+
+### Filters
 
 Usual filters and bucketing are:
 
@@ -102,7 +104,7 @@ Usual filters and bucketing are:
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
-## Visualizations
+### Visualizations
 
 Some useful visualizations are:
 
@@ -121,9 +123,6 @@ X axis, and number of reviews in the Y axis.
 
 ## Reference Implementation
 
-[ To be done. ]
-
 ## Known Implementations
 
-
-## External References (Literature)
+## Resources
