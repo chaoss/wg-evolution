@@ -68,7 +68,7 @@ Usual aggregators are:
 
 * Count. Total number of issues during the period.
 
-## Specific description: GitHub
+### Specific description: GitHub
 
 In the case of GitHub, an issue is defined as an "issue",
 as long as it is related to source code files.
@@ -76,11 +76,11 @@ as long as it is related to source code files.
 The date of the issue can be defined (for considering it in a period or not)
 as the date in which the issue was opened (submitted).
 
-### GitHub parameters
+#### GitHub parameters
 
 None.
 
-## Specific description: GitLab
+### Specific description: GitLab
 
 In the case of GitHub, an issue is defined as an "issue",
 as long as it is related to source code files.
@@ -88,11 +88,11 @@ as long as it is related to source code files.
 The date of the issue can be defined (for considering it in a period or not)
 as the date in which the issue was opened (submitted).
 
-### GitLab parameters
+#### GitLab parameters
 
 None.
 
-## Specific description: Jira
+### Specific description: Jira
 
 In the case of Jira, an issue is defined as an "issue",
 as long as it is related to source code files.
@@ -100,11 +100,11 @@ as long as it is related to source code files.
 The date of the issue can be defined (for considering it in a period or not)
 as the date in which the issue was opened (submitted).
 
-### Jira parameters
+#### Jira parameters
 
 None.
 
-## Specific description: Bugzilla
+### Specific description: Bugzilla
 
 In the case of Bugzilla, an issue is defined as a "bug report",
 as long as it is related to source code files.
@@ -112,12 +112,12 @@ as long as it is related to source code files.
 The date of the issue can be defined (for considering it in a period or not)
 as the date in which the bug report was opened (submitted).
 
-### Bugzilla parameters
+#### Bugzilla parameters
 
 None.
 
 
-## Use Cases
+## Objectives
 
 * Volume of issues discussed in a project.
 
@@ -129,8 +129,9 @@ None.
     used to track volume of coding activity.
 
 
-## Filters
+## Filters and Visualizations
 
+### Filters
 Usual filters and bucketing are:
 
 * By actors (submitter, commenter, closer). Requires actor merging
@@ -139,7 +140,7 @@ Usual filters and bucketing are:
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
-## Visualizations
+### Visualizations
 
 Some useful visualizations are:
 
@@ -151,8 +152,6 @@ Each bar would represent proposals to change the code
 during a certain period (eg, a month).
 
 ## Reference Implementation
-
-[ To be done. ]
 
 ## Known Implementations
 
@@ -169,4 +168,4 @@ during a certain period (eg, a month).
   - Example screenshot: ![GrimoireLab screenshot of metric issues_new](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/issues_new-GrimoireLab.png)
 
 
-## External References (Literature)
+## Resources
