@@ -1,8 +1,11 @@
 from datetime import datetime
 
-import conditions
-import utils
-from commit import Commit
+from implementations.code_df.commit import Commit
+from implementations.code_df.conditions import (DirExclude,
+                                                MasterInclude,
+                                                PostfixExclude)
+from implementations.code_df.utils import (str_to_date,
+                                           read_json_file)
 
 
 class CodeChangesLines(Commit):
@@ -23,7 +26,7 @@ class CodeChangesLines(Commit):
         :returns:    list of a single flat dictionary
         """
 
-        creation_date = utils.str_to_date(item['data']['AuthorDate'])
+        creation_date = str_to_date(item['data']['AuthorDate'])
         if self.since and (self.since > creation_date):
             return []
 
@@ -42,7 +45,7 @@ class CodeChangesLines(Commit):
                 'category': "commit",
                 'created_date': creation_date,
                 'committer': item['data']['Commit'],
-                'commit_date': utils.str_to_date(item['data']['CommitDate']),
+                'commit_date': str_to_date(item['data']['CommitDate']),
                 'files_no': len(item['data']['files']),
                 'refs': item['data']['refs'],
                 'parents': item['data']['parents'],
@@ -127,18 +130,18 @@ class CodeChangesLines(Commit):
 
 if __name__ == "__main__":  
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
-    items = utils.read_json_file('../git-commits.json')
+    items = read_json_file('../git-commits.json')
     changes = CodeChangesLines(items, date_range=(None, None))
     print("Code_Changes_Lines, total changes:", changes.compute())
 
     changes = CodeChangesLines(items, date_range=(date_since, None),
-                               is_code=[conditions.DirExclude(['tests']),
-                                        conditions.PostfixExclude(
+                               is_code=[DirExclude(['tests']),
+                                        PostfixExclude(
                                             ['.md', 'COPYING'])])
     print("Code_Changes_Lines, excluding some files:", changes.compute())
 
     changes = CodeChangesLines(items, date_range=(date_since, None),
-                               conds=[conditions.MasterInclude()])
+                               conds=[MasterInclude()])
     print("Code_Changes_Lines, only for master:", changes.compute())
 
     print("The number of lines modified each month is: ")

@@ -1,9 +1,10 @@
-import pandas as pd
 from datetime import datetime
 
-import utils
-import conditions
-from commit import Commit
+from implementations.code_df.commit import Commit
+from implementations.code_df.conditions import (DirExclude,
+                                                Naive,
+                                                PostfixExclude)
+from implementations.code_df.utils import read_json_file
 
 
 class NewContributorsOfCommits(Commit):
@@ -25,7 +26,7 @@ class NewContributorsOfCommits(Commit):
         """
 
     def __init__(self, items, date_range=(None, None),
-                 is_code=[conditions.Naive()], conds=[]):
+                 is_code=[Naive()], conds=[]):
 
         super().__init__(items, date_range, is_code, conds)
 
@@ -86,7 +87,7 @@ if __name__ == "__main__":
     date_until = datetime.strptime("2018-07-01", "%Y-%m-%d")
     check_since = datetime.strptime("2018-03-08", "%Y-%m-%d")
     check_until = datetime.strptime("2018-06-08", "%Y-%m-%d")
-    items = utils.read_json_file('../git-commits.json')
+    items = read_json_file('../git-commits.json')
 
     new_committers = NewContributorsOfCommits(items)    
     print("New committers, total: {}".format(new_committers.compute()))
@@ -94,8 +95,8 @@ if __name__ == "__main__":
     new_committers_interval = NewContributorsOfCommits(
         items,
         (date_since, date_until),
-        is_code=[conditions.DirExclude(['tests']),
-                 conditions.PostfixExclude(['.md', 'COPYING'])])
+        is_code=[DirExclude(['tests']),
+                 PostfixExclude(['.md', 'COPYING'])])
 
     print("Variations in the number of new committers"
           " between 2018-01-01 and 2018-07-01: ")
@@ -105,8 +106,8 @@ if __name__ == "__main__":
                                             items,
                                             (date_since, date_until),
                                             is_code=[
-                                                conditions.DirExclude(['tests']),
-                                                conditions.PostfixExclude(
+                                                cDirExclude(['tests']),
+                                                PostfixExclude(
                                                     ['.md', 'COPYING'])])
     print("New committers, after 2018-03-08 (excluding some files):",
           new_committers.compute(check_range=(check_since, None)))

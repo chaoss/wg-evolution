@@ -16,7 +16,7 @@ We have two kinds of conditions:
 """
 
 
-class Code():
+class Code:
     """
     Root of the hierarchy for deciding if a commit touches source code.
 
@@ -111,7 +111,7 @@ class PostfixExclude(Code):
             return True
 
 
-class Commit():
+class Commit:
 
     def __init__(self):
 

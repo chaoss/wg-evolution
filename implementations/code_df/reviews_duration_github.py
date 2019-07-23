@@ -1,6 +1,7 @@
 from datetime import datetime
 
-import utils
+from implementations.code_df.utils import (str_to_date,
+                                           read_json_file)
 from pullrequest_github import PullRequestGitHub
 
 
@@ -22,7 +23,7 @@ class ReviewsDurationGitHub(PullRequestGitHub):
         :returns:   list of a single flat dictionary
         """
 
-        creation_date = utils.str_to_date(item['data']['created_at'])
+        creation_date = str_to_date(item['data']['created_at'])
         if self.since and (self.since > creation_date):
             return []
 
@@ -41,7 +42,7 @@ class ReviewsDurationGitHub(PullRequestGitHub):
         if flat['merged'] is False:
             return []
 
-        flat['duration'] = (utils.str_to_date(item['data']['merged_at'])
+        flat['duration'] = (str_to_date(item['data']['merged_at'])
                             - flat['created_date']).days
 
         return [flat]
@@ -87,7 +88,7 @@ class ReviewsDurationGitHub(PullRequestGitHub):
 
 if __name__ == "__main__":
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
-    items = utils.read_json_file('../pull_requests.json')
+    items = read_json_file('../pull_requests.json')
 
     reviews_duration = ReviewsDurationGitHub(items)
     print("The median reviews duration is {}"

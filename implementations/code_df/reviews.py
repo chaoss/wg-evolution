@@ -1,7 +1,7 @@
 from datetime import datetime
 
-import utils
-from pullrequest import PullRequest
+from implementations.code_df.pullrequest import PullRequest
+from implementations.code_df.utils import read_json_file
 
 
 class Reviews(PullRequest):
@@ -49,7 +49,7 @@ class Reviews(PullRequest):
 
 if __name__ == "__main__":
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
-    items = utils.read_json_file('../pull_requests.json')
+    items = read_json_file('../pull_requests.json')
 
     reviews = Reviews(items)
     print("The total number of reviews is {}"
