@@ -1,13 +1,8 @@
 import datetime
-import unittest
 import json
+import unittest
 
-import sys
-sys.path.append('..')
-from code_df.pullrequest_github import PullRequestGitHub
-from code_df import utils
-from code_df import conditions
-from pandas.util.testing import assert_frame_equal
+from implementations.code_df.pullrequest import PullRequest
 
 
 def read_file(path):
@@ -39,7 +34,7 @@ class TestPullRequestGitHub(unittest.TestCase):
         Run before each test to read the test data file
         """
 
-        self.items = read_file('test_pulls_data.json')
+        self.items = read_file('data/test_pulls_data.json')
 
     def test__flatten_valid_input(self):
         """
@@ -48,7 +43,7 @@ class TestPullRequestGitHub(unittest.TestCase):
         properly flattened pull request is expected.
         """
 
-        pullrequest = PullRequestGitHub(self.items)
+        pullrequest = PullRequest(self.items)
 
         flat_item = pullrequest._flatten(self.items[0])
         flat_expected = [
@@ -72,7 +67,7 @@ class TestPullRequestGitHub(unittest.TestCase):
 
         # date in future, hence no pull request will satisfy date check
         date_since = datetime.datetime.strptime("2020-09-20", "%Y-%m-%d")
-        pullrequest = PullRequestGitHub(self.items, date_range=(date_since, None))
+        pullrequest = PullRequest(self.items, date_range=(date_since, None))
 
         flat_item = pullrequest._flatten(self.items[0])
         flat_expected = []

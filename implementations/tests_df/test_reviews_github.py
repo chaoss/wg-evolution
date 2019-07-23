@@ -1,12 +1,10 @@
 import unittest
 import json
 
-import sys
-sys.path.append('..')
-from code_df.metric import Metric
-from code_df import utils
-from code_df.reviews_github import ReviewsGitHub
 from pandas.util.testing import assert_frame_equal
+
+from implementations.code_df.metric import Metric
+from implementations.code_df.reviews import Reviews
 
 
 def read_file(path):
@@ -35,7 +33,7 @@ class TestReviewsGitHub(unittest.TestCase):
         Run before each test to read the test data file
         """
 
-        self.items = read_file('test_pulls_data.json')
+        self.items = read_file('data/test_pulls_data.json')
 
     def test_compute_trivial(self):
         """
@@ -43,7 +41,7 @@ class TestReviewsGitHub(unittest.TestCase):
         object with default parameters.
         """
 
-        reviews = ReviewsGitHub(self.items)
+        reviews = Reviews(self.items)
         expected_count = 20
         count = reviews.compute()
         self.assertEqual(expected_count, count)
@@ -57,7 +55,7 @@ class TestReviewsGitHub(unittest.TestCase):
 
         items_temp = self.items
         items_temp.append(self.items[0])
-        reviews = ReviewsGitHub(items_temp)
+        reviews = Reviews(items_temp)
         expected_count = 20
         count = reviews.compute()
         self.assertEqual(expected_count, count)
@@ -69,7 +67,7 @@ class TestReviewsGitHub(unittest.TestCase):
         on a weekly basis.
         """
 
-        reviews = ReviewsGitHub(self.items)
+        reviews = Reviews(self.items)
         reviews.df = reviews.df.set_index('created_date')
         test_df = reviews.df
         test_df = test_df.resample('W')['category'].agg(['count'])

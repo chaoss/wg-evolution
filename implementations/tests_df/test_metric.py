@@ -1,10 +1,9 @@
-import unittest
-import sys
-sys.path.append('..')
-from code_df.commit import Commit
-from code_df import utils
-from pandas.util.testing import assert_frame_equal
 import json
+import unittest
+
+from pandas.util.testing import assert_frame_equal
+
+from implementations.code_df.commit import Commit
 
 
 def read_file(path):
@@ -32,7 +31,7 @@ class TestMetric(unittest.TestCase):
     """
 
     def setUp(self):
-        self.items = read_file('test_commits_data.json')
+        self.items = read_file('data/test_commits_data.json')
 
     def test_time_series_commit(self):
         """
