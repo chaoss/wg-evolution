@@ -1,12 +1,15 @@
 import datetime
-import unittest
 import json
+import unittest
 
-import sys
-sys.path.append('..')
-from code_df.commit import Commit
-from code_df import utils
-from code_df import conditions
+from implementations.code_df.commit import Commit
+from implementations.code_df.conditions import (Commit as CommitCond,
+                                                DirExclude,
+                                                EmptyExclude,
+                                                MasterInclude,
+                                                MergeExclude,
+                                                Naive,
+                                                PostfixExclude)
 from pandas.util.testing import assert_frame_equal
 
 
@@ -39,7 +42,7 @@ class Test_filterout(unittest.TestCase):
         Run before each test to read the test data file
         """
 
-        self.items = read_file('test_commits_data.json')
+        self.items = read_file('data/test_commits_data.json')
 
         class Temp(Commit):
             """
@@ -54,7 +57,7 @@ class Test_filterout(unittest.TestCase):
             """
 
             def __init__(self, items, date_range=(None, None),
-                         is_code=[conditions.Naive()], conds=[]):
+                         is_code=[Naive()], conds=[]):
 
                 (self.since, self.until) = date_range
                 self.is_code = is_code
@@ -63,7 +66,7 @@ class Test_filterout(unittest.TestCase):
 
                 # Initialize conditions
                 for condition in self.conds:
-                    if isinstance(condition, conditions.Commit):
+                    if isinstance(condition, CommitCond):
                         condition.set_commits(self.df)
         self.temp_class = Temp
 
@@ -89,7 +92,7 @@ class Test_filterout(unittest.TestCase):
         Test whether _filterout includes only master commits
         when this condition is passed
         """
-        temp = self.temp_class(self.items, conds=[conditions.MasterInclude()])
+        temp = self.temp_class(self.items, conds=[MasterInclude()])
         expected_df = temp.df
         for condition in temp.conds:
             for index, row in expected_df.iterrows():
@@ -106,7 +109,7 @@ class Test_filterout(unittest.TestCase):
         Test whether _filterout excludes empty
         commits when this condition is passed
         """
-        temp = self.temp_class(self.items, conds=[conditions.EmptyExclude()])
+        temp = self.temp_class(self.items, conds=[EmptyExclude()])
         expected_df = temp.df
         for condition in temp.conds:
             for index, row in expected_df.iterrows():
@@ -123,7 +126,7 @@ class Test_filterout(unittest.TestCase):
         Test whether _filterout excludes merge
         commits when this condition is passed
         """
-        temp = self.temp_class(self.items, conds=[conditions.MergeExclude()])
+        temp = self.temp_class(self.items, conds=[MergeExclude()])
         expected_df = temp.df
         for condition in temp.conds:
             for index, row in expected_df.iterrows():
@@ -146,7 +149,7 @@ class Test_flatten(unittest.TestCase):
         Run before each test to read the test data file
         """
 
-        self.items = utils.read_file('test_commits_data.json')
+        self.items = read_file('data/test_commits_data.json')
 
     def test__flatten_valid_input(self):
         """
@@ -207,7 +210,7 @@ class Test_flatten(unittest.TestCase):
         the `dirs` parameter: ['tests', 'bin']
         """
 
-        commit = Commit(self.items, is_code=[conditions.DirExclude()])
+        commit = Commit(self.items, is_code=[DirExclude()])
         expected_df = Commit(self.items).df
 
         for index, item in expected_df.iterrows():
@@ -228,7 +231,7 @@ class Test_flatten(unittest.TestCase):
         markdown(.md) and README are excluded in this test.
         """
 
-        commit = Commit(self.items, is_code=[conditions.PostfixExclude()])
+        commit = Commit(self.items, is_code=[PostfixExclude()])
         expected_df = Commit(self.items).df
 
         for index, item in expected_df.iterrows():

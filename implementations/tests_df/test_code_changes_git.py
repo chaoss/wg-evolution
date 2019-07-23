@@ -1,12 +1,9 @@
-import unittest
 import json
+import unittest
 
-import sys
-sys.path.append('..')
-from code_df.metric import Metric
-from code_df import utils
-from code_df.code_changes_git import CodeChangesGit
 from pandas.util.testing import assert_frame_equal
+
+from implementations.code_df.code_changes_git import CodeChangesGit
 
 
 def read_file(path):
@@ -35,7 +32,7 @@ class TestCodeChangesGit(unittest.TestCase):
         Run before each test to read the test data file
         """
 
-        self.items = read_file('test_commits_data.json')
+        self.items = read_file('data/test_commits_data.json')
 
     def test_compute_trivial(self):
         """
