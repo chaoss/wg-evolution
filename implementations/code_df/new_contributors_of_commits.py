@@ -89,7 +89,7 @@ if __name__ == "__main__":
     check_until = datetime.strptime("2018-06-08", "%Y-%m-%d")
     items = read_json_file('../git-commits.json')
 
-    new_committers = NewContributorsOfCommits(items)    
+    new_committers = NewContributorsOfCommits(items)
     print("New committers, total: {}".format(new_committers.compute()))
 
     new_committers_interval = NewContributorsOfCommits(
@@ -106,7 +106,7 @@ if __name__ == "__main__":
                                             items,
                                             (date_since, date_until),
                                             is_code=[
-                                                cDirExclude(['tests']),
+                                                DirExclude(['tests']),
                                                 PostfixExclude(
                                                     ['.md', 'COPYING'])])
     print("New committers, after 2018-03-08 (excluding some files):",

@@ -128,7 +128,7 @@ class CodeChangesLines(Commit):
         return df
 
 
-if __name__ == "__main__":  
+if __name__ == "__main__":
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
     items = read_json_file('../git-commits.json')
     changes = CodeChangesLines(items, date_range=(None, None))

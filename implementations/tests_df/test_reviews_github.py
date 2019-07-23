@@ -3,7 +3,6 @@ import json
 
 from pandas.util.testing import assert_frame_equal
 
-from implementations.code_df.metric import Metric
 from implementations.code_df.reviews import Reviews
 
 
