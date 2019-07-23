@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-class Metric():
+class Metric:
     """
     Create a DataFrame from items fetched by Perceval
 
