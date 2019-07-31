@@ -23,7 +23,6 @@ be any line of a source code file, including comments and blank lines.
 
 ### Parameters
 Mandatory:
-
 * Period of time. Start and finish date of the period. Default: forever.
 
     Period during which changes are considered.
@@ -32,6 +31,12 @@ Mandatory:
 
     If we are focused on source code, we need a criteria for deciding
     whether a file is a part of the source code or not.
+
+Optional:
+* Type of source code change.
+    - Lines added
+    - Lines removed
+    - Whitespace 
 
 ### Aggregators
 Usual aggregators are:
