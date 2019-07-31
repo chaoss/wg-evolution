@@ -1,12 +1,7 @@
 # Reviews_Declined
-
-[Comment on Release Candidate](https://github.com/chaoss/wg-evolution/issues/185)
-
-Reviews for changes to the source code that ended declining the change
-during a certain period.
+Question: What reviews for changes to the source code that ended up declining the change during a certain period.
 
 ## Description
-
 Reviews are defined as in [Reviews](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews.md).
 Declined reviews are those that are finally closed without
 being merged into the code base of the project.
@@ -20,7 +15,6 @@ can be formally "abandoned", which is the way of detecting
 declined reviews in this system.
 
 ### Parameters
-
 Mandatory:
 
 * Period of time. Start and finish date of the period. Default: forever.
@@ -33,13 +27,11 @@ Mandatory:
     whether a file is a part of the source code or not.
 
 ### Aggregators
-
 Usual aggregators are:
 
 * Count. Total number of declined reviews during the period.
 
 ### Specific description: GitHub
-
 In the case of GitHub, accepted reviews are defined as "pull requests
 that are closed with their changes not being included in the git repository",
 as long as it proposes changes to source code files.
@@ -48,7 +40,6 @@ See the discussion in the specific description for GitHub in
 [Reviews_Accepted](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews_Accepted.md), since it applies here as well.
 
 #### GitHub parameters
-
 Mandatory:
 
 * Heuristic for detecting declined pull requests, telling apart
@@ -57,15 +48,11 @@ Mandatory:
   Default: None.
 
 ### Specific description: GitLab
-
 In the case of GitLab, accepted reviews are defined as "merge requests
 that are closed with their changes not being included in the git repository",
 as long as it proposes changes to source code files.
 
-[ Details to be done ]
-
-#### GitLab parameters
-
+#### GitLab parameter
 Mandatory:
 
 * Heuristic for detecting declined merge requests, telling apart
@@ -74,18 +61,13 @@ Mandatory:
   Default: None.
 
 ### Specific description: Gerrit
-
 In the case of Gerrit, declined reviews are defined as "changesets
 abandoned", as long as they propose changes to source code files.
 
-[ Details to be done ]
-
 #### Gerrit parameters
-
 None.
 
 ## Objectives
-
 * Volume of coding activity.
 
     Declined code reviews are a proxy for the activity in a project.
@@ -96,9 +78,9 @@ None.
     used to track volume of coding activity.
 
 ## Filters and Visualizations 
-
+ 
+ 
 ### Filters
-
 Usual filters and bucketing are:
 
 * By actors (submitter, reviewer, merger). Requires actor merging
@@ -108,7 +90,6 @@ Usual filters and bucketing are:
 Requires actor grouping, and likely, actor merging.
 
 ### Visualizations
-
 Some useful visualizations are:
 
 * Count per month over time
@@ -119,7 +100,11 @@ Each bar would represent declined reviews during a certain period
 (eg, a month).
 
 ## Reference Implementation
-
+ 
+ 
 ## Known Implementations
-
+ 
+ 
 ## Resources
+ 
+ 
