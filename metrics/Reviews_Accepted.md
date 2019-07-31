@@ -38,7 +38,7 @@ Usual aggregators are:
 
 * Count. Total number of accepted reviews during the period.
 
-## Specific description: GitHub
+### Specific description: GitHub
 
 In the case of GitHub, accepted reviews are defined as "pull requests
 whose changes are included in the git repository",
@@ -71,7 +71,7 @@ In some cases, projects have policies of mentioning the commits
 when the pull request is closed (such as "closing by accepting commits
 xxx and yyyy"), which may help to track commits in the git repository.
 
-### GitHub parameters
+#### GitHub parameters
 
 Mandatory:
 
@@ -79,7 +79,7 @@ Mandatory:
   via the web interface.
   Default: None.
 
-## Specific description: GitLab
+### Specific description: GitLab
 
 In the case of GitLab, accepted reviews are defined as "merge requests
 whose changes are included in the git repository",
@@ -87,7 +87,7 @@ as long as it proposes changes to source code files.
 
 [ Details to be done ]
 
-### GitLab parameters
+#### GitLab parameters
 
 Mandatory:
 
@@ -95,7 +95,7 @@ Mandatory:
   via the web interface.
   Default: None.
 
-## Specific description: Gerrit
+### Specific description: Gerrit
 
 In the case of Gerrit, accepted reviews are defined as "changesets
 whose changes are included in the git repository",
@@ -103,15 +103,11 @@ as long as they proposes changes to source code files.
 
 [ Details to be done ]
 
-
-
-### Gerrit parameters
+#### Gerrit parameters
 
 None.
 
-
-
-## Use Cases
+## Objectives
 
 * Volume of coding activity.
 
@@ -122,7 +118,9 @@ None.
     Of course, this metric is not the only one that should be
     used to track volume of coding activity.
 
-## Filters
+## Filters and Visualizations
+
+### Filters
 
 Usual filters and bucketing are:
 
@@ -132,7 +130,7 @@ Usual filters and bucketing are:
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
-## Visualizations
+### Visualizations
 
 Some useful visualizations are:
 
@@ -144,8 +142,6 @@ Each bar would represent accepted reviews to change the code
 during a certain period (eg, a month).
 
 ## Reference Implementation
-
-[ To be done. ]
 
 ## Known Implementations
 
@@ -174,4 +170,4 @@ during a certain period (eg, a month).
     * As discussed [above for GitHub case](#specific-description-github), sometimes is not easy to identify merges. As you probably noticed, in this example we based our expression on GrimoireLab Git index. Besides, it could be applied to any other similar environment using Git repositories, not only to GitHub.
   - Example screenshot: ![GrimoireLab screenshot of metric Reviews Accepted](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/reviews_accepted_GrimoireLab.png)
 
-## External References (Literature)
+## Resources
