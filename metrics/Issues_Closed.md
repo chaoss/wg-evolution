@@ -1,8 +1,6 @@
 # Issues Closed
 
-[Comment on Release Candidate](https://github.com/chaoss/wg-evolution/issues/188)
-
-Issues that were closed during a certain period.
+Question: What are the issues that were closed during a certain period?
 
 ## Description
 
