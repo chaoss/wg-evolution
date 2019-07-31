@@ -1,11 +1,7 @@
 # Reviews
-
-[Comment on Release Candidate](https://github.com/chaoss/wg-evolution/issues/183)
-
-New review requests for changes to the source code, during a certain period.
+Question: What new review requests for changes to the source code, occurred during a certain period? 
 
 ## Description
-
 When a project uses code review processes, changes are not directly
 submitted to the code base, but are first proposed for discussion
 as "proposals for change to the source code".
@@ -20,7 +16,6 @@ to "merge requests" in the case of GitLab, and to "code reviews"
 or in some contexts "changesets" in the case of Gerrit.
 
 ### Parameters
-
 Mandatory:
 
 * Period of time. Start and finish date of the period. Default: forever.
@@ -33,13 +28,11 @@ Mandatory:
     whether a file is a part of the source code or not.
 
 ### Aggregators
-
 Usual aggregators are:
 
 * Count. Total number of reviews during the period.
 
 ### Specific description: GitHub
-
 In the case of GitHub, a review is defined as a "pull request",
 as long as it proposes changes to source code files.
 
@@ -47,11 +40,9 @@ The date of the review can be defined (for considering it in a period or not)
 as the date in which the pull request was submitted.
 
 #### GitHub parameters
-
 None.
 
 ### Specific description: GitLab
-
 In the case of GitLab, a review is defined as a "merge request",
 as long as it proposes changes to source code files.
 
@@ -59,11 +50,9 @@ The date of the review can be defined (for considering it in a period or not)
 as the date in which the merge request was submitted.
 
 #### GitLab parameters
-
 None.
 
 ### Specific description: Gerrit
-
 In the case of Gerrit, a review is defined as a "code review",
 or in some contexts, a "changeset",
 as long as it proposes changes to source code files.
@@ -73,12 +62,10 @@ as the date in which the code review was started by submitting a
 patchset for review.
 
 #### Gerrit parameters
-
 None.
 
 
 ## Objectives
-
 * Volume of changes proposed to a project.
 
     Reviews are a proxy for the activity in a project.
@@ -90,9 +77,9 @@ None.
 
 
 ## Filters and Visualizations
-
+ 
+ 
 ### Filters
-
 Usual filters and bucketing are:
 
 * By actors (submitter, reviewer, merger). Requires actor merging
@@ -102,7 +89,6 @@ Usual filters and bucketing are:
 Requires actor grouping, and likely, actor merging.
 
 ### Visualizations
-
 Some useful visualizations are:
 
 * Count per month over time
@@ -113,9 +99,9 @@ Each bar would represent reviews to change the code
 during a certain period (eg, a month).
 
 ## Reference Implementation
-
+ 
+ 
 ## Known Implementations
-
 * [Grimoirelab](https://chaoss.github.io/grimoirelab) provides this metric out of the box for GitHub Pull Requests, GitLab Merge Requests and Gerrit Changesets.  
   - View an example on the [CHAOSS instance of Bitergia Analytics](https://chaoss.biterg.io/app/kibana#/dashboard/GitHub-Pull-Requests).  
   - Download and import a ready-to-go dashboard containing examples for this metric visualization based on GitHub Pull Requests data from the [GrimoireLab Sigils panel collection](https://chaoss.github.io/grimoirelab-sigils/panels/github-pullrequests/).
@@ -129,3 +115,5 @@ during a certain period (eg, a month).
   - Example screenshot: ![GrimoireLab screenshot of metric Reviews](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/reviews-GrimoireLab.png)
 
 ## Resources
+ 
+ 
