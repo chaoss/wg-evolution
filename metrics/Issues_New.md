@@ -1,11 +1,7 @@
 # Issues New
-
-[Comment on Release Candidate](https://github.com/chaoss/wg-evolution/issues/186)
-
-New issues related to the source code, during a certain period.
+Question: What new issues are created during a certain period? 
 
 ## Description
-
 Projects discuss how they are fixing bugs, or adding new features,
 in tickets in the issue tracking system.
 Each of these tickets (issues) are opened (submitted) by a certain
@@ -44,7 +40,6 @@ GitLab or Jira, to "bug reports" in the case of Bugzilla, and to
 "issues" or "tickets" in other systems.
 
 ### Parameters
-
 Mandatory:
 
 * Period of time. Start and finish date of the period. Default: forever.
@@ -63,49 +58,38 @@ Mandatory:
     as new issues.
 
 ### Aggregators
-
 Usual aggregators are:
 
 * Count. Total number of issues during the period.
 
 ### Specific description: GitHub
-
-In the case of GitHub, an issue is defined as an "issue",
-as long as it is related to source code files.
+In the case of GitHub, an issue is defined as an "issue".
 
 The date of the issue can be defined (for considering it in a period or not)
 as the date in which the issue was opened (submitted).
 
 #### GitHub parameters
-
 None.
 
 ### Specific description: GitLab
-
-In the case of GitHub, an issue is defined as an "issue",
-as long as it is related to source code files.
+In the case of GitHub, an issue is defined as an "issue".
 
 The date of the issue can be defined (for considering it in a period or not)
 as the date in which the issue was opened (submitted).
 
 #### GitLab parameters
-
 None.
 
 ### Specific description: Jira
-
-In the case of Jira, an issue is defined as an "issue",
-as long as it is related to source code files.
+In the case of Jira, an issue is defined as an "issue".
 
 The date of the issue can be defined (for considering it in a period or not)
 as the date in which the issue was opened (submitted).
 
 #### Jira parameters
-
 None.
 
 ### Specific description: Bugzilla
-
 In the case of Bugzilla, an issue is defined as a "bug report",
 as long as it is related to source code files.
 
@@ -113,11 +97,9 @@ The date of the issue can be defined (for considering it in a period or not)
 as the date in which the bug report was opened (submitted).
 
 #### Bugzilla parameters
-
 None.
 
 ## Objectives
-
 * Volume of issues discussed in a project.
 
     Issues are a proxy for the activity in a project.
@@ -129,7 +111,7 @@ None.
 
 
 ## Filters and Visualizations
-
+ 
 
 ### Filters
 Usual filters and bucketing are:
@@ -141,7 +123,6 @@ Usual filters and bucketing are:
 Requires actor grouping, and likely, actor merging.
 
 ### Visualizations
-
 Some useful visualizations are:
 
 * Count per month over time
@@ -152,8 +133,11 @@ Each bar would represent proposals to change the code
 during a certain period (eg, a month).
 
 ## Reference Implementation
-
+  
+  
 ## Known Implementations
-
+ 
+ 
 
 ## Resources
+ 
