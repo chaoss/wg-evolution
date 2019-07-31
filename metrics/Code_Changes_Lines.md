@@ -106,8 +106,6 @@ Each bar would represent a code changes during a certain period (eg, a month).
 
 ## Reference Implementation
 
-[ Work in progress ]
-
 ## Known Implementations
 
 * [GrimoireLab](https://chaoss.github.io/grimoirelab) provides this metric out of the box.
@@ -122,4 +120,4 @@ Each bar would represent a code changes during a certain period (eg, a month).
   - Example screenshot: ![GrimoireLab screenshot of metric Code_Changes_Lines](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/code_changes_lines-GrimoireLab.png)
 
 
-## External References (Literature)
+## Resources
