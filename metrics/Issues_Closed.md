@@ -1,9 +1,6 @@
 # Issues Closed
 
-[Comment on Release Candidate](https://github.com/chaoss/wg-evolution/issues/188)
-
-Issues related to the source code that were closed
-during a certain period.
+Question: What are the issues that were closed during a certain period?
 
 ## Description
 
@@ -30,14 +27,13 @@ issues that were closed during a certain period.
 Mandatory:
 
 * Period of time. Start and finish date of the period. Default: forever.
-
-    Period during which issues are considered.
+    - Period during which issues are considered.
 
 * Criteria for source code. Algorithm. Default: all issues are related to
   source code.
-
-    If we are focused on source code, we need a criteria for deciding
+    - If we are focused on source code, we need a criteria for deciding
     whether an issues is related to the source code or not.
+    - All issues could be included in the metric by altering the default. 
 
 * Reopen as new. Boolean, defining whether reopened issues are considered
   as new issues. If false, it means the closing event previous to a
@@ -55,40 +51,28 @@ Usual aggregators are:
 * Count. Total number of active issues during the period.
 
 ### Specific description: GitHub
-
-In the case of GitHub, closed issues are defined as "issues
-which are closed",
-as long as they are related to source code files.
+- In the case of GitHub, closed issues are defined as "issues which are closed". 
 
 #### GitHub parameters
 
 None.
 
 ### Specific description: GitLab
-
-In the case of GitLab, active issues are defined as "issues
-that are closed",
-as long as they are related to source code files.
+- In the case of GitLab, active issues are defined as "issues
+that are closed".
 
 #### GitLab parameters
-
-None.
+- None.
 
 ### Specific description: Jira
-
-In the case of Jira, active issues are defined as "issues
-that change to the closed state",
-as long as they are related to source code files.
+- In the case of Jira, active issues are defined as "issues that change to the closed state". 
 
 #### Jira parameters
 
 None.
 
 ### Specific description: Bugzilla
-
-In the case of Bugzilla, active issues are defined as "bug reports
-that change to the closed state",
-as long as they are related to source code files.
+- In the case of Bugzilla, active issues are defined as "bug reports that change to the closed state".
 
 #### Bugzilla parameters
 
@@ -97,7 +81,6 @@ None.
 ## Objectives
 
 * Volume of issues that are dealt with in a project.
-
     Closed issues are a proxy for the activity in a project.
     By counting closed issues related to code in the set of repositories corresponding
     to a project, you can have an idea of the overall activity in
@@ -126,10 +109,9 @@ Some useful visualizations are:
 * Count per group over time
 
 These could be represented as bar charts, with time running in the X axis.
-Each bar would represent proposals to change the code
-during a certain period (eg, a month).
 
 ## Reference Implementation
+  
 
 ## Known Implementations
 
