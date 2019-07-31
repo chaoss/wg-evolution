@@ -1,12 +1,7 @@
 # Code_Changes_Lines
-
-[Comment on Release Candidate](https://github.com/chaoss/wg-evolution/issues/182)
-
-Sum of the number of lines touched (lines added plus lines removed)
-in all changes to the source code during a certain period.
+Question: What is the sum of the number of lines touched (lines added plus lines removed) in all changes to the source code during a certain period?
 
 ## Description
-
 When introducing changes to the source code, developers touch
 (edit, add, remove) lines of the source code files.
 This metric considers the aggregated number of lines touched
@@ -27,7 +22,6 @@ defined in [Code_Changes](https://github.com/chaoss/wg-evolution/blob/master/met
 be any line of a source code file, including comments and blank lines.
 
 ### Parameters
-
 Mandatory:
 
 * Period of time. Start and finish date of the period. Default: forever.
@@ -40,13 +34,11 @@ Mandatory:
     whether a file is a part of the source code or not.
 
 ### Aggregators
-
 Usual aggregators are:
 
 * Count. Total number of lines changes (touched) during the period.
 
 ## Specific description: git
-
 In the cases of git, we define "code change" and "date of a change"
 as we detail in [Code_Changes](https://github.com/chaoss/wg-evolution/blob/master/metrics/Code_Changes.md).
 The date of a change can be defined (for considering it in a period or not)
@@ -58,7 +50,6 @@ will be considered as a line changed (touched).
 If a line is removed and added, it will be considered as two "changes to a line".
 
 ### Git parameters
-
 Mandatory:
 
 * Kind of date. Either author date or committer date. Default: author date.
@@ -75,7 +66,6 @@ Mandatory:
 
 
 ## Use Cases
-
 * Volume of coding activity:
 
   Although code changes can be a proxy to the coding activity of a project,
@@ -85,7 +75,6 @@ Mandatory:
   activity.
 
 ## Filters
-
 Usual filters and bucketing are:
 
 * By actors (author, committer). Requires actor merging
@@ -95,7 +84,6 @@ Usual filters and bucketing are:
 and likely, actor merging.
 
 ## Visualizations
-
 Some useful visualizations are:
 
 * Count per month over time
@@ -105,9 +93,9 @@ These could be represented as bar charts, with time running in the X axis.
 Each bar would represent a code changes during a certain period (eg, a month).
 
 ## Reference Implementation
-
+ 
+ 
 ## Known Implementations
-
 * [GrimoireLab](https://chaoss.github.io/grimoirelab) provides this metric out of the box.
   - View an example on the [CHAOSS instance of Bitergia Analytics](https://chaoss.biterg.io/app/kibana#/dashboard/f13af0e0-18e5-11e9-ba47-d5cbef43f8d3).  
   - Download and import a ready-to-go dashboard containing examples for this metric visualization from the [GrimoireLab Sigils panel collection](https://chaoss.github.io/grimoirelab-sigils/chaoss-gmd-cde/lines_of_code_changed/).
@@ -121,3 +109,5 @@ Each bar would represent a code changes during a certain period (eg, a month).
 
 
 ## Resources
+ 
+ 
