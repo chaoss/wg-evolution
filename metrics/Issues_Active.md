@@ -1,9 +1,6 @@
 # Issues Active
 
-[Comment on Release Candidate](https://github.com/chaoss/wg-evolution/issues/187)
-
-Issues related to the source code that showed some activity
-during a certain period.
+Question: What issues that showed some activity during a certain period? 
 
 ## Description
 
@@ -30,59 +27,44 @@ Mandatory:
     whether an issues is related to the source code or not.
 
 ### Aggregators
-
 Usual aggregators are:
 
 * Count. Total number of active issues during the period.
 
 ### Specific description: GitHub
-
 In the case of GitHub, active issues are defined as "issues
 which get a comment, a change in tags, a change in assigned
-person, or are closed",
-as long as they are related to source code files.
+person, or are closed".
 
 #### GitHub parameters
-
 None.
 
 ### Specific description: GitLab
-
 In the case of GitLab, active issues are defined as "issues
 which get a comment, a change in tags, a change in assigned
-person, or are closed",
-as long as they are related to source code files.
+person, or are closed".
 
 #### GitLab parameters
-
 None.
 
 ### Specific description: Jira
-
 In the case of Jira, active issues are defined as "issues
 which get a comment, a change in state, a change in assigned
-person, or are closed",
-as long as they are related to source code files.
+person, or are closed".
 
 #### Jira parameters
-
 None.
 
 ### Specific description: Bugzilla
-
 In the case of Bugzilla, active issues are defined as "bug reports
 which get a comment, a change in state, a change in assigned
-person, or are closed",
-as long as they are related to source code files.
+person, or are closed".
 
 #### Bugzilla parameters
-
 None.
 
 ## Objectives
-
 * Volume of active issues in a project.
-
     Active issues are a proxy for the activity in a project.
     By counting active issues related to code in the set of repositories corresponding
     to a project, you can have an idea of the overall activity in
@@ -93,7 +75,6 @@ None.
 ## Filters and Visualizations
 
 ### Filters
-
 Usual filters and bucketing are:
 
 * By actors (submitter, commenter, closer). Requires actor merging
@@ -103,7 +84,6 @@ Usual filters and bucketing are:
 Requires actor grouping, and likely, actor merging.
 
 ### Visualizations
-
 Some useful visualizations are:
 
 * Count per month over time
@@ -116,7 +96,6 @@ during a certain period (eg, a month).
 ## Reference Implementation
 
 ## Known Implementations
-
 * [GrimoireLab](https://chaoss.github.io/grimoirelab) provides data for computing a metric close to the one described in this page for GitHub Issues, GitLab issues, Jira, Bugzilla and Redmine. In terms of the metric, **GrimoireLab data have only the date of the last update of each item, which limits computing this metric to time ranges ending on the current date**.
   - Depending on the source API, the definition of what is considered an update on the issue could vary. GrimoireLab uses `metadata__updated_on` to store latest issue update, please check [Perceval documentation](https://perceval.readthedocs.io/en/latest/search.html?q=metadata_updated_on&check_keywords=yes&area=default) to look for the specific API field being used in each case and understand its limitations, if any.
   - Currently, there is no dashboard showing this in action. Nevertheless, it is easy to build a visualization that shows the number uses which last activity occurred at some point between a date and current date (we'll do it for GitHub Issues here).
