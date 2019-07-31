@@ -130,8 +130,8 @@ None.
 
 ## Filters and Visualizations
 
-### Filters
 
+### Filters
 Usual filters and bucketing are:
 
 * By actors (submitter, commenter, closer). Requires actor merging
@@ -154,18 +154,6 @@ during a certain period (eg, a month).
 ## Reference Implementation
 
 ## Known Implementations
-
-* [GrimoireLab](https://chaoss.github.io/grimoirelab) provides this metric out of the box for GitHub Issues, GitLab issues, Jira, Bugzilla, Maniphest, and Redmine.
-  - View an example on the [CHAOSS instance of Bitergia Analytics](https://chaoss.biterg.io/app/kibana#/dashboard/GitHub-Issues).  
-  - Download and import a ready-to-go dashboard containing examples for this metric visualization from the [GrimoireLab Sigils panel collection](https://chaoss.github.io/grimoirelab-sigils/panels/github-issues/).
-  - Add a sample visualization to any GrimoreLab Kibiter dashboard following these instructions:
-    * Create a new `Vertical Bar` chart
-    * Select the `github_issues` index
-    * Filter: `pull_request` is `false`
-    * Metrics Y-axis: `Count` Aggregation, `# Issues` Custom Label
-    * Buckets X-axis: `Date Histogram` Aggregation, `grimoire_creation_date` Field, `Auto` Interval, `Time` Custom Label
-    * Buckets Split Series: `Terms` Sub Aggregation, `state` Field, `metric: # Issues` Order By, `Descending` Order, `1000` Size, `State` Custom Label
-  - Example screenshot: ![GrimoireLab screenshot of metric issues_new](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/issues_new-GrimoireLab.png)
 
 
 ## Resources
