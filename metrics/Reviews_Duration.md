@@ -1,9 +1,7 @@
 # Reviews_Duration
 
-[Comment on Release Candidate](https://github.com/chaoss/wg-evolution/issues/189)
-
-Duration of the period between the moment a code review starts,
-and the moment it is accepted.
+Question: What is the duration of the period between the moment a code review starts,
+and the moment it is accepted?
 
 ## Description
 
