@@ -1,11 +1,7 @@
 # Code_Changes
-
-[Comment on Release Candidate](https://github.com/chaoss/wg-evolution/issues/181)
-
-Changes to the source code during a certain period.
+Question: What changes were made to the source code during a specified period? 
 
 ## Description
-
 These are changes to the source code during a certain period.
 For "change" we consider what developers consider an atomic change to their code.
 In other words, a change is some change to the source code which usually
@@ -15,7 +11,6 @@ or, to be more precise, "code change" corresponds to the part of a commit which
 touches files considered as source code.
 
 ### Parameters
-
 Mandatory:
 
 * Period of time. Start and finish date of the period. Default: forever.
@@ -28,13 +23,11 @@ Mandatory:
     whether a file is a part of the source code or not.
 
 ### Aggregators
-
 Usual aggregators are:
 
 * Count. Total number of changes during the period.
 
 ### Specific description: git
-
 In the cases of git, a code change is defined as the part of
 a git commit that "touches" a source file.
 That is, for each git commit, only the part related to
@@ -49,7 +42,6 @@ of them. Therefore, for counting unique changes,
 repeated commits should be counted only once.
 
 #### Git parameters
-
 Mandatory:
 
 * Kind of date. Either author date or committer date. Default: author date.
@@ -71,7 +63,6 @@ Mandatory:
     reflecting a coding activity.
 
 ## Objectives
-
 * Volume of coding activity.
 
     Code changes are a proxy for the activity in a project.
@@ -82,9 +73,9 @@ Mandatory:
     used to track volume of coding activity.
 
 ## Sample Filter and Visualization
-
+ 
+ 
 ### Filters
-
 Usual filters and bucketing are:
 
 * By actors (author, committer). Requires actor merging
@@ -94,7 +85,6 @@ Usual filters and bucketing are:
 and likely, actor merging.
 
 ### Visualizations
-
 Some useful visualizations are:
 
 * Count per month over time
@@ -104,12 +94,10 @@ These could be represented as bar charts, with time running in the X axis.
 Each bar would represent a code changes during a certain period (eg, a month).
 
 ## Reference Implementation
-
 See [reference implementation for git](../implementations/Code_Changes-Git.ipynb)
 ([see it in Binder](https://mybinder.org/v2/gh/chaoss/wg-gmd/master?filepath=implementations/Code_Changes-Git.ipynb)).
 
 ## Known Implementations
-
 * [GrimoireLab](https://chaoss.github.io/grimoirelab) provides this metric out of the box.
   - View an example on the [CHAOSS instance of Bitergia Analytics](https://chaoss.biterg.io/app/kibana#/dashboard/Git).  
   - Download and import a ready-to-go dashboard containing examples for this metric visualization from the [GrimoireLab Sigils panel collection](https://chaoss.github.io/grimoirelab-sigils/panels/git/).
@@ -125,3 +113,4 @@ See [reference implementation for git](../implementations/Code_Changes-Git.ipynb
 * [Gitdm](https://repo.or.cz/w/git-dm.git). Provides this metric out of the box.
 
 ## Resources
+ 
