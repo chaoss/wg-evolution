@@ -14,16 +14,11 @@ touches files considered as source code.
 Mandatory:
 
 * Period of time. Start and finish date of the period. Default: forever.
-
-    Period during which changes are considered.
-
+* Period during which changes are considered.
 * Criteria for source code. Algorithm. Default: all files are source code.
-
-    If we are focused on source code, we need a criteria for deciding
-    whether a file is a part of the source code or not.
+* If focused on source code, criteria for deciding whether a file is a part of the source code or not.
 
 ### Aggregators
-Usual aggregators are:
 
 * Count. Total number of changes during the period.
 
@@ -44,11 +39,11 @@ repeated commits should be counted only once.
 #### Git parameters
 Mandatory:
 
-* Kind of date. Either author date or committer date. Default: author date.
+* Date type. Either author date or committer date. Default: author date.
 
     For each git commit, two dates are kept: when the commit was authored,
     and when it was committed to the repository.
-    For deciding on the period, one of them has to be selected.
+    For deciding on the period, one of them has to be selected.  
 
 * Include merge commits. Boolean. Default: True.
 
