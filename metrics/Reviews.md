@@ -77,7 +77,6 @@ None.
 
 * By actors (submitter, reviewer, merger). Requires actor merging
 (merging ids corresponding to the same author).
-
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
