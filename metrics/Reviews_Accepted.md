@@ -1,5 +1,5 @@
 # Reviews Accepted
-Question: How many reviews are present in a code change? 
+Question: How many accepted reviews are present in a code change? 
 
 ## Description
 Reviews are defined as in [Reviews](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews.md).
