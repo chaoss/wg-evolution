@@ -40,18 +40,14 @@ repeated commits should be counted only once.
 #### Git parameters
 Mandatory:
 
-* Period of time. Start and finish date of the period. Default: forever.  
-    Period during which changes are considered.  
-    <br>
-* Criteria for source code. Algorithm. Default: all files are source code.  
-    If focused on source code, criteria for deciding whether a file is a part of the source code or not.  
-
 * Date type. Either author date or committer date. Default: author date.  
     For each git commit, two dates are kept: when the commit was authored, and when it was committed to the repository. For     deciding on the period, one of them has to be selected.  
 <br>
+
 * Include merge commits. Boolean. Default: True.  
     Merge commits are those which merge a branch, and in some cases are not considered as reflecting a coding activity.  
 <br>
+
 * Include empty commits. Boolean. Default: True.  
     Empty commits are those which do not touch files, and in some cases are not considered as reflecting a coding activity.
 
