@@ -1,7 +1,6 @@
-# Reviews_Duration
+# Reviews Duration
 
-Question: What is the duration of the period between the moment a code review starts,
-and the moment it is accepted?
+Question: What is the duration of time between the moment a code review starts and the moment it is accepted?
 
 ## Description
 
@@ -26,20 +25,16 @@ the code review.
 
 Mandatory:
 
-* Period of time. Start and finish date of the period. Default: forever.
-
+* Period of time. Start and finish date of the period. Default: forever.  
     Period during which accepted reviews are considered.
     An accepted review is considered to be in the period if
-    its creation event is in the period.
+    its creation event is in the period.<br>
 
-* Criteria for source code. Algorithm. Default: all files are source code.
-
+* Criteria for source code. Algorithm. Default: all files are source code.  
     If we are focused on source code, we need a criteria for deciding
     whether a file is a part of the source code or not.
 
 ### Aggregators
-
-Usual aggregators are:
 
 * Median. Median (50% percentile) of review duration for all
   accepted reviews in the considered period of time.
@@ -83,7 +78,6 @@ None.
 ## Objectives
 
 * Duration of acceptance of contributions processes.
-
     Review duration for accepted reviews is one of the indicators
     showing how long does a project take before accepting
     a contribution of code.
@@ -94,17 +88,12 @@ None.
 
 ### Filters
 
-Usual filters and bucketing are:
-
 * By actors (submitter, reviewer, merger). Requires actor merging
 (merging ids corresponding to the same author).
-
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
 ### Visualizations
-
-Some useful visualizations are:
 
 * Median per month over time
 * Median per group over time
@@ -124,4 +113,3 @@ X axis, and number of reviews in the Y axis.
 ## Known Implementations
 
 ## Resources
-
