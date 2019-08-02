@@ -1,6 +1,6 @@
 # Issues Active
 
-Question: What issues that showed some activity during a certain period? 
+Question: What is the count of issues that showed activity during a certain period? 
 
 ## Description
 
@@ -16,18 +16,15 @@ the action of closing an issue, is considered as a sign of activity.
 
 Mandatory:
 
-* Period of time. Start and finish date of the period. Default: forever.
-
-    Period during which issues are considered.
+* Period of time. Start and finish date of the period. Default: forever.  
+    Period during which issues are considered.<br>
 
 * Criteria for source code. Algorithm. Default: all issues are related to
-  source code.
-
+  source code.  
     If we are focused on source code, we need a criteria for deciding
     whether an issues is related to the source code or not.
 
 ### Aggregators
-Usual aggregators are:
 
 * Count. Total number of active issues during the period.
 
@@ -75,16 +72,13 @@ None.
 ## Filters and Visualizations
 
 ### Filters
-Usual filters and bucketing are:
 
 * By actors (submitter, commenter, closer). Requires actor merging
 (merging ids corresponding to the same author).
-
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
 ### Visualizations
-Some useful visualizations are:
 
 * Count per month over time
 * Count per group over time
