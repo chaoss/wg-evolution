@@ -1,5 +1,5 @@
 # Reviews_Declined
-Question: What reviews for changes to the source code that ended up declining the change during a certain period.
+Question: What reviews of code changes ended up declining the change during a certain period?
 
 ## Description
 Reviews are defined as in [Reviews](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews.md).
@@ -17,17 +17,13 @@ declined reviews in this system.
 ### Parameters
 Mandatory:
 
-* Period of time. Start and finish date of the period. Default: forever.
-
-    Period during which declined reviews are considered.
-
-* Criteria for source code. Algorithm. Default: all files are source code.
-
+* Period of time. Start and finish date of the period. Default: forever.  
+    Period during which declined reviews are considered. <br>
+* Criteria for source code. Algorithm. Default: all files are source code.  
     If we are focused on source code, we need a criteria for deciding
     whether a file is a part of the source code or not.
 
 ### Aggregators
-Usual aggregators are:
 
 * Count. Total number of declined reviews during the period.
 
@@ -57,8 +53,7 @@ Mandatory:
 
 * Heuristic for detecting declined merge requests, telling apart
   those cases where the merge request was closed, but the
-  changes were included in the git repository manually.
-  Default: None.
+  changes were included in the git repository manually. Default: None.
 
 ### Specific description: Gerrit
 In the case of Gerrit, declined reviews are defined as "changesets
@@ -69,7 +64,6 @@ None.
 
 ## Objectives
 * Volume of coding activity.
-
     Declined code reviews are a proxy for the activity in a project.
     By counting declined code reviews in the set of repositories corresponding
     to a project, you can have an idea of the overall coding activity in
@@ -79,18 +73,14 @@ None.
 
 ## Filters and Visualizations 
  
- 
 ### Filters
-Usual filters and bucketing are:
 
 * By actors (submitter, reviewer, merger). Requires actor merging
 (merging ids corresponding to the same author).
-
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
 ### Visualizations
-Some useful visualizations are:
 
 * Count per month over time
 * Count per group over time
@@ -101,10 +91,7 @@ Each bar would represent declined reviews during a certain period
 
 ## Reference Implementation
  
- 
 ## Known Implementations
  
- 
 ## Resources
- 
  
