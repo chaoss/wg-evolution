@@ -1,8 +1,5 @@
 from datetime import datetime
 
-import pandas as pd
-import numpy as np
-
 import utils
 from issue import Issue
 
@@ -10,23 +7,45 @@ from issue import Issue
 class OpenIssueAge(Issue):
     """
     Class for Age of Open Issues
-
-    :param items: A list of dictionaries.
-        Each item is a Perceval dictionary, obtained from a JSON
-        file or from Perceval directly.
-
-    :param date_range: A tuple which represents the period of interest
-        It is of the form (since, until), where since and until are strings.
-        Either, or both can be None. If, for example, since is None, that
-        would mean that all commits from the first commit to the commit
-        who last falls inside the until range will be included.
     """
 
-    def __init__(self, item_list, date_range=(None, None)):
+    def _flatten(self, item):
+        """
+        Flatten a raw issue fetched by Perceval into a flat dictionary.
 
-        super().__init__(item_list, date_range)
+        A list with a single flat directory will be returned.
+        That dictionary will have the elements we need for computing metrics.
+        The list may be empty, if for some reason the issue should not
+        be considered.
 
-        self.df = self._add_open_issue_age_col(self.df)
+        :param item: raw item fetched by Perceval (dictionary)
+        :returns:   list of a single flat dictionary
+        """
+
+        creation_date = utils.str_to_date(item['data']['created_at'])
+        if self.since and (self.since > creation_date):
+            return []
+
+        if self.until and (self.until < creation_date):
+            return []
+
+        flat = {
+            'repo': item['origin'],
+            'hash': item['data']['id'],
+            'category': "issue",
+            'author': item['data']['user']['login'],
+            'created_date': creation_date,
+            'current_status': item['data']['state']
+        }
+
+        if flat['current_status'] == 'open':
+            flat['open_issue_age'] = \
+               (datetime.now() - flat['created_date']).days
+
+        else:
+            return []
+
+        return [flat]
 
     def compute(self):
         """
@@ -36,10 +55,7 @@ class OpenIssueAge(Issue):
             issues
         """
 
-        open_issue_ages = [age for age in self.df['open_issue_age']
-                           if not pd.isna(age)]
-
-        avg_open_issue_age = np.mean(open_issue_ages)
+        avg_open_issue_age = self.df['open_issue_age'].mean()
         return avg_open_issue_age
 
     def _agg(self, df, period):
@@ -65,36 +81,8 @@ class OpenIssueAge(Issue):
             been performed on the "open_issue_age" column
         """
 
-        df = df.resample(period)['open_issue_age'].agg(['mean'])
-
-        return df
-
-    def _add_open_issue_age_col(self, df):
-        """
-        Adds the open_issue_age column to df if it is
-        not empty.
-
-        :param df: A pandas DataFrame.
-        :returns df: Modified DataFrame
-
-        :raises ValueError: No analysis possible if no valid data in df.
-        """
-
-        if len(df) > 0:
-            # add open_issue_age column
-            df['open_issue_age'] = pd.np.nan
-
-            # replace NaN values for open issues by their "age"
-            issue_status_series = datetime.now() - df["created_date"][
-                df["current_status"] == "open"]
-
-            ages_in_days = [x.days for x in issue_status_series]
-            df.loc[df["current_status"] == "open",
-                   ['open_issue_age']] = ages_in_days
-
-        else:
-            raise ValueError("DataFrame empty. "
-                             "Please check instantiation parameters")
+        df = df.resample(period).agg({'open_issue_age': 'mean'})
+        df['open_issue_age'] = df['open_issue_age'].fillna(0)
 
         return df
 
@@ -102,6 +90,13 @@ class OpenIssueAge(Issue):
 if __name__ == "__main__":
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
     items = utils.read_json_file('../issues.json')
+
+    # the GitHub API considers all pull requests to be issues. Any
+    # pull request represented as an issue has a 'pull_request'
+    # attribute, which is used to filter them out from the issue
+    # data.
+
+    items = [item for item in items if 'pull_request' not in item['data']]
     open_issue_age = OpenIssueAge(items)
     print("The average age of all open issues is {:.2f}"
           .format(open_issue_age.compute()))
@@ -110,4 +105,5 @@ if __name__ == "__main__":
     print("The average age of open issues created after 2018-09-07 is {:.2f}"
           .format(open_issue_age.compute()))
 
+    print("The changes in the age of open issues on a monthly basis: ")
     print(open_issue_age.time_series('M'))
