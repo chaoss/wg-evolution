@@ -1,5 +1,5 @@
 # Reviews
-Question: What new review requests for changes to the source code, occurred during a certain period? 
+Question: What new review requests for changes to the source code occurred during a certain period? 
 
 ## Description
 When a project uses code review processes, changes are not directly
@@ -18,17 +18,14 @@ or in some contexts "changesets" in the case of Gerrit.
 ### Parameters
 Mandatory:
 
-* Period of time. Start and finish date of the period. Default: forever.
+* Period of time. Start and finish date of the period. Default: forever.  
+    Period during which reviews are considered.<br>
 
-    Period during which reviews are considered.
-
-* Criteria for source code. Algorithm. Default: all files are source code.
-
+* Criteria for source code. Algorithm. Default: all files are source code.  
     If we are focused on source code, we need a criteria for deciding
     whether a file is a part of the source code or not.
 
 ### Aggregators
-Usual aggregators are:
 
 * Count. Total number of reviews during the period.
 
@@ -64,10 +61,8 @@ patchset for review.
 #### Gerrit parameters
 None.
 
-
 ## Objectives
 * Volume of changes proposed to a project.
-
     Reviews are a proxy for the activity in a project.
     By counting reviews to code changes in the set of repositories corresponding
     to a project, you can have an idea of the overall activity in
@@ -78,9 +73,7 @@ None.
 
 ## Filters and Visualizations
  
- 
 ### Filters
-Usual filters and bucketing are:
 
 * By actors (submitter, reviewer, merger). Requires actor merging
 (merging ids corresponding to the same author).
@@ -89,7 +82,6 @@ Usual filters and bucketing are:
 Requires actor grouping, and likely, actor merging.
 
 ### Visualizations
-Some useful visualizations are:
 
 * Count per month over time
 * Count per group over time
@@ -99,7 +91,6 @@ Each bar would represent reviews to change the code
 during a certain period (eg, a month).
 
 ## Reference Implementation
- 
  
 ## Known Implementations
 * [Grimoirelab](https://chaoss.github.io/grimoirelab) provides this metric out of the box for GitHub Pull Requests, GitLab Merge Requests and Gerrit Changesets.  
@@ -115,5 +106,4 @@ during a certain period (eg, a month).
   - Example screenshot: ![GrimoireLab screenshot of metric Reviews](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/reviews-GrimoireLab.png)
 
 ## Resources
- 
  
