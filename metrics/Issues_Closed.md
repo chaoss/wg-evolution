@@ -1,6 +1,6 @@
 # Issues Closed
 
-Question: What are the issues that were closed during a certain period?
+Question: What is the count of issues that were closed during a certain period?
 
 ## Description
 
@@ -26,14 +26,14 @@ issues that were closed during a certain period.
 
 Mandatory:
 
-* Period of time. Start and finish date of the period. Default: forever.
-    - Period during which issues are considered.
+* Period of time. Start and finish date of the period. Default: forever.  
+    Period during which issues are considered.<br>
 
 * Criteria for source code. Algorithm. Default: all issues are related to
-  source code.
-    - If we are focused on source code, we need a criteria for deciding
+  source code.  
+    If we are focused on source code, we need a criteria for deciding
     whether an issues is related to the source code or not.
-    - All issues could be included in the metric by altering the default. 
+    All issues could be included in the metric by altering the default. 
 
 * Reopen as new. Boolean, defining whether reopened issues are considered
   as new issues. If false, it means the closing event previous to a
@@ -45,8 +45,6 @@ Mandatory:
   the period of interest.
 
 ### Aggregators
-
-Usual aggregators are:
 
 * Count. Total number of active issues during the period.
 
@@ -88,22 +86,16 @@ None.
     Of course, this metric is not the only one that should be
     used to track volume of coding activity.
 
-
 ## Filters and Visualizations
 
 ### Filters
 
-Usual filters and bucketing are:
-
 * By actors (submitter, commenter, closer). Requires actor merging
 (merging ids corresponding to the same author).
-
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
 ### Visualizations
-
-Some useful visualizations are:
 
 * Count per month over time
 * Count per group over time
@@ -111,7 +103,6 @@ Some useful visualizations are:
 These could be represented as bar charts, with time running in the X axis.
 
 ## Reference Implementation
-  
 
 ## Known Implementations
 
