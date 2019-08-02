@@ -114,7 +114,6 @@ None.
 Requires actor grouping, and likely, actor merging.
 
 ### Visualizations
-Some useful visualizations are:
 
 * Count per month over time
 * Count per group over time
