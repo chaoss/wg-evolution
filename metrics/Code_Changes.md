@@ -41,26 +41,22 @@ repeated commits should be counted only once.
 Mandatory:
 
 * Date type. Either author date or committer date. Default: author date.
-
     For each git commit, two dates are kept: when the commit was authored,
     and when it was committed to the repository.
     For deciding on the period, one of them has to be selected.  
-
+<br>
 * Include merge commits. Boolean. Default: True.
-
     Merge commits are
     those which merge a branch, and in some cases are not considered as
     reflecting a coding activity
-
+<br>
 * Include empty commits. Boolean. Default: True.
-
     Empty commits are
     those which do not touch files, and in some cases are not considered as
     reflecting a coding activity.
 
 ## Objectives
 * Volume of coding activity.
-
     Code changes are a proxy for the activity in a project.
     By counting the code changes in the set of repositories corresponding
     to a project, you can have an idea of the overall coding activity in
@@ -70,9 +66,7 @@ Mandatory:
 
 ## Sample Filter and Visualization
  
- 
 ### Filters
-Usual filters and bucketing are:
 
 * By actors (author, committer). Requires actor merging
 (merging ids corresponding to the same author).
@@ -81,7 +75,6 @@ Usual filters and bucketing are:
 and likely, actor merging.
 
 ### Visualizations
-Some useful visualizations are:
 
 * Count per month over time
 * Count per group over time
@@ -90,8 +83,7 @@ These could be represented as bar charts, with time running in the X axis.
 Each bar would represent a code changes during a certain period (eg, a month).
 
 ## Reference Implementation
-See [reference implementation for git](../implementations/Code_Changes-Git.ipynb)
-([see it in Binder](https://mybinder.org/v2/gh/chaoss/wg-gmd/master?filepath=implementations/Code_Changes-Git.ipynb)).
+See [reference implementation for git](https://github.com/chaoss/wg-evolution/blob/master/implementations/notebooks_df/code_changes_git.ipynb)
 
 ## Known Implementations
 * [GrimoireLab](https://chaoss.github.io/grimoirelab) provides this metric out of the box.
@@ -104,9 +96,9 @@ See [reference implementation for git](../implementations/Code_Changes-Git.ipynb
     * X-axis: `Date Histogram` Aggregation, `grimoire_creation_date` Field, `Auto` Interval, `Time` Custom Label
   - Example screenshot: ![GrimoireLab screenshot of metric Code_Changes](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/code_changes-GrimoireLab.png)
 
-* [Augur](https://chaoss.github.io/augur/). Provides this metric out of the box.
+* [Augur](https://chaoss.github.io/augur/)
 
-* [Gitdm](https://repo.or.cz/w/git-dm.git). Provides this metric out of the box.
+* [Gitdm](https://repo.or.cz/w/git-dm.git)
 
 ## Resources
  
