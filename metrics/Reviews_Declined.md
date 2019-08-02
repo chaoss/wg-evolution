@@ -1,4 +1,4 @@
-# Reviews_Declined
+# Reviews Declined
 Question: What reviews of code changes ended up declining the change during a certain period?
 
 ## Description
