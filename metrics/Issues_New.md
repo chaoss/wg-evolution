@@ -1,5 +1,5 @@
 # Issues New
-Question: What new issues are created during a certain period? 
+Question: What are the number of new issues are created during a certain period? 
 
 ## Description
 Projects discuss how they are fixing bugs, or adding new features,
@@ -42,23 +42,19 @@ GitLab or Jira, to "bug reports" in the case of Bugzilla, and to
 ### Parameters
 Mandatory:
 
-* Period of time. Start and finish date of the period. Default: forever.
-
-    Period during which issues are considered.
+* Period of time. Start and finish date of the period. Default: forever.  
+    Period during which issues are considered.<br>
 
 * Criteria for source code. Algorithm. Default: all issues are related to
-  source code.
-
+  source code.  
     If we are focused on source code, we need a criteria for deciding
-    whether an issues is related to the source code or not.
+    whether an issues is related to the source code or not.<br>
 
-* Reopen as new. Boolean. Default: False.
-
+* Reopen as new. Boolean. Default: False.  
     Criteria for defining whether reopened issues are considered
     as new issues.
 
 ### Aggregators
-Usual aggregators are:
 
 * Count. Total number of issues during the period.
 
@@ -101,7 +97,6 @@ None.
 
 ## Objectives
 * Volume of issues discussed in a project.
-
     Issues are a proxy for the activity in a project.
     By counting issues discussing code in the set of repositories corresponding
     to a project, you can have an idea of the overall activity in
@@ -109,16 +104,12 @@ None.
     Of course, this metric is not the only one that should be
     used to track volume of coding activity.
 
-
 ## Filters and Visualizations
- 
 
 ### Filters
-Usual filters and bucketing are:
 
 * By actors (submitter, commenter, closer). Requires actor merging
 (merging ids corresponding to the same author).
-
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
@@ -134,10 +125,7 @@ during a certain period (eg, a month).
 
 ## Reference Implementation
   
-  
 ## Known Implementations
  
- 
-
 ## Resources
  
