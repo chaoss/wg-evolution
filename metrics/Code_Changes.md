@@ -16,6 +16,7 @@ Mandatory:
 * Period of time. Start and finish date of the period. Default: forever.  
     Period during which changes are considered.  
     
+    
 * Criteria for source code. Algorithm. Default: all files are source code.  
     If focused on source code, criteria for deciding whether a file is a part of the source code or not.  
 
