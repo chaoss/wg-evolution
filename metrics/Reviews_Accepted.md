@@ -1,6 +1,5 @@
-# Reviews_Accepted
-Question: What reviews for changes to the source code that ended accepting the change
-during a certain period? 
+# Reviews Accepted
+Question: How many reviews are present in a code change? 
 
 ## Description
 Reviews are defined as in [Reviews](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews.md).
@@ -18,17 +17,14 @@ corresponds to a single commit.
 ### Parameters
 Mandatory:
 
-* Period of time. Start and finish date of the period. Default: forever.
+* Period of time. Start and finish date of the period. Default: forever.  
+    Period during which accepted reviews are considered.<br>
 
-    Period during which accepted reviews are considered.
-
-* Criteria for source code. Algorithm. Default: all files are source code.
-
+* Criteria for source code. Algorithm. Default: all files are source code.  
     If we are focused on source code, we need a criteria for deciding
     whether a file is a part of the source code or not.
 
 ### Aggregators
-Usual aggregators are:
 
 * Count. Total number of accepted reviews during the period.
 
@@ -68,36 +64,29 @@ xxx and yyyy"), which may help to track commits in the git repository.
 Mandatory:
 
 * Heuristic for detecting accepted pull requests not accepted
-  via the web interface.
-  Default: None.
+  via the web interface. Default: None.
 
 ### Specific description: GitLab
 In the case of GitLab, accepted reviews are defined as "merge requests
 whose changes are included in the git repository",
 as long as it proposes changes to source code files.
 
-[ Details to be done ]
-
 #### GitLab parameters
 Mandatory:
 
 * Heuristic for detecting accepted pull requests not accepted
-  via the web interface.
-  Default: None.
+  via the web interface. Default: None.
 
 ### Specific description: Gerrit
 In the case of Gerrit, accepted reviews are defined as "changesets
 whose changes are included in the git repository",
 as long as they proposes changes to source code files.
 
-[ Details to be done ]
-
 #### Gerrit parameters
 None.
 
 ## Objectives
-* Volume of coding activity.
-
+* Volume of coding activity.  
     Accepted code reviews are a proxy for the activity in a project.
     By counting accepted code reviews in the set of repositories corresponding
     to a project, you can have an idea of the overall coding activity in
@@ -107,18 +96,14 @@ None.
 
 ## Filters and Visualizations
  
- 
 ### Filters
-Usual filters and bucketing are:
 
 * By actors (submitter, reviewer, merger). Requires actor merging
 (merging ids corresponding to the same author).
-
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
 ### Visualizations
-Some useful visualizations are:
 
 * Count per month over time
 * Count per group over time
@@ -128,7 +113,6 @@ Each bar would represent accepted reviews to change the code
 during a certain period (eg, a month).
 
 ## Reference Implementation
-  
   
 ## Known Implementations
 * [Grimoirelab](https://chaoss.github.io/grimoirelab) provides this metric out of the box for GitHub Pull Requests and also provides data to build similar visualizations for GitLab Merge Requests and Gerrit Changesets.
