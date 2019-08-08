@@ -1,14 +1,16 @@
 from datetime import datetime
 
-import conditions
-import utils
-from commit_git import CommitGit
+from implementations.code_df.commit_git import CommitGit
+from implementations.code_df.conditions import (DirExclude,
+                                                MasterInclude,
+                                                PostfixExclude)
+from implementations.code_df.utils import (read_json_file,
+                                           str_to_date)
 
 
 class CodeChangesLinesGit(CommitGit):
     """
-    Class for Code_Changes_Lines for Git repositories
-    with a non-pandas approach.
+    Class for Code_Changes_Lines for Git repositories (non-pandas)
     """
 
     def _flatten(self, item):
@@ -24,7 +26,7 @@ class CodeChangesLinesGit(CommitGit):
         :returns:    list of a single flat dictionary
         """
 
-        creation_date = utils.str_to_date(item['data']['AuthorDate'])
+        creation_date = str_to_date(item['data']['AuthorDate'])
         if self.since and (self.since > creation_date):
             return []
 
@@ -43,7 +45,7 @@ class CodeChangesLinesGit(CommitGit):
                 'category': "commit",
                 'created_date': creation_date,
                 'committer': item['data']['Commit'],
-                'commit_date': utils.str_to_date(item['data']['CommitDate']),
+                'commit_date': str_to_date(item['data']['CommitDate']),
                 'files_no': len(item['data']['files']),
                 'refs': item['data']['refs'],
                 'parents': item['data']['parents'],
@@ -100,20 +102,26 @@ class CodeChangesLinesGit(CommitGit):
 
         return modifications_count
 
+    def __str__(self):
+        return "Code Changes Lines"
+
 
 if __name__ == "__main__":
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
-    items = utils.read_json_file('../git-commits.json')
+    items = read_json_file('../git-commits.json')
 
+    # total number of line changes
     changes = CodeChangesLinesGit(items, date_range=(None, None))
     print("Code_Changes_Lines, total changes:", changes.compute())
 
-    changes = CodeChangesLinesGit(items, date_range=(date_since, None),
-                                  is_code=[conditions.DirExclude(['tests']),
-                                           conditions.PostfixExclude(
+    # number of line changes after imposing conditions
+    changes = CodeChangesLinesGit(items, date_range=(None, None),
+                                  is_code=[DirExclude(['tests']),
+                                           PostfixExclude(
                                             ['.md', 'COPYING'])])
     print("Code_Changes_Lines, excluding some files:", changes.compute())
 
+    # total line changes after a certain date
     changes = CodeChangesLinesGit(items, date_range=(date_since, None),
-                                  conds=[conditions.MasterInclude()])
+                                  conds=[MasterInclude()])
     print("Code_Changes_Lines, only for master:", changes.compute())

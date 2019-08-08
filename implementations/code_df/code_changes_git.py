@@ -9,7 +9,7 @@ from implementations.code_df.utils import read_json_file
 
 class CodeChangesGit(CommitGit):
     """
-    Class for Code_Changes for Git repositories.
+    Class for Code Changes for Git repositories.
     """
 
     def compute(self):
@@ -47,6 +47,9 @@ class CodeChangesGit(CommitGit):
 
         df = df.resample(period)['category'].agg(['count'])
         return df
+
+    def __str__(self):
+        return "Code Changes"
 
 
 if __name__ == "__main__":

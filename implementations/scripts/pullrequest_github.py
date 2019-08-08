@@ -1,5 +1,5 @@
-from metric import Metric
-import utils
+from implementations.scripts.metric import Metric
+from implementations.scripts.utils import str_to_date
 
 
 class PullRequestGitHub(Metric):
@@ -37,7 +37,7 @@ class PullRequestGitHub(Metric):
         :returns:   list of a single flat dictionary
         """
 
-        creation_date = utils.str_to_date(item['data']['created_at'])
+        creation_date = str_to_date(item['data']['created_at'])
         if self.since and (self.since > creation_date):
             return []
 

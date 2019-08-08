@@ -7,7 +7,7 @@ from implementations.code_df.utils import (str_to_date,
 
 class ReviewsDurationGitHub(PullRequestGitHub):
     """
-    Class for Reviews Duration
+    Class for Reviews Duration metric
     """
 
     def _flatten(self, item):
@@ -84,6 +84,9 @@ class ReviewsDurationGitHub(PullRequestGitHub):
         df = df.dropna()
 
         return df
+
+    def __str__(self):
+        return "Reviews Duration"
 
 
 if __name__ == "__main__":

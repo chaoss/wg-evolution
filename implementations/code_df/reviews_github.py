@@ -6,7 +6,7 @@ from implementations.code_df.utils import read_json_file
 
 class ReviewsGitHub(PullRequestGitHub):
     """
-    Class for Reviews
+    Class for the Reviews metric
     """
 
     def compute(self):
@@ -45,6 +45,9 @@ class ReviewsGitHub(PullRequestGitHub):
         df = df.resample(period)['category'].agg(['count'])
 
         return df
+
+    def __str__(self):
+        return "Reviews"
 
 
 if __name__ == "__main__":

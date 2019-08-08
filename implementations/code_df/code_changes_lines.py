@@ -10,7 +10,7 @@ from implementations.code_df.utils import (str_to_date,
 
 class CodeChangesLinesGit(CommitGit):
     """
-    Class for Code_Changes_Lines
+    Class for the Code Changes Lines metric
     """
 
     def _flatten(self, item):
@@ -127,6 +127,9 @@ class CodeChangesLinesGit(CommitGit):
         df = df.resample(period)['modifications'].agg(['sum'])
 
         return df
+
+    def __str__(self):
+        return "Code Changes Lines"
 
 
 if __name__ == "__main__":
