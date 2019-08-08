@@ -6,7 +6,7 @@ from implementations.code_df.utils import str_to_date, read_json_file
 
 class OpenIssueAgeGitHub(IssueGitHub):
     """
-    Class for Age of Open Issues
+    Class for the Open Issue Age metric.
     """
 
     def _flatten(self, item):
@@ -85,6 +85,9 @@ class OpenIssueAgeGitHub(IssueGitHub):
         df['open_issue_age'] = df['open_issue_age'].fillna(0)
 
         return df
+
+    def __str__(self):
+        return "Open Issue Age"
 
 
 if __name__ == "__main__":

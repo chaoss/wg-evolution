@@ -1,12 +1,12 @@
 from datetime import datetime
 
-import utils
-from pullrequest_github import PullRequestGitHub
+from implementations.scripts.pullrequest_github import PullRequestGitHub
+from implementations.scripts.utils import read_json_file
 
 
 class ReviewsAccepted(PullRequestGitHub):
     """
-    Class for Reviews Accepted
+    Class for the Reviews Accepted metric (non-pandas)
     """
 
     def compute(self):
@@ -22,10 +22,13 @@ class ReviewsAccepted(PullRequestGitHub):
 
         return len(pull_ids)
 
+    def __str__(self):
+        return "Reviews Accepted"
+
 
 if __name__ == "__main__":
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
-    items = utils.read_json_file('../pull_requests.json')
+    items = read_json_file('../pull_requests.json')
 
     # total accepted reviews
     reviews_accepted = ReviewsAccepted(items)
