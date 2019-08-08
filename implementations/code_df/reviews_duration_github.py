@@ -1,8 +1,8 @@
 from datetime import datetime
 
+from implementations.code_df.pullrequest_github import PullRequestGitHub
 from implementations.code_df.utils import (str_to_date,
                                            read_json_file)
-from pullrequest_github import PullRequestGitHub
 
 
 class ReviewsDurationGitHub(PullRequestGitHub):
@@ -90,15 +90,18 @@ if __name__ == "__main__":
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
     items = read_json_file('../pull_requests.json')
 
+    # median duration over all reviews
     reviews_duration = ReviewsDurationGitHub(items)
     print("The median reviews duration is {}"
           .format(reviews_duration.compute()))
 
+    # median duration for reviews created after a certain date
     reviews_duration = ReviewsDurationGitHub(items, (date_since, None))
     print("The median reviews duration for reviews created after "
           "2018-09-07 which were accepted is {}"
           .format(reviews_duration.compute()))
 
+    # time-series on a monthly basis for median duration of reviews
     print("The trends in the median duration for reviews created"
           " from 2018-09-07 onwards are: ")
     print(reviews_duration.time_series('M'))

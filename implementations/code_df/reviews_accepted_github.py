@@ -1,17 +1,18 @@
 from datetime import datetime
 
-from implementations.code_df.pullrequest import PullRequest
+from implementations.code_df.pullrequest import PullRequestGitHub
 from implementations.code_df.utils import read_json_file
 
 
-class ReviewsAccepted(PullRequest):
+class ReviewsAcceptedGitHub(PullRequestGitHub):
     """
     Class for Reviews Accepted
     """
 
     def compute(self):
         """
-        Compute the total number of reviews which were accepted, from the Perceval data.
+        Compute the total number of reviews which were accepted,
+        from the Perceval data.
 
         :returns count: The total number of reviews accepted
         """
@@ -52,14 +53,17 @@ if __name__ == "__main__":
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
     items = read_json_file('../pull_requests.json')
 
-    reviews_accepted = ReviewsAccepted(items)
+    # total number of reviews accepted
+    reviews_accepted = ReviewsAcceptedGitHub(items)
     print("The total number of reviews accepted is {}"
           .format(reviews_accepted.compute()))
 
-    reviews_accepted = ReviewsAccepted(items, (date_since, None))
+    # total number of reviews accepted after a particular date
+    reviews_accepted = ReviewsAcceptedGitHub(items, (date_since, None))
     print("The number of reviews created after 2018-09-07 which were accepted is {}"
           .format(reviews_accepted.compute()))
 
+    # time-series on a monthly basis
     print("The trends in the number of accepted reviews created"
           " from 2018-09-07 onwards are: ")
     print(reviews_accepted.time_series('M'))

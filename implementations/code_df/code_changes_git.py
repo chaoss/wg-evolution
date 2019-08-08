@@ -1,13 +1,13 @@
 from datetime import datetime
 
-from implementations.code_df.commit import Commit
+from implementations.code_df.commit_git import CommitGit
 from implementations.code_df.conditions import (DirExclude,
                                                 MasterInclude,
                                                 PostfixExclude)
 from implementations.code_df.utils import read_json_file
 
 
-class CodeChangesGit(Commit):
+class CodeChangesGit(CommitGit):
     """
     Class for Code_Changes for Git repositories.
     """
@@ -53,17 +53,21 @@ if __name__ == "__main__":
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
     items = read_json_file('../git-commits.json')
 
+    # total changes
     changes = CodeChangesGit(items, date_range=(date_since, None))
     print("Code_Changes, total:", changes.compute())
 
+    # excluding certain files
     changes = CodeChangesGit(items, date_range=(date_since, None),
                              is_code=[DirExclude(['tests']),
                                       PostfixExclude(['.md', 'COPYING'])])
     print("Code_Changes, excluding some files:", changes.compute())
 
+    # considering commits only on the master
     changes = CodeChangesGit(items, date_range=(date_since, None),
                              conds=[MasterInclude()])
     print("Code_Changes, only for master:", changes.compute())
 
+    # time-series on a monthly basis considering only master commits
     print("The number of commits created on a monthly basis is:")
     print(changes.time_series(period='M'))

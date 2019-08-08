@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from implementations.code_df.commit import Commit
+from implementations.code_df.commit_git import CommitGit
 from implementations.code_df.conditions import (DirExclude,
                                                 MasterInclude,
                                                 PostfixExclude)
@@ -8,7 +8,7 @@ from implementations.code_df.utils import (str_to_date,
                                            read_json_file)
 
 
-class CodeChangesLines(Commit):
+class CodeChangesLinesGit(CommitGit):
     """
     Class for Code_Changes_Lines
     """
@@ -70,7 +70,8 @@ class CodeChangesLines(Commit):
             for file in item['data']['files']:
                 if 'added' and 'removed' in file:
                     try:
-                        modified_lines += int(file['added']) + int(file['removed'])
+                        modified_lines += int(file['added']) \
+                                        + int(file['removed'])
 
                     except ValueError:
                         # in case of compressed files,
@@ -131,18 +132,23 @@ class CodeChangesLines(Commit):
 if __name__ == "__main__":
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
     items = read_json_file('../git-commits.json')
-    changes = CodeChangesLines(items, date_range=(None, None))
+
+    # total number of line changes
+    changes = CodeChangesLinesGit(items, date_range=(None, None))
     print("Code_Changes_Lines, total changes:", changes.compute())
 
-    changes = CodeChangesLines(items, date_range=(date_since, None),
-                               is_code=[DirExclude(['tests']),
-                                        PostfixExclude(
+    # number of line changes after imposing conditions
+    changes = CodeChangesLinesGit(items, date_range=(None, None),
+                                  is_code=[DirExclude(['tests']),
+                                           PostfixExclude(
                                             ['.md', 'COPYING'])])
     print("Code_Changes_Lines, excluding some files:", changes.compute())
 
-    changes = CodeChangesLines(items, date_range=(date_since, None),
-                               conds=[MasterInclude()])
+    # total line changes after a certain date
+    changes = CodeChangesLinesGit(items, date_range=(date_since, None),
+                                  conds=[MasterInclude()])
     print("Code_Changes_Lines, only for master:", changes.compute())
 
+    # time-series on a monthly basis considering only master commits
     print("The number of lines modified each month is: ")
     print(changes.time_series())

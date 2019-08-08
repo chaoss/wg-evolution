@@ -19,7 +19,6 @@ We have two kinds of conditions:
 class Code:
     """
     Root of the hierarchy for deciding if a commit touches source code.
-
     """
 
     def __init__(self):

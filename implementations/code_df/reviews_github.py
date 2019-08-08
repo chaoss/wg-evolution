@@ -1,10 +1,10 @@
 from datetime import datetime
 
-from implementations.code_df.pullrequest import PullRequest
+from implementations.code_df.pullrequest import PullRequestGitHub
 from implementations.code_df.utils import read_json_file
 
 
-class Reviews(PullRequest):
+class ReviewsGitHub(PullRequestGitHub):
     """
     Class for Reviews
     """
@@ -51,14 +51,17 @@ if __name__ == "__main__":
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
     items = read_json_file('../pull_requests.json')
 
-    reviews = Reviews(items)
+    # total number of reviews
+    reviews = ReviewsGitHub(items)
     print("The total number of reviews is {}"
           .format(reviews.compute()))
 
-    reviews = Reviews(items, (date_since, None))
+    # reviews after a certain date
+    reviews = ReviewsGitHub(items, (date_since, None))
     print("The number of reviews created after 2018-09-07 is {}"
           .format(reviews.compute()))
 
+    # time-series on a monthly basis
     print("The trends in the number of reviews created"
           " from 2018-09-07 onwards are: ")
     print(reviews.time_series('M'))
