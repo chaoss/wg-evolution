@@ -1,10 +1,10 @@
 from datetime import datetime
 
-import utils
-from issue import Issue
+from implementations.code_df.issue_github import IssueGitHub
+from implementations.code_df.utils import str_to_date, read_json_file
 
 
-class OpenIssueAge(Issue):
+class OpenIssueAgeGitHub(IssueGitHub):
     """
     Class for Age of Open Issues
     """
@@ -22,7 +22,7 @@ class OpenIssueAge(Issue):
         :returns:   list of a single flat dictionary
         """
 
-        creation_date = utils.str_to_date(item['data']['created_at'])
+        creation_date = str_to_date(item['data']['created_at'])
         if self.since and (self.since > creation_date):
             return []
 
@@ -89,7 +89,7 @@ class OpenIssueAge(Issue):
 
 if __name__ == "__main__":
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
-    items = utils.read_json_file('../issues.json')
+    items = read_json_file('../issues.json')
 
     # the GitHub API considers all pull requests to be issues. Any
     # pull request represented as an issue has a 'pull_request'
@@ -97,13 +97,17 @@ if __name__ == "__main__":
     # data.
 
     items = [item for item in items if 'pull_request' not in item['data']]
-    open_issue_age = OpenIssueAge(items)
+
+    # total number of open issues in a given period
+    open_issue_age = OpenIssueAgeGitHub(items)
     print("The average age of all open issues is {:.2f}"
           .format(open_issue_age.compute()))
 
-    open_issue_age = OpenIssueAge(items, (date_since, None))
+    # number of open issues created after a certain date
+    open_issue_age = OpenIssueAgeGitHub(items, (date_since, None))
     print("The average age of open issues created after 2018-09-07 is {:.2f}"
           .format(open_issue_age.compute()))
 
+    # time-series on a monthly basis for the number of open issues
     print("The changes in the age of open issues on a monthly basis: ")
     print(open_issue_age.time_series('M'))

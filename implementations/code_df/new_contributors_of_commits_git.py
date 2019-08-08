@@ -1,14 +1,14 @@
 from datetime import datetime
 
-from implementations.code_df.commit import Commit
-from implementations.code_df.conditions import (DirExclude,
-                                                Naive,
-                                                PostfixExclude)
-from implementations.code_df.utils import read_json_file
+import conditions
+import utils
+from commit_git import CommitGit
 
 
-class NewContributorsOfCommits(Commit):
+class NewContributorsOfCommitsGit(CommitGit):
     """
+    Class for New_Contributors_of_commits.
+
     Initializes self.df, the dataframe with one commit per row.
 
     :param items: A list of dictionaries.
@@ -26,11 +26,12 @@ class NewContributorsOfCommits(Commit):
         """
 
     def __init__(self, items, date_range=(None, None),
-                 is_code=[Naive()], conds=[]):
+                 is_code=[conditions.Naive()], conds=[]):
 
         super().__init__(items, date_range, is_code, conds)
 
-        self.df = self.df.loc[self.df.groupby('author')['created_date'].idxmin()]
+        self.df = self.df.loc[self.df.groupby('author')['created_date']
+                              .idxmin()]
 
     def compute(self, check_range=(None, None)):
         """
@@ -40,8 +41,8 @@ class NewContributorsOfCommits(Commit):
         :param check_range: A tuple which represents the start and end date
             when new committers will be considered
 
-        :returns count_new_committers: the number of new committers who committed
-            between the dates of check_range
+        :returns count_new_committers: the number of new committers who
+            committed between the dates of check_range
         """
 
         self.check_since, self.check_until = check_range
@@ -87,31 +88,32 @@ if __name__ == "__main__":
     date_until = datetime.strptime("2018-07-01", "%Y-%m-%d")
     check_since = datetime.strptime("2018-03-08", "%Y-%m-%d")
     check_until = datetime.strptime("2018-06-08", "%Y-%m-%d")
-    items = read_json_file('../git-commits.json')
+    items = utils.read_json_file('../git-commits.json')
 
-    # total number of new committers
-    new_committers = NewContributorsOfCommits(items)
+    # total new contributors
+    new_committers = NewContributorsOfCommitsGit(items)
     print("New committers, total: {}".format(new_committers.compute()))
 
-    # number of committers after imposing conditions on commits
-    new_committers_interval = NewContributorsOfCommits(
+    # excluding certain files
+    new_committers_interval = NewContributorsOfCommitsGit(
         items,
         (date_since, date_until),
-        is_code=[DirExclude(['tests']),
-                 PostfixExclude(['.md', 'COPYING'])])
+        is_code=[conditions.DirExclude(['tests']),
+                 conditions.PostfixExclude(['.md', 'COPYING'])])
 
-    # time-series on a monthly basis for number of new contributors
+    # time-series on a monthly basis
     print("Variations in the number of new committers"
           " between 2018-01-01 and 2018-07-01: ")
     print(new_committers_interval.time_series(period='M'))
 
-    # number of new committers after a certain date
-    new_committers_dated = NewContributorsOfCommits(
+    # restricting to a certain check range
+    new_committers_dated = NewContributorsOfCommitsGit(
                                             items,
                                             (date_since, date_until),
                                             is_code=[
-                                                DirExclude(['tests']),
-                                                PostfixExclude(
+                                                conditions.DirExclude(
+                                                    ['tests']),
+                                                conditions.PostfixExclude(
                                                     ['.md', 'COPYING'])])
     print("New committers, after 2018-03-08 (excluding some files):",
           new_committers.compute(check_range=(check_since, None)))

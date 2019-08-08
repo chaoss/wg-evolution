@@ -13,6 +13,7 @@ def str_to_date(date):
 
     :returns datetimeobj: the datetime object obtained from date string
     """
+
     try:
         datetimestr = datetime.datetime.strptime(
             date, "%a %b %d %H:%M:%S %Y %z").strftime("%Y-%m-%d")
@@ -35,6 +36,7 @@ def read_json_file(path):
 
     :returns items: a list of dictionaries read from a JSON file
     """
+
     items = list()
     with open(path, 'r') as raw_data:
         for line in raw_data:

@@ -1,10 +1,10 @@
 from implementations.code_df.metric import Metric
-from implementations.code_df.utils import str_to_date
+from implementations.utils import str_to_date
 
 
-class PullRequest(Metric):
+class IssueGitHub(Metric):
     """
-    Initilizes self.df, the dataframe with one pull_request per row.
+    Initializes self.df, the DataFrame, with one issue per row.
 
     :param items: A list of dictionaries.
         Each item is a Perceval dictionary, obtained from a JSON
@@ -13,9 +13,9 @@ class PullRequest(Metric):
     :param date_range: A tuple which represents the period of interest
         It is of the form (since, until), where since and until are
         strings. Either, or both can be None. If, for example, since
-        is None, that would mean that all pull_requests from the first
-        pull_request to the pull_request which last falls inside the
-        until range will be included.
+        is None, that would mean that all issues from the first issue
+        to the issue which last falls inside the until range will be
+        included.
     """
 
     def __init__(self, items, date_range=(None, None)):
@@ -25,11 +25,11 @@ class PullRequest(Metric):
 
     def _flatten(self, item):
         """
-        Flatten a raw pull_request fetched by Perceval into a flat dictionary.
+        Flatten a raw issue fetched by Perceval into a flat dictionary.
 
         A list with a single flat directory will be returned.
         That dictionary will have the elements we need for computing metrics.
-        The list may be empty, if for some reason the pull_request should not
+        The list may be empty, if for some reason the issue should not
         be considered.
 
         :param item: raw item fetched by Perceval (dictionary)
@@ -46,11 +46,10 @@ class PullRequest(Metric):
         flat = {
             'repo': item['origin'],
             'hash': item['data']['id'],
-            'category': "pull_request",
+            'category': "issue",
             'author': item['data']['user']['login'],
             'created_date': creation_date,
-            'current_status': item['data']['state'],
-            'merged': item['data']['merged']
+            'current_status': item['data']['state']
         }
 
         return [flat]

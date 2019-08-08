@@ -3,9 +3,9 @@ from implementations.code_df.metric import Metric
 from implementations.code_df.utils import str_to_date
 
 
-class Commit(Metric):
+class CommitGit(Metric):
     """
-    Initilizes self.df, the dataframe with one commit per row.
+    Initializes self.df, the dataframe with one commit per row.
 
     :param items: A list of dictionaries.
         Each item is a Perceval dictionary, obtained from a JSON
@@ -32,14 +32,16 @@ class Commit(Metric):
 
         # Initialize conditions
         for condition in self.conds:
-            if isinstance(condition, Commit):
+            if isinstance(condition, CommitGit):
                 condition.set_commits(self.df)
         # Filter out rows not fulfilling conditions
         for condition in self.conds:
             self._filterout(condition)
 
     def _filterout(self, condition):
-        """Filter out rows according to conditions on commits"""
+        """
+        Filter out rows according to conditions on commits
+        """
 
         for index, row in self.df.iterrows():
             if not condition.check(row['hash']):

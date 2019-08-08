@@ -6,7 +6,7 @@ class Metric:
     Create a DataFrame from items fetched by Perceval
 
     All classes computing metrics based on data frames
-    will be descendents of this class.
+    will be descendants of this class.
 
     :param items: A list of dictionaries.
         Each element is a Perceval dictionary, obtained from a JSON
