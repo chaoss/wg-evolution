@@ -1,10 +1,9 @@
 import unittest
 import json
-import sys
 from datetime import datetime
-sys.path.append('..')
 
-from code_df import utils
+from implementations.code_df.utils import (str_to_date,
+                                           read_json_file)
 
 
 def read_file(path):
@@ -45,7 +44,7 @@ class TestUtils(unittest.TestCase):
 
         expected = datetime.strptime(expected, "%Y-%m-%d")
 
-        datetimeobj = utils.str_to_date(date)
+        datetimeobj = str_to_date(date)
         self.assertEqual(expected, datetimeobj)
 
     def test_str_to_date_issue(self):
@@ -62,7 +61,7 @@ class TestUtils(unittest.TestCase):
 
         expected = datetime.strptime(expected, "%Y-%m-%d")
 
-        datetimeobj = utils.str_to_date(date)
+        datetimeobj = str_to_date(date)
         self.assertEqual(expected, datetimeobj)
 
     def test_read_json_file(self):
@@ -71,8 +70,8 @@ class TestUtils(unittest.TestCase):
         Perceval data, where each line in the file is of json format.
         """
 
-        expected = read_file('test_commits_data.json')
-        items = utils.read_json_file('test_commits_data.json')
+        expected = read_file('data/test_commits_data.json')
+        items = read_json_file('data/test_commits_data.json')
 
         self.assertEqual(expected, items)
 
