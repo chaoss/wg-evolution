@@ -2,23 +2,17 @@ import matplotlib.pyplot as plt
 from perceval.backends.core.github import GitHub
 from perceval.backends.core.git import Git
 import argparse
-from fpdf import FPDF
+import os
 
-from code_df import conditions
-from code_df import (
+from fpdf import FPDF
+import json
+
+from implementations.code_df.conditions import Naive
+from implementations.code_df import (
     code_changes_git,
     code_changes_lines,
-    # reviews,
-    # reviews_accepted,
     )
-
-# from scripts import (
-#     code_changes_git,
-#     code_changes_lines,
-#     reviews,
-#     reviews_accepted)
-
-from code_df import utils
+from implementations.code_df.utils import str_to_date
 
 GITHUB_URI = "http://github.com/"
 COMMIT_METRICS = \
@@ -42,10 +36,12 @@ METRICS = \
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Simple parser for GitHub issues and pull requests"
+        description="Analyze script argument parser"
     )
+
     parser.add_argument("-a", "--api-token",
                         help="GitHub API token", default=None)
+
     parser.add_argument("-r", "--repo",
                         required=True,
                         help="GitHub repository, as 'owner/repo'")
@@ -55,6 +51,7 @@ def parse_args():
     parser.add_argument("-u", "--until",
                         default=None,
                         help="To date")
+
     parser.add_argument("-cat", "--categories",
                         default=['commit'],
                         nargs='+',
@@ -66,32 +63,76 @@ def parse_args():
                         nargs='*',
                         type=list,
                         help="Commit conds")
+
     parser.add_argument("-x", "--is-code",
                         type=list,
-                        default=[conditions.Naive()],
+                        default=[Naive()],
                         help="is code conds")
+
     parser.add_argument("-t", "--time-series",
                         action='store_true',
-                        help="To get plots of timeseries'")
+                        help="To get plots of time-series'")
+
     parser.add_argument("-pe", "--period",
                         default='M',
                         help="period for time-series: 'M', 'W', etc.")
+
+    parser.add_argument("-o", "--output-formats",
+                        default=['json'],
+                        nargs='+',
+                        choices=['json', 'pdf', 'images', 'markdown'],
+                        help="json, issue, images, markdown (any combination)")
     return parser.parse_args()
 
 
-def plot_chart(df, title, y, x=None):
-    """
-    Plot chart when dataframe, title and axes are given.
-    """
+def generate_output(results, output_formats=['json'], write_to='xyz'):
 
-    plt.style.use('seaborn')
-    if not x:
-        df.plot(y=y, use_index=True)
-    else:
-        df.plot(x=x, y=y)
+    generate_options = {
+        'json': generate_json,
+        'pdf': generate_pdf,
+        'images': generate_images
+    }
 
-    plt.title(title)
-    plt.savefig(title.strip('<>') + '.png')
+    for output_format in output_formats:
+        generate_options[output_format](results, write_to)
+
+    # delete temporarily generated images
+    if 'pdf' in output_formats and 'images' not in output_formats:
+        for img in os.listdir(write_to):
+            if img.endswith('.png'):
+                os.remove(img)
+
+
+def generate_images(results, write_to='xyz'):
+    for category, results in results.items():
+        for result in results:
+            ax = result['metric'].plot_time_series()
+            plt.savefig(write_to + '/' + "_".join(str(result['metric'])) + '.png')
+
+
+# def plot_chart(df, title, y, x=None):
+#     """
+#     Plot chart when dataframe, title and axes are given.
+#     """
+
+#     plt.style.use('seaborn')
+#     if not x:
+#         df.plot(y=y, use_index=True)
+#     else:
+#         df.plot(x=x, y=y)
+
+#     plt.title(title)
+#     plt.savefig(title.strip('<>') + '.png')
+
+
+def generate_json(results, write_to='xyz.json'):
+    with open(write_to, 'w') as json_file:
+        for category, results in results.items():
+            for result in results:
+                json.dumps({
+                            'category': category,
+                            'metric': result['metric'],
+                            'value': result['value']}, json_file)
 
 
 def generate_pdf(results, write_to='xyz.pdf'):
@@ -118,14 +159,14 @@ def generate_pdf(results, write_to='xyz.pdf'):
             pdf.multi_cell(w=0, h=3, txt=txt)
 
             if result['df'] is not None:
-                plot_chart(result['df'], str(result['metric']), y='count')
+                generate_images(results, write_to)
                 pdf.image(str(result['metric']) + '.png', w=100)
 
     pdf.output(write_to, 'F')
 
 
 def run_metrics(items, categories=['commit'], date_range=(None, None),
-                is_code=[conditions.Naive()], conds=[],
+                is_code=[Naive()], conds=[],
                 timeseries=True, period='M'):
     """
     Calculate values of metrics on the given data (items).
@@ -183,6 +224,8 @@ def fetch_data(owner, repository, api_token=None, categories=['commit']):
             items = list(github.fetch(category=category))
 
         data[category] = items
+
+    data['issue'] = [item for item in data['issue'] if 'pull_request' not in item]
     return data
 
 
@@ -190,12 +233,10 @@ def main():
 
     args = parse_args()
 
-    print(args.conds, args.is_code)
     owner, repo = args.repo.split('/')
+    date_range = (str_to_date(args.since), str_to_date(args.until))
 
     items = fetch_data(owner, repo, args.api_token, args.categories)
-
-    date_range = (utils.str_to_date(args.since), utils.str_to_date(args.until))
 
     results = \
         run_metrics(
@@ -205,7 +246,7 @@ def main():
                         period=args.period
                     )
 
-    generate_pdf(results)
+    generate_output(results, args.output_formats)
 
 
 if __name__ == '__main__':
