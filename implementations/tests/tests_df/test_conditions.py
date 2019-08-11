@@ -1,14 +1,11 @@
 import unittest
 import json
-import sys
-sys.path.append('..')
 
-# from code_df.metric import Metric
-# from code_df import utils
-# from code_df.code_changes_git import CodeChangesGit
-from code_df.conditions import (
+from implementations.code_df.commit_git import CommitGit
+from implementations.code_df.metric import Metric
+from implementations.code_df.conditions import (
             Naive, DirExclude, PostfixExclude,
-            MasterInclude, MergeExclude, EmptyExclude
+            MasterInclude, MergeExclude, EmptyExclude,
             )
 
 
@@ -41,7 +38,7 @@ class TestNaive(unittest.TestCase):
         Run before each test to initialize test files.
         """
 
-        commits = read_file('test_commits_data.json')
+        commits = read_file('data/test_commits_data.json')
         self.file_gitignore = commits[0]['data']['files'][0]['file']
         self.file_tests = commits[1]['data']['files'][0]['file']
         self.file_bin = commits[2]['data']['files'][0]['file']
@@ -71,7 +68,7 @@ class TestDirExclude(unittest.TestCase):
         Run before each test to initialize test files.
         """
 
-        commits = read_file('test_commits_data.json')
+        commits = read_file('data/test_commits_data.json')
         self.file_gitignore = commits[0]['data']['files'][0]['file']
         self.file_tests = commits[1]['data']['files'][0]['file']
         self.file_bin = commits[2]['data']['files'][0]['file']
@@ -130,7 +127,7 @@ class TestPostfixExclude(unittest.TestCase):
         Run before each test to initialize test files.
         """
 
-        commits = read_file('test_commits_data.json')
+        commits = read_file('data/test_commits_data.json')
         self.file_gitignore = commits[0]['data']['files'][0]['file']
         self.file__init__ = commits[8]['data']['files'][0]['file']
         self.file_bin = commits[2]['data']['files'][0]['file']
@@ -180,6 +177,83 @@ class TestPostfixExclude(unittest.TestCase):
 
         self.assertFalse(PostfixExclude(['py']).check(self.file_py))
         self.assertFalse(PostfixExclude(['py']).check(self.file__init__))
+
+
+class TestCommitConditions(unittest.TestCase):
+    """
+    Tests for Commit Conditions, the Commit hierarchy of
+    classes in the conditions module.
+    """
+
+    def setUp(self):
+        """
+        Run before each test to initialize test files.
+        """
+
+        self.items = read_file('data/test_commits_data_2.json')
+
+        class Temp(Metric):
+            """
+            The Temp class.
+
+            A temporary sub-class of the code_df.Metric class.
+
+            It overrides the __init__ method so that there is no
+            implicit call to the set_commits and _filterout methods while
+            instantiating an object of this class, which happens in the case of
+            the Commit class.
+            """
+
+            def __init__(self, items, date_range=(None, None),
+                         is_code=[Naive()], conds=[]):
+
+                (self.since, self.until) = date_range
+                self.is_code = is_code
+                self.conds = conds
+
+                super().__init__(items)
+
+        self.Temp = Temp
+        self.Temp._flatten = CommitGit._flatten
+
+    def test_set_commits_master_include(self):
+        """
+        Test whether the set_commits method of the MasterInclude
+        class correctly identifies commits made on the master branch.
+        """
+
+        temp = self.Temp(self.items, conds=[MasterInclude()])
+        master_include = temp.conds[0]
+        master_include.set_commits(temp.df)
+
+        commit = CommitGit(self.items, conds=[MasterInclude()])
+        self.assertEqual(master_include.included, commit.conds[0].included)
+
+    def test_set_commits_empty_exclude(self):
+        """
+        Test whether the set_commits method of the EmptyExclude
+        class correctly identifies empty commits.
+        """
+
+        temp = self.Temp(self.items, conds=[EmptyExclude()])
+        empty_exclude = temp.conds[0]
+        empty_exclude.set_commits(temp.df)
+
+        commit = CommitGit(self.items, conds=[EmptyExclude()])
+        self.assertEqual(empty_exclude.included, commit.conds[0].included)
+
+    def test_set_commits_merge_exclude(self):
+        """
+        Test whether the set_commits method of the EmptyExclude
+        class correctly identifies merge commits.
+        """
+
+        temp = self.Temp(self.items, conds=[MergeExclude()])
+        merge_exclude = temp.conds[0]
+        merge_exclude.set_commits(temp.df)
+
+        commit = CommitGit(self.items, conds=[MergeExclude()])
+        self.assertEqual(merge_exclude.included, commit.conds[0].included)
 
 
 if __name__ == '__main__':
