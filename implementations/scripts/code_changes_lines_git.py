@@ -1,10 +1,10 @@
 from datetime import datetime
 
-from implementations.code_df.commit_git import CommitGit
-from implementations.code_df.conditions import (DirExclude,
+from implementations.scripts.commit_git import CommitGit
+from implementations.scripts.conditions import (DirExclude,
                                                 MasterInclude,
                                                 PostfixExclude)
-from implementations.code_df.utils import (read_json_file,
+from implementations.scripts.utils import (read_json_file,
                                            str_to_date)
 
 

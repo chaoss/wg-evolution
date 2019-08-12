@@ -1,8 +1,10 @@
 from datetime import datetime
 
-import conditions
-import utils
-from commit_git import CommitGit
+from implementations.scripts.commit_git import CommitGit
+from implementations.scripts.conditions import (DirExclude,
+                                                MasterInclude,
+                                                PostfixExclude)
+from implementations.scripts.utils import read_json_file
 
 
 class CodeChangesGit(CommitGit):
@@ -26,17 +28,17 @@ class CodeChangesGit(CommitGit):
 
 if __name__ == "__main__":
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
-    items = utils.read_json_file('../git-commits.json')
+    items = read_json_file('../git-commits.json')
 
     changes = CodeChangesGit(items, date_range=(date_since, None))
     print("Code_Changes, total:", changes.compute())
 
     changes = CodeChangesGit(items, date_range=(date_since, None),
-                             is_code=[conditions.DirExclude(['tests']),
-                                      conditions.PostfixExclude(
+                             is_code=[DirExclude(['tests']),
+                                      PostfixExclude(
                                         ['.md', 'COPYING'])])
     print("Code_Changes, excluding some files:", changes.compute())
 
     changes = CodeChangesGit(items, date_range=(date_since, None),
-                             conds=[conditions.MasterInclude()])
+                             conds=[MasterInclude()])
     print("Code_Changes, only for master:", changes.compute())

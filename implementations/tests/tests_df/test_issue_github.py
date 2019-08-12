@@ -58,7 +58,7 @@ class TestIssueGitHub(unittest.TestCase):
         ]
         self.assertEqual(flat_item, flat_expected)
 
-    def test__flatten_invalid_input(self):
+    def test__flatten_invalid_input_since(self):
         """
         Test for invalid input. An empty list is expected to be
         returned.
@@ -67,6 +67,20 @@ class TestIssueGitHub(unittest.TestCase):
         # date in future, hence no issue will satisfy date check
         date_since = datetime.datetime.strptime("2020-09-20", "%Y-%m-%d")
         issue = IssueGitHub(self.items, date_range=(date_since, None))
+
+        flat_item = issue._flatten(self.items[0])
+        flat_expected = []
+        self.assertEqual(flat_item, flat_expected)
+
+    def test__flatten_invalid_input_until(self):
+        """
+        Test for invalid input. An empty list is expected to be
+        returned.
+        """
+
+        # date in past, hence no issue will satisfy date check
+        date_until = datetime.datetime.strptime("1800-09-20", "%Y-%m-%d")
+        issue = IssueGitHub(self.items, date_range=(None, date_until))
 
         flat_item = issue._flatten(self.items[0])
         flat_expected = []
