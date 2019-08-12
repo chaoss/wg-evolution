@@ -3,7 +3,7 @@ import unittest
 
 from pandas.util.testing import assert_frame_equal
 
-from implementations.code_df.commit import Commit
+from implementations.code_df.commit_git import CommitGit
 
 
 def read_file(path):
@@ -38,11 +38,11 @@ class TestMetric(unittest.TestCase):
         Test whether time_series correctly sets the
         index of the DataFrame to the `created_date` column
         """
-        class Temp(Commit):
+        class Temp(CommitGit):
             """
             The Temp class.
 
-            A temporary sub-class of the code_df.Commit class.
+            A temporary sub-class of the code_df.CommitGit class.
 
             It overrides the _agg method to simply return the passed
             dataframe without modification. This allows the testing of

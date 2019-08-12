@@ -1,5 +1,5 @@
 from implementations.code_df.metric import Metric
-from implementations.utils import str_to_date
+from implementations.code_df.utils import str_to_date
 
 
 class IssueGitHub(Metric):

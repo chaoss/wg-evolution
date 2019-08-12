@@ -2,7 +2,7 @@ import datetime
 import json
 import unittest
 
-from implementations.code_df.pullrequest import PullRequest
+from implementations.code_df.pullrequest_github import PullRequestGitHub
 
 
 def read_file(path):
@@ -43,7 +43,7 @@ class TestPullRequestGitHub(unittest.TestCase):
         properly flattened pull request is expected.
         """
 
-        pullrequest = PullRequest(self.items)
+        pullrequest = PullRequestGitHub(self.items)
 
         flat_item = pullrequest._flatten(self.items[0])
         flat_expected = [
@@ -67,7 +67,7 @@ class TestPullRequestGitHub(unittest.TestCase):
 
         # date in future, hence no pull request will satisfy date check
         date_since = datetime.datetime.strptime("2020-09-20", "%Y-%m-%d")
-        pullrequest = PullRequest(self.items, date_range=(date_since, None))
+        pullrequest = PullRequestGitHub(self.items, date_range=(date_since, None))
 
         flat_item = pullrequest._flatten(self.items[0])
         flat_expected = []

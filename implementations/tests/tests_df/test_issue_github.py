@@ -1,12 +1,8 @@
 import datetime
 import unittest
 import json
-from pandas.util.testing import assert_frame_equal
 
-import sys
-sys.path.append('..')
-
-from code_df.issue_github import IssueGitHub
+from implementations.code_df.issue_github import IssueGitHub
 
 
 def read_file(path):
@@ -38,7 +34,7 @@ class TestIssueGitHub(unittest.TestCase):
         Run before each test to read the test data file
         """
 
-        self.items = read_file('test_issues_data.json')
+        self.items = read_file('data/test_issues_data.json')
 
     def test__flatten_valid_input(self):
         """
@@ -53,10 +49,10 @@ class TestIssueGitHub(unittest.TestCase):
         flat_expected = [
             {
                 'repo': 'https://github.com/atom/language-java',
-                'hash': 41815742,
+                'hash': 32532309,
                 'category': 'issue',
-                'author': 'kevinsawicki',
-                'created_date': datetime.datetime(2011, 3, 15, 0, 0),
+                'author': 'tylertate',
+                'created_date': datetime.datetime(2014, 4, 30, 0, 0),
                 'current_status': "closed",
              }
         ]
