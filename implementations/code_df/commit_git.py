@@ -1,4 +1,4 @@
-from implementations.code_df.conditions import Naive
+from implementations.code_df.conditions import Naive, Commit
 from implementations.code_df.metric import Metric
 from implementations.code_df.utils import str_to_date
 
@@ -32,7 +32,7 @@ class CommitGit(Metric):
 
         # Initialize conditions
         for condition in self.conds:
-            if isinstance(condition, CommitGit):
+            if isinstance(condition, Commit):
                 condition.set_commits(self.df)
         # Filter out rows not fulfilling conditions
         for condition in self.conds:

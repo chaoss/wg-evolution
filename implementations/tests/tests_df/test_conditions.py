@@ -133,7 +133,6 @@ class TestPostfixExclude(unittest.TestCase):
         self.file_bin = commits[2]['data']['files'][0]['file']
         self.file_py = commits[4]['data']['files'][0]['file']
         self.file_authors = commits[0]['data']['files'][1]['file']
-        self.file_md = commits[20]['data']['files'][0]['file']
 
     def test_check(self):
         """
@@ -148,8 +147,6 @@ class TestPostfixExclude(unittest.TestCase):
         self.assertTrue(PostfixExclude().check(self.file__init__))
         self.assertTrue(PostfixExclude().check(self.file_bin))
 
-        self.assertFalse(PostfixExclude().check(self.file_md))
-
     def test_check_exclude_none(self):
         """
         Test whether the check method of the PostfixExclude class
@@ -162,7 +159,6 @@ class TestPostfixExclude(unittest.TestCase):
         self.assertTrue(PostfixExclude([]).check(self.file_authors))
         self.assertTrue(PostfixExclude([]).check(self.file__init__))
         self.assertTrue(PostfixExclude([]).check(self.file_bin))
-        self.assertTrue(PostfixExclude([]).check(self.file_md))
 
     def test_check_exclude_py(self):
         """
@@ -173,7 +169,6 @@ class TestPostfixExclude(unittest.TestCase):
         self.assertTrue(PostfixExclude(['py']).check(self.file_gitignore))
         self.assertTrue(PostfixExclude(['py']).check(self.file_authors))
         self.assertTrue(PostfixExclude(['py']).check(self.file_bin))
-        self.assertTrue(PostfixExclude(['py']).check(self.file_md))
 
         self.assertFalse(PostfixExclude(['py']).check(self.file_py))
         self.assertFalse(PostfixExclude(['py']).check(self.file__init__))
