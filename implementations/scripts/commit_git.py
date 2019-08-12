@@ -1,6 +1,6 @@
-from implementations.code_df.conditions import Naive, Commit
-from implementations.code_df.metric import Metric
-from implementations.code_df.utils import str_to_date
+from implementations.scripts.conditions import Naive, Commit
+from implementations.scripts.metric import Metric
+from implementations.scripts.utils import str_to_date
 
 
 class CommitGit(Metric):
