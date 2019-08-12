@@ -3,7 +3,7 @@ import json
 
 from pandas.util.testing import assert_frame_equal
 
-from implementations.code_df.reviews import Reviews
+from implementations.code_df.reviews_github import ReviewsGitHub
 
 
 def read_file(path):
@@ -40,7 +40,7 @@ class TestReviewsGitHub(unittest.TestCase):
         object with default parameters.
         """
 
-        reviews = Reviews(self.items)
+        reviews = ReviewsGitHub(self.items)
         expected_count = 20
         count = reviews.compute()
         self.assertEqual(expected_count, count)
@@ -54,7 +54,7 @@ class TestReviewsGitHub(unittest.TestCase):
 
         items_temp = self.items
         items_temp.append(self.items[0])
-        reviews = Reviews(items_temp)
+        reviews = ReviewsGitHub(items_temp)
         expected_count = 20
         count = reviews.compute()
         self.assertEqual(expected_count, count)
@@ -66,7 +66,7 @@ class TestReviewsGitHub(unittest.TestCase):
         on a weekly basis.
         """
 
-        reviews = Reviews(self.items)
+        reviews = ReviewsGitHub(self.items)
         reviews.df = reviews.df.set_index('created_date')
         test_df = reviews.df
         test_df = test_df.resample('W')['category'].agg(['count'])

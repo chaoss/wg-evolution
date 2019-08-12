@@ -7,7 +7,7 @@ from commit_git import CommitGit
 
 class CodeChangesGit(CommitGit):
     """
-    Class for Code_Changes for Git repositories.
+    Class for Code_Changes for Git repositories. (non-pandas)
     """
 
     def compute(self):

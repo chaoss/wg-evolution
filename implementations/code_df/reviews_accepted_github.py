@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from implementations.code_df.pullrequest import PullRequestGitHub
+from implementations.code_df.pullrequest_github import PullRequestGitHub
 from implementations.code_df.utils import read_json_file
 
 

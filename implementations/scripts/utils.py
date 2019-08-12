@@ -17,7 +17,7 @@ def str_to_date(date):
         datetimestr = datetime.datetime.strptime(
             date, "%a %b %d %H:%M:%S %Y %z").strftime("%Y-%m-%d")
 
-    except ValueError as ve:
+    except ValueError:
         datetimestr = datetime.datetime.strptime(
                 date, "%Y-%m-%dT%H:%M:%SZ").strftime("%Y-%m-%d")
 
@@ -42,4 +42,3 @@ def read_json_file(path):
 
             items.append(line)
     return items
-

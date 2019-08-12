@@ -1,6 +1,6 @@
-import conditions
-from metric import Metric
-import utils
+from implementations.code_df.conditions import Naive, Commit
+from implementations.code_df.metric import Metric
+from implementations.code_df.utils import str_to_date
 
 
 class CommitGit(Metric):
@@ -23,7 +23,7 @@ class CommitGit(Metric):
         """
 
     def __init__(self, items, date_range=(None, None),
-                 is_code=[conditions.Naive()], conds=[]):
+                 is_code=[Naive()], conds=[]):
 
         (self.since, self.until) = date_range
         self.is_code = is_code
@@ -33,7 +33,7 @@ class CommitGit(Metric):
 
         # Initialize conditions
         for condition in self.conds:
-            if isinstance(condition, conditions.Commit):
+            if isinstance(condition, Commit):
                 condition.set_commits(self.items)
         # Filter out rows not fulfilling conditions
         for condition in self.conds:
@@ -60,7 +60,7 @@ class CommitGit(Metric):
         :returns:    list of a single flat dictionary
         """
 
-        creation_date = utils.str_to_date(item['data']['AuthorDate'])
+        creation_date = str_to_date(item['data']['AuthorDate'])
         if self.since and (self.since > creation_date):
             return []
 
@@ -79,7 +79,7 @@ class CommitGit(Metric):
                 'category': "commit",
                 'created_date': creation_date,
                 'committer': item['data']['Commit'],
-                'commit_date': utils.str_to_date(item['data']['CommitDate']),
+                'commit_date': str_to_date(item['data']['CommitDate']),
                 'files_no': len(item['data']['files']),
                 'refs': item['data']['refs'],
                 'parents': item['data']['parents'],

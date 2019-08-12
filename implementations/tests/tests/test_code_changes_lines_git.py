@@ -1,9 +1,7 @@
 import unittest
 import json
-import sys
-sys.path.append('..')
 
-from scripts.code_changes_lines_git import CodeChangesLinesGit
+from implementations.scripts.code_changes_lines_git import CodeChangesLinesGit
 
 
 def read_file(path):
@@ -35,7 +33,7 @@ class TestCodeChangesLinesGit(unittest.TestCase):
         Run before each test to read the test data file
         """
 
-        self.items = read_file('../tests_df/test_commits_data.json')
+        self.items = read_file('data/test_commits_data.json')
 
     def test_compute(self):
         """

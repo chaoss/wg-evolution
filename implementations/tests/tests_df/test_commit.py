@@ -2,7 +2,7 @@ import datetime
 import json
 import unittest
 
-from implementations.code_df.commit import Commit
+from implementations.code_df.commit_git import CommitGit
 from implementations.code_df.conditions import (Commit as CommitCond,
                                                 DirExclude,
                                                 EmptyExclude,
@@ -44,16 +44,16 @@ class Test_filterout(unittest.TestCase):
 
         self.items = read_file('data/test_commits_data.json')
 
-        class Temp(Commit):
+        class Temp(CommitGit):
             """
             The Temp class.
 
-            A temporary sub-class of the code_df.Commit class.
+            A temporary sub-class of the code_df.CommitGit class.
 
             It overrides the __init__ method so that there is no
             implicit call to the _filterout method while instantiating
             an object of this class, which happens in the case of
-            the Commit class.
+            the CommitGit class.
             """
 
             def __init__(self, items, date_range=(None, None),
@@ -141,7 +141,7 @@ class Test_filterout(unittest.TestCase):
 
 class Test_flatten(unittest.TestCase):
     """
-    Class to the _flatten method, defined in the Commit class.
+    Class to the _flatten method, defined in the CommitGit class.
     """
 
     def setUp(self):
@@ -154,11 +154,11 @@ class Test_flatten(unittest.TestCase):
     def test__flatten_valid_input(self):
         """
         Test for valid input. A commit that satisfies all conditions
-        passed while creating the Commit object for testing. A properly
+        passed while creating the CommitGit object for testing. A properly
         flattened commit is expected.
         """
 
-        commit = Commit(self.items)
+        commit = CommitGit(self.items)
 
         flat_item = commit._flatten(self.items[0])
         flat_expected = [
@@ -197,7 +197,7 @@ class Test_flatten(unittest.TestCase):
 
         # date in future, hence no commit will satisfy date check
         date_since = datetime.datetime.strptime("2020-09-20", "%Y-%m-%d")
-        commit = Commit(self.items, date_range=(date_since, None))
+        commit = CommitGit(self.items, date_range=(date_since, None))
 
         flat_item = commit._flatten(self.items[0])
         flat_expected = []
@@ -210,8 +210,8 @@ class Test_flatten(unittest.TestCase):
         the `dirs` parameter: ['tests', 'bin']
         """
 
-        commit = Commit(self.items, is_code=[DirExclude()])
-        expected_df = Commit(self.items).df
+        commit = CommitGit(self.items, is_code=[DirExclude()])
+        expected_df = CommitGit(self.items).df
 
         for index, item in expected_df.iterrows():
 
@@ -231,8 +231,8 @@ class Test_flatten(unittest.TestCase):
         markdown(.md) and README are excluded in this test.
         """
 
-        commit = Commit(self.items, is_code=[PostfixExclude()])
-        expected_df = Commit(self.items).df
+        commit = CommitGit(self.items, is_code=[PostfixExclude()])
+        expected_df = CommitGit(self.items).df
 
         for index, item in expected_df.iterrows():
 
