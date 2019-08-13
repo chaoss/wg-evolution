@@ -82,7 +82,7 @@ as a pull request for updating the CHAOSS metrics with
 
 ## Implementations
 
-Example for implementaions can be found [here](implementations).
+Examples for implementations can be found [here](implementations).
 
 <!---## Software work
 
