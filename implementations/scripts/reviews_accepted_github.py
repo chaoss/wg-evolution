@@ -4,7 +4,7 @@ from implementations.scripts.pullrequest_github import PullRequestGitHub
 from implementations.scripts.utils import read_json_file
 
 
-class ReviewsAccepted(PullRequestGitHub):
+class ReviewsAcceptedGitHub(PullRequestGitHub):
     """
     Class for the Reviews Accepted metric (non-pandas)
     """
@@ -31,12 +31,12 @@ if __name__ == "__main__":
     items = read_json_file('../pull_requests.json')
 
     # total accepted reviews
-    reviews_accepted = ReviewsAccepted(items)
+    reviews_accepted = ReviewsAcceptedGitHub(items)
     print("The total number of reviews accepted is {}"
           .format(reviews_accepted.compute()))
 
     # accepted reviews created after a certain date
-    reviews_accepted = ReviewsAccepted(items, (date_since, None))
+    reviews_accepted = ReviewsAcceptedGitHub(items, (date_since, None))
     print("The number of reviews created after 2018-09-07 which were accepted"
           "is {}"
           .format(reviews_accepted.compute()))

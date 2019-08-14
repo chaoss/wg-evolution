@@ -1,9 +1,7 @@
 import json
 import unittest
 
-from pandas.util.testing import assert_frame_equal
-
-from implementations.code_df.code_changes_git import CodeChangesGit
+from implementations.scripts.code_changes_git import CodeChangesGit
 
 
 def read_file(path):
@@ -34,7 +32,7 @@ class TestCodeChangesGit(unittest.TestCase):
 
         self.items = read_file('data/test_commits_data.json')
 
-    def test_compute(self):
+    def test_compute_trivial(self):
         """
         Test the compute method of a CodeChangesGit
         object with default parameters.
@@ -58,21 +56,6 @@ class TestCodeChangesGit(unittest.TestCase):
         expected_count = 21
         count = changes.compute()
         self.assertEqual(expected_count, count)
-
-    def test__agg(self):
-        """
-        Test the _agg method of a CodeChangesGit
-        object with default parameters when re-sampling
-        on a weekly basis.
-        """
-
-        changes = CodeChangesGit(self.items)
-        changes.df = changes.df.set_index('created_date')
-        test_df = changes.df
-        test_df = test_df.resample('W')['category'].agg(['count'])
-
-        changes.df = changes._agg(changes.df, 'W')
-        assert_frame_equal(test_df, changes.df)
 
 
 if __name__ == '__main__':

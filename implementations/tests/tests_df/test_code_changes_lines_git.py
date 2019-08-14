@@ -1,9 +1,8 @@
-import json
 import unittest
+import json
+from pandas.testing import assert_frame_equal
 
-from pandas.util.testing import assert_frame_equal
-
-from implementations.code_df.code_changes_git import CodeChangesGit
+from implementations.code_df.code_changes_lines_git import CodeChangesLinesGit
 
 
 def read_file(path):
@@ -25,7 +24,10 @@ def read_file(path):
     return items
 
 
-class TestCodeChangesGit(unittest.TestCase):
+class TestCodeChangesLinesGit(unittest.TestCase):
+    """
+    Class to test the CodeChangesLinesGit class.
+    """
 
     def setUp(self):
         """
@@ -36,40 +38,26 @@ class TestCodeChangesGit(unittest.TestCase):
 
     def test_compute(self):
         """
-        Test the compute method of a CodeChangesGit
+        Test the compute method of a CodeChangesLinesGit
         object with default parameters.
         """
 
-        changes = CodeChangesGit(self.items)
-        expected_count = 21
+        changes = CodeChangesLinesGit(self.items)
+        expected_lines = 4025
         count = changes.compute()
-        self.assertEqual(expected_count, count)
-
-    def test_compute_with_duplicate(self):
-        """
-        Test the compute method of a CodeChangesGit
-        object with default parameters but with a
-        duplicate item in the test data.
-        """
-
-        items_temp = self.items
-        items_temp.append(self.items[0])
-        changes = CodeChangesGit(items_temp)
-        expected_count = 21
-        count = changes.compute()
-        self.assertEqual(expected_count, count)
+        self.assertEqual(expected_lines, count)
 
     def test__agg(self):
         """
-        Test the _agg method of a CodeChangesGit
+        Test the _agg method of a CodeChangesLinesGit
         object with default parameters when re-sampling
         on a weekly basis.
         """
 
-        changes = CodeChangesGit(self.items)
+        changes = CodeChangesLinesGit(self.items)
         changes.df = changes.df.set_index('created_date')
         test_df = changes.df
-        test_df = test_df.resample('W')['category'].agg(['count'])
+        test_df = test_df.resample('W')['modifications'].agg(['sum'])
 
         changes.df = changes._agg(changes.df, 'W')
         assert_frame_equal(test_df, changes.df)
