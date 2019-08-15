@@ -62,6 +62,25 @@ class TestCodeChangesLinesGit(unittest.TestCase):
         changes.df = changes._agg(changes.df, 'W')
         assert_frame_equal(test_df, changes.df)
 
+    def test__get_params(self):
+        """
+        Test whether the _get_params method correctly returns
+        the expected parameters for plotting a timeseries plot
+        for the Code Changes Lines metric.
+        """
+
+        changes = CodeChangesLinesGit(self.items)
+        params = changes._get_params()
+
+        expected_params = {
+            'x': None,
+            'y': 'sum',
+            'title': "Trends in Line modifications",
+            'use_index': True
+        }
+
+        self.assertEqual(expected_params, params)
+
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
