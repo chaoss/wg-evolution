@@ -2,5 +2,7 @@
 
 exclude_lines =
 	raise NotImplementedError
+	def __str__
+	def plot_time_series
     if 0:
     if __name__ == .__main__.:

@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 
 class Metric:
@@ -51,10 +52,10 @@ class Metric:
         during object initiation.
 
         :param period: A string which can be any one of the pandas time
-        series rules:
-            'W': week
-            'M': month
-            'D': day
+            series rules:
+                'W': week
+                'M': month
+                'D': day
 
         :returns df: A DataFrame whose rows each represent an interval
             of "period" and the count for that interval
@@ -66,3 +67,23 @@ class Metric:
         df = self._agg(df, period)
 
         return df
+
+    def plot_time_series(self, period='M', style='seaborn'):
+        """
+        Create a timeseries plot.
+
+        :param period: A string which can be any one of the pandas time
+            series rules:
+                'W': week
+                'M': month
+                'D': day
+
+        :param style: A matplotlib style sheet
+
+        :returns: The plot of the timeseries, an AxesSubplot object
+        """
+
+        params = self._get_params()
+        plt.style.use(style)
+        df = self.time_series(period)
+        return df.plot(**params)
