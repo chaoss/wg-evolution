@@ -28,12 +28,16 @@ setup(name="wg-evolution-implementations",
       version="0.0.1",
       install_requires=[
           'pandas',
-          'perceval'
+          'perceval',
+          'matplotlib'
       ],
       setup_requires=[
           'wheel'
       ],
       packages=[
           'implementations'
+      ],
+      scripts=[
+          'bin/analyze'
       ],
       zip_safe=False)
