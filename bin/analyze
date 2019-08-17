@@ -20,16 +20,15 @@
 #     Aniruddha Karajgi <akarajgi0@gmail.com>
 #
 
-import matplotlib.pyplot as plt
-from perceval.backends.core.github import GitHub
-from perceval.backends.core.git import Git
 from datetime import datetime
 import argparse
-import os
 import sys
+import logging
 
-from fpdf import FPDF
-import json
+from perceval.backends.core.github import GitHub
+from perceval.backends.core.git import Git
+
+from implementations.generate_output import GenerateOutput
 
 from implementations.code_df.conditions import Naive, PostfixExclude, DirExclude
 from implementations.code_df.conditions import MasterInclude, EmptyExclude, MergeExclude
@@ -70,6 +69,27 @@ METRICS = \
         ISSUE_CATEGORY: ISSUE_METRICS,
         PULL_REQUEST_CATEGORY: PULLREQUEST_METRICS
     }
+
+
+LOG_FORMAT = "[%(asctime)s] - %(message)s"
+DEBUG_LOG_FORMAT = "[%(asctime)s - %(name)s - %(levelname)s] - %(message)s"
+
+
+def configure_logging(debug):
+    """
+    Configure logging.
+
+    This function sets basic attributes for logging.
+
+    :param debug: set the debug mode
+    """
+
+    if not debug:
+        logging.basicConfig(level=logging.INFO,
+                            format=LOG_FORMAT)
+    else:
+        logging.basicConfig(level=logging.DEBUG,
+                            format=DEBUG_LOG_FORMAT)
 
 
 def parse_args():
@@ -135,113 +155,45 @@ def parse_args():
                         nargs='+',
                         choices=['json', 'pdf', 'images'],
                         help="Possible options: %(choices)s (any combination)")
+
+    parser.add_argument("-d", "--debug",
+                        action='store_true')
+
+    parser.add_argument("-w", "--write-to",
+                        default='results_dir',
+                        help="Path for output results")
     return parser.parse_args()
 
 
-def generate_output(results, output_formats=['json'], write_to='results_dir'):
-    """
-    Generate output based on results in different format.
-
-    Output format:
-    <write_to>
-        - report.pdf
-        - report.json
-        - images
-            - metric_1_name.png
-            - metric_2_name.png
-            - metric_3_name.png
-    """
-
-    if not os.path.exists(write_to):
-        os.mkdir(write_to)
-
-    generate_options = {
-        'json': generate_json,
-        'pdf': generate_pdf,
-        'images': generate_images
-    }
-
-    for output_format in output_formats:
-        generate_options[output_format](results, write_to)
-
-
-def generate_images(results, write_to='results_dir'):
-    if not os.path.exists(write_to + '/images'):
-        os.mkdir(write_to + '/images')
-
-    for category, results_ in results.items():
-        for result in results_:
-            result['metric'].plot_time_series()
-            plt.savefig(write_to + '/images/' + "_".join(str(result['metric']).split()) + '.png')
-
-
-def generate_json(results, write_to='results_dir'):
-    """
-    Generate a json file with results of metric computation,
-    with each result on a new line.
-
-    Creates write_to/report.json
-
-    Format:
-    {'category': 'commit', 'metric': <metric1>, 'value': <metric1_val>}
-    {'category': 'commit', 'metric': <metric2>, 'value': <metric2_val>}
-    {'category': 'issue', 'metric': <metric3>, 'value': <metric3_val>}
-    ..
-    .
-    """
-
-    with open(write_to + '/report.json', 'w') as json_file:
-        for category, results_ in results.items():
-            for result in results_:
-                json.dump({
-                            'category': category,
-                            'metric': str(result['metric']),
-                            'value': str(result['value'])}, json_file)
-                json_file.write('\n')
-
-
-def generate_pdf(results, write_to='results_dir'):
-    """
-    Generates a pdf report with results of the compute
-    method as well as an image of the resultant plot.
-
-    Creates write_to/report.pdf
-    """
-
-    pdf = FPDF('P', 'mm', 'A4')
-    pdf.set_font('Arial', 'B', 50)
-    pdf.set_margins(left=20, top=20, right=-1)
-
-    pdf.add_page()
-    pdf.cell(w=100, h=100, txt="Metric Report", border=0, ln=2)
-
-    pdf.set_font('Arial', 'B', 25)
-    generate_images(results, write_to)
-    for category, results_ in results.items():
-        for result in results_:
-            pdf.add_page()
-            pdf.cell(w=100, h=10, txt=str(result['metric']), border=0, ln=1)
-            pdf.ln()
-
-            txt = \
-                """
-                The value of the metric is:\n
-                {}. \n
-                """.format(result['value'])
-            pdf.set_font('Arial', style='', size=16)
-            pdf.multi_cell(w=0, h=3, txt=txt)
-            pdf.image(write_to + '/images/' + "_".join(str(result['metric']).split()) + '.png', w=200)
-
-    pdf.output(write_to + '/report.pdf', 'F')
-
-
-def run_metrics(items, categories=[COMMIT_CATEGORY], date_range=(None, None),
-                is_code=[Naive()], conds=[], period='M'):
+def run_metrics(items, categories, date_range, is_code, conds):
     """
     Calculate values of metrics on the given data (items).
-    Returns results.
+
+    :param items: A list of dictionaries.
+        Each item is a Perceval dictionary, obtained from a JSON
+        file or from Perceval directly.
+
+    :param categories: A list of metric categories. A combination of
+        COMMIT_CATEGORY, ISSUE_CATEGORY and PULL_REQUEST_CATEGORY.
+
+    :param date_range: A tuple which represents the period of interest
+        It is of the form (since, until), where since and until are strings.
+        Either, or both can be None. If, for example, since is None, that
+        would mean that all commits from the first commit to the commit
+        who last falls inside the until range will be included.
+
+    :param is_code:  list of Code Condition objects
+        Used to determine what comprises source code.
+
+    :param conds: list of Commit sub-class objects.
+        Used to add restrictions on which commits are
+        included in the analysis.
+
+    :returns results: A dictionary with the computed values of metrics,
+        groups according to the category of metrics.
     """
 
+    logging.info("Running metrics")
     results = {
         COMMIT_CATEGORY: [],
         ISSUE_CATEGORY: [],
@@ -250,11 +202,14 @@ def run_metrics(items, categories=[COMMIT_CATEGORY], date_range=(None, None),
 
     for category in categories:
         for metric in METRICS[category]:
+
             if category == COMMIT_CATEGORY:
                 metric_obj = metric(items[category], date_range,
                                     is_code, conds)
             else:
                 metric_obj = metric(items[category], date_range)
+
+            logging.info("Computing the value of: %s" % str(metric_obj))
 
             result = {
                         'metric': metric_obj,
@@ -263,14 +218,30 @@ def run_metrics(items, categories=[COMMIT_CATEGORY], date_range=(None, None),
 
             results[category].append(result)
 
+    logging.info("Metrics computed")
+
     return results
 
 
-def fetch_data(owner, repository, api_token=None, categories=[COMMIT_CATEGORY]):
+def fetch_data(owner, repository, api_token, categories):
     """
-    Calls git or github backend, depending on the category of data.
+    Fetches data required for the analysis.
+
+    Depending on the category of metrics to be computed, this function
+    calls the Git (commits) and the GitHub backend (issues, pull_requests).
+
+    :param owner: The owner of a repository
+    :param repository: The name of a git repository
+    :param api_token: GitHub API token
+    :param categories: A list of metric categories. A combination of
+        COMMIT_CATEGORY, ISSUE_CATEGORY and PULL_REQUEST_CATEGORY.
+
+    :returns data: A dictionary of fetched items, segregated by category.
     """
 
+    api_token = [] if api_token is None else api_token
+
+    logging.info("Fetching data")
     data = {
         COMMIT_CATEGORY: [],
         ISSUE_CATEGORY: [],
@@ -279,8 +250,10 @@ def fetch_data(owner, repository, api_token=None, categories=[COMMIT_CATEGORY]):
 
     for category in categories:
         if category == COMMIT_CATEGORY:
+
             repo_uri = GITHUB_URI + owner + '/' + repository + '.git'
-            git = Git(uri=repo_uri, gitpath="tmp")
+            print(repo_uri)
+            git = Git(uri=repo_uri, gitpath='tmp')
             items = list(git.fetch(category=category))
 
         else:
@@ -295,17 +268,42 @@ def fetch_data(owner, repository, api_token=None, categories=[COMMIT_CATEGORY]):
 
 
 def main():
+    """
+    A script for evaluating the values of Evolution WG metrics on user data.
+    Data is fetched using Perceval's back-ends and metrics are evaluated on it.
+
+    The results of the analysis can be output in several different formats.
+    Currently, json, pdf and images are supported.
+
+    The script can be run via the command line:
+        $ analyze -r chaoss/wg-evolution
+
+    Examples:
+    --------
+
+    * Run all commit metrics on chaoss/wg-evolution, starting from 2018-01-01
+    and using the api-token xxxx:
+        $ analyze -r chaoss/wg-evolution -s 2018-01-01 -t xxxx  -cat commit
+
+    * Run all metrics on chaoss/grimoirelab-perceval and generate a pdf report
+    of the results:
+        $ analyze -r chaoss/grimoirelab-perceval -o pdf
+
+    * Run commit metrics on chaoss/wg-evolution considering only non-empty commits
+    created on the master branch
+        $ analyze -r chaoss/wg-evolution -cat commit -c EmptyExclude MasterInclude
+    """
 
     args = parse_args()
 
+    # owner and repo parsing
     owner, repo = args.repo.split('/')
-    date_range = (None, None)
 
-    # date
-    if args.since:
-        date_range[0] = datetime.strptime(args.since, "%Y-%m-%d")
-    if args.until:
-        date_range[1] = datetime.strptime(args.until, "%Y-%m-%d")
+    # date parsing
+    since = datetime.strptime(args.since, "%Y-%m-%d") if args.since else None
+    until = datetime.strptime(args.until, "%Y-%m-%d") if args.until else None
+
+    date_range = (since, until)
 
     # conds parsing
     conds_options = {
@@ -325,20 +323,28 @@ def main():
 
     is_code = [is_code_options[option] for option in args.is_code]
 
-    items = fetch_data(owner, repo, args.api_token, args.categories)
+    configure_logging(args.debug)
 
+    # fetching data
+    items = fetch_data(owner, repo, [args.api_token], args.categories)
+
+    # computing the values of metrics
     results = \
         run_metrics(
                         items, args.categories,
                         date_range=date_range, is_code=is_code,
-                        conds=conds, period=args.period
+                        conds=conds
                     )
 
-    generate_output(results, args.output_formats)
+    # generating output
+    generate_output = GenerateOutput(results, args.output_formats,
+                                     args.write_to, args.period)
+    generate_output.generate()
 
 
 if __name__ == '__main__':
     try:
+
         main()
     except KeyboardInterrupt:
         s = "\n\nReceived Ctrl-C or other break signal. Exiting.\n"
