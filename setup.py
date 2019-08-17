@@ -27,9 +27,10 @@ from setuptools import setup
 setup(name="wg-evolution-implementations",
       version="0.0.1",
       install_requires=[
-          'pandas',
-          'perceval',
-          'matplotlib'
+        'perceval>=0.12.18',
+        'pandas>=0.1.9',
+        'fpdf>=1.7.2',
+        'matplotlib>=2.2.4'
       ],
       setup_requires=[
           'wheel'
