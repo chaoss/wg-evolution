@@ -38,12 +38,10 @@ class OpenIssueAgeGitHub(IssueGitHub):
             'current_status': item['data']['state']
         }
 
-        if flat['current_status'] == 'open':
-            flat['open_issue_age'] = \
-               (datetime.now() - flat['created_date']).days
-
-        else:
+        if flat['current_status'] != 'open':
             return []
+
+        flat['open_issue_age'] = (datetime.now() - flat['created_date']).days
 
         return [flat]
 
@@ -81,10 +79,25 @@ class OpenIssueAgeGitHub(IssueGitHub):
             been performed on the "open_issue_age" column
         """
 
-        df = df.resample(period).agg({'open_issue_age': 'mean'})
-        df['open_issue_age'] = df['open_issue_age'].fillna(0)
+        df = df.resample(period)['open_issue_age'].agg(['mean'])
+        df = df.dropna()
 
         return df
+
+    def _get_params(self):
+        """
+        Return parameters for creating a timeseries plot
+
+        :returns: A dictionary with axes to plot, a title
+            and if use_index should be true when creating
+            the plot.
+        """
+
+        title = "Trends in Open Issue Age"
+        x = None
+        y = 'mean'
+        use_index = True
+        return {'x': x, 'y': y, 'title': title, 'use_index': use_index}
 
     def __str__(self):
         return "Open Issue Age"
