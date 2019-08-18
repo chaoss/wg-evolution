@@ -85,6 +85,21 @@ class ReviewsDurationGitHub(PullRequestGitHub):
 
         return df
 
+    def _get_params(self):
+        """
+        Return parameters for creating a timeseries plot
+
+        :returns: A dictionary with axes to plot, a title
+            and if use_index should be true when creating
+            the plot.
+        """
+
+        title = "Trends in the Duration of Reviews"
+        x = None
+        y = 'median'
+        use_index = True
+        return {'x': x, 'y': y, 'title': title, 'use_index': use_index}
+
     def __str__(self):
         return "Reviews Duration"
 
