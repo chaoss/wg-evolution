@@ -63,6 +63,25 @@ class TestReviewsDeclinedGitHub(unittest.TestCase):
         reviews_declined.df = reviews_declined._agg(reviews_declined.df, 'W')
         assert_frame_equal(test_df, reviews_declined.df)
 
+    def test__get_params(self):
+        """
+        Test whether the _get_params method correctly returns
+        the expected parameters for plotting a timeseries plot
+        for the Reviews Declined metric.
+        """
+
+        changes = ReviewsDeclinedGitHub(self.items)
+        params = changes._get_params()
+
+        expected_params = {
+            'x': None,
+            'y': 'count',
+            'title': "Trends in Reviews Declined",
+            'use_index': True
+        }
+
+        self.assertEqual(expected_params, params)
+
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
