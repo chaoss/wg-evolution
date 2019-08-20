@@ -16,12 +16,19 @@ class IssueGitHub(Metric):
         is None, that would mean that all issues from the first issue
         to the issue which last falls inside the until range will be
         included.
+
+    :param reopen_as_new: A criteria for deciding whether reopened issues
+        are considered as new issues. If True, every time an item is reopened,
+        it is treated as a new issue.
     """
 
-    def __init__(self, items, date_range=(None, None)):
+    def __init__(self, items, date_range=(None, None), reopen_as_new=False):
 
         self.since, self.until = date_range
         super().__init__(items)
+
+        if reopen_as_new is True:
+            self.df = self._update_with_reopened_items(self.df)
 
     def _flatten(self, item):
         """
@@ -49,7 +56,71 @@ class IssueGitHub(Metric):
             'category': "issue",
             'author': item['data']['user']['login'],
             'created_date': creation_date,
-            'current_status': item['data']['state']
+            'current_status': item['data']['state'],
+            'events_data': item['data']['events_data']
         }
 
         return [flat]
+
+    def _update_with_reopened_items(self, df):
+        """
+        Add reopened items as new items to the data frame df.
+
+        The original item to be replaced is removed, while its constituent
+        items (created from a reopen-close cycle) are appending to the dataframe.
+
+        :param df: A pandas DataFrame, containing items obtained from Perceval.
+
+        :returns df: A modified pandas DataFrame.
+        """
+
+        reopened_items = []
+        new_items = []
+        for index, item in df.iterrows():
+
+            events = [event for event in item['events_data'] if event['event'] == 'closed'
+                      or event['event'] == 'reopened']
+
+            if events:
+
+                # the first closing event gives us our first item
+                new_item = self._add_item(item, item['created_date'], 'closed')
+                new_items.append(new_item)
+
+                # for every reopen-close pair, create another event
+                for i in range(1, len(events), 2):
+                    if events[i]['event'] == 'reopened':
+                        if i == len(events) - 1:
+                            new_item = self._add_item(item, str_to_date(events[i]['created_at']), 'open')
+                        else:
+                            new_item = self._add_item(item, str_to_date(events[i]['created_at']), 'closed')
+                        # print(new_item['created_date'])
+                        new_items.append(new_item)
+                reopened_items.append(index)
+
+        # remove the items that we split into constituent items
+        df = df.drop(reopened_items)
+
+        df = df.append(new_items, ignore_index=True)
+        return df
+
+    def _add_item(self, item, created_date, current_status):
+        """
+        Create a copy of an item with slight modifications to status and
+        creation date.
+
+        :param item: A pandas Series object, a single unit of Perceval data.
+
+        :param created_date: A datetime object representing when the item to be
+            added was created.
+
+        :param current status: A string representing the current state of the item
+            to be added. Either "open" or "closed"
+
+        :returns new_item: A pandas Series object, a constituent of item.
+        """
+
+        new_item = item.copy(deep=True)
+        new_item['created_date'] = created_date
+        new_item['current_status'] = current_status
+        return new_item
