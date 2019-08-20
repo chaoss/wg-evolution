@@ -31,7 +31,7 @@ class TestIssuesNewGitHub(unittest.TestCase):
         Run before each test to read the test data file
         """
 
-        self.items = read_file('data/test_issues_data.json')
+        self.items = read_file('data/test_issues_events_data.json')
 
     def test_compute(self):
         """
@@ -41,6 +41,16 @@ class TestIssuesNewGitHub(unittest.TestCase):
 
         issues = IssuesNewGitHub(self.items)
         expected_count = 20
+        count = issues.compute()
+        self.assertEqual(expected_count, count)
+
+    def test_compute_reopen_as_new(self):
+        """
+        Test whether the reopen_as_new parameter works as expected.
+        """
+
+        issues = IssuesNewGitHub(self.items, reopen_as_new=True)
+        expected_count = 21
         count = issues.compute()
         self.assertEqual(expected_count, count)
 
@@ -58,6 +68,25 @@ class TestIssuesNewGitHub(unittest.TestCase):
 
         issues.df = issues._agg(issues.df, 'W')
         assert_frame_equal(test_df, issues.df)
+
+    def test__get_params(self):
+        """
+        Test whether the _get_params method correctly returns
+        the expected parameters for plotting a timeseries plot
+        for the Issues New metric.
+        """
+
+        changes = IssuesNewGitHub(self.items)
+        params = changes._get_params()
+
+        expected_params = {
+            'x': None,
+            'y': 'count',
+            'title': "Trends in Issues Opened",
+            'use_index': True
+        }
+
+        self.assertEqual(expected_params, params)
 
 
 if __name__ == '__main__':
