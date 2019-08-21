@@ -9,41 +9,6 @@ class IssuesClosedGitHub(IssueGitHub):
     Class for Issues Closed
     """
 
-    def _flatten(self, item):
-        """
-        Flatten a raw issue fetched by Perceval into a flat dictionary.
-
-        A list with a single flat directory will be returned.
-        That dictionary will have the elements we need for computing metrics.
-        The list may be empty, if for some reason the commit should not
-        be considered.
-
-        :param item: raw item fetched by Perceval (dictionary)
-        :returns:   list of a single flat dictionary
-        """
-
-        creation_date = str_to_date(item['data']['created_at'])
-
-        if self.since and (self.since > creation_date):
-            return []
-
-        if self.until and (self.until < creation_date):
-            return []
-
-        flat = {
-            'repo': item['origin'],
-            'hash': item['data']['id'],
-            'category': "issue",
-            'author': item['data']['user']['login'],
-            'created_date': creation_date,
-            'current_status': item['data']['state'],
-        }
-
-        if flat['current_status'] is not 'closed':
-            return []
-
-        return [flat]
-
     def compute(self):
         """
         Compute the number of closed issues in the Perceval data
@@ -53,7 +18,7 @@ class IssuesClosedGitHub(IssueGitHub):
             given period.
         """
 
-        closed_issues = len(self.df.index)
+        closed_issues = len(self.df[self.df['current_status'] == 'closed'])
         return closed_issues
 
     def _agg(self, df, period):
@@ -79,13 +44,31 @@ class IssuesClosedGitHub(IssueGitHub):
             been performed on the "category" column.
         """
 
-        df = df.resample(period)['category'].agg(['count'])
+        df = df[df['current_status'] == 'closed'].resample(period)['category'].agg(['count'])
         return df
+
+    def _get_params(self):
+        """
+        Return parameters for creating a timeseries plot
+
+        :returns: A dictionary with axes to plot, a title
+            and if use_index should be true when creating
+            the plot.
+        """
+
+        title = "Trends in Issues Closed"
+        x = None
+        y = 'count'
+        use_index = True
+        return {'x': x, 'y': y, 'title': title, 'use_index': use_index}
+
+    def __str__(self):
+        return "Issues Closed"
 
 
 if __name__ == "__main__":
     date_since = datetime.strptime("2018-09-07", "%Y-%m-%d")
-    items = read_json_file('../issues.json')
+    items = read_json_file('../issues_events.json')
 
     # the GitHub API considers all pull requests to be issues. Any
     # pull request represented as an issue has a 'pull_request'
@@ -95,15 +78,17 @@ if __name__ == "__main__":
     items = [item for item in items if 'pull_request' not in item['data']]
 
     # total closed issues
-    new_issues = IssuesClosedGitHub(items)
+    issues = IssuesClosedGitHub(items)
     print("The total number of closed issues is {:.2f}"
-          .format(new_issues.compute()))
+          .format(issues.compute()))
 
-    # closed issues created after a certain date
-    new_issues = IssuesClosedGitHub(items, (date_since, None))
-    print("The number of issues closed after 2018-09-07 is {:.2f}"
-          .format(new_issues.compute()))
+    # closed issues created after a certain date, considering reopened issues
+    # as new
+    issues = IssuesClosedGitHub(items, (date_since, None), reopen_as_new=False)
+    print("The number of issues closed after 2018-09-07, considering reopened issues"
+          " as new, is {:.2f}"
+          .format(issues.compute()))
 
     # time-series for closed issues created after a certain date
     print("The changes in the number of issues closed on a monthly basis: ")
-    print(new_issues.time_series('M'))
+    print(issues.time_series('M'))
