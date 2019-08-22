@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from implementations.code_df.utils import read_json_file, str_to_date
+from implementations.code_df.utils import read_json_file
 from implementations.code_df.issue_github import IssueGitHub
 
 
