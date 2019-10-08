@@ -41,7 +41,7 @@ class TestOpenIssueAgeGitHub(unittest.TestCase):
         """
 
         open_issue_age = OpenIssueAgeGitHub(self.items)
-        expected_mean = 1132.0
+        expected_mean = 1179.0
         mean_age = open_issue_age.compute()
         self.assertEqual(expected_mean, mean_age)
 

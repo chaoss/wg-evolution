@@ -153,7 +153,7 @@ def parse_args():
     parser.add_argument("-o", "--output-formats",
                         default=['json'],
                         nargs='+',
-                        choices=['json', 'pdf', 'images'],
+                        choices=['markdown', 'json', 'pdf', 'images'],
                         help="Possible options: %(choices)s (any combination)")
 
     parser.add_argument("-d", "--debug",
