@@ -27,9 +27,11 @@ import logging
 from fpdf import FPDF
 
 
+MD_FILE = 'report.markdown'
 PDF_FILE = 'report.pdf'
 JSON_FILE = 'report.json'
 IMAGES_DIR = 'images'
+MD_REPORT_TITLE = 'Metrics Report'
 PDF_REPORT_TITLE = 'Metrics Report'
 
 logger = logging.getLogger(__name__)
@@ -62,6 +64,7 @@ class GenerateOutput():
         self.period = period
 
         self.generate_options = {
+            'markdown': self._generate_markdown,
             'json': self._generate_json,
             'pdf': self._generate_pdf,
             'images': self._generate_images
@@ -128,6 +131,38 @@ class GenerateOutput():
                           + "_".join(str(result['metric']).split()) + '.png', w=200)
 
         pdf.output(self.write_to + '/' + PDF_FILE, 'F')
+
+    def _generate_markdown(self):
+        """
+        Generates a markdown report with results of the compute
+        method as well as an image of the resultant plot.
+
+        Creates MD_FILE.
+        """
+
+        logger.info("Generating %s" % MD_FILE)
+        template = "# {}\n\n".format(MD_REPORT_TITLE)
+
+        self._generate_images()
+
+        for category, results_ in self.results.items():
+            for result in results_:
+
+                template += "## " + str(result['metric']) + '\n'
+
+                txt = \
+                    "The value of the metric is:\n" \
+                    + "{}. \n".format(result['value'])
+
+                template += txt
+
+                embed_img = '![](../' + self.write_to + '/' + IMAGES_DIR + '/' \
+                            + "_".join(str(result['metric']).split()) + '.png)'
+
+                template += embed_img + "\n\n"
+
+        with open(self.write_to + '/' + MD_FILE, 'w') as f:
+            f.write(template)
 
     def _generate_json(self):
         """
