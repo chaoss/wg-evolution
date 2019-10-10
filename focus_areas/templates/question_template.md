@@ -1,37 +1,21 @@
-# [Area of Analysis]: [Focal Concern]
+## Description
 
-**Question:** placeholder for a variety of channels (choice?)
+## Objectives
 
+## Implementation
 
-## 1. Description
+### Filters (optional)
 
-_This section provides a rationale for why this question is important to growth maturity and decline._
-_Example for how to use this template: [Documentation](./resources/project_places-documentation.md)_
+### Visualizations (optional)
 
-## 2. Sample Objectives
+### Tools providing the metric (optional)
+- formerly: "known or sample implementations"
+- Metric must be currently deployed/available, in contrast to a tool having the "potential" to provide the metric
+- provide direct link to implementation/documentation, if applicable
 
-- _This section provides a list of reasons a community wants to assess this question_
--
+### Data Collection Strategies (optional)
 
+## Success Metrics (optional)
 
-## 3. Sample Strategies
-
-- _This section provides a list of methods available for answering the question._
--
-
-
-## 4. Sample Success Metrics
-_Qualitative_
-
-- _This section provides detailed instructions for how to execute the above listed methods and evaluate the results_
--
-
-_Quantitative_
-
-- _This section provides detailed instructions for how to execute the above listed quantitative methods and evaluate the results_
--
-
-
-## 5. Resources
-
-- _This section provides a list of resources and references_
+## Resources
+- links to external literature, etc
