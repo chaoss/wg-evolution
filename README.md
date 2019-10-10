@@ -8,11 +8,9 @@ Formerly known as the Growth Maturity and Decline Working Group
 This CHAOSS working group is using the general [CHAOSS mailing list](https://lists.linuxfoundation.org/mailman/listinfo/chaoss).
 
 ## Join our Weekly Calls
-The Evolution Working Group meets every Monday from 7:30am - 8:30am Pacific Time every other Wednesday.  Our next meeting will be on 10th, 2019. All are welcome.
+The Evolution working group meets every other Thursday at 10:00am CDT in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288, use US phone number 1-408-638-0968 or [international numbers](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9)).
 
-The videoconference URL is https://unomaha.zoom.us/j/720431288.
-
-[You can also read our meeting notes.](meeting_notes.md)
+Our [meeting notes](meeting_notes.md) are posted after each call.
 
 ## Introduction
 
@@ -21,8 +19,7 @@ The videoconference URL is https://unomaha.zoom.us/j/720431288.
 _Evolution_ is a working group focused on the lifecycle of open source projects. We do not valence the stages, but seek to build awareness of those stages among consumers of these metrics. Decline can be ok when a project's utility is waning; or terrible if 20% of the entire internet relies on that project. Context matters, and we are not the arbiters of your context. The "valence" of "good/bad" emerges from use cases and YOUR context.
 
 ### Goal
-Currently, the goals are structured in the following focus areas : [Issue Resolution](focus_areas/issue_resolution.md), [Code Development](focus_areas/code_development.md) and [Community Growth](focus_areas/community_growth.md).
-
+Currently, the goals are structured in the following focus areas : [Code Development Activity](focus_areas/code_development_activity.md), [Code Development Efficiency](focus_areas/code_development_efficiency.md) and [Code Development Process Quality](focus_areas/code_development_process_quality.md).
 
 ### Process
 For each area of interest, we're following the [goal-question-metric](https://en.wikipedia.org/wiki/GQM) methodology defining questions and metrics that help to answer them.
@@ -62,23 +59,18 @@ Our key focus areas for 2019 are summarized [here](ROADMAP.md).
 
 The evolution metrics dealt with in this working group are organized in focus areas:
 
-Focus Area | Description
+Focus Area | Goal
 --- | ---
-[Code Development](./focus_areas/code_development.md) | Scope: Aspects related to how the source code changes over time, and the mechanisms that the project has to perform and control those changes.
-[Community Growth](./focus_areas/community_growth.md) | Goal: Identify the size of the project community and whether it is growing, shrinking, or staying the same.
-[Issue Resolution](./focus_areas/issue_resolution.md) | Goal: Identify how effective the community is at addressing issues identified by community participants.
+[Code Development Activity](./code_development_activity.md) | Learn about the types and frequency of activities involved in developing code.
+[Code Development Efficiency](./code_development_efficiency.md) | Learn how efficiently activities around code development get resolved.
+[Code Development Process Quality](./code_development_quality.md) | Learning about the processes to improve/review quality that are used (for example: testing, code review, tagging issues, tagging a release, time to response, CII Badging).
 
-
-NOTE: Please see that the work in the [focus_areas](/focus_areas) is still in progress.
+Please note that the work in the focus areas is still in progress.
 
 ## Usage
 
 This is a repository for the Evolution working group.
-When this working group decides to "release" a version of its metrics,
-the relevant files will be dumped to the
-[chaoss/metrics](https://github.com/chaoss/metrics) repository,
-as a pull request for updating the CHAOSS metrics with
-"Evolution metrics release x.y".
+When this working group decides to "release" a version of its metrics, the relevant files will be dumped to the [chaoss/metrics](https://github.com/chaoss/metrics) repository, as a pull request for updating the CHAOSS metrics with "Evolution metrics release x.y".
 
 ## Implementations
 
@@ -98,17 +90,16 @@ To be updated. --->
 
 ## Contributing
 
-A few steps as good starting points for contributing to the GMD Working group:
-* Introduce yourself on the [CHAOSS mailing list](https://github.com/chaoss/wg-gmd#mailing-list) explaining your interest.
+A few steps as good starting points for contributing to the Evolution Working group:
+* Introduce yourself on the [CHAOSS mailing list](https://github.com/chaoss/wg-evolution#mailing-list) explaining your interest.
 * Then, you can have a look at the archives of the mailing lists, at the minutes of past meetings, and at the
-    * [issues](https://github.com/chaoss/wg-gmd/issues)
-    * [pull requests](https://github.com/chaoss/wg-gmd/pulls)
-    * [contents of this repository](https://github.com/chaoss/wg-gmd).
+    * [issues](https://github.com/chaoss/wg-evolution/issues)
+    * [pull requests](https://github.com/chaoss/wg-evolution/pulls)
+    * [contents of this repository](https://github.com/chaoss/wg-evolution).
 * By proposing new goals for a focus area, or new questions for learning about those goals, or new metrics for answering those questions. Or by helping to refine goals, and questions.
 
 You can contribute
 See more details in the [contributing file](CONTRIBUTING.md).
-
 
 ## Communications
 
@@ -128,8 +119,7 @@ so that anyone had the opportunity of commenting on them, and make up their mind
 ### Mailing list
 
 * We use the [CHAOSS mailing list](https://chaoss.community/participate/#user-content-join-the-mailing-list).
-Please prefix the message subject with \[wg-gmd\] if it is specific to this working group.
-
+Please prefix the message subject with \[wg-evolution\] if it is specific to this working group.
 
 ## Contributors
 
@@ -137,6 +127,7 @@ Please prefix the message subject with \[wg-gmd\] if it is specific to this work
 
 - [Jesus M. Gonzales-Barahona](https://github.com/jgbarah)
 - [Sean P. Goggins](https://github.com/sgoggins)
+- [Carter Landis](https://github.com/ccarterlandis)
 
 ### Core Contributors
 

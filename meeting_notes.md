@@ -2,58 +2,247 @@
 
 ## Connection details for meetings, and recordings
 
-The CHAOSS Growth Maturity and Decline working group meets every other Wednesday at 9:30 am CDT
-(usually 16:30 CET, but beware different switches to Summer time in EU and US, [check your local time](http://www.thetimezoneconverter.com/?t=11am&tz=Chicago&))
+The Evolution working group meets every other Thursday at 10:00am CDT
 in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288,
-use US phone number 1-408-638-0968 or [international numbers](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9))
+use US phone number 1-408-638-0968 or [international numbers](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9)).
 
 Video recordings of Evolution Meetings available in the
 [CHAOSS Youtube channel](https://www.youtube.com/channel/UCrG-a3hIc_hCEUWloG0gm9A)
 
 WG Repository: https://github.com/chaoss/wg-evolution
 
-We use [Google Notes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit#) to take the meeting minutes. Notes are captured by the entire group and a volunteer acting as the primary scribe.
+We use [Google Notes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit#) to take the meeting minutes. Notes are captured by the entire group and a volunteer acting as the primary scribe. Once the meeting has ended, a maintainer will upload the notes to this repository for posterity.
 
 ## Next Meeting
-**Wednesday, June 5, 2019**  
+**Thursday, October 10, 2019**  
 
-Please be aware the time of the meeting has changed from 11am CDT to 9:30am CDT (18:00 CET to 16:30 CET)
+--------------------------------
 
-## Agenda For Next Meeting
+# Meeting on September 26, 2019
 
+Attendees: Georg L., Sean G., Kevin L., Carter L., Matt G. Armstrong F., Manrique
+
+Video:  https://youtu.be/ScIwEvj99m8 
+
+## Agenda
+Review metrics list from last time - any more to add?
+Break metrics in list into focus areas?
+Review open issues/PRs
+
+## Notes
+* What focus area accommodate the previously released metrics?
+
+Code Development Activity 
+Goal: Learn about the types and frequency of activities involved in developing code.
+Question | Metric
+Code Development Efficiency [issue and review metrics]
+Goal: Learning how efficiently activities around code development get resolved 
+Question | Metric (Here is where we articulate ratios)
+Code Development Process Quality
+Goal: Learning about the processes to improve/review quality that are used (for example: testing, code review, tagging issues, tagging a release, time to response, CII Badging)
+Question | Metric
+
+* Review metrics from previous releases before every new one
+
+--------------------------------
+
+# Meeting on September 12, 2019
+
+Attendees: Matt G, Sean G, Carter L, Kevin L, Georg L, Armstrong, Manrique, Daniel I. 
+
+Video: https://youtu.be/Ruf0F9Hd5wI 
+
+## Agenda
+* Consistent working group organization
+* What’s working about our processes?
+* What’s not working about our processes?
+* Can we identify reasons why?
+* What can we do about it?
+* What can we incorporate from other working groups?
+* What do we think other working groups could stand to learn from us?
+* Do we have a release schedule/deadline? If so, what is it and does it need to shift? 
+* Metric creation priorities
+* What kind of metrics are our CHAOSS stakeholders interested in? 
+* How can we best enable and encourage newcomers to express their metrics ideas?
+* Do we need to update focus areas? Which ones need the most work?
+* Does the GQM paradigm still fit?
+* What currently implemented (but not defined) metrics would we most like to see defined?
+* Which is higher priority: depth (defining what metrics we already have even further) or breadth (adopting new metrics), or perhaps something else?
+* Work through open issues and PRs
+
+## Notes
+_Current metric implementation chart temporarily ommitted for formatting's sake_
+_AI Carter: Translate chart to table, perhaps separate from this document_
+
+--------------------------------
+
+# Meeting on August 28, 2019
+
+Attendees: Matt G, Sean G, Armstrong F, Matt S, Kevin L
+
+## Notes 
+* Carter Landis has agreed to co-lead the Evolution WG
+* Need to find another co-lead
+* Thanks to Carter for agreeing to do this 
+* Perhaps Carter to send a call for participation
+* From a vision perspective 
+* What are the evolution-y metrics that already exist in GL and Augur? 
+* We should simply identify and document evolution metrics as they are currently deployed in both GL and Augur
+* Need to get the WG to be a bit more aligned with other WG with respect to structure 
+* AI Matt G and Kevin: will take a look at how to align this. Issue a PR to suggest changes 
+* Worked through PRs and Issues
+* Fuzzy consensus to move the meeting to every other Thursday at 10am US Central. This meeting would be during the weeks that the Common WG is not meeting. 
+
+--------------------------------
+
+# Meeting on August 14, 2019
+
+Attendees: Kevin L, Matt G, Sean G., Carter L., Matt S., Paul
+
+## Agenda
+* Need to find someone to lead the Evolution WG on a regular basis
+* Key WG around some of the activity metrics 
+* Sort of an infrastructure WG with core metrics 
+* Working Group Steering Committees meetings
+* Idea From community meeting
+* Meet two or more times a year 
+* Target program and community managers
+
+## Notes
+* Worked through Issues and PRs
+* What metrics are up for the next release? (Fosdem - February 2020)
+* Need to discuss issue #138 in the next meeting
+
+--------------------------------
+
+# Meeting on July 31, 2019
+
+Attendees: Kevin L, Matt G, Sean G. 
+
+## Agenda
+* Perhaps reduce the amount of implementation details on the metrics. The reason is that the installation instructions are likely to change and difficult to keep updated. Installation instructions could be maintained at the specific software/tool page. 
+* PRs are being merged to create header consistency throughout the metrics 
+
+## Notes
+* All metrics ready for release 
+
+### Issues
+* Candidate Release Comments (Review Duration) #189 (Issue discussed and closed)
+* Candidate Release Comments (Issues Closed) #188 (Moderate language changes to accommodate comments)
+* Candidate Release Comments (Issues Active) #187 (Moderate language changes to accommodate comments)
+* Candidate Release Comments (Issues New) #186 (Moderate language changes to accommodate comments)
+* Candidate Release Comments (Reviews Declined) #185 (Moderate language changes to accommodate comments)
+* Candidate Release Comments (Reviews Accepted) #184 (Moderate language changes to accommodate comments)
+* Candidate Release Comments (Reviews) #183 (Moderate language changes to accommodate comments)
+* Candidate Release Comments (Code Changes Lines) #182 (Moderate language changes to accommodate comment)
+* Candidate Release Comments (Code Changes) #181 (Moderate language changes to accommodate comments)
+
+--------------------------------
+
+# Meeting on July 3, 2019
+
+Attendees: Jesus GB, Kevin L, Matt G, Andrea G, Armstrong F
+
+Video: https://youtu.be/V3_fb93jogU 
+
+## Agenda
 * Outstanding issues
 * Outstanding pull requests
-* List of metrics considered ready for release
-* TBA  
+* Metrics release
 
--------------
 
-## May 22, 2019
+## Notes
+* Brief discussion about the metrics release cycle. 
 
-# Agenda
+### Issues
+* #188 - Fixed dead link
+* #187 - Fixed dead link
+* #181 - Fixed dead link
+* #165 - Closed 
+* #159 - Closed
 
+### Pull Requestss
+* #189 - Merged
+* #197 - Typos Merged
+
+--------------------------------
+
+# Meeting on June 19, 2019
+
+Attendees: Armstrong, Jesus, Kevin, Georg, Alberto
+
+Video: https://youtu.be/ShaHsusKo4k 
+
+## Agenda
 * Outstanding issues
 * Outstanding pull requests
+* Metrics release
+* AoB
+
+## Notes
+* Reviewing issues https://github.com/chaoss/wg-evolution/issues
+* The goal of GSoC is to have as many reference implementations as possible
+* #165 - revisit later which metrics are ready for release
+* #159 - Grimoirelab dashboard examples in metrics
+* Will merge all related pull requests as they were already reviewed
+* Reviewing pull requests https://github.com/chaoss/wg-evolution/pulls
+* Skip the GSoC prs
+* Skip the ones related to #159
+* #174, #177 and #178 - refactoring and restructuring
+* Metrics Release (#165) Spreadsheet: https://docs.google.com/spreadsheets/d/1_jwkwzs8s6SAm2vVY-8lzTQk3YT0YpOveTlKOwjd2eQ/edit#gid=0
+
+--------------------------------
+
+# Meeting on June 5, 2019
+
+Attendees: Armstrong, Jesus, Kevin, Andrea Gallo, Sean Goggins
+
+Video: https://youtu.be/cNcs06dk__I 
+
+## Agenda
+* Outstanding issues
+* Outstanding pull requests
+* Progress of GSoC
+* AoB
+
+## Notes
+* GSoC
+* Pandas?
+* Metrics Release
+
+### Issues
+* Naming and a few 404 errors (Help requested)
+
+### Pull Requests
+* Update group name to Evolution (Please Review)
+* Create metrics-release-criteria (Discussion occurring elsewhere, closing)
+
+--------------------------------
+
+# Meeting on May 22, 2019
 
 Attendees: Jesus Gonzalez-Barahona, Parth Sharma.
 
-## Notes
+## Agenda
+* Outstanding issues
+* Outstanding pull requests
+* Metrics release 
 
+## Notes
 We went, as usual, through pending issues and pull requests. Since we were only two people, there was little discussion.
 
-Some notes on issues:
-
+### Issues
 * [134](https://github.com/chaoss/wg-evolution/issues/134), Definition of Abandoned Issue. It was closed, because the pull request implementing it was already merged.
 * [138](https://github.com/chaoss/wg-evolution/issues/138). We’re discussing a new goal (Efficiency) in the Code Development focus area. Comments and ideas are welcome.
 * [136](https://github.com/chaoss/wg-evolution/issues/136). We still need to define testing for reference implementations. Very likely we will do this as a part of the tasks during GSoC.
 * [61](https://github.com/chaoss/wg-evolution/issues/61) and [48](https://github.com/chaoss/wg-evolution/issues/48). We have this two use cases still open, just in case somebody wants to elaborate on them. Please, anyone, feel free to submit more uses cases.
 
-Some notes on pull requests:
-
+### Pull requests
 * [151](https://github.com/chaoss/wg-evolution/pull/151). This is the first proposed metric for the Efficiency goal in the Code Development focus area. Reviews are welcome.
 * [148](https://github.com/chaoss/wg-evolution/pull/148). Minor fix due to the change in name of the working group. Please, anyone, review.
 * [147](https://github.com/chaoss/wg-evolution/pull/147). Discussion on the criteria to release metrics. Likely addressed by the new contributing file in the metrics repository. We propose to close this pull request, and refer to that file.
 
+--------------------------------
 
 # May 8, 2019
 ## Agenda
@@ -483,11 +672,11 @@ No notes were taken
 
 Sean-
     1. Pull request comment duration 
-    2. Maintainer response to merge duration 
-    3. Pull request comment diversity 
-    4. Pull request comments 
-    5. Pull requests open 
-    6. Forks 
+        2. Maintainer response to merge duration 
+        3. Pull request comment diversity 
+        4. Pull request comments 
+        5. Pull requests open 
+        6. Forks 
 
 #### Action items
 *   Create release page - Kevin
@@ -1109,15 +1298,14 @@ Move from bi-weekly to weekly meetings
 * Create template and folder for Use Cases
 * Create contribute and process documents
 
-
 ----------------------------
 
 ## October 10, 2018
 
   - Attendees: Alberto García-Plaza, Jesus M. Gonzales-Barahona, Matt Germonprez,
-  Sean P. Goggins (lost connection), Kevin Lumbard.
+    Sean P. Goggins (lost connection), Kevin Lumbard.
   - Video of the meeting: will be available in the
-  [CHAOSS Youtube channel](https://www.youtube.com/channel/UCrG-a3hIc_hCEUWloG0gm9A)
+    [CHAOSS Youtube channel](https://www.youtube.com/channel/UCrG-a3hIc_hCEUWloG0gm9A)
   - Agenda:
     - Discuss ordered list of metrics to work on defining. With some degree of prioritization (perhaps keep in a markdown document)
     - Discuss [pending pull requests](https://github.com/chaoss/wg-gmd/pulls)
