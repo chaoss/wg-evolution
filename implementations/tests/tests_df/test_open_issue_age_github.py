@@ -1,9 +1,11 @@
 import unittest
 import json
+from datetime import datetime
 
 from pandas.util.testing import assert_frame_equal
 
 from implementations.code_df.open_issue_age_github import OpenIssueAgeGitHub
+from implementations.code_df.utils import str_to_date
 
 
 def read_file(path):
@@ -41,8 +43,15 @@ class TestOpenIssueAgeGitHub(unittest.TestCase):
         """
 
         open_issue_age = OpenIssueAgeGitHub(self.items)
-        expected_mean = 1179.0
+
+        # manually calculate the age of all open issues in days
+        expected_ages = [(datetime.now() - str_to_date(item['data']['created_at'])).days
+                         for item in self.items
+                         if item['data']['state'] == 'open']
+
+        expected_mean = sum(expected_ages) / len(expected_ages)
         mean_age = open_issue_age.compute()
+
         self.assertEqual(expected_mean, mean_age)
 
     def test__agg(self):
