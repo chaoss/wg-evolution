@@ -61,7 +61,7 @@ class Metric:
             of "period" and the count for that interval
         """
 
-        df = self.df
+        df = self.df.copy(deep=True)
 
         df = df.set_index('created_date')
         df = self._agg(df, period)
