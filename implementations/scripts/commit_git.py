@@ -1,5 +1,26 @@
-from implementations.scripts.conditions import Naive, Commit
+# -*- coding: utf-8 -*-
+#
+# Copyright (C) 2019 CHAOSS
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+# Authors:
+#     Aniruddha Karajgi <akarajgi0@gmail.com>
+#
+
 from implementations.scripts.metric import Metric
+from implementations.scripts.conditions import Naive, Commit
 from implementations.scripts.utils import str_to_date
 
 
@@ -20,6 +41,10 @@ class CommitGit(Metric):
 
     :param is_code:  list of CodeCondition objects
         It is used to determine what comprises source code.
+
+    :param conds: list of Commit sub-class objects.
+        Used to add restrictions on which commits are
+        included in the analysis.
         """
 
     def __init__(self, items, date_range=(None, None),
