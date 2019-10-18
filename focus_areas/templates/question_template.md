@@ -1,3 +1,7 @@
+## Title
+
+## Question
+
 ## Description
 
 ## Objectives
@@ -15,7 +19,7 @@
 
 ### Data Collection Strategies (optional)
 
-## Success Metrics (optional)
+### Success Metrics (optional)
 
 ## Resources
 - links to external literature, etc
