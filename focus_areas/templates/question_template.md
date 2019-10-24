@@ -1,37 +1,29 @@
-# [Area of Analysis]: [Focal Concern]
+# {Name of Metric}
 
-**Question:** placeholder for a variety of channels (choice?)
+Question: _____
 
+## Description
+A description of what the metric is and what it captures.
+The first few sentences should match the description in the [metrics list](../activity-metrics-list.md).
 
-## 1. Description
+## Objectives
+Answer the question for why someone wants to measure this metric and what can be known with it.
 
-_This section provides a rationale for why this question is important to growth maturity and decline._
-_Example for how to use this template: [Documentation](./resources/project_places-documentation.md)_
+## Implementation
+Provide details on how to measure the metric, collect the data, and analyze it. The following sub-headings are optional but help to structure the different aspects of implementation.
 
-## 2. Sample Objectives
+### Filters (optional)
+Include a Filter
 
-- _This section provides a list of reasons a community wants to assess this question_
--
+### Visualizations (optional)
+Include visualizations such as screenshot of the metric. There may be many more visualizations for this metric, we only want to provide a flavor for what this metric is about.
 
+### Tools Providing the Metric (optional)
+Metric must be currently deployed/available, in contrast to a tool having the "potential" to provide the metric. Provide direct link to implementation/documentation, if applicable
 
-## 3. Sample Strategies
+### Data Collection Strategies (Optional)
+If there are several different ways to collect data for this metric, list them here. 
+This may include expressing a metric in different ways.
 
-- _This section provides a list of methods available for answering the question._
--
-
-
-## 4. Sample Success Metrics
-_Qualitative_
-
-- _This section provides detailed instructions for how to execute the above listed methods and evaluate the results_
--
-
-_Quantitative_
-
-- _This section provides detailed instructions for how to execute the above listed quantitative methods and evaluate the results_
--
-
-
-## 5. Resources
-
-- _This section provides a list of resources and references_
+## References
+Blog posts, websites, academic papers, or books that mention the metric and provide more background.
