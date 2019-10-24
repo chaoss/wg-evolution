@@ -14,7 +14,58 @@ WG Repository: https://github.com/chaoss/wg-evolution
 We use [Google Notes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit#) to take the meeting minutes. Notes are captured by the entire group and a volunteer acting as the primary scribe. Once the meeting has ended, a maintainer will upload the notes to this repository for posterity.
 
 ## Next Meeting
-**Thursday, October 10, 2019**  
+
+Thursday, October 24th, 2019
+
+# Meeting on October 10, 2019
+
+Attendees: Sean G., Matt G., Armstrong, F. Carter, L. Manrique, LF, Georg, L.
+
+## Agenda
+- Review PR #245
+- Review PR #246
+- Recap focus area titles and goals
+- Distribute already defined metrics into new focus areas
+
+## Notes
+- Worked through PRs and merged all
+- Working through Issues
+- AI Carter: Update Code_Changes.md
+- AI Carter: Fix process quality link
+- AI Carter: Re-organization of code development & issue resolution focus areas
+- New template: 
+
+```markdown
+# Title
+
+**Question**
+
+## Description
+
+## Objectives
+
+## Implementation
+
+### Filters (optional)
+
+### Visualizations (optional)
+
+### Tools providing the metric (optional)
+- formerly: "known or sample implementations"
+- Metric must be currently deployed/available, in contrast to a tool having the "potential" to provide the metric
+- provide direct link to implementation/documentation, if applicable
+
+### Data Collection Strategies (optional)
+
+### Success Metrics (optional)
+
+## Resources
+- links to external literature, etc
+
+```
+
+- What are the existing metrics (from anywhere, in the repo or in tools) that are not captured in the focus areas that should be considered for review?
+- AI ???: Reorg, re-template, new metrics? (2-3)
 
 --------------------------------
 
