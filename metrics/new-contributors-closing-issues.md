@@ -1,4 +1,4 @@
-# Closed Issues New Contributors
+# New Contributors Closing Issues
 
 ## 1. Description
 What is the number of persons closing an issue for the first time?
