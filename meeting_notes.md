@@ -17,6 +17,26 @@ We use [Google Notes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oS
 
 Thursday, October 24th, 2019
 
+# Meeting on Thursday, October 24, 2019
+
+Attendees: Jesus G., Georg L., Carter L., Sean G., Armstrong F., Kevin L.
+
+Video: https://youtu.be/tBecDBd21tI 
+
+## Agenda
+- Review PR #246 (Updated the metrics template and merged)
+- Discuss PR #250 (closed, we revised the metric’s use of the template and merged a new pr #251)
+- Discuss any metrics for detailing, if there is interest
+- Do we need to start thinking about what metrics we’d like to include in the CHAOSS metrics reports yet?
+- Community Growth - still a focus area? Do we put a pin in it?
+
+## Notes
+AI Carter: Start changing over released metrics to new template
+
+Release sheet for tracking metrics
+https://docs.google.com/spreadsheets/d/1tAGzUiZ9jdORKCnoDQJkOU8tQsZDCZVjcWqXYOSAFmE/edit#gid=1004270137
+
+
 # Meeting on October 10, 2019
 
 Attendees: Sean G., Matt G., Armstrong, F. Carter, L. Manrique, LF, Georg, L.
