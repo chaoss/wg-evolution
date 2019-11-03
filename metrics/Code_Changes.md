@@ -28,7 +28,6 @@ touches files considered as source code.
 ## Implementation
 
 **Aggregators:**
-
 * Count. Total number of changes during the period.
 
 **Parameters:**

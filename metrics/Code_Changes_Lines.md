@@ -1,7 +1,10 @@
 # Code Changes Lines
-Question: What is the sum of the number of lines touched (lines added plus lines removed) in all changes to the source code during a certain period?
+
+**Question:** What is the sum of the number of lines touched (lines added plus lines removed) in all changes to the source code during a certain period?
+
 
 ## Description
+
 When introducing changes to the source code, developers touch
 (edit, add, remove) lines of the source code files.
 This metric considers the aggregated number of lines touched
@@ -21,56 +24,33 @@ For this matter, we consider changes to the source code as
 defined in [Code_Changes](https://github.com/chaoss/wg-evolution/blob/master/metrics/Code_Changes.md). Lines of code will
 be any line of a source code file, including comments and blank lines.
 
-### Parameters
-Mandatory:
-* Period of time. Start and finish date of the period. Default: forever.  
-    Period during which changes are considered.<br>
 
-* Criteria for source code. Algorithm. Default: all files are source code.  
-    If we are focused on source code, we need a criteria for deciding
-    whether a file is a part of the source code or not.<br>
+## Objectives
 
-Optional:
-* Type of source code change.
-    - Lines added
-    - Lines removed
-    - Whitespace 
-
-### Aggregators
-
-* Count. Total number of lines changes (touched) during the period.
-
-## Specific description: git
-In the cases of git, we define "code change" and "date of a change"
-as we detail in [Code_Changes](https://github.com/chaoss/wg-evolution/blob/master/metrics/Code_Changes.md).
-The date of a change can be defined (for considering it in a period or not)
-as the author date or the committer date of the corresponding git commit.
-
-Since git provides changes as diff patches (list of lines added and removed),
-each of those lines mentioned as a line added or a line removed in the diff
-will be considered as a line changed (touched).
-If a line is removed and added, it will be considered as two "changes to a line".
-
-### Git parameters
-Mandatory:
-
-* Kind of date. Either author date or committer date. Default: author date.  
-    For each git commit, two dates are kept: when the commit was authored,
-    and when it was committed to the repository.
-    For deciding on the period, one of them has to be selected.<br>
-
-* Include merge commits. Boolean. Default: True.  
-    Merge commits are
-    those which merge a branch, and in some cases are not considered as
-    reflecting a coding activity
-
-## Use Cases
 * Volume of coding activity:  
   Although code changes can be a proxy to the coding activity of a project,
   not all changes are the same. Considering the aggregated number of
   lines touched in all changes gives a complementary idea of how large
   the changes are, and in general, how large is the volume of coding
   activity.
+
+
+## Implementation
+
+**Aggregators:**
+* Count. Total number of lines changes (touched) during the period.
+
+**Parameters:**
+* Period of time. Start and finish date of the period. Default: forever.  
+    Period during which changes are considered.<br>
+* Criteria for source code. Algorithm. Default: all files are source code.  
+    If we are focused on source code, we need a criteria for deciding
+    whether a file is a part of the source code or not.<br>
+* Type of source code change.
+    - Lines added
+    - Lines removed
+    - Whitespace 
+
 
 ## Filters
 
@@ -80,6 +60,7 @@ Mandatory:
 * By groups of actors (employer, gender...). Requires actor grouping,
 and likely, actor merging.
 
+
 ## Visualizations
 
 * Count per month over time
@@ -88,9 +69,9 @@ and likely, actor merging.
 These could be represented as bar charts, with time running in the X axis.
 Each bar would represent a code changes during a certain period (eg, a month).
 
-## Reference Implementation
- 
-## Known Implementations
+
+### Tools Providing the Metric
+
 * [GrimoireLab](https://chaoss.github.io/grimoirelab) provides this metric out of the box.
   - View an example on the [CHAOSS instance of Bitergia Analytics](https://chaoss.biterg.io/app/kibana#/dashboard/f13af0e0-18e5-11e9-ba47-d5cbef43f8d3).  
   - Download and import a ready-to-go dashboard containing examples for this metric visualization from the [GrimoireLab Sigils panel collection](https://chaoss.github.io/grimoirelab-sigils/chaoss-gmd-cde/lines_of_code_changed/).
@@ -102,5 +83,30 @@ Each bar would represent a code changes during a certain period (eg, a month).
     * X-axis: `Date Histogram` Aggregation, `grimoire_creation_date` Field, `Auto` Interval, `Time` Custom Label
   - Example screenshot: ![GrimoireLab screenshot of metric Code_Changes_Lines](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/code_changes_lines-GrimoireLab.png)
 
-## Resources
- 
+
+### Data Collection Strategies
+
+**Specific description: Git**
+
+In the cases of git, we define "code change" and "date of a change"
+as we detail in [Code_Changes](https://github.com/chaoss/wg-evolution/blob/master/metrics/Code_Changes.md).
+The date of a change can be defined (for considering it in a period or not)
+as the author date or the committer date of the corresponding git commit.
+
+Since git provides changes as diff patches (list of lines added and removed),
+each of those lines mentioned as a line added or a line removed in the diff
+will be considered as a line changed (touched).
+If a line is removed and added, it will be considered as two "changes to a line".
+
+__Mandatory parameters:__
+
+* Kind of date. Either author date or committer date. Default: author date.  
+    For each git commit, two dates are kept: when the commit was authored,
+    and when it was committed to the repository.
+    For deciding on the period, one of them has to be selected.<br>
+
+* Include merge commits. Boolean. Default: True.  
+    Merge commits are
+    those which merge a branch, and in some cases are not considered as
+    reflecting a coding activity
+
