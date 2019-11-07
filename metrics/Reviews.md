@@ -1,6 +1,6 @@
 # Reviews
 
-**Question:** What new review requests for changes to the source code occurred during a certain period? 
+Question: What new review requests for changes to the source code occurred during a certain period? 
 
 
 ## Description
