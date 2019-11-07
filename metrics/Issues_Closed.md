@@ -1,6 +1,7 @@
 # Issues Closed
 
-Question: What is the count of issues that were closed during a certain period?
+**Question:** What is the count of issues that were closed during a certain period?
+
 
 ## Description
 
@@ -22,10 +23,24 @@ as opening a new issue, or making void the previous close
 For example, in GitHub Issues or GitLab Issues, issues closed are
 issues that were closed during a certain period.
 
-### Parameters
 
-Mandatory:
+## Objectives
 
+* Volume of issues that are dealt with in a project.
+    Closed issues are a proxy for the activity in a project.
+    By counting closed issues related to code in the set of repositories corresponding
+    to a project, you can have an idea of the overall activity in
+    finishing work with issues in that project.
+    Of course, this metric is not the only one that should be
+    used to track volume of coding activity.
+
+
+## Implementation
+
+**Aggregators:**
+* Count. Total number of active issues during the period.
+
+**Parameters:**
 * Period of time. Start and finish date of the period. Default: forever.  
     Period during which issues are considered.<br>
 
@@ -44,67 +59,24 @@ Mandatory:
 * Criteria for closed. Algorithm. Default: having a closing event during
   the period of interest.
 
-### Aggregators
 
-* Count. Total number of active issues during the period.
-
-### Specific description: GitHub
-- In the case of GitHub, closed issues are defined as "issues which are closed". 
-
-#### GitHub parameters
-
-None.
-
-### Specific description: GitLab
-- In the case of GitLab, active issues are defined as "issues
-that are closed".
-
-#### GitLab parameters
-- None.
-
-### Specific description: Jira
-- In the case of Jira, active issues are defined as "issues that change to the closed state". 
-
-#### Jira parameters
-
-None.
-
-### Specific description: Bugzilla
-- In the case of Bugzilla, active issues are defined as "bug reports that change to the closed state".
-
-#### Bugzilla parameters
-
-None.
-
-## Objectives
-
-* Volume of issues that are dealt with in a project.
-    Closed issues are a proxy for the activity in a project.
-    By counting closed issues related to code in the set of repositories corresponding
-    to a project, you can have an idea of the overall activity in
-    finishing work with issues in that project.
-    Of course, this metric is not the only one that should be
-    used to track volume of coding activity.
-
-## Filters and Visualizations
-
-### Filters
+### Filters 
 
 * By actors (submitter, commenter, closer). Requires actor merging
 (merging ids corresponding to the same author).
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
-### Visualizations
+
+### Visualizations 
 
 * Count per month over time
 * Count per group over time
 
 These could be represented as bar charts, with time running in the X axis.
 
-## Reference Implementation
 
-## Known Implementations
+### Tools Providing the Metric 
 
 * [GrimoireLab](https://chaoss.github.io/grimoirelab) provides data for computing this metric for GitHub Issues, GitLab issues, Jira, Bugzilla and Redmine. Current dashboards show information based on creation date, that means they show current status of the issues that were created during a time period (e.g. [GitHub Issues dashboard](https://chaoss.github.io/grimoirelab-sigils/panels/github-issues/), you can [see it in action](https://chaoss.biterg.io/app/kibana#/dashboard/GitHub-Issues)). Nevertheless, it is easy to build a visualization that shows issues based on closing date by following the next steps:
   - Add a sample visualization to any GrimoreLab Kibiter dashboard following these instructions:
@@ -116,4 +88,39 @@ These could be represented as bar charts, with time running in the X axis.
     * Buckets X-axis: `Date Histogram` Aggregation, `closed_at` Field, `Weekly` Interval (or whatever interval may fit your needs, depending on the whole time range you wish to visualize in the chart), `Time` Custom Label.
   - Example screenshot: ![GrimoireLab screenshot of metric issues_closed](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/issues_closed_GrimoireLab.png).
 
-## Resources
+
+### Data Collection Strategies 
+
+**Specific description: GitHub**
+
+- In the case of GitHub, closed issues are defined as "issues which are closed". 
+
+__Mandatory parameters:__
+
+None.
+
+**Specific description: GitLab**
+
+- In the case of GitLab, active issues are defined as "issues
+that are closed".
+
+__Mandatory parameters:__
+
+- None.
+
+**Specific description: Jira**
+
+- In the case of Jira, active issues are defined as "issues that change to the closed state". 
+
+__Mandatory parameters:__
+
+None.
+
+**Specific description: Bugzilla**
+
+- In the case of Bugzilla, active issues are defined as "bug reports that change to the closed state".
+
+__Mandatory parameters:__
+
+None.
+
