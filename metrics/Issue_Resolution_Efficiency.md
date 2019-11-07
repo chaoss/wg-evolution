@@ -1,0 +1,31 @@
+# Issue Resolution Efficiency
+
+Question: What is the number of closed issues/number of abandoned issues?
+
+## Description
+A description of what the metric is and what it captures.
+The first few sentences should match the description in the [metrics list](../activity-metrics-list.md).
+
+**Note:** The term abandoned issues also refers to inactive issues. Currently the definition of Inactive/Abandoned issues is yet to be defined formally. For more information refer the following [issue #134](https://github.com/chaoss/wg-evolution/issues/134).
+
+## Objectives
+Answer the question for why someone wants to measure this metric and what can be known with it.
+
+## Implementation
+Provide details on how to measure the metric, collect the data, and analyze it. The following sub-headings are optional but help to structure the different aspects of implementation.
+
+### Filters (optional)
+Include a Filter
+
+### Visualizations (optional)
+Include visualizations such as screenshot of the metric. There may be many more visualizations for this metric, we only want to provide a flavor for what this metric is about.
+
+### Tools Providing the Metric (optional)
+Metric must be currently deployed/available, in contrast to a tool having the "potential" to provide the metric. Provide direct link to implementation/documentation, if applicable
+
+### Data Collection Strategies (Optional)
+If there are several different ways to collect data for this metric, list them here. 
+This may include expressing a metric in different ways.
+
+## References
+Blog posts, websites, academic papers, or books that mention the metric and provide more background.
