@@ -36,7 +36,7 @@ or in some contexts "changesets" in the case of Gerrit.
 **Parameters:**
 
 * Period of time. Start and finish date of the period. Default: forever.  
-    Period during which reviews are considered.<br>
+    Period during which reviews are considered.
 
 * Criteria for source code. Algorithm. Default: all files are source code.  
     If we are focused on source code, we need a criteria for deciding
