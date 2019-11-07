@@ -87,10 +87,6 @@ as long as it proposes changes to source code files.
 The date of the review can be defined (for considering it in a period or not)
 as the date in which the pull request was submitted.
 
-__Mandatory parameters:__
-
-None.
-
 **Specific description: GitLab**
 
 In the case of GitLab, a review is defined as a "merge request",
@@ -98,10 +94,6 @@ as long as it proposes changes to source code files.
 
 The date of the review can be defined (for considering it in a period or not)
 as the date in which the merge request was submitted.
-
-__Mandatory parameters:__
-
-None.
 
 **Specific description: Gerrit**
 
@@ -113,7 +105,4 @@ The date of the review can be defined (for considering it in a period or not)
 as the date in which the code review was started by submitting a
 patchset for review.
 
-__Mandatory parameters:__
-
-None.
 
