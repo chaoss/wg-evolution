@@ -1,7 +1,9 @@
 # Reviews Accepted
-Question: How many accepted reviews are present in a code change? 
+
+**Question:** How many accepted reviews are present in a code change?
 
 ## Description
+
 Reviews are defined as in [Reviews](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews.md).
 Accepted reviews are those that end with the corresponding changes
 finally merged into the code base of the project.
@@ -14,9 +16,24 @@ in the corresponding git repository. The same can be said of
 GitLab merge requests. In the case of Gerrit, a code review usually
 corresponds to a single commit.
 
-### Parameters
-Mandatory:
 
+## Objectives
+
+* Volume of coding activity.  
+    Accepted code reviews are a proxy for the activity in a project.
+    By counting accepted code reviews in the set of repositories corresponding
+    to a project, you can have an idea of the overall coding activity in
+    that project that leads to actual changes.
+    Of course, this metric is not the only one that should be
+    used to track volume of coding activity.
+
+
+## Implementation
+
+**Aggregators:**
+* Count. Total number of accepted reviews during the period.
+
+**Parameters:**
 * Period of time. Start and finish date of the period. Default: forever.  
     Period during which accepted reviews are considered.<br>
 
@@ -24,11 +41,57 @@ Mandatory:
     If we are focused on source code, we need a criteria for deciding
     whether a file is a part of the source code or not.
 
-### Aggregators
 
-* Count. Total number of accepted reviews during the period.
+### Filters
 
-### Specific description: GitHub
+* By actors (submitter, reviewer, merger). Requires actor merging
+(merging ids corresponding to the same author).
+* By groups of actors (employer, gender... for each of the actors).
+Requires actor grouping, and likely, actor merging.
+
+
+### Visualizations
+
+* Count per month over time
+* Count per group over time
+
+These could be represented as bar charts, with time running in the X axis.
+Each bar would represent accepted reviews to change the code
+during a certain period (eg, a month).
+
+
+### Tools Providing the Metric
+
+* [Grimoirelab](https://chaoss.github.io/grimoirelab) provides this metric out of the box for GitHub Pull Requests and also provides data to build similar visualizations for GitLab Merge Requests and Gerrit Changesets.
+  - View an example on the [CHAOSS instance of Bitergia Analytics](https://chaoss.biterg.io/app/kibana#/dashboard/a7b3fd70-ef16-11e8-9be6-c962f0cee9ae).  
+  - Download and import a ready-to-go dashboard containing examples for this metric visualization based on GitHub Pull Requests data from the [GrimoireLab Sigils panel collection](https://chaoss.github.io/grimoirelab-sigils/panels/github-pullrequests/).
+  - Add a sample visualization for GitHub Pull requests to any GrimoreLab Kibiter dashboard following these instructions:
+    * Create a new `Timelion` visualization.
+    * Select `Auto` as Interval.
+    * Paste the following Timelion Expression:
+    ```
+    .es(index=git, q="title:Merge* OR files:0", timefield=grimoire_creation_date).bars().color(#94c3af).label("Pull Requests Merged")
+    ```
+    * The expression, step by step:
+      * `.es()`: used to define an ElasticSearch query.
+        * `index=git`: use git index.
+        * `q="title:Merge* OR files:0"`: heuristic to filter in merges.
+        * `timefield=grimoire_creation_date`: time will be based on commit creation date (as our query looks for merge commits, it should be the date in which the merge was effectively done).
+      * `.bars()`: draw bars instead of lines.
+      * `.color()` and `.label()`: some formatting options.
+    * If you wish to get also the trend, use this instead (i.e. repeating the same expression twice and calling `trend()` the second time):
+    ```
+    .es(index=git, q="title:Merge* OR files:0", timefield=grimoire_creation_date).bars().color(#94c3af).label("Pull Requests Merged"),
+    .es(index=git, q="title:Merge* OR files:0", timefield=grimoire_creation_date).trend().color(#ffb745).label("Trend")
+    ```
+    * As discussed [above for GitHub case](#specific-description-github), sometimes is not easy to identify merges. As you probably noticed, in this example we based our expression on GrimoireLab Git index. Besides, it could be applied to any other similar environment using Git repositories, not only to GitHub.
+  - Example screenshot: ![GrimoireLab screenshot of metric Reviews Accepted](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/reviews_accepted_GrimoireLab.png)
+
+
+### Data Collection Strategies (Optional)
+
+**Specific description: GitHub**
+
 In the case of GitHub, accepted reviews are defined as "pull requests
 whose changes are included in the git repository",
 as long as it proposes changes to source code files.
@@ -60,85 +123,33 @@ In some cases, projects have policies of mentioning the commits
 when the pull request is closed (such as "closing by accepting commits
 xxx and yyyy"), which may help to track commits in the git repository.
 
-#### GitHub parameters
-Mandatory:
+__Mandatory parameters:__
 
 * Heuristic for detecting accepted pull requests not accepted
   via the web interface. Default: None.
 
-### Specific description: GitLab
+**Specific description: GitLab**
+
 In the case of GitLab, accepted reviews are defined as "merge requests
 whose changes are included in the git repository",
 as long as it proposes changes to source code files.
 
-#### GitLab parameters
-Mandatory:
+__Mandatory parameters:__
 
 * Heuristic for detecting accepted pull requests not accepted
   via the web interface. Default: None.
 
-### Specific description: Gerrit
+**Specific description: Gerrit**
+
 In the case of Gerrit, accepted reviews are defined as "changesets
 whose changes are included in the git repository",
 as long as they proposes changes to source code files.
 
-#### Gerrit parameters
+__Mandatory parameters:__
+
 None.
 
-## Objectives
-* Volume of coding activity.  
-    Accepted code reviews are a proxy for the activity in a project.
-    By counting accepted code reviews in the set of repositories corresponding
-    to a project, you can have an idea of the overall coding activity in
-    that project that leads to actual changes.
-    Of course, this metric is not the only one that should be
-    used to track volume of coding activity.
 
-## Filters and Visualizations
- 
-### Filters
-
-* By actors (submitter, reviewer, merger). Requires actor merging
-(merging ids corresponding to the same author).
-* By groups of actors (employer, gender... for each of the actors).
-Requires actor grouping, and likely, actor merging.
-
-### Visualizations
-
-* Count per month over time
-* Count per group over time
-
-These could be represented as bar charts, with time running in the X axis.
-Each bar would represent accepted reviews to change the code
-during a certain period (eg, a month).
-
-## Reference Implementation
-  
-## Known Implementations
-* [Grimoirelab](https://chaoss.github.io/grimoirelab) provides this metric out of the box for GitHub Pull Requests and also provides data to build similar visualizations for GitLab Merge Requests and Gerrit Changesets.
-  - View an example on the [CHAOSS instance of Bitergia Analytics](https://chaoss.biterg.io/app/kibana#/dashboard/a7b3fd70-ef16-11e8-9be6-c962f0cee9ae).  
-  - Download and import a ready-to-go dashboard containing examples for this metric visualization based on GitHub Pull Requests data from the [GrimoireLab Sigils panel collection](https://chaoss.github.io/grimoirelab-sigils/panels/github-pullrequests/).
-  - Add a sample visualization for GitHub Pull requests to any GrimoreLab Kibiter dashboard following these instructions:
-    * Create a new `Timelion` visualization.
-    * Select `Auto` as Interval.
-    * Paste the following Timelion Expression:
-    ```
-    .es(index=git, q="title:Merge* OR files:0", timefield=grimoire_creation_date).bars().color(#94c3af).label("Pull Requests Merged")
-    ```
-    * The expression, step by step:
-      * `.es()`: used to define an ElasticSearch query.
-        * `index=git`: use git index.
-        * `q="title:Merge* OR files:0"`: heuristic to filter in merges.
-        * `timefield=grimoire_creation_date`: time will be based on commit creation date (as our query looks for merge commits, it should be the date in which the merge was effectively done).
-      * `.bars()`: draw bars instead of lines.
-      * `.color()` and `.label()`: some formatting options.
-    * If you wish to get also the trend, use this instead (i.e. repeating the same expression twice and calling `trend()` the second time):
-    ```
-    .es(index=git, q="title:Merge* OR files:0", timefield=grimoire_creation_date).bars().color(#94c3af).label("Pull Requests Merged"),
-    .es(index=git, q="title:Merge* OR files:0", timefield=grimoire_creation_date).trend().color(#ffb745).label("Trend")
-    ```
-    * As discussed [above for GitHub case](#specific-description-github), sometimes is not easy to identify merges. As you probably noticed, in this example we based our expression on GrimoireLab Git index. Besides, it could be applied to any other similar environment using Git repositories, not only to GitHub.
-  - Example screenshot: ![GrimoireLab screenshot of metric Reviews Accepted](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/reviews_accepted_GrimoireLab.png)
 
 ## Resources
  

@@ -1,6 +1,7 @@
 # Reviews Duration
 
-Question: What is the duration of time between the moment a code review starts and the moment it is accepted?
+**Question:** What is the duration of time between the moment a code review starts and the moment it is accepted?
+
 
 ## Description
 
@@ -21,59 +22,6 @@ In case there are comments or other events after the code is
 merged, they are not considered for measuring the duration of
 the code review.
 
-### Parameters
-
-Mandatory:
-
-* Period of time. Start and finish date of the period. Default: forever.  
-    Period during which accepted reviews are considered.
-    An accepted review is considered to be in the period if
-    its creation event is in the period.<br>
-
-* Criteria for source code. Algorithm. Default: all files are source code.  
-    If we are focused on source code, we need a criteria for deciding
-    whether a file is a part of the source code or not.
-
-### Aggregators
-
-* Median. Median (50% percentile) of review duration for all
-  accepted reviews in the considered period of time.
-
-### Specific description: GitHub
-
-In the case of GitHub, duration is considered for
-pull requests that are accepted and merged in the code base.
-For an individual pull request, duration starts when it
-is opened, and finishes when the commits it includes
-are merged into the code base.
-
-#### GitHub parameters
-
-None.
-
-### Specific description: GitLab
-
-In the case of GitLab, duration is considered for
-merge requests that are accepted and merged in the code base.
-For an individual merge request, duration starts when it
-is opened, and finishes when the commits it includes
-are merged into the code base.
-
-#### GitLab parameters
-
-None.
-
-### Specific description: Gerrit
-
-In the case of Gerrit, duration is considered for
-code reviews that are accepted and merged in the code base.
-For an individual cod review, duration starts when it is opened,
-and finishes when the commits it includes
-are merged into the code base.
-
-#### Gerrit parameters
-
-None.
 
 ## Objectives
 
@@ -84,7 +32,22 @@ None.
     Of course, this metric is not the only one that should be
     used to track volume of coding activity.
 
-## Filters and Visualizations
+
+## Implementation
+
+**Aggregators:**
+* Median. Median (50% percentile) of review duration for all
+  accepted reviews in the considered period of time.
+
+**Parameters:**
+* Period of time. Start and finish date of the period. Default: forever.  
+    Period during which accepted reviews are considered.
+    An accepted review is considered to be in the period if
+    its creation event is in the period.
+
+* Criteria for source code. Algorithm. Default: all files are source code.  
+    If we are focused on source code, we need a criteria for deciding
+    whether a file is a part of the source code or not.
 
 ### Filters
 
@@ -92,6 +55,7 @@ None.
 (merging ids corresponding to the same author).
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
+
 
 ### Visualizations
 
@@ -108,8 +72,42 @@ These could be represented with the usual statistical distribution
 curves, or with bar charts, with buckets for duration in the
 X axis, and number of reviews in the Y axis.
 
-## Reference Implementation
 
-## Known Implementations
+### Data Collection Strategies
 
-## Resources
+**Specific description: GitHub**
+
+In the case of GitHub, duration is considered for
+pull requests that are accepted and merged in the code base.
+For an individual pull request, duration starts when it
+is opened, and finishes when the commits it includes
+are merged into the code base.
+
+__Mandatory parameters:__
+
+None.
+
+**Specific description: GitLab**
+
+In the case of GitLab, duration is considered for
+merge requests that are accepted and merged in the code base.
+For an individual merge request, duration starts when it
+is opened, and finishes when the commits it includes
+are merged into the code base.
+
+__Mandatory parameters:__
+
+None.
+
+**Specific description: Gerrit**
+
+In the case of Gerrit, duration is considered for
+code reviews that are accepted and merged in the code base.
+For an individual cod review, duration starts when it is opened,
+and finishes when the commits it includes
+are merged into the code base.
+
+__Mandatory parameters:__
+
+None.
+
