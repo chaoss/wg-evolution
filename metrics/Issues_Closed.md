@@ -26,13 +26,13 @@ issues that were closed during a certain period.
 
 ## Objectives
 
-* Volume of issues that are dealt with in a project.
-    Closed issues are a proxy for the activity in a project.
-    By counting closed issues related to code in the set of repositories corresponding
-    to a project, you can have an idea of the overall activity in
-    finishing work with issues in that project.
-    Of course, this metric is not the only one that should be
-    used to track volume of coding activity.
+Volume of issues that are dealt with in a project.
+Closed issues are a proxy for the activity in a project.
+By counting closed issues related to code in the set of repositories corresponding
+to a project, you can have an idea of the overall activity in
+finishing work with issues in that project.
+Of course, this metric is not the only one that should be
+used to track volume of coding activity.
 
 
 ## Implementation
@@ -64,6 +64,7 @@ issues that were closed during a certain period.
 
 * By actors (submitter, commenter, closer). Requires actor merging
 (merging ids corresponding to the same author).
+
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
@@ -93,18 +94,18 @@ These could be represented as bar charts, with time running in the X axis.
 
 **Specific description: GitHub**
 
-- In the case of GitHub, closed issues are defined as "issues which are closed". 
+In the case of GitHub, closed issues are defined as "issues which are closed". 
 
 **Specific description: GitLab**
 
-- In the case of GitLab, active issues are defined as "issues
+In the case of GitLab, active issues are defined as "issues
 that are closed".
 
 **Specific description: Jira**
 
-- In the case of Jira, active issues are defined as "issues that change to the closed state". 
+In the case of Jira, active issues are defined as "issues that change to the closed state". 
 
 **Specific description: Bugzilla**
 
-- In the case of Bugzilla, active issues are defined as "bug reports that change to the closed state".
+In the case of Bugzilla, active issues are defined as "bug reports that change to the closed state".
 
