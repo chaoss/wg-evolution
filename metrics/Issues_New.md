@@ -1,6 +1,6 @@
 # Issues New
 
-**Question:** What are the number of new issues are created during a certain period? 
+Question: What are the number of new issues are created during a certain period? 
 
 
 ## Description
@@ -101,20 +101,12 @@ In the case of GitHub, an issue is defined as an "issue".
 The date of the issue can be defined (for considering it in a period or not)
 as the date in which the issue was opened (submitted).
 
-__Mandatory parameters:__
-
-None.
-
 **Specific description: GitLab**
 
 In the case of GitHub, an issue is defined as an "issue".
 
 The date of the issue can be defined (for considering it in a period or not)
 as the date in which the issue was opened (submitted).
-
-__Mandatory parameters:__
-
-None.
 
 **Specific description: Jira**
 
@@ -123,9 +115,6 @@ In the case of Jira, an issue is defined as an "issue".
 The date of the issue can be defined (for considering it in a period or not)
 as the date in which the issue was opened (submitted).
 
-__Mandatory parameters:__
- None.
-
 **Specific description: Bugzilla**
 
 In the case of Bugzilla, an issue is defined as a "bug report",
@@ -133,9 +122,5 @@ as long as it is related to source code files.
 
 The date of the issue can be defined (for considering it in a period or not)
 as the date in which the bug report was opened (submitted).
-
-__Mandatory parameters:__
-
-None.
 
  

@@ -1,6 +1,6 @@
 # Issues Active
 
-**Question:** What is the count of issues that showed activity during a certain period? 
+Question: What is the count of issues that showed activity during a certain period? 
 
 
 ## Description
@@ -79,19 +79,11 @@ In the case of GitHub, active issues are defined as "issues
 which get a comment, a change in tags, a change in assigned
 person, or are closed".
 
-__Mandatory parameters:__
-
-None.
-
 **Specific description: GitLab**
 
 In the case of GitLab, active issues are defined as "issues
 which get a comment, a change in tags, a change in assigned
 person, or are closed".
-
-__Mandatory parameters:__
-
-None.
 
 **Specific description: Jira**
 
@@ -99,17 +91,9 @@ In the case of Jira, active issues are defined as "issues
 which get a comment, a change in state, a change in assigned
 person, or are closed".
 
-__Mandatory parameters:__
-
-None.
-
 **Specific description: Bugzilla**
 
 In the case of Bugzilla, active issues are defined as "bug reports
 which get a comment, a change in state, a change in assigned
 person, or are closed".
-
-__Mandatory parameters:__
-
-None.
 

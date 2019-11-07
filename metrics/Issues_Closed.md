@@ -1,6 +1,6 @@
 # Issues Closed
 
-**Question:** What is the count of issues that were closed during a certain period?
+Question: What is the count of issues that were closed during a certain period?
 
 
 ## Description
@@ -42,7 +42,7 @@ issues that were closed during a certain period.
 
 **Parameters:**
 * Period of time. Start and finish date of the period. Default: forever.  
-    Period during which issues are considered.<br>
+    Period during which issues are considered.
 
 * Criteria for source code. Algorithm. Default: all issues are related to
   source code.  
@@ -95,32 +95,16 @@ These could be represented as bar charts, with time running in the X axis.
 
 - In the case of GitHub, closed issues are defined as "issues which are closed". 
 
-__Mandatory parameters:__
-
-None.
-
 **Specific description: GitLab**
 
 - In the case of GitLab, active issues are defined as "issues
 that are closed".
 
-__Mandatory parameters:__
-
-- None.
-
 **Specific description: Jira**
 
 - In the case of Jira, active issues are defined as "issues that change to the closed state". 
 
-__Mandatory parameters:__
-
-None.
-
 **Specific description: Bugzilla**
 
 - In the case of Bugzilla, active issues are defined as "bug reports that change to the closed state".
-
-__Mandatory parameters:__
-
-None.
 
