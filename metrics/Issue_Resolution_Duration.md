@@ -14,7 +14,7 @@ This metric can be used to evaluate the effort and time needed to conclude and r
 ## Implementation
 
 For each closed issue:
-* Issue Resolution Duration = Timestamp of issue closed - Timestamp of issue opens 
+* Issue Resolution Duration = Timestamp of issue closed - Timestamp of issue opened 
 
 **Aggregators:**
 * Average. Average amount of time (in days, by default) for an issue in the repository to be closed.
@@ -52,5 +52,6 @@ For each closed issue:
 For specific descriptions of collecting data about closed issues, please refer to the [corresponding section of Issues Closed](./Issues_Closed.md#data-collection-strategies).
 
 
-
+### Resources
+* None.
 
