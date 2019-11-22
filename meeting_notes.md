@@ -13,9 +13,41 @@ WG Repository: https://github.com/chaoss/wg-evolution
 
 We use [Google Notes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit#) to take the meeting minutes. Notes are captured by the entire group and a volunteer acting as the primary scribe. Once the meeting has ended, a maintainer will upload the notes to this repository for posterity.
 
-## Next Meeting
+# Next Meeting: Thursday, December 5, 2019 
 
-Thursday, October 24th, 2019
+# Thursday, November 21, 2019 
+
+Attendees: Matt G., Armstrong F., Carter L., Georg L., Carolyn Perniciaro
+
+Video:  https://youtu.be/kalbtZmYaFA 
+
+## Agenda
+* Housekeeping: December meetings (12/5 & 12/19)
+* Continue advancing metrics from previous call
+* Minor changes to Issue Resolution Duration pull request -- and merged (https://github.com/chaoss/wg-evolution/pull/264)
+* Worked on Contributors metric
+    * We decided it should belonged more under Common than Evolution
+    * PR to add to Common: https://github.com/chaoss/wg-common/pull/36
+* Worked on Issue Age metric (AI Carter: Finish out the metric and open PR)
+
+
+# Meeting on Thursday, November 7, 2019
+
+Attendees: Carter L., Sean G., Georg L.
+
+Video: https://youtu.be/3MjxkukTMBU 
+
+## Agenda
+* Go over merged PRs (254, 265, 257, 258)
+* Review PRs
+    * 259 (Closed, merged 262 instead)
+    * 260 (Merged)
+    * 261 (Merged)
+Working Folder: https://drive.google.com/drive/folders/1ezuo62qps0yhxuK9euysoTj4JbgGMmaY?usp=sharing 
+
+## Notes:
+* Worked on the Issue Resolution Duration metric (in the above folder)
+
 
 # Meeting on Thursday, October 24, 2019
 
