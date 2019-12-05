@@ -32,8 +32,8 @@ For all open issues, get the date the issue was opened and calculate the number 
 
 ### Tools Providing the Metric
 
-* GrimoireLab (https://chaoss.github.io/grimoirelab/)
-* Augur (http://augur.osshealth.io/api_docs/#api-Evolution-Open_Issue_Age_Repo_)
+* [GrimoireLab](https://chaoss.github.io/grimoirelab/)
+* [Augur](http://augur.osshealth.io/api_docs/#api-Evolution-Open_Issue_Age_Repo_)
 
 ### Data Collection Strategies 
 
