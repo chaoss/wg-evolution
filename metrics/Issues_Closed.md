@@ -109,3 +109,5 @@ In the case of Jira, active issues are defined as "issues that change to the clo
 
 In the case of Bugzilla, active issues are defined as "bug reports that change to the closed state".
 
+## Resources
+
