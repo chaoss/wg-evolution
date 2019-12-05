@@ -110,3 +110,5 @@ __Mandatory parameters:__
     those which merge a branch, and in some cases are not considered as
     reflecting a coding activity
 
+## Resources
+
