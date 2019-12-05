@@ -123,4 +123,5 @@ as long as it is related to source code files.
 The date of the issue can be defined (for considering it in a period or not)
 as the date in which the bug report was opened (submitted).
 
- 
+## Resources
+
