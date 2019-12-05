@@ -61,7 +61,7 @@ Each bar would represent declined reviews during a certain period
 (eg, a month).
 
 
-### Data Collection Strategies 
+## Data Collection Strategies 
 
 **Specific description: GitHub**
 
@@ -98,4 +98,6 @@ abandoned", as long as they propose changes to source code files.
 
 __Mandatory parameters:__
 None.
+
+## Resources
 
