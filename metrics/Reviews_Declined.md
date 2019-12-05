@@ -61,7 +61,7 @@ Each bar would represent declined reviews during a certain period
 (eg, a month).
 
 
-## Data Collection Strategies 
+### Data Collection Strategies 
 
 **Specific description: GitHub**
 
