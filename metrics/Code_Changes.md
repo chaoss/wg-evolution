@@ -89,3 +89,5 @@ __Mandatory parameters:__
 * Include empty commits. Boolean. Default: True.  
     Empty commits are those which do not touch files, and in some cases are not considered as reflecting a coding activity.
 
+## Resources
+
