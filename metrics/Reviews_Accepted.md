@@ -88,7 +88,7 @@ during a certain period (eg, a month).
   - Example screenshot: ![GrimoireLab screenshot of metric Reviews Accepted](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/reviews_accepted_GrimoireLab.png)
 
 
-### Data Collection Strategies (Optional)
+### Data Collection Strategies
 
 **Specific description: GitHub**
 
