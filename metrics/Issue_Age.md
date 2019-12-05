@@ -39,6 +39,4 @@ For all open issues, get the date the issue was opened and calculate the number 
 
 For specific descriptions of collecting data about closed issues, please refer to the [corresponding section of Issues Closed](./Issues_Closed.md#data-collection-strategies).
 
-## References
-Blog posts, websites, academic papers, or books that mention the metric and provide more background.
-
+## Resources
