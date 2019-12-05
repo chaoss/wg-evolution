@@ -105,4 +105,4 @@ The date of the review can be defined (for considering it in a period or not)
 as the date in which the code review was started by submitting a
 patchset for review.
 
-
+## Resources
