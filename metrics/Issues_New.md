@@ -46,13 +46,11 @@ The first few sentences should match the description in the [metrics list](../ac
 
 ## Objectives
 
-* Volume of issues discussed in a project.
-    Issues are a proxy for the activity in a project.
-    By counting issues discussing code in the set of repositories corresponding
-    to a project, you can have an idea of the overall activity in
-    discussing issues in that project.
-    Of course, this metric is not the only one that should be
-    used to track volume of coding activity.
+Volume of issues discussed in a project. Issues are a proxy for the
+activity in a project. By counting issues discussing code in the set
+of repositories corresponding to a project, you can have an idea of
+the overall activity in discussing issues in that project. Of course,
+this metric is not the only one that should be used to track volume of coding activity.
 
 
 ## Implementation
