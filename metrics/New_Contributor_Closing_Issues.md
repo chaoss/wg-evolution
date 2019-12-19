@@ -3,7 +3,7 @@
 Question: How many contributors are closing issues for the first time?
 
 ## Description
-This metric is an indication of the volume of people who are closing issues for their first time. When a person closes an issue for the first time it is some indication of "stickiness" for the individual within a project, especially for contributors who are not also committers.
+This metric is an indication of the volume of contributors who are closing issues for their first time. When a contributor closes an issue for the first time it is some indication of "stickiness" for the individual within a project, especially for contributors who are not also committers.
 
 ## Objectives
 To know how contributors are moving through the [contributor funnel](https://mikemcquaid.com/2018/08/14/the-open-source-contributor-funnel-why-people-dont-contribute-to-your-open-source-project/) by identifying “closing issues” as a milestone in the contributor journey.
