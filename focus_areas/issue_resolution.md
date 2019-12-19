@@ -7,6 +7,7 @@ Name | Question
 [Issues New](../metrics/Issues_New.md) | What are the number of new issues created during a certain period?
 [Issues Active](../metrics/Issues_Active.md) | What is the count of issues that showed activity during a certain period?
 [Issues Closed](../metrics/Issues_Closed.md) | What is the count of issues that were closed during a certain period?
+[Issue Response Time](../metrics/Issue_Response_Time.md) | How much time passes between the opening of an issue and a response in the issue thread from another contributor??
 
 **Disclaimer:**
 The name/question pairs listed are not meant to represent a fully comprehensive list. It is expected that this list will evolve as people have insights and thoughts about the name/question pairs that comprise Evolution.
