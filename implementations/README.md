@@ -10,8 +10,6 @@ of how the intended metrics can be computed.
 
 ## List of reference implementations
 
-
-
 | metric | plain python script | pandas script | plain python notebook | pandas notebook | description |
 | --- | --- | --- | --- | --- | --- |
 | **Code Changes** | [module](./scripts/code_changes_git.py) | [with-pandas](./code_df/code_changes_git.py) | [notebook](./notebooks/code_changes_git.ipynb) | [with-pandas notebook](./notebooks_df/code_changes_git.ipynb)| [description](https://github.com/chaoss/wg-evolution/blob/master/metrics/Code_Changes.md) |
@@ -19,11 +17,10 @@ of how the intended metrics can be computed.
 | **Reviews** | [module](./scripts/reviews_github.py) | [with-pandas](./code_df/reviews_github.py) | [notebook](./notebooks/reviews_github.ipynb) | [with-pandas notebook](./notebooks_df/reviews_github.ipynb)| [description](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews.md) |
 | **Reviews Accepted** | [module](./scripts/reviews_accepted_github.py) | [with-pandas](./code_df/reviews_accepted_github.py) | [notebook](./notebooks/reviews_accepted_github.ipynb) | [with-pandas notebook](./notebooks_df/reviews_accepted_github.ipynb)| [description](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews_Accepted.md) |
 | **Reviews Declined** | [module](./scripts/reviews_declined_github.py) | [with-pandas](./code_df/reviews_declined_github.py) | [notebook](./notebooks/reviews_declined_github.ipynb) | [with-pandas notebook](./notebooks_df/reviews_declined_github.ipynb)| [description](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews_Declined.md) |
-| **Reviews Duration** | [module](./scripts/reviews_duration_github.py) | [with-pandas](./code_df/reviews_duration_github.py) | [notebook](./notebooks/reviews_duration_github.ipynb) | [with-pandas notebook](./notebooks_df/reviews_duration_github.ipynb)| [description](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews_Duration.md) |
-
-
-
-
+| **Reviews Duration** | [module](./scripts/reviews_duration_github.py) | [with-pandas](./code_df/reviews_duration_github.py) | [notebook](./notebooks/reviews_duration_github.ipynb) | [with-pandas notebook](./notebooks_df/reviews_duration_github.ipynb)| [description](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews_Duration.md) |    
+  
+  
+  
 ## Contents of this directory
 
 We use Python Jupyter notebooks as the framework for producing the implementations that will be explanatory in regard to the analysis performed. These notebooks come in two flavors:
@@ -38,7 +35,7 @@ using Pandas data frames as the basis for computing the metrics.
 In these cases, the data produced by Perceval is converted to a Pandas
 dataframe, and then processed to produce the metrics.
 
-Notebooks are also exported as Python modules. These are more useful
+Notebooks are exported as Python modules. These are more useful
 if you intend to look only at the code:
 
 * [scripts](./scripts/) are notebooks in the [notebooks](./notebooks/)
@@ -84,6 +81,101 @@ To summarize, the class hierarchy for both kinds of implementations is:
 Root class (metric.py) <- Category classes (commit_git.py, for example) <- Metric classes (code_changes_git.py, for example)
 ```
 
+- **analyze ([script](../bin/analyze))**:  
+    A script for evaluating the values of Evolution WG metrics on user data.
+    Data is fetched using Perceval's back-ends and metrics are evaluated on it.
+
+    The results of the analysis can be output in several different formats.
+    Currently, json, pdf, markdown and images are supported.
+
+    The script can be run via the command line:
+    ```bash
+    $ analyze -r chaoss/wg-evolution
+    ```
+
+    **Usage**
+    ```bash
+    usage: analyze [-h] [-t API_TOKEN] -r REPO [-s SINCE] [-u UNTIL]
+               [-cat {commit,issue,pull_request} [{commit,issue,pull_request} ...]]
+               [-c {MergeExclude,EmptyExclude,MasterInclude} [{MergeExclude,EmptyExclude,MasterInclude} ...]]
+               [-i {Naive,PostfixExclude,DirExclude} [{Naive,PostfixExclude,DirExclude} ...]]
+               [-pf POSTFIXES_TO_EXCLUDE [POSTFIXES_TO_EXCLUDE ...]]
+               [-de DIRS_TO_EXCLUDE [DIRS_TO_EXCLUDE ...]] [-p PERIOD]
+               [-o {markdown,json,pdf,images} [{markdown,json,pdf,images} ...]]
+               [-d] [-w WRITE_TO]
+
+    Analyze script argument parser
+
+    optional arguments:
+      -h, --help            show this help message and exit
+      -t API_TOKEN, --api-token API_TOKEN
+                            GitHub API token.
+                            
+      -r REPO, --repo REPO  GitHub repository, as 'owner/repo'.
+                            
+      -s SINCE, --since SINCE
+                            Start date for item consideration. ('%Y-%m-%d'
+                            format).
+                            
+      -u UNTIL, --until UNTIL
+                            End date for item consideration. ('%Y-%m-%d' format).
+                            
+      -cat {commit,issue,pull_request} [{commit,issue,pull_request} ...], --categories {commit,issue,pull_request} [{commit,issue,pull_request} ...]
+                            The types of datasource to consider for analysis.
+                            Possible options: commit, issue, pull_request (any
+                            combination).
+                            
+      -c {MergeExclude,EmptyExclude,MasterInclude} [{MergeExclude,EmptyExclude,MasterInclude} ...], --conds {MergeExclude,EmptyExclude,MasterInclude} [{MergeExclude,EmptyExclude,MasterInclude} ...]
+                            Restrictions on which commits to include. Possible
+                            options: MergeExclude, EmptyExclude, MasterInclude
+                            (any combinations).
+                            
+      -i {Naive,PostfixExclude,DirExclude} [{Naive,PostfixExclude,DirExclude} ...], --is-code {Naive,PostfixExclude,DirExclude} [{Naive,PostfixExclude,DirExclude} ...]
+                            Definition of Source Code.Possible options: Naive,
+                            PostfixExclude, DirExclude (any combination).
+                            
+      -pf POSTFIXES_TO_EXCLUDE [POSTFIXES_TO_EXCLUDE ...], --postfixes-to-exclude POSTFIXES_TO_EXCLUDE [POSTFIXES_TO_EXCLUDE ...]
+                            Files to be excluded based on their
+                            extension.Examples: .md, README.
+                            
+      -de DIRS_TO_EXCLUDE [DIRS_TO_EXCLUDE ...], --dirs-to-exclude DIRS_TO_EXCLUDE [DIRS_TO_EXCLUDE ...]
+                            Files to be excluded based on their path. Examples:
+                            tests, bin, docs.
+                            
+      -p PERIOD, --period PERIOD
+                            period for time-series: 'M', 'W', 'D', etc. Any valid
+                            pandas Period frequency.
+                            
+      -o {markdown,json,pdf,images} [{markdown,json,pdf,images} ...], --output-formats {markdown,json,pdf,images} [{markdown,json,pdf,images} ...]
+                            Possible options: markdown, json, pdf, images (any
+                            combination).
+                            
+      -d, --debug           Set debug mode for logging.
+                            
+      -w WRITE_TO, --write-to WRITE_TO
+                            Results output path.
+    ```
+
+    **Some Examples:**
+
+    * Run all commit metrics on chaoss/wg-evolution, starting from 2018-01-01
+    and using the api-token xxxx:
+    ```bash
+    $ analyze -r chaoss/wg-evolution -s 2018-01-01 -t xxxx  -cat commit
+    ```
+
+    * Run all metrics on chaoss/grimoirelab-perceval and generate a pdf report
+    of the results:
+    ```bash
+    $ analyze -r chaoss/grimoirelab-perceval -o pdf
+    ```
+
+    * Run commit metrics on chaoss/wg-evolution considering only non-empty commits
+    created on the master branch
+    ```bash
+    $ analyze -r chaoss/wg-evolution -cat commit -c EmptyExclude MasterInclude
+    ```
+
 ## How to run the notebooks
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chaoss/wg-gmd/master?filepath=implementations)
@@ -93,78 +185,111 @@ Just click on the "launch binder" logo above.
 
 You can also run the notebooks locally on your computer.
 For that, you need a Python3 environment with certain modules installed
-(it is recommended to use a virtual environment,
-  see [Creation of virtual environments](https://docs.python.org/3/library/venv.html)).
-To install the modules, just use pip3:
+(it is recommended to use a virtual environment, see [Creation of virtual environments](https://docs.python.org/3/library/venv.html)).
 
+- To install the modules, just use pip3:
 ```bash
 $ pip install jupyter
-$ pip install pandas
-$ pip install perceval
+$ pip install pandas>=0.1.9
+$ pip install perceval>=0.12.18
+$ pip install matplotlib>=2.2.4
 ```
+(check the specific imports made in each notebook at the top just in case more modules need to be installed).
 
-(check at the beginning of each notebook just in case more modules need to be installed).
-
-Clone this repository and change directory to where this notebook resides:
-
-```
+- Clone this repository and change directory to where this notebook resides:
+```bash
 $ git clone https://github.com/chaoss/wg-gmd
 $ cd wg-gmd/implementations/notebooks_df
 ```
 
-Then launch Jupyter from the command line...
-
-```
+- Launch Jupyter from the command line:
+```bash
 $ jupyter notebook
 ```
 
-This will launch the Jupyter kernel, and will open your default browser
+- This will launch the Jupyter kernel, and will open your default browser
 with the directory with all the notebooks loaded.
 Click on the notebook you want to run, and you're ready to go.
 More detailed instructions can be found in
 [Introducing the Notebook Server’s Command Line Options](https://jupyter-notebook.readthedocs.io/en/stable/config.html).
 
-Once you have the notebook in your browser, you can execute the selected cell
-by clicking \[CTRL\]\[Enter\], or \[Shift\]\[Enter\]. In the latter case,
+- Once you have the notebook in your browser, you can execute the selected cell
+by clicking `[CTRL][Enter]`, or `[Shift][Enter]`. In the latter case,
 the current cell will be run, and the next one will be selected.
 For selecting any cell, just click on it.
 
-So, if you want to execute the whole dashboard, just select the first cell,
-and click \[Shift\]\[Enter\] until you're done.
+- So, if you want to execute the whole dashboard, just select the first cell,
+and click `[Shift][Enter]` until you're done.
 You can also click on the Cell menu, and select "Run All",
 which will also run all the cells in the notebook.
 More details can be found in [Executing a notebook](https://jupyter-notebook-beginner-guide.readthedocs.io/en/stable/execute.html#executing-a-notebook).
 
-If you want to modify any cell, just click on it, look for the cursor,
+- If you want to modify any cell, just click on it, look for the cursor,
 and start writing.
 
-If you want more details and context about Jupyter notebooks, have a look at
-[Jupyter Notebook Tutorial](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook).
+*Note:If you want more details and context about Jupyter notebooks, have a look at
+[Jupyter Notebook Tutorial](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook).*
 
 
 ## Adding reference implementations
 
-### Files per metric
+### Files to be created for each metric
 Every metric that is defined by the Evolution working group is implemented in two forms: a plain Python implementation, and another one which makes use of Pandas data structures, particularly data frames.
 
-Each metric also has a jupyter notebook dedicated to it, and the python scripts associated with a metric are derived from this notebook. The notebook discusses key functionality and also discusses how the metric is computed.
+Each metric also has a jupyter notebook dedicated to it, and the python scripts associated with a metric are derived from this notebook. The notebook discusses key functionality and also discusses how the metric is computed.  
+
 
 ### Naming convention
-A metric class follows the following naming convention:
+A **metric module** follows the following naming convention:
 ```
 <name of the metric>_<data source>.py
 ```
 For example, `code_changes_git.py` or `reviews_accepted_github.py`.
-All issue and pull request related metrics use the `github api` as a data source.  
+All issue and pull request related metrics use the `github` api as a data source while all commit metrics use `git`.
 Notebooks follow the same convention.
 
+A **metric class** follows a similar naming convention but uses camel-case and eliminates the underscore characters.
+```
+class <name of the metric><data source>(<parent module>):
+    pass
+```
+As an example, consider the class for the Reviews Duration metric, which can be found in `reviews_duration_github.py`. It is named `ReviewsDurationGitHub`, following the convention described above.  
+
+
 ### Structure of a metric class
-The pandas version of a metric has the `compute` and the `_agg` methods, while the non-pandas or plain Python version has only the `compute` method. The `compute` method calculates the value of the metric for the given time period while the `_agg` returns a data frame to the `time_series` method defined in
-`metric.py`
+The pandas version of a metric has the `compute` and the `_agg` methods, while the non-pandas or plain Python version only has the `compute` method. The `compute` method calculates the value of the metric for the given time period while `_agg` returns a data frame to the `time_series` method defined in
+`metric.py`.
+
+Apart from the above, each metric class also has an `__str__` and a `_get_params` method. The `_get_params` method makes it easier to create timeseries plots of a metric's value.
+
+Thus, the `CodeChangesLinesGit` class is structured like so:
+```python
+class CodeChangesLinesGit(CommitGit):
+    def _flatten(self, item):
+        pass
+
+    def compute(self):
+        pass
+
+    def _agg(self, df, period):
+        pass
+
+    def _get_params(self):
+        pass
+
+    def __str__(self):
+        pass
+```
+The `_flatten` method is actually for overriding `CommitGit`'s method for more specific functionality. Thus, you won't find this method in all metric classes.  
+
+
+### Adding Tests
+Every metric module has unit-tests written for it. These tests improve the reliability of the metric implementations and make future development more efficient.
+
+More information on writing tests for metric implementations can be found [here](./tests/README.md).  
 
 
 ## Notes
-
 * Every metric is computed for all the items in the data structure used to instantiate the
 corresponding class.
 If a data structure contains items of a single repository,
@@ -173,5 +298,4 @@ Likewise, using the data of an entire project,
 (consisting of several repositories)
 will result in the metric being computed for the entire project and not for each individual repository. 
 
-* Another assumption is that the JSON data file has items of the same kind, for example: commits, issues or pull requests.
-    
+* Another assumption is that the JSON data file used for the metric computation has items of the same kind, for example: commits, issues or pull requests.  
