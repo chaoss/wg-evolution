@@ -22,6 +22,7 @@
 
 from datetime import datetime
 import argparse
+from argparse import RawTextHelpFormatter
 import sys
 import logging
 
@@ -93,75 +94,83 @@ def configure_logging(debug):
 
 
 def parse_args():
+    """
+    Setup command line argument parsing with argparse.
+    """
+
     parser = argparse.ArgumentParser(
-        description="Analyze script argument parser"
+        description="Analyze script argument parser",
+        formatter_class=RawTextHelpFormatter,
     )
 
     parser.add_argument("-t", "--api-token",
                         default=None,
-                        help="GitHub API token")
+                        help="GitHub API token.\n\n")
 
     parser.add_argument("-r", "--repo",
                         required=True,
-                        help="GitHub repository, as 'owner/repo'")
+                        help="GitHub repository, as 'owner/repo'.\n\n"
+                        )
 
     parser.add_argument("-s", "--since",
                         default=None,
-                        help="Start date for item consideration. ('%%Y-%%m-%%d' format)")
+                        help="Start date for item consideration. ('%%Y-%%m-%%d' format).\n\n")
 
     parser.add_argument("-u", "--until",
                         default=None,
-                        help="End date for item consideration. ('%%Y-%%m-%%d' format)")
+                        help="End date for item consideration. ('%%Y-%%m-%%d' format).\n\n")
 
     parser.add_argument("-cat", "--categories",
                         default=[COMMIT_CATEGORY],
                         nargs='+',
                         choices=[COMMIT_CATEGORY, ISSUE_CATEGORY, PULL_REQUEST_CATEGORY],
-                        help="Possible options: %(choices)s (any combination)")
+                        help="The types of datasource to consider for analysis.\n"
+                        "Possible options: %(choices)s (any combination).\n\n")
 
     parser.add_argument("-c", "--conds",
                         default=[],
                         nargs='+',
                         choices=['MergeExclude', 'EmptyExclude', 'MasterInclude'],
-                        help="Restrictions on which commits to include."
-                        " Possible options: %(choices)s (any combinations)")
+                        help="Restrictions on which commits to include.\n"
+                        "Possible options: %(choices)s (any combinations).\n\n")
 
     parser.add_argument("-i", "--is-code",
                         default=['Naive'],
                         nargs='+',
                         choices=['Naive', 'PostfixExclude', 'DirExclude'],
-                        help="Definition of Source Code."
-                             "Possible options: %(choices)s (any combination)")
+                        help="Definition of Source Code.\n"
+                             "Possible options: %(choices)s (any combination).\n\n")
 
     parser.add_argument("-pf", "--postfixes-to-exclude",
                         default=['.md', 'README'],
                         nargs='+',
-                        help="Files to be excluded based on their extension."
-                        "Examples: .md, README")
+                        help="Files to be excluded based on their extension.\n"
+                        "Examples: .md, README.\n\n")
 
     parser.add_argument("-de", "--dirs-to-exclude",
                         default=['tests', 'bin'],
                         nargs='+',
-                        help="Files to be excluded based on their path."
-                             "Examples: tests, bin, docs")
+                        help="Files to be excluded based on their path.\n"
+                             "Examples: tests, bin, docs.\n\n")
 
     parser.add_argument("-p", "--period",
                         default='M',
-                        help="period for time-series: 'M', 'W', 'D', etc."
-                             "Any valid pandas Period frequency")
+                        help="period for time-series: 'M', 'W', 'D', etc.\n"
+                             "Any valid pandas Period frequency.\n\n")
 
     parser.add_argument("-o", "--output-formats",
                         default=['json'],
                         nargs='+',
                         choices=['markdown', 'json', 'pdf', 'images'],
-                        help="Possible options: %(choices)s (any combination)")
+                        help="Possible options: %(choices)s (any combination).\n\n")
 
     parser.add_argument("-d", "--debug",
-                        action='store_true')
+                        action='store_true',
+                        help="Set debug mode for logging.\n\n")
 
     parser.add_argument("-w", "--write-to",
                         default='results_dir',
-                        help="Path for output results")
+                        help="Results output path.")
     return parser.parse_args()
 
 
@@ -273,7 +282,7 @@ def main():
     Data is fetched using Perceval's back-ends and metrics are evaluated on it.
 
     The results of the analysis can be output in several different formats.
-    Currently, json, pdf and images are supported.
+    Currently, json, pdf, markdown and images are supported.
 
     The script can be run via the command line:
         $ analyze -r chaoss/wg-evolution
