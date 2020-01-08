@@ -108,7 +108,8 @@ class CommitGit(Metric):
                 'files_no': len(item['data']['files']),
                 'refs': item['data']['refs'],
                 'parents': item['data']['parents'],
-                'files': item['data']['files']
+                'files': item['data']['files'],
+                'message': item['data']['message']
             }
 
             actions = 0

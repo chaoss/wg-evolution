@@ -24,7 +24,8 @@ from datetime import datetime
 from implementations.scripts.commit_git import CommitGit
 from implementations.scripts.conditions import (DirExclude,
                                                 MasterInclude,
-                                                PostfixExclude)
+                                                PostfixExclude,
+                                                CommitByTag)
 from implementations.scripts.utils import read_json_file
 
 
@@ -63,3 +64,9 @@ if __name__ == "__main__":
     changes = CodeChangesGit(items, date_range=(date_since, None),
                              conds=[MasterInclude()])
     print("Code_Changes, only for master:", changes.compute())
+
+    tags = ["[api]", "[backend]"]
+    for tag in tags:
+        print("Code_Changes, only for the commits that contain {} into their message: {}".format(
+            tag,
+            CodeChangesGit(items, conds=[CommitByTag(tag)]).compute()))
