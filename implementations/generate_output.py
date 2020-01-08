@@ -45,7 +45,7 @@ class GenerateOutput():
         groups according to the category of metrics.
 
     :param output_formats: Possible formats for output. Currently, pdf,
-        images and json are supported.
+        images, markdown and json are supported.
 
     :param write_to: The directory where the generated outputs are present.
 
