@@ -256,3 +256,26 @@ class MergeExclude(Commit):
 
         items = [item for item in items if item['merge'] is False]
         self.included = [item['hash'] for item in items]
+
+
+class CommitByTag(Commit):
+    """
+    Considerer as a commit contains a specific tag into its message.
+    """
+
+    def __init__(self, tag):
+        self.tag = tag
+
+    def set_commits(self, commits):
+        """
+        Check if a commit contains the tag in his message.
+
+        Exemple: we want to have the commits where the message begins by [perceval] or [backend]
+
+        :param tag: tag to check if the commit contains it in this message
+        :returns: True if the commit contains the tag in its message
+        """
+        items = [dict(commit) for commit in commits]
+
+        items = [item for item in items if self.tag in item['message']]
+        self.included = [item['hash'] for item in items]

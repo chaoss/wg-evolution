@@ -27,6 +27,7 @@ from implementations.scripts.metric import Metric
 from implementations.scripts.conditions import (
             Naive, DirExclude, PostfixExclude,
             MasterInclude, MergeExclude, EmptyExclude,
+            CommitByTag
             )
 
 
@@ -270,6 +271,20 @@ class TestCommitConditions(unittest.TestCase):
 
         commit = CommitGit(self.items, conds=[MergeExclude()])
         self.assertEqual(merge_exclude.included, commit.conds[0].included)
+
+    def test_set_commits_commit_by_tag(self):
+        """
+        Test whether the set_commits method of the CommitByTag
+        class correctly identifies the commits contain the tag
+        into their message.
+        """
+        tag = "[api]"
+        temp = self.Temp(self.items, conds=[CommitByTag(tag)])
+        commit_by_tag = temp.conds[0]
+        commit_by_tag.set_commits(temp.items)
+
+        commit = CommitGit(self.items, conds=[CommitByTag(tag)])
+        self.assertEqual(commit_by_tag.included, commit.conds[0].included)
 
 
 if __name__ == '__main__':

@@ -254,3 +254,30 @@ class MergeExclude(Commit):
         df = df[~df['merge']]
 
         self.included = set(df['hash'].tolist())
+
+
+class CommitByTag(Commit):
+    """
+    Considerer as a commit contains a specific tag into its message.
+    """
+
+    def __init__(self, tag):
+        self.tag = tag
+
+    def set_commits(self, commits):
+        """
+        Check if a commit contains the tag in this message.
+
+        Exemple: we want to have the commits when the message begins by [perceval] or [backend]
+
+        :param tag: tag to check if the commit contains it in this message
+        :returns: True if the commit contains the tag in its message
+        """
+        self.commits = commits
+        df = self.commits
+
+        todo = set()
+        for _, commit in df.iterrows():
+            if self.tag in commit['message']:
+                todo.add(commit['hash'])
+        self.included = todo
