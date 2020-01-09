@@ -52,7 +52,7 @@ be any line of a source code file, including comments and blank lines.
     - Whitespace 
 
 
-## Filters
+### Filters
 
 * By actors (author, committer). Requires actor merging
 (merging ids corresponding to the same author).
@@ -60,6 +60,13 @@ be any line of a source code file, including comments and blank lines.
 * By groups of actors (employer, gender...). Requires actor grouping,
 and likely, actor merging.
 
+* By tags (used in the message of the commits). Requires a structure
+  for the message of commits.
+
+#### Tag in message of commit
+
+This tag can be use in a open-source project to communicate to every
+contributors if the commit is, for example, a fix for a bug or a improvement of a feature.
 
 ## Visualizations
 
