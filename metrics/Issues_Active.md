@@ -97,4 +97,4 @@ In the case of Bugzilla, active issues are defined as "bug reports
 which get a comment, a change in state, a change in assigned
 person, or are closed".
 
-## Resources
+## References
