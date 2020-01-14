@@ -41,8 +41,6 @@ For example, "issues" correspond to "issues" in the case of GitHub,
 GitLab or Jira, to "bug reports" in the case of Bugzilla, and to
 "issues" or "tickets" in other systems.
 
-The first few sentences should match the description in the [metrics list](../activity-metrics-list.md).
-
 
 ## Objectives
 
@@ -121,5 +119,5 @@ as long as it is related to source code files.
 The date of the issue can be defined (for considering it in a period or not)
 as the date in which the bug report was opened (submitted).
 
-## Resources
+## References
 
