@@ -1,6 +1,6 @@
 # Reviews Declined
 
-**Question:** What reviews of code changes ended up declining the change during a certain period?
+Question: What reviews of code changes ended up declining the change during a certain period?
 
 
 ## Description
@@ -99,5 +99,5 @@ abandoned", as long as they propose changes to source code files.
 __Mandatory parameters:__
 None.
 
-## Resources
+## References
 
