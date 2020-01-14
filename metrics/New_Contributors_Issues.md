@@ -1,6 +1,6 @@
-# New Constributors of Issues
+# New Contributors of Issues
 
-Question: What is the number of persons opening an issue for the first time?
+Question: What is the number of contributors opening an issue for the first time?
 
 ## Description
 A description of what the metric is and what it captures.
