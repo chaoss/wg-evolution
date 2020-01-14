@@ -1,6 +1,6 @@
 # Reviews Accepted
 
-**Question:** How many accepted reviews are present in a code change?
+Question: How many accepted reviews are present in a code change?
 
 ## Description
 
@@ -151,5 +151,5 @@ None.
 
 
 
-## Resources
+## References
  
