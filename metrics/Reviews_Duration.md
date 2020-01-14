@@ -1,6 +1,6 @@
 # Reviews Duration
 
-**Question:** What is the duration of time between the moment a code review starts and the moment it is accepted?
+Question: What is the duration of time between the moment a code review starts and the moment it is accepted?
 
 
 ## Description
@@ -111,5 +111,5 @@ __Mandatory parameters:__
 
 None.
 
-## Resources
+## References
 
