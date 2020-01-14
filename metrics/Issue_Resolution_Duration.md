@@ -52,6 +52,6 @@ For each closed issue:
 For specific descriptions of collecting data about closed issues, please refer to the [corresponding section of Issues Closed](./Issues_Closed.md#data-collection-strategies).
 
 
-### Resources
+### References
 * None.
 
