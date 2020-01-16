@@ -60,13 +60,10 @@ be any line of a source code file, including comments and blank lines.
 * By groups of actors (employer, gender...). Requires actor grouping,
 and likely, actor merging.
 
-* By tags (used in the message of the commits). Requires a structure
-  for the message of commits.
-
-#### Tag in message of commit
-
-This tag can be use in a open-source project to communicate to every
-contributors if the commit is, for example, a fix for a bug or a improvement of a feature.
+* By [tags](https://www.odoo.com/documentation/13.0/reference/guidelines.html#tag-and-module-name) (used in the message of the commits).
+Requires a structure for the message of commits.
+This tag can be used in an open-source project to communicate to every contributors
+if the commit is, for example, a fix for a bug or an improvement of a feature.
 
 ## Visualizations
 
@@ -119,3 +116,4 @@ __Mandatory parameters:__
 
 ## Resources
 
+* https://www.odoo.com/documentation/13.0/reference/guidelines.html#tag-and-module-name
