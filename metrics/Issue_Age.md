@@ -1,9 +1,9 @@
 # Issue Age
 
-Question: What is the aggregated time that issues have been left open in a project?
+Question: How long have open issues been left open?
 
 ## Description
-This aggregated metric is an indication of how long issues have been left open in the considered time period. If an issue has been closed but re-opened again within that period if will be considered as having remained open since its initial opening date.
+This metric is an indication of how long issues have been left open in the considered time period. If an issue has been closed but re-opened again within that period if will be considered as having remained open since its initial opening date.
 
 ## Objectives
 When the issue age is increasing, identify the oldest open issues in a project to gain insight as to why they have been open for an extended period of time. Additionally, to understand how well maintainers are resolving issues and how quickly issues are resolved. 
