@@ -1,6 +1,6 @@
 # Issues Closed
 
-Question: What is the count of issues that were closed during a certain period?
+Question: How many issues were closed during a certain period?
 
 
 ## Description
@@ -39,15 +39,15 @@ used to track volume of coding activity.
 
 **Aggregators:**
 * Count. Total number of active issues during the period.
+* Ratio. Ratio of active issues over total number of issues during that period.
 
 **Parameters:**
-* Period of time. Start and finish date of the period. Default: forever.  
-    Period during which issues are considered.
+* Period of time. Start and finish date of the period during which issues are considered. Default: forever.  
 
 * Criteria for source code. Algorithm. Default: all issues are related to
   source code.  
-    If we are focused on source code, we need a criteria for deciding
-    whether an issues is related to the source code or not.
+    If we focus on source code, we need a criterion for deciding
+    whether an issue is related to the source code or not.
     All issues could be included in the metric by altering the default. 
 
 * Reopen as new. Boolean, defining whether reopened issues are considered
@@ -62,8 +62,7 @@ used to track volume of coding activity.
 
 ### Filters 
 
-* By actors (submitter, commenter, closer). Requires actor merging
-(merging ids corresponding to the same author).
+* By actors (submitter, commenter, closer). Requires merging identities corresponding to the same author.
 
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
@@ -71,9 +70,10 @@ Requires actor grouping, and likely, actor merging.
 
 ### Visualizations 
 
-* Count per month over time
-* Count per group over time
+* Count per time period over time
+* Ratio per time period over time
 
+These could be grouped by applying the filters defined aboce.
 These could be represented as bar charts, with time running in the X axis.
 
 
