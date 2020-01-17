@@ -1,6 +1,6 @@
-# Issues New
+# New Issues
 
-Question: What are the number of new issues are created during a certain period? 
+Question: How many new issues are created during a certain period? 
 
 
 ## Description
@@ -54,35 +54,35 @@ this metric is not the only one that should be used to track volume of coding ac
 ## Implementation
 
 **Aggregators:**
-* Count. Total number of issues during the period.
+* Count. Total number of new issues during the period.
+* Ratio. Ratio of new issues over total number of issues during that period.
 
 **Parameters:**
-* Period of time. Start and finish date of the period. Default: forever.  
-    Period during which issues are considered.<br>
+* Period of time. Start and finish date of the period during which issues are considered. Default: forever.  
 
-* Criteria for source code. Algorithm. Default: all issues are related to
+* Criterion for source code. Algorithm. Default: all issues are related to
   source code.  
-    If we are focused on source code, we need a criteria for deciding
-    whether an issues is related to the source code or not.<br>
+    If we focus on source code, we need a criterion for deciding
+    whether an issue is related to the source code or not.<br>
 
 * Reopen as new. Boolean. Default: False.  
-    Criteria for defining whether reopened issues are considered
+    Criterion for defining whether reopened issues are considered
     as new issues.
 
 
 ### Filters 
 
-* By actors (submitter, commenter, closer). Requires actor merging
-(merging ids corresponding to the same author).
+* By actors (submitter, commenter, closer). Requires merging identities corresponding to the same author.
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
 
 ### Visualizations 
 
-* Count per month over time
-* Count per group over time
+* Count per time period over time
+* Ratio per time period over time
 
+These could be grouped by applying the filters defined above.
 These could be represented as bar charts, with time running in the X axis.
 Each bar would represent proposals to change the code
 during a certain period (eg, a month).
