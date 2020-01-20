@@ -210,7 +210,8 @@ class Test_flatten(unittest.TestCase):
                      'indexes': ['0000000', '94a9ed0'],
                         'modes': ['000000', '100644'], 'removed': '0'}],
                 'files_action': 3,
-                'merge': False
+                'merge': False,
+                'message': 'Initial import'
              }
         ]
         self.assertEqual(flat_item, flat_expected)
