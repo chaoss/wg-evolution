@@ -38,4 +38,4 @@ Look at the [Issues New](https://github.com/chaoss/wg-evolution/blob/master/metr
 
 ## References
 
-
+This metric is a specific case of the [Time to First Reponse metric](https://github.com/chaoss/wg-common/blob/master/focus-areas/when/time-to-first-response.md) in the [Common working group](https://github.com/chaoss/wg-common). 
