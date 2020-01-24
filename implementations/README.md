@@ -45,20 +45,21 @@ directory exported as Python modules
 
  For the implementations, you can find the following modules:
 
-####**Root module ([module](./scripts/metric.py) [with-pandas](./code_df/metric.py))**:     
+#### Root module ([module](./scripts/metric.py) [with-pandas](./code_df/metric.py)):     
 This file contains the root class, `Metric`. All other classes inherit from it. It takes JSON data collected by Perceval and converts it into a form easier to analyze: like a dataframe, or a list of dictionaries.  
 
-#### **Category modules**:  
+#### Category modules:  
 These classes provide basic functionality which is common to all metric classes working on the same category of data: commits, issues or pull request.
 The three category modules are:
-    + **commit_git.py ([module](./scripts/commit_git.py) [with-pandas](./code_df/metric.py))**
-    + **issue_github.py ([module](./scripts/issue_github.py) [with-pandas](./code_df/metric.py))**
-    + **pullrequest_github.py ([module](./scripts/pullrequest_github.py) [with-pandas](./code_df/metric.py))**
 
-#### **Individual Metric modules**:  
+  + **commit_git.py ([module](./scripts/commit_git.py) [with-pandas](./code_df/metric.py))**
+  + **issue_github.py ([module](./scripts/issue_github.py) [with-pandas](./code_df/metric.py))**
+  + **pullrequest_github.py ([module](./scripts/pullrequest_github.py) [with-pandas](./code_df/metric.py))**
+
+#### Individual Metric modules:  
 These are python scripts exported from the reference implementation notebooks. They inherit from the Category modules, but have the functionality to calculate the value of the metric they correspond to. For the pandas version of the implementations, the time-series can be generated for a particular metric. 
 
-#### **source code check ([module](scripts/conditions.py) [with-pandas](code_df/conditions.py))**:  
+#### source code check ([module](scripts/conditions.py) [with-pandas](code_df/conditions.py)):  
 An important aspect of several metrics is how source code is defined. This module provides several algorithms, which help define source code. Currently, the following are provided:
 
   - Naive
@@ -71,7 +72,7 @@ In the case of metrics using Git, restrictions on the kinds of commits being con
   - EmptyExclude
   - MergeExclude  
 
-#### **utilities ([module](./scripts/utils.py) [with-pandas](./code_df/utils.py))**:  
+#### utilities ([module](./scripts/utils.py) [with-pandas](./code_df/utils.py)):  
 The following functionality is provided:
 - covert dates in string format to datetime objects
 - read json files into a python list
@@ -80,7 +81,7 @@ To summarize, the class hierarchy for both kinds of implementations is:
 
 ![class_hierarchy](assets/classhierarchy.png)
 
-#### **analyze ([script](../bin/analyze))**:  
+#### analyze ([script](../bin/analyze)):  
 A script for evaluating the values of Evolution WG metrics on user data.
 Data is fetched using Perceval's back-ends and metrics are evaluated on it.
 

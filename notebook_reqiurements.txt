@@ -1,0 +1,4 @@
+perceval>=0.12.18
+pandas>=0.1.9
+matplotlib>=2.2.4
+notebook>=6.0.0
