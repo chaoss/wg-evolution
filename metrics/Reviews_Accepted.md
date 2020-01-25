@@ -122,7 +122,7 @@ In some cases, projects have policies of mentioning the commits
 when the pull request is closed (such as "closing by accepting commits
 xxx and yyyy"), which may help to track commits in the git repository.
 
-__Mandatory parameters:__
+Mandatory parameters (for GitHub):
 
 * Heuristic for detecting accepted pull requests not accepted
   via the web interface. Default: None.
@@ -133,7 +133,7 @@ In the case of GitLab, accepted reviews are defined as "merge requests
 whose changes are included in the git repository",
 as long as it proposes changes to source code files.
 
-__Mandatory parameters:__
+Mandatory parameters (for GitLab):
 
 * Heuristic for detecting accepted pull requests not accepted
   via the web interface. Default: None.
@@ -144,9 +144,9 @@ In the case of Gerrit, accepted reviews are defined as "changesets
 whose changes are included in the git repository",
 as long as they proposes changes to source code files.
 
-__Mandatory parameters:__
+Mandatory parameters (for Gerrit):
 
-None.
+* None.
 
 
 
