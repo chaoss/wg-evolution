@@ -146,7 +146,7 @@ as long as they proposes changes to source code files.
 
 Mandatory parameters (for Gerrit):
 
-None.
+* None.
 
 
 
