@@ -5,6 +5,9 @@ Question: How much time passes between the opening of an issue and a response in
 ## Description
 This metric is an indication of how much time passes between the opening of an issues and a response from other contributors. 
 
+This metric is a specific case of the [Time to First Reponse metric](https://github.com/chaoss/wg-common/blob/master/focus-areas/when/time-to-first-response.md) in the [Common working group](https://github.com/chaoss/wg-common). 
+
+
 ## Objectives
 Learn about the responsiveness of an open source community. 
 
@@ -37,5 +40,3 @@ Learn about the responsiveness of an open source community.
 Look at the [Issues New](https://github.com/chaoss/wg-evolution/blob/master/metrics/Issues_New.md) metric for a definiton of “issues.” Subtract the issue opened timestamp from the first response timestamp. Do not count responses if created by the author of the issue.
 
 ## References
-
-
