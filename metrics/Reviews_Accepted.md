@@ -32,29 +32,28 @@ corresponds to a single commit.
 
 **Aggregators:**
 * Count. Total number of accepted reviews during the period.
+* Ratio. Ratio of accepted reviews over total number of reviews during that period.
 
 **Parameters:**
-* Period of time. Start and finish date of the period. Default: forever.  
-    Period during which accepted reviews are considered.<br>
+* Period of time. Start and finish date of the period during which accepted reviews are considered. Default: forever.  
 
 * Criteria for source code. Algorithm. Default: all files are source code.  
-    If we are focused on source code, we need a criteria for deciding
-    whether a file is a part of the source code or not.
+    If we focus on source code, we need a criterion for deciding whether a file belongs to the source code or not.
 
 
 ### Filters
 
-* By actors (submitter, reviewer, merger). Requires actor merging
-(merging ids corresponding to the same author).
+* By actor type (submitter, reviewer, merger). Requires merging identities corresponding to the same actor.
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
 
 ### Visualizations
 
-* Count per month over time
-* Count per group over time
+* Count per time period over time
+* Ratio per time period over time
 
+These could be grouped by actor type or actor group by applying the filters defined above.
 These could be represented as bar charts, with time running in the X axis.
 Each bar would represent accepted reviews to change the code
 during a certain period (eg, a month).
