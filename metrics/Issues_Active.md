@@ -1,6 +1,6 @@
 # Issues Active
 
-Question: What is the count of issues that showed activity during a certain period? 
+Question: How many issues were active during a certain period? 
 
 
 ## Description
@@ -29,29 +29,29 @@ the action of closing an issue, is considered as a sign of activity.
 
 **Aggregators:**
 * Count. Total number of active issues during the period.
+* Ratio. Ratio of active issues over total number of issues during that period.
 
 **Parameters:**
-* Period of time. Start and finish date of the period. Default: forever.  
-    Period during which issues are considered.
+* Period of time. Start and finish date of the period during which issues are considered. Default: forever.
 
 * Criteria for source code. Algorithm. Default: all issues are related to
   source code.  
-    If we are focused on source code, we need a criteria for deciding
-    whether an issues is related to the source code or not.
+    If we focus on source code, we need a criterion for deciding
+    whether an issue is related to the source code or not.
 
 ### Filters 
 
-* By actors (submitter, commenter, closer). Requires actor merging
-(merging ids corresponding to the same author).
+* By actor (submitter, commenter, closer). Requires merging identities corresponding to the same author.
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
 
 ### Visualizations 
 
-* Count per month over time
-* Count per group over time
+* Count per period over time
+* Ratio per period over time
 
+These could be grouped by applying the previously defined filters.
 These could be represented as bar charts, with time running in the X axis.
 Each bar would represent proposals to change the code
 during a certain period (eg, a month).
