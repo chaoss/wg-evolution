@@ -34,31 +34,30 @@ declined reviews in this system.
 
 **Aggregators**:
 * Count. Total number of declined reviews during the period.
+* Ratio. Ratio of declined reviews over the total number of reviews during that pariod.
 
 **Parameters:**
-* Period of time. Start and finish date of the period. Default: forever.  
-    Period during which declined reviews are considered. <br>
+* Period of time. Start and finish date of the period during which declined reviews are considered. Default: forever.
 * Criteria for source code. Algorithm. Default: all files are source code.  
-    If we are focused on source code, we need a criteria for deciding
-    whether a file is a part of the source code or not.
+    If we focus on source code, we need a criterion to decide
+    whether a file belongs to the source code or not.
 
 
 ### Filters 
 
-* By actors (submitter, reviewer, merger). Requires actor merging
-(merging ids corresponding to the same author).
+* By actors (submitter, reviewer, merger). Requires merging identities corresponding to the same actor.
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 
 
 ### Visualizations 
 
-* Count per month over time
-* Count per group over time
+* Count per period over time
+* Ratio per period over time
 
-These could be represented as bar charts, with time running in the X axis.
-Each bar would represent declined reviews during a certain period
-(eg, a month).
+These could be grouped (per actor type, or per group of actors) by applying the filters,
+and could be represented as bar charts, with time running in the X axis.
+Each bar would represent declined reviews during a certain period (eg, a month).
 
 
 ### Data Collection Strategies 
