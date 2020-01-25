@@ -41,12 +41,12 @@ be any line of a source code file, including comments and blank lines.
 * Count. Total number of lines changes (touched) during the period.
 
 **Parameters:**
-* Period of time. Start and finish date of the period. Default: forever.  
+* **Period of time:** Start and finish date of the period. Default: forever.  
     Period during which changes are considered.<br>
-* Criteria for source code. Algorithm. Default: all files are source code.  
-    If we are focused on source code, we need a criteria for deciding
+* **Criteria for source code; Algorithm Default:**  all files are source code.  
+    If we are focused on source code, we need a criterion for deciding
     whether a file is a part of the source code or not.<br>
-* Type of source code change.
+* **Type of source code change:**
     - Lines added
     - Lines removed
     - Whitespace 
