@@ -1,22 +1,22 @@
 # Issue Age
 
-Question: What is the average time that open issues have been open?
+Question: How long have open issues been left open?
 
 ## Description
-This metric is an indication of how long issues that are currently open have been open. This also includes issues that have been re-opened (counting from their initial open date).
+This metric is an indication of how long issues have been left open in the considered time period. If an issue has been closed but re-opened again within that period if will be considered as having remained open since its initial opening date.
 
 ## Objectives
-When the issue age is increasing, identify the oldest open issues in a project to gain insight as to why they have been open for an extended period of time. Additionally, to understand how well maintainers are resolving issues and how quickly bugs are resolved. 
+When the issue age is increasing, identify the oldest open issues in a project to gain insight as to why they have been open for an extended period of time. Additionally, to understand how well maintainers are resolving issues and how quickly issues are resolved. 
 
 ## Implementation
 For all open issues, get the date the issue was opened and calculate the number of days to current date.
 
 **Aggregators:**
-* Average. Average age of all currently open issues.
+* Average. Average age of all open issues.
+* Median. Median age of all open issues.
 
 **Parameters:**
-* Period of time. Start and finish date of the period. Default: forever.
- Period during which issues are considered.
+* Period of time. Start and finish date of the period during which open issues are considered. Default: forever (i.e., the entire observable period of the project's issue activity).
 
 ### Filters
 * Module or working group
