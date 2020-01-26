@@ -144,9 +144,7 @@ In the case of Gerrit, accepted reviews are defined as "changesets
 whose changes are included in the git repository",
 as long as they proposes changes to source code files.
 
-Mandatory parameters (for Gerrit):
-
-* None.
+Mandatory parameters (for Gerrit): None.
 
 
 
