@@ -69,7 +69,7 @@ that are closed with their changes not being included in the git repository",
 as long as it proposes changes to source code files.
 
 See the discussion in the specific description for GitHub in
-[Reviews_Accepted](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews_Accepted.md), since it applies here as well.
+[Reviews Accepted](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews_Accepted.md), since it applies here as well.
 
 Mandatory parameters (for GitHub):
 
