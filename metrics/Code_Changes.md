@@ -1,6 +1,6 @@
 # Code Changes
 
-**Question**: How many changes were made to the source code during a specified period? 
+Question: How many changes were made to the source code during a specified period? 
 
 
 ## Description
