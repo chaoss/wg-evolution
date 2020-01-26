@@ -83,9 +83,7 @@ For an individual pull request, duration starts when it
 is opened, and finishes when the commits it includes
 are merged into the code base.
 
-__Mandatory parameters:__
-
-None.
+Mandatory parameters (for GitHub): None.
 
 **Specific description: GitLab**
 
@@ -95,9 +93,7 @@ For an individual merge request, duration starts when it
 is opened, and finishes when the commits it includes
 are merged into the code base.
 
-__Mandatory parameters:__
-
-None.
+Mandatory parameters (for GitLab): None.
 
 **Specific description: Gerrit**
 
@@ -107,9 +103,7 @@ For an individual cod review, duration starts when it is opened,
 and finishes when the commits it includes
 are merged into the code base.
 
-__Mandatory parameters:__
-
-None.
+Mandatory parameters (for Gerrit): None.
 
 ## References
 
