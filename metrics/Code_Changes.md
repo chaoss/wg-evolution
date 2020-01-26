@@ -1,6 +1,6 @@
 # Code Changes
 
-**Question**: How many changes were made to the source code during a specified period? 
+Question: How many changes were made to the source code during a specified period? 
 
 
 ## Description
@@ -82,7 +82,7 @@ Each bar would represent a code changes during a certain period (eg, a month).
 
 See [reference implementation for git](https://github.com/chaoss/wg-evolution/blob/master/implementations/notebooks_df/code_changes_git.ipynb)
 
-__Mandatory parameters:__
+Mandatory parameters (for Git):
 
 * Date type. Either author date or committer date. Default: author date.  
     For each git commit, two dates are kept: when the commit was authored, and when it was committed to the repository. For deciding on the period, one of them has to be selected.
@@ -93,6 +93,6 @@ __Mandatory parameters:__
 * Include empty commits. Boolean. Default: True.  
     Empty commits are those which do not touch files, and in some cases are not considered as reflecting a coding activity.
 
-## Resources
+## References
 
 * https://www.odoo.com/documentation/13.0/reference/guidelines.html#tag-and-module-name

@@ -1,6 +1,6 @@
 # Code Changes Lines
 
-**Question:** What is the sum of the number of lines touched (lines added plus lines removed) in all changes to the source code during a certain period?
+Question: What is the sum of the number of lines touched (lines added plus lines removed) in all changes to the source code during a certain period?
 
 
 ## Description
