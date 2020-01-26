@@ -71,7 +71,7 @@ as long as it proposes changes to source code files.
 See the discussion in the specific description for GitHub in
 [Reviews_Accepted](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews_Accepted.md), since it applies here as well.
 
-__Mandatory parameters:__
+Mandatory parameters (for GitHub):
 
 * Heuristic for detecting declined pull requests, telling apart
   those cases where the pull request was closed, but the
@@ -84,7 +84,7 @@ In the case of GitLab, accepted reviews are defined as "merge requests
 that are closed with their changes not being included in the git repository",
 as long as it proposes changes to source code files.
 
-__Mandatory parameters:__
+Mandatory parameters (for GitLab):
 
 * Heuristic for detecting declined merge requests, telling apart
   those cases where the merge request was closed, but the
@@ -95,8 +95,7 @@ __Mandatory parameters:__
 In the case of Gerrit, declined reviews are defined as "changesets
 abandoned", as long as they propose changes to source code files.
 
-__Mandatory parameters:__
-None.
+Mandatory parameters (for Gerrit): None.
 
 ## References
 
