@@ -6,7 +6,7 @@ Question: What is the duration of time between the moment a code review starts a
 ## Description
 
 Reviews are defined as in [Reviews](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews.md).
-Accepted reviews are defined in [Reviews_Accepted](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews_Accepted.md).
+Accepted reviews are defined in [Reviews Accepted](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews_Accepted.md).
 
 The review duration is the duration of the period since the
 code review started, to the moment it ended (by being accepted
