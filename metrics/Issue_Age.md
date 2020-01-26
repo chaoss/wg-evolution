@@ -24,11 +24,11 @@ For all open issues, get the date the issue was opened and calculate the number 
 
 ### Visualizations
 
-1. Summary data for open issues
-![Summary data for open issues](./images/open_issue_data.png)
+1. Summary data for open issues<br />
+![Summary data for open issues](images/open_issue_data.png)
 
-2. Count of open issues per day
-![Count of open issues per day](./images/open_issue_count_timeseries.png)
+2. Count of open issues per day<br />
+![Count of open issues per day](images/open_issue_count_timeseries.png)
 
 ### Tools Providing the Metric
 
@@ -37,6 +37,6 @@ For all open issues, get the date the issue was opened and calculate the number 
 
 ### Data Collection Strategies 
 
-For specific descriptions of collecting data about closed issues, please refer to the [corresponding section of Issues New](./Issues_New.md#data-collection-strategies).
+For specific descriptions of collecting data about closed issues, please refer to the [corresponding section of Issues New](Issues_New.md#data-collection-strategies).
 
 ## References
