@@ -275,8 +275,8 @@ class TestCommitConditions(unittest.TestCase):
     def test_set_commits_commit_by_tag(self):
         """
         Test whether the set_commits method of the CommitByTag
-        class correctly identifies the commits contain the tag
-        into their message.
+        class correctly identifies the commits whose messages
+        start with the [api] tag.
         """
         tag = "[api]"
         temp = self.Temp(self.items, conds=[CommitByTag(tag)])

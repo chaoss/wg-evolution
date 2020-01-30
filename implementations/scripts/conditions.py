@@ -260,22 +260,32 @@ class MergeExclude(Commit):
 
 class CommitByTag(Commit):
     """
-    Considerer as a commit contains a specific tag into its message.
+    Considerer as included only commits with specific tag.
     """
 
     def __init__(self, tag):
-        self.tag = tag
+        self.tags = tag if isinstance(tag, list) else [tag]
 
     def set_commits(self, commits):
         """
-        Check if a commit contains the tag in his message.
+        Set the list with commits to be analyzed for condition
 
-        Exemple: we want to have the commits where the message begins by [perceval] or [backend]
+        This method also prepares the set of included commits
+        (those which their message starts with the tag), so that
+        the check can be done quickly later.
 
-        :param tag: tag to check if the commit contains it in this message
-        :returns: True if the commit contains the tag in its message
+        To check for message of each commit starts with one of tags,
+        this method checks if the value of the string field
+        'message' of each commit starts with one of tags given in
+        parameter of the constructor of this class.
+        If True, the message of the commit starts with the tag.
+
+        Exemple: we want to have the commits where the message
+            begins by [perceval] or [backend]
+
+        :param commits: commits (list)
         """
         items = [dict(commit) for commit in commits]
 
-        items = [item for item in items if self.tag in item['message']]
+        items = [item for item in items if any(item['message'].startswith(tag) for tag in self.tags)]
         self.included = [item['hash'] for item in items]

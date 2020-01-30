@@ -273,6 +273,11 @@ class TestCommitConditions(unittest.TestCase):
         self.assertEqual(merge_exclude.included, commit.conds[0].included)
 
     def test_set_commits_commit_by_tag(self):
+        """
+        Test whether the set_commits method of the CommitByTag
+        class correctly identifies the commits whose messages
+        start with the [api] tag.
+        """
         tag = "[api]"
         temp = self.Temp(self.items, conds=[CommitByTag(tag)])
         commit_by_tag = temp.conds[0]
