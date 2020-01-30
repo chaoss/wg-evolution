@@ -58,15 +58,20 @@ if __name__ == "__main__":
     changes = CodeChangesGit(items, date_range=(date_since, None),
                              is_code=[DirExclude(['tests']),
                                       PostfixExclude(
-                                        ['.md', 'COPYING'])])
+                                 ['.md', 'COPYING'])])
     print("Code_Changes, excluding some files:", changes.compute())
 
     changes = CodeChangesGit(items, date_range=(date_since, None),
                              conds=[MasterInclude()])
     print("Code_Changes, only for master:", changes.compute())
 
+    # considering only those commits that contain either the [api] or the
+    # [backend] tag in their message.
     tags = ["[api]", "[backend]"]
     for tag in tags:
-        print("Code_Changes, only for the commits that contain {} into their message: {}".format(
+        print("Code_Changes, only for the commits whose message starts with {}: {}".format(
             tag,
             CodeChangesGit(items, conds=[CommitByTag(tag)]).compute()))
+
+    print("Code_Changes, only for the commits whose message starts with either [api] or [backend]: {}".format(
+        CodeChangesGit(items, conds=[CommitByTag(tags)]).compute()))

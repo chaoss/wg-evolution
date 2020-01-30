@@ -112,11 +112,11 @@ if __name__ == "__main__":
     print("The number of commits created on a monthly basis is:")
     print(changes.time_series(period='M'))
 
-    # considering commits only that contain either [api] or [backend]
-    # into their message
+    # considering only those commits that contain either the [api] or the
+    # [backend] tag in their message
     tags = ["[api]", "[backend]"]
     for tag in tags:
-        print("Code_Changes, only for the commits that contain {} into their message: {}".format(
+        print("Code_Changes, only those commits whose their message starts with {}: {}".format(
             tag,
             CodeChangesGit(items, conds=[CommitByTag(tag)]).compute()
         ))
