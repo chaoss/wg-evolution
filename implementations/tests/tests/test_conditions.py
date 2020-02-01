@@ -276,9 +276,9 @@ class TestCommitConditions(unittest.TestCase):
         """
         Test whether the set_commits method of the CommitByTag
         class correctly identifies the commits whose messages
-        start with the [api] tag.
+        start with the [model] tag.
         """
-        tag = "[api]"
+        tag = "[model]"
         temp = self.Temp(self.items, conds=[CommitByTag(tag)])
         commit_by_tag = temp.conds[0]
         commit_by_tag.set_commits(temp.items)
