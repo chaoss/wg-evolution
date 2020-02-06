@@ -5,14 +5,14 @@ Goal: Identify the size of the project community and whether it is growing, shri
 Metric | Question
 --- | ---
 [Contributors](../metrics/contributors.md) | What is the number of contributors?
-[New Contributors](../metrics/contributors-new.md) | What is the overall number of new contributors?
-[New Contributors of Commits](../metrics/pull-requests-merge-contributor-new.md) | What is the number of persons contributing with an accepted commit for the first time?
-[New Contributors of Issues](../metrics/issues-first-time-opened.md) | What is the number of persons opening an issue for the first time?
-[New Contributors Closing Issues](../metrics/New_Contributors_Closing_Issues.md) | How many contributors are closing issues for the first time?
-[New Contributors of Initiated Code Reviews]| What is the number of persons initiating a code review for the first time?
+[New Contributors](../metrics/New_Contributors.md) | What is the overall number of new contributors?
+[New Contributors of Commits](../metrics/New_Contributor_Commits.md) | What is the number of persons contributing with an accepted commit for the first time?
+[New Contributors of Issues](../metrics/New_Contributors_Issues.md) | What is the number of persons opening an issue for the first time?
+[New Contributors Closing Issues](../metrics/New_Contributor_Closing_Issues.md) | How many contributors are closing issues for the first time?
+[New Contributors of Initiated Code Reviews](../metrics/New_Contributors_Initiated_Code_Reviews.md) | What is the number of persons initiating a code review for the first time?
 [New Contributors of Code Reviews](../metrics/pull-requests-code-reviews-contributors-new.md) | What is the number of persons contributing with reviews of code for the first time?
-[New Contributors on the Email List](../metrics/mailing-lists-messages-contributors-new.md) | What is the number of persons posting messages in mailing lists for the first time?
-[Contributing Organizations](../metrics/organizations.md) | What is the number of contributing organizations?
+[New Contributors on the Email List](../metrics/New_Contributors_Email_List.md) | What is the number of persons posting messages in mailing lists for the first time?
+[Contributing Organizations](../metrics/Contributing_Organizations.md) | What is the number of contributing organizations?
 [New Contributing Organizations](../metrics/organizations-new.md) | What is the number of new contributing organizations?
 [Sub-Projects](../metrics/sub-projects.md) | What is the number of sub-projects?
 [Pull Requests Merged/Closed (Contribution Acceptance)](../metrics/pull-requests-merged-vs-closed.md)  | Ratio of contributions accepted vs. closed without acceptance
