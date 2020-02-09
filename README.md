@@ -8,7 +8,7 @@ Formerly known as the Growth Maturity and Decline Working Group
 This CHAOSS working group is using the general [CHAOSS mailing list](https://lists.linuxfoundation.org/mailman/listinfo/chaoss).
 
 ## Join our Weekly Calls
-The Evolution working group meets every other Thursday at 10:00am CDT in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288, use US phone number 1-408-638-0968 or [international numbers](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9)).
+The Evolution working group meets every other Wednesday at 12:00pm CDT in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288, use US phone number 1-408-638-0968 or [international numbers](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9)).
 
 Our [meeting notes](meeting_notes.md) are posted after each call.
 
