@@ -13,9 +13,77 @@ WG Repository: https://github.com/chaoss/wg-evolution
 
 We use [Google Notes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit#) to take the meeting minutes. Notes are captured by the entire group and a volunteer acting as the primary scribe. Once the meeting has ended, a maintainer will upload the notes to this repository for posterity.
 
-# Next Meeting: Thursday, December 5, 2019 
+# Wednesday, February 12, 2019
 
-# Thursday, November 21, 2019 
+Attendees: Carter L., Armstrong F., Sean G., Georg L.
+
+Video: https://youtu.be/4qsHs_Ci0Lo 
+
+## Agenda
+- New meeting time (12pm CST every other Wednesday, starting 2/12)
+- Congratulations to everyone for the Metrics Version 2 Release! (https://chaoss.community/metrics/)
+Open PRs:
+- https://github.com/chaoss/wg-evolution/pull/327 (Merged)
+- https://github.com/chaoss/wg-evolution/pull/312 (Wait for now - see section of notes about implementation)
+- https://github.com/chaoss/wg-evolution/pull/320 (Wait for now - see section of notes about implementation)
+- https://github.com/chaoss/wg-evolution/pull/326 (Wait for now - see section of notes about implementation)
+- Continue to work on advancing metrics (https://drive.google.com/drive/folders/1ezuo62qps0yhxuK9euysoTj4JbgGMmaY)
+
+## Notes
+### Implementation examples
+- Where should they live? In WG repo? In CHAOSS org?
+- We will raise a question at the general CHAOSS call about the role of notebooks, and whether or not they are helpful solely to the Evolution working group? Does the fact that they are not a component of the released metrics kind of “hide” them in a way that makes their application less clear?
+- Should we consider a more formal publication of examples and references to implementations? 
+- What’s the original intention of doing the notebooks (I think it is to demonstrate the logic of a metric’s filters more clearly, but there may be other discussions that have taken place)
+
+### Issue Response Time
+- The Evolution working group approves and supports referencing the “issue response time” metric in Evolution as specific implementation of the “time to first response” metric in the common working group. 
+- Creating a PR to common asking that filter on activity type (i.e. “Issues”) be added to the “Issue Response Time” Metric.  https://github.com/chaoss/wg-common/pull/52
+- Recommendation: New contributors becomes a filter on the Common “Contributors” metric. HOWEVER, we will implement a new contributors metric that elaborates more fully on the definitions, questions, and nature of specific interest in understanding and identifying new contributors. 
+- PR to Common WG: https://github.com/chaoss/wg-common/pull/53
+- Next meeting will focus on new contributor, new contributor of commits, and new contributor of issues metrics. 
+
+
+# Thursday, January 16, 2019 
+
+Attendees: Carter L., Matt G., Sean G., Xavier, Georg
+
+Video: https://youtu.be/mST3d8NRq4c 
+
+## Agenda
+- Discuss comments on metrics release (https://github.com/chaoss/wg-evolution/issues)
+
+## Notes
+- Worked through metrics release Issues
+
+
+# Meeting on Thursday, December 19, 2019 
+
+Attendees: Carter L., Georg L.
+
+Video: https://youtu.be/YzygbtqwjEA 
+
+## Agenda
+- Continue to work on advancing metrics
+- Review list of metrics ready for release
+    - New Contributors Closing Issues (Completed, https://docs.google.com/document/d/1Fy3MKLM3RepO07pWDqnD70Xfm9W0v94_CiMiE7LVImc/edit)
+    - Issue Response Time (Completed, https://docs.google.com/document/d/1NLRA7nV7KJ8vRpj6WiGrGROo6Zjbd2Wseoc3n3lMQNE/edit)
+- Release sheet for tracking metrics (https://docs.google.com/spreadsheets/d/1tAGzUiZ9jdORKCnoDQJkOU8tQsZDCZVjcWqXYOSAFmE/edit#gid=1004270137)
+- AI Carter: Check all metrics for typos
+
+# Meeting on Thursday, December 5, 2019 
+
+Attendees: Matt G., Kevin L., Carter L.
+
+## Agenda:
+- Work through open PRs
+- Metrics spreadsheet v2
+- Continue to work on advancing metrics (https://drive.google.com/drive/folders/1ezuo62qps0yhxuK9euysoTj4JbgGMmaY)
+- AI Carter: Make google doc for all “In-progress” metrics & link to them in release spreadsheet
+- AI Carter: Check for Issue Resolution Duration visualizations in Augur
+
+
+# Meeting on Thursday, November 21, 2019 
 
 Attendees: Matt G., Armstrong F., Carter L., Georg L., Carolyn Perniciaro
 
