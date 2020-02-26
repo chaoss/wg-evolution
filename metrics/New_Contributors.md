@@ -1,29 +1,39 @@
 # New Contributors
 
-Question: What is the number of new contributors?
+Question:  How many contributors are making their first contribution to a given project and who are they?
 
 ## Description
-A description of what the metric is and what it captures.
-The first few sentences should match the description in the [metrics list](../activity-metrics-list.md).
+This metric is an indication of how many new contributors there are to a given project in a specified time period. Like most impressions, the first contribution can be of critical importance for making the contributor feel welcome to the community. Additionally, the number of new contributions can in some cases be viewed as a reflection of the projects popularity or ability to market itself, as projects that are in the limelight could be more likely to have more contributions just because more people know about it.
+
+This is a specific implementation of the [Contributors](https://chaoss.community/metric-contributors/) metric.
+
 
 ## Objectives
-Answer the question for why someone wants to measure this metric and what can be known with it.
+An increase or decline in new contributors can be an early indicator of project health. Understanding the behavior and barriers of new community members requires knowing who they are. Welcome new contributors and thank them for their first contribution.
+
 
 ## Implementation
-Provide details on how to measure the metric, collect the data, and analyze it. The following sub-headings are optional but help to structure the different aspects of implementation.
+For each [Contributor](https://chaoss.community/metric-contributors/), only consider their first contribution.
 
-### Filters (optional)
-Include a Filter
 
-### Visualizations (optional)
-Include visualizations such as screenshot of the metric. There may be many more visualizations for this metric, we only want to provide a flavor for what this metric is about.
+### Filters
+Period of Time: When was the first contribution made.
+Location of engagement or type of contribution. See [Contributors](https://chaoss.community/metric-contributors/) or [Types of Contributions](https://github.com/chaoss/wg-common/blob/master/focus-areas/what/types-of-contributions.md) metrics.
+Stage of engagement (e.g., opening pull request vs. getting it accepted).
 
-### Tools Providing the Metric (optional)
-Metric must be currently deployed/available, in contrast to a tool having the "potential" to provide the metric. Provide direct link to implementation/documentation, if applicable
 
-### Data Collection Strategies (Optional)
-If there are several different ways to collect data for this metric, list them here. 
-This may include expressing a metric in different ways.
+### Visualizations
+
+![New Contributors Visualization from GrimoireLab](images/new_contributors.png)
+
+### Tools Providing the Metric
+[Augur](http://augur.osshealth.io/api_docs/#api-Evolution-New_Contributors_Repo_)
+[GrimoireLab](https://chaoss.github.io/grimoirelab-sigils/panels/git-demographics/)
+
 
 ## References
-Blog posts, websites, academic papers, or books that mention the metric and provide more background.
+https://opensource.com/article/17/4/encourage-new-contributors
+
+
+
+
