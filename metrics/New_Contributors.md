@@ -17,9 +17,9 @@ For each [Contributor](https://chaoss.community/metric-contributors/), only cons
 
 
 ### Filters
-Period of Time: When was the first contribution made.
-Location of engagement or type of contribution. See [Contributors](https://chaoss.community/metric-contributors/) or [Types of Contributions](https://github.com/chaoss/wg-common/blob/master/focus-areas/what/types-of-contributions.md) metrics.
-Stage of engagement (e.g., opening pull request vs. getting it accepted).
+* Period of Time: When was the first contribution made.
+* Location of engagement or type of contribution. See [Contributors](https://chaoss.community/metric-contributors/) or [Types of Contributions](https://github.com/chaoss/wg-common/blob/master/focus-areas/what/types-of-contributions.md) metrics.
+* Stage of engagement (e.g., opening pull request vs. getting it accepted).
 
 
 ### Visualizations
