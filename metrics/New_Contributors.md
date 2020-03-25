@@ -18,7 +18,20 @@ For each [Contributor](https://chaoss.community/metric-contributors/), only cons
 
 ### Filters
 Period of Time: When was the first contribution made.
-Location of engagement or type of contribution. See [Contributors](https://chaoss.community/metric-contributors/) or [Types of Contributions](https://github.com/chaoss/wg-common/blob/master/focus-areas/what/types-of-contributions.md) metrics.
+
+By location of engagement. For example:
+* Repository authors
+* Issue authors
+* Code review participants
+* Mailing list authors
+* Event participants
+* IRC authors
+* Blog authors
+* By release cycle
+* Timeframe of activity in the project, e.g, find new contributors
+* Programming languages of the project
+* Role or function in project
+
 Stage of engagement (e.g., opening pull request vs. getting it accepted).
 
 
