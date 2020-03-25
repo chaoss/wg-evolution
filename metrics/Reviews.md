@@ -49,6 +49,7 @@ or in some contexts "changesets" in the case of Gerrit.
 (merging ids corresponding to the same author).
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
+* Status (open, closed)
 
 
 ### Visualizations
