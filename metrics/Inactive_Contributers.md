@@ -18,7 +18,7 @@ The metric will work by:
 4. create list of inactive contributers
 
 ### Aggregators:
-inactive: number of inactive contributers
+- inactive: number of inactive contributers
 
 ### Filters
 - Minimum commits required to be considered active
