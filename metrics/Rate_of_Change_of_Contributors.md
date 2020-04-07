@@ -1,40 +1,13 @@
-New Contributors
-Question: How many contributors are making their first contribution to a given project and who are they?
+# Rate of Change of Contributors
 
-Description
-This metric is an indication of how many new contributors there are to a given project in a specified time period. Like most impressions, the first contribution can be of critical importance for making the contributor feel welcome to the community. Additionally, the number of new contributions can in some cases be viewed as a reflection of the projects popularity or ability to market itself, as projects that are in the limelight could be more likely to have more contributions just because more people know about it.
+Question: How is the number of contributors changing over time?
 
-This is a specific implementation of the Contributors metric.
+## Description
+This metric is an indication of the amount of active contributors that are working on a given project over a time period. This can give a better indication of the growth of the project team, as well as a warning indication if the rate of change of contributors is negative (people are leaving the project.) 
 
-Objectives
-An increase or decline in new contributors can be an early indicator of project health. Understanding the behavior and barriers of new community members requires knowing who they are. Welcome new contributors and thank them for their first contribution.
+## Objectives
+By looking at the rate that the number of contributors is changing, one can easily determine whether the project is rapidly expanding or declining. The number of contributors at any given time may not be enough information, as a team of 6 may be alright for some projects, but it could be a negative indicator if a month ago that same project had a team of 30. By analyzing the rate of change of contributors, users can more easily quantitatively see the growth or decline of a project. 
 
-Implementation
-For each Contributor, only consider their first contribution.
+## Implementation
+This can take advantage of already implemented metrics. By using the Contributors metric and measuring its result at many different periods of time, we can get the overall rate of change of contributors of the project. 
 
-Filters
-Period of Time: When was the first contribution made.
-
-By location of engagement. For example:
-
-Repository authors
-Issue authors
-Code review participants
-Mailing list authors
-Event participants
-IRC authors
-Blog authors
-By release cycle
-Timeframe of activity in the project, e.g, find new contributors
-Programming languages of the project
-Role or function in project
-Stage of engagement (e.g., opening pull request vs. getting it accepted).
-
-Visualizations
-New Contributors Visualization from GrimoireLab
-
-Tools Providing the Metric
-Augur GrimoireLab
-
-References
-https://opensource.com/article/17/4/encourage-new-contributors
