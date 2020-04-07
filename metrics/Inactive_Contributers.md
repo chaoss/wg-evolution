@@ -1,4 +1,4 @@
-# {Inactive_Contributers}
+# Inactive_Contributers
 
 Question: How many Contributers have gone inactive over a specific period of time.
 
@@ -15,19 +15,19 @@ The metric will work by:
 1. getting a list of all contributers
 2. checking the last commit date
 3. if the last commit date is before the cutoff then add them to the inactivity count of the period they last committed in.
+4. create list of inactive contributers
 
-### Filters (optional)
+### Aggregators:
+inactive: number of inactive contributers
 
+### Filters
+Minimum commits required to be considered active
+Period of time to determine inactivity
+Start date/End date
+Period of graph
 
-### Visualizations (optional)
-
-
-### Tools Providing the Metric (optional)
-
-
-### Data Collection Strategies (Optional)
+### Data Collection Strategies
 The list of contributers can be collected usign the existing contributers metric.
 To determine the last commit date new code may be needed.
 
-## References
 
