@@ -21,10 +21,10 @@ The metric will work by:
 inactive: number of inactive contributers
 
 ### Filters
-Minimum commits required to be considered active
-Period of time to determine inactivity
-Start date/End date
-Period of graph
+- Minimum commits required to be considered active
+- Period of time to determine inactivity
+- Start date/End date
+- Period of graph
 
 ### Data Collection Strategies
 The list of contributers can be collected usign the existing contributers metric.
