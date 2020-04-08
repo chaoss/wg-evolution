@@ -1,12 +1,12 @@
-Reviews Comments
+#Reviews Comments
 
 Question: How many people are reviews, and which area has the most comments?
 
-## Description
+##Description
 To review the comments of the users and improve it base on the comments. Also,  know which area is most interesting by the users. 
 
-## Objectives
+##Objectives
 The comments are very useful for improving. One people’s ideas and thoughts are always limited. But if all the users can be help for improving, that means there are millions of ideas and thoughts. Also, we can review which kind of comment has the most, so know which part needs to improve.
 
-## Implementation
+##Implementation
 First, It should first collect all the comments that have at least a sentence. Some comments just have a word, character, or emoji. Those comments are unuseful, should not collect is. Second, make groups of different kinds of comments. In the end, analyze all the comments, look at which thing people mention most. 
