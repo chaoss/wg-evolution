@@ -3,27 +3,24 @@
 Question: What is the number of contributing organizations?
 
 ## Description
-A description of what the metric is and what it captures.
-The first few sentences should match the description in the [metrics list](../activity-metrics-list.md).
-
+These are the contributions made by organizations that are seperate from the project being assessed. This does not include individual contributors to the project. For example, if a software company such as Google commited changes, it would count twards the number of contributing organizations, but an individual employee of Google would not count as being seperate. 
 ## Objectives
-Answer the question for why someone wants to measure this metric and what can be known with it.
+Volume of contributing organizations. This metric give insight into contributing orgainizations, and shows which organizations are contributing to the health of a project.
 
 ## Implementation
-Provide details on how to measure the metric, collect the data, and analyze it. The following sub-headings are optional but help to structure the different aspects of implementation.
+Aggregators:
+* Count. Total number of contributing organizations.
 
-### Filters (optional)
-Include a Filter
+Parameters:
+* Period of time. Start and end date of period. Deafult: All time. Period during which organizations are contributed.
+
 
 ### Visualizations (optional)
-Include visualizations such as screenshot of the metric. There may be many more visualizations for this metric, we only want to provide a flavor for what this metric is about.
-
-### Tools Providing the Metric (optional)
-Metric must be currently deployed/available, in contrast to a tool having the "potential" to provide the metric. Provide direct link to implementation/documentation, if applicable
+* Count of contributing organizations per month over time
+* Count of contributing organizations per year over time
 
 ### Data Collection Strategies (Optional)
-If there are several different ways to collect data for this metric, list them here. 
-This may include expressing a metric in different ways.
+* Data collected through git.
 
 ## References
-Blog posts, websites, academic papers, or books that mention the metric and provide more background.
+
