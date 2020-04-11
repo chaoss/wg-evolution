@@ -7,25 +7,45 @@ This metric should give some light to who is creating the direction of a project
 The metric should give a name and contact for each issue, as well as showing top issue creators and most open issues per creator.
 
 ## Objectives
-By seeing who is creating new issues, we are able to determine how workload is being distributed and could even determine importance of an issue by the individual that submitted it.
+By seeing who is creating new issues, we are able to determine how workload is being distributed and could even determine importance of an issue by the individual that submitted it. We should display individuals that are creating the most issues, categories of issues being created for each user, and the time to completion of an average issues by the creator.
 
 ## Implementation
 Provide details on how to measure the metric, collect the data, and analyze it. The following sub-headings are optional but help to structure the different aspects of implementation.
 
-### Filters (optional)
-Include a Filter
+### Aggregators
+- Average. Find the average time to completion for issues by this creator.
+- Max. Find the highest issue creators.
 
-### Visualizations (optional)
-Include visualizations such as screenshot of the metric. There may be many more visualizations for this metric, we only want to provide a flavor for what this metric is about.
-
-### Tools Providing the Metric (optional)
-Metric must be currently deployed/available, in contrast to a tool having the "potential" to provide the metric. Provide direct link to implementation/documentation, if applicable
+### Filters
+- Module or working group
+- Tags/labels on issues
 
 ### Data Collection Strategies (Optional)
-If there are several different ways to collect data for this metric, list them here.
-This may include expressing a metric in different ways.
+Specific description: GitHub
+
+In the case of GitHub, an issue is defined as an "issue".
+
+The creator of the issue can be defined as the user who originally opened the issue (submitted).
+
+Specific description: GitLab
+
+In the case of GitHub, an issue is defined as an "issue".
+
+The creator of the issue can be defined as the user who originally opened the issue (submitted).
+
+Specific description: Jira
+
+In the case of Jira, an issue is defined as an "issue".
+
+The creator of the issue can be defined as the user who originally opened the issue (submitted).
+
+Specific description: Bugzilla
+
+In the case of Bugzilla, an issue is defined as a "bug report", as long as it is related to source code files.
+
+The creator of the issue can be defined as the user who originally opened the issue (submitted).
 
 ## References
-Blog posts, websites, academic papers, or books that mention the metric and provide more background.
+https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue  
 
 
