@@ -10,7 +10,6 @@ The metric should give a name and contact for each issue, as well as showing top
 By seeing who is creating new issues, we are able to determine how workload is being distributed and could even determine importance of an issue by the individual that submitted it. We should display individuals that are creating the most issues, categories of issues being created for each user, and the time to completion of an average issues by the creator.
 
 ## Implementation
-Provide details on how to measure the metric, collect the data, and analyze it. The following sub-headings are optional but help to structure the different aspects of implementation.
 
 ### Aggregators
 - Average. Find the average time to completion for issues by this creator.
