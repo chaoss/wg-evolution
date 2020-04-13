@@ -23,7 +23,7 @@ A measure of the amount of new contributors. Counting the number of new forks of
 ### Visualizations (optional)
 * Bar Graph (x = time period, y = number of forks)
 * Line Graph (x = time period, y = number of forks)
-vizualization link- (https://github.com/JosephBurris/jpb68d/blob/master/Assignment_11/metric_visualization.png)
+\nvizualization link- (https://github.com/JosephBurris/jpb68d/blob/master/Assignment_11/metric_visualization.png)
 
 ### Tools Providing the Metric (optional)
 (TBD)
