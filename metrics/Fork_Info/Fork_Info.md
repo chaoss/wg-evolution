@@ -1,4 +1,4 @@
-# {Forks}
+# {Analysis of Forks}
 
 Question: How many forks have been made of a given repository in a specified time period.
 
@@ -13,7 +13,7 @@ Aggregators:
 - Count the number of new forks of a repository
 
 Parameters:
-- Period of time. Start and finish time period. Default: All-time. Period in which number of forks are considered.
+- Date/Time Interval. Start and finish time period. Default: All-time. Period in which number of forks are considered.
 - First forking. Boolean value (T/F). Default: F. Boolean value to give consideration to the first time that a project is forked.
 
 ### Filters (optional)
