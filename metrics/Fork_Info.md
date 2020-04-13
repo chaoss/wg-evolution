@@ -1,4 +1,4 @@
-# {Analysis of Forks}
+# Analysis of Forks
 
 Question: How many forks have been made of a given repository in a specified time period.
 
