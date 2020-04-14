@@ -1,6 +1,6 @@
 # Issue Contributors
 
-Question: How many contributors are have contributed issues, or made comments on issues?
+Question: How many contributors have contributed issues, or made comments on issues?
 
 ## Description
 This metric is an indication of the volume of people who are active on issues at any point in time. 
@@ -20,40 +20,24 @@ and doesn't remain stagnant.
 
 ## Implementation
 Aggregators
-  -Count. Total number of issue contributors.
-  -Ratio. Ratio of active issue contributors over total project contributors.
-Parameters
-  -Period of time. Start and finish date of the period during which issues are considered. Default: forever.
-  -Criteria for source code. Algorithm. Default: all issues are related to source code.
+  - Count. Total number of issue contributors.
+  - Ratio. Ratio of active issue contributors over total project contributors.
+Parameters 
+  - Period of time. Start and finish date of the period during which issues are considered. Default: forever.
+  - Criteria for source code. Algorithm. Default: all issues are related to source code.
    We assume that we only care about issues related to the source code if this is not the case the default can be modified.
-  -Criteria for active. Algorithm. Default: Having created an issue or making a comment on a issue.
+  - Criteria for active. Algorithm. Default: Having created an issue or making a comment on a issue.
 
 ### Filters (optional)
-  -By actors (submitter, commenter, closer). Requires merging identities corresponding to the same author.
+  - By actors (submitter, commenter, closer). Requires merging identities corresponding to the same author.
 
 ### Visualizations (optional)
-  -Count per time period over time
-  -Ratio per time period over time
+  - Count per time period over time
+  - Ratio per time period over time
 
 ### Tools Providing the Metric (optional)
 
-
 ### Data Collection Strategies (Optional)
-Specific description: GitHub
-
-In the case of GitHub, closed issues are defined as "issues which are closed".
-
-Specific description: GitLab
-
-In the case of GitLab, active issues are defined as "issues that are closed".
-
-Specific description: Jira
-
-In the case of Jira, active issues are defined as "issues that change to the closed state".
-
-Specific description: Bugzilla
-
-In the case of Bugzilla, active issues are defined as "bug reports that change to the closed state".
 
 ## References
 Blog posts, websites, academic papers, or books that mention the metric and provide more background.
