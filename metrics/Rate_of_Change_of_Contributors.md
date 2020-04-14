@@ -9,5 +9,5 @@ This metric is an indication of the amount of active contributors that are worki
 By looking at the rate that the number of contributors is changing, one can easily determine whether the project is rapidly expanding or declining. The number of contributors at any given time may not be enough information, as a team of 6 may be alright for some projects, but it could be a negative indicator if a month ago that same project had a team of 30. By analyzing the rate of change of contributors, users can more easily quantitatively see the growth or decline of a project. 
 
 ## Implementation
-This can take advantage of already implemented metrics. By using the Contributors metric and measuring its result at many different periods of time, we can get the overall rate of change of contributors of the project. 
+This can take advantage of already implemented metrics. By using the Contributors metric and measuring how many of the contributors are actively participating in the project throughout time we can have a reliable metric showing the growth or decline of a project. This can be improved by looking at the commits and ensuring that only contributors who are actively commiting to the project are being counted in order to get an even better representation. 
 
