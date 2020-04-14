@@ -99,7 +99,7 @@ as the date in which the issue was opened (submitted).
 
 **Specific description: GitLab**
 
-In the case of GitHub, an issue is defined as an "issue".
+In the case of GitLab, an issue is defined as an "issue".
 
 The date of the issue can be defined (for considering it in a period or not)
 as the date in which the issue was opened (submitted).
