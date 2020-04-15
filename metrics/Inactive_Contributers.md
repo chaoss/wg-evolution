@@ -17,7 +17,7 @@ The metric will work by:
 3. if the last contribution date is before the cutoff then add them to the inactivity count of the period they last contibuted in.
 4. create list of inactive contributors
 
-** Aggregators:**
+**Aggregators:**
 - inactive: number of inactive contributors
 
 ### Filters
