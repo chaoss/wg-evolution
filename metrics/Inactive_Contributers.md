@@ -1,4 +1,4 @@
-# Inactive_Contributors
+# Inactive Contributors
 
 Question: How many Contributors have gone inactive over a specific period of time?
 
