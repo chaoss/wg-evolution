@@ -3,14 +3,17 @@ Formerly known as the Growth Maturity and Decline Working Group
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-## Join our Mailing List
+## Table of Contents
 
-This CHAOSS working group is using the general [CHAOSS mailing list](https://lists.linuxfoundation.org/mailman/listinfo/chaoss).
-
-## Join our Weekly Calls
-The Evolution working group meets every other Wednesday at 12:00pm CDT in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288, use US phone number 1-408-638-0968 or [international numbers](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9)).
-
-Our [meeting notes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit) are posted after each call.
+- [Introduction](#introduction)
+- [Metrics](#metrics)
+- [Usage](#usage)
+- [Implementations](#implementations)
+- [Use Cases](#use-cases)
+- [Contributing](#contributing)
+- [Communications](#communications)
+- [Contributors](#contributors)
+- [License](#license)
 
 ## Introduction
 
@@ -23,37 +26,6 @@ Currently, the goals are structured in the following focus areas : [Code Develop
 
 ### Process
 For each area of interest, we're following the [goal-question-metric](https://en.wikipedia.org/wiki/GQM) methodology defining questions and metrics that help to answer them.
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Roadmap for 2019](#roadmap-for-2019)
-- [Metrics](#metrics)
-- [Usage](#usage)
-- [Implementations](#implementations)
-- [Use Cases](#use-cases)
-- [Contributing](#contributing)
-- [Communications](#communications)
-- [Contributors](#contributors)
-- [License](#license)
-
-<!---## Background
-
-### Problem Statement
-
-To be updated.
-
-### Opportunity
-
-To be updated
-
-### Work To Date
-
-To be updated. --->
-
-## Roadmap for 2019
-
-Our key focus areas for 2019 are summarized [here](ROADMAP.md).
 
 ## Metrics
 
@@ -78,17 +50,9 @@ When this working group decides to "release" a version of its metrics, the relev
 
 Examples for implementations can be found [here](implementations).
 
-<!---## Software work
-
-To be updated. --->
-
 ## Use Cases
 
 The details for the _Evolution_ Working Group are present in [use_cases](use_cases).
-
-<!--## Related Works
-
-To be updated. --->
 
 ## Contributing
 
@@ -100,44 +64,33 @@ A few steps as good starting points for contributing to the Evolution Working gr
     * [contents of this repository](https://github.com/chaoss/wg-evolution).
 * By proposing new goals for a focus area, or new questions for learning about those goals, or new metrics for answering those questions. Or by helping to refine goals, and questions.
 
-You can contribute
 See more details in the [contributing file](CONTRIBUTING.md).
 
 ## Communications
 
-### Meetings
-
-The Evolution working group meets frequently. Check details on when we meet, and minutes of past meetings
-in the [meetings document](meeting_notes.md).
-
-Usually, we try to make decisions mainly during the last meeting of each month,
-so that decisions can be brought when convenient to the monthly main CHAOSS meeting,
-which is the first meeting of each month. In all the meetings we may have an agenda,
-but random issues can be raised if time allows, after we're done with the agenda.
-Whenever possible, and specially if a decision needs to be made,
-ensure that issues / pull requests about the subject matter were opened some time before the meeting,
-so that anyone had the opportunity of commenting on them, and make up their mind about that subject matter.
-
-### Mailing list
-
-* We use the [CHAOSS mailing list](https://chaoss.community/participate/#user-content-join-the-mailing-list).
+This CHAOSS working group uses the general [CHAOSS mailing list](https://lists.linuxfoundation.org/mailman/listinfo/chaoss).
 Please prefix the message subject with \[wg-evolution\] if it is specific to this working group.
+
+### Meetings
+The Evolution working group meets every other Wednesday at 9:00pm CDT in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288, use US phone number 1-408-638-0968 or [international numbers](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9)).
+Our [meeting notes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit) are uploaded to the repository after each call.
+
+Usually, we try to make decisions mainly during the last meeting of each month, so that decisions can be brought when convenient to the monthly main CHAOSS meeting, which is the first meeting of each month. In all the meetings we may have an agenda, but random issues can be raised if time allows, after we're done with the agenda. Whenever possible, and specially if a decision needs to be made, ensure that issues / pull requests about the subject matter were opened some time before the meeting, so that everyone has already some opportunities to comment on them.
 
 ## Contributors
 
 ### Maintainers
 
-- [Jesus M. Gonzales-Barahona](https://github.com/jgbarah)
-- [Sean P. Goggins](https://github.com/sgoggins)
 - [Carter Landis](https://github.com/ccarterlandis)
 
 ### Core Contributors
 
-- [Alberto Perez]()
-- [Armstrong Foundjem]()
+- [Sean P. Goggins](https://github.com/sgoggins)
+- [Jesus M. Gonzales-Barahona](https://github.com/jgbarah)
 - [Georg Link](https://github.com/GeorgLink)
-- [Kevin Lumbard](https://github.com/klumb)
 - [Matt Germonprez](https://github.com/germonprez)
+- [Kevin Lumbard](https://github.com/klumb)
+- [Armstrong Foundjem](https://github.com/foundjem)
 
 The criteria for becoming a core contributor is to participate at least once per month over a period of 3 months. Participation could include providing feedback in the Evolution working group meetings, providing feedback on docs, or making other contributions on GitHub (commits / issues). People not participating over a 3 month period may be removed as core contributors.
 
@@ -147,4 +100,4 @@ If you'd like to be on our squad, an easy way to start is by going through the i
 
 The documents in this repositories are released under the MIT License. See [LICENSE](LICENSE) for details.
 
-Copyright © 2018-2019 CHAOSS Project
+Copyright © 2018-2020 CHAOSS Project
