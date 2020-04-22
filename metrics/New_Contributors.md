@@ -1,6 +1,6 @@
 # New Contributors
 
-*This metric is part of the continuous release process, and has passed the 30 day comment period. This metric could, possibly, be edited prior to the regular release.*
+_The continuous release metrics include a disclaimer until part of the next regular release: This metric is part of the continuous release process, has been through the 30-day review period, and the information displayed on the website may still be edited prior to the regular release_
 
 Question:  How many contributors are making their first contribution to a given project and who are they?
 
