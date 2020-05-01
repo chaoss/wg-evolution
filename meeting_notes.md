@@ -6,12 +6,86 @@ The Evolution working group meets every other Thursday at 10:00am CDT
 in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288,
 use US phone number 1-408-638-0968 or [international numbers](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9)).
 
-Video recordings of Evolution Meetings available in the
+Video recordings of Evolution Meetings available on the
 [CHAOSS Youtube channel](https://www.youtube.com/channel/UCrG-a3hIc_hCEUWloG0gm9A)
 
 WG Repository: https://github.com/chaoss/wg-evolution
 
 We use [Google Notes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit#) to take the meeting minutes. Notes are captured by the entire group and a volunteer acting as the primary scribe. Once the meeting has ended, a maintainer will upload the notes to this repository for posterity.
+
+# April 8, 2020
+
+Attendees:
+Sean Goggins
+Carter Landis
+Armstrong Foundjem
+Kevin Lumbard
+Brock Weekley
+Payton Boekhout
+Jonathan Van Egeren
+Sarina Gaines 
+Yutong Zhu
+Zhenxian Han
+Jeremy Schneiderjohn
+
+Video: https://youtu.be/MOWQegOw6Fk 
+
+## Agenda
+### New Metrics discussion: 
+- Looked at our template for new metrics, and changed “template” to “chaoss template” and added a new template for “CHAOSS Evolution Metric”
+- https://github.com/chaoss/wg-evolution/pull/334 (Reviewed during meeting)
+- https://github.com/chaoss/wg-evolution/pull/335 (@sgoggins will review)
+- https://github.com/chaoss/wg-evolution/pull/336 (@sgoggins will review)
+
+### Other PRs
+- Created a metrics release candidate issue for this change (https://github.com/chaoss/wg-evolution/pull/332). Review period ends: May 6th
+- New Contributors ready for release once this PR is merged (https://github.com/chaoss/wg-evolution/pull/330)
+
+
+# March 25, 2020
+
+Attendees: Georg, Sean, Matt, Carter, Gaokun
+
+Video: https://youtu.be/JMxyDee7usI
+
+## Agenda:
+- https://docs.google.com/spreadsheets/d/1tAGzUiZ9jdORKCnoDQJkOU8tQsZDCZVjcWqXYOSAFmE/edit#gid=1004270137
+- Working on New Contributors of Issues metric definition - maybe use this as a template: https://github.com/chaoss/wg-common/blob/master/focus-areas/who/contributors.md
+- Maybe make the “New Contributors of Issues” a specific implementation of “New Contributors”
+https://github.com/chaoss/wg-evolution/blob/master/metrics/New_Contributors.md
+- Talked through how to create tags on the continuous release cycles at the 45 minute mark 
+
+
+# Wednesday, March 11, 2020
+Attendees: Georg, Sean 
+
+Video: https://youtu.be/OFZ_UR2_Dw0 
+
+## Agenda
+- Metrics 
+- GitLab migration proposal: https://docs.google.com/document/d/1a5_mRWmWBE0yRm8lgBi0myEW7YwfRSgF9pQGR1_IPK0/edit?ts=5e688522#
+
+## Notes
+- Reviewed GitLab migration proposal
+- Merged https://github.com/chaoss/wg-evolution/pull/328/files
+- Started Continuous Metric Contribution (Example: https://github.com/chaoss/wg-common/issues/56)
+- https://github.com/chaoss/wg-evolution/blob/master/metrics/New_Contributors.md
+- Issue for New Contributors Release Comments: https://github.com/chaoss/wg-evolution/issues/329 
+
+
+# Wednesday, February 26, 2020
+
+Attendees: Carter L., Georg L.
+
+Video: https://youtu.be/64VRvWNG7fI 
+
+## Agenda
+- Flesh out new contributor metrics as discussed on previous call
+
+## Notes
+- No discussion on the GitHub/GitLab discussion
+- Flesh out new contributor metrics as discussed on previous call
+
 
 # Wednesday, February 12, 2019
 
