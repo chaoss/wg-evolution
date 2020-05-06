@@ -1,15 +1,16 @@
 # CHAOSS Evolution Working Group
-Formerly known as the Growth Maturity and Decline Working Group
+Formerly known as the Growth Maturity and Decline Working Group. 
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+
+The Evolution working group meets every other Wednesday at 9:00pm CDT in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288, use US phone number 1-408-638-0968 or [international numbers](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9)).
+Our [meeting notes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit) are uploaded to the repository after each call.
 
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Metrics](#metrics)
 - [Usage](#usage)
-- [Implementations](#implementations)
-- [Use Cases](#use-cases)
 - [Contributing](#contributing)
 - [Communications](#communications)
 - [Contributors](#contributors)
@@ -45,14 +46,6 @@ Please note that the work in the focus areas is still in progress.
 
 This is a repository for the Evolution working group.
 When this working group decides to "release" a version of its metrics, the relevant files will be dumped to the [chaoss/metrics](https://github.com/chaoss/metrics) repository, as a pull request for updating the CHAOSS metrics with "Evolution metrics release x.y".
-
-## Implementations
-
-Examples for implementations can be found [here](implementations).
-
-## Use Cases
-
-The details for the _Evolution_ Working Group are present in [use_cases](use_cases).
 
 ## Contributing
 
