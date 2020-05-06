@@ -1,5 +1,5 @@
 # CHAOSS Evolution Working Group
-Formerly known as the Growth Maturity and Decline Working Group. 
+Formerly known as the Growth Maturity and Decline Working Group. This repository is where new metrics are actively developed and prepared for release. Released metrics are available on the CHAOSS Website: https://chaoss.community/metrics/
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
@@ -10,7 +10,6 @@ Our [meeting notes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPH
 
 - [Introduction](#introduction)
 - [Metrics](#metrics)
-- [Usage](#usage)
 - [Contributing](#contributing)
 - [Communications](#communications)
 - [Contributors](#contributors)
@@ -41,11 +40,6 @@ Focus Area | Goal
 [Community Growth](./focus_areas/community_growth.md) | Identify the size of the project community and whether it is growing, shrinking, or staying the same.
 
 Please note that the work in the focus areas is still in progress.
-
-## Usage
-
-This is a repository for the Evolution working group.
-When this working group decides to "release" a version of its metrics, the relevant files will be dumped to the [chaoss/metrics](https://github.com/chaoss/metrics) repository, as a pull request for updating the CHAOSS metrics with "Evolution metrics release x.y".
 
 ## Contributing
 
