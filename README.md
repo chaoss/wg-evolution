@@ -11,7 +11,6 @@ Our [meeting notes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPH
 - [Introduction](#introduction)
 - [Metrics](#metrics)
 - [Contributing](#contributing)
-- [Communications](#communications)
 - [Contributors](#contributors)
 - [License](#license)
 
@@ -52,17 +51,6 @@ A few steps as good starting points for contributing to the Evolution Working gr
 * By proposing new goals for a focus area, or new questions for learning about those goals, or new metrics for answering those questions. Or by helping to refine goals, and questions.
 
 See more details in the [contributing file](CONTRIBUTING.md).
-
-## Communications
-
-This CHAOSS working group uses the general [CHAOSS mailing list](https://lists.linuxfoundation.org/mailman/listinfo/chaoss).
-Please prefix the message subject with \[wg-evolution\] if it is specific to this working group.
-
-### Meetings
-The Evolution working group meets every other Wednesday at 9:00pm CDT in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288, use US phone number 1-408-638-0968 or [international numbers](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9)).
-Our [meeting notes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit) are uploaded to the repository after each call.
-
-Usually, we try to make decisions mainly during the last meeting of each month, so that decisions can be brought when convenient to the monthly main CHAOSS meeting, which is the first meeting of each month. In all the meetings we may have an agenda, but random issues can be raised if time allows, after we're done with the agenda. Whenever possible, and specially if a decision needs to be made, ensure that issues / pull requests about the subject matter were opened some time before the meeting, so that everyone has already some opportunities to comment on them.
 
 ## Contributors
 
