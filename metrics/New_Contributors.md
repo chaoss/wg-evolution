@@ -2,7 +2,7 @@
 
 Question:  How many contributors are making their first contribution to a given project and who are they?
 
-### This metric is part of the continuous release process and has been through the 30-day review period. However, the information displayed on this page may still be edited prior to the regular release.
+_This metric is part of the continuous release process and has been through the 30-day review period. However, the information displayed on this page may still be edited prior to the regular release._
 
 ## Description
 This metric is an indication of how many new contributors there are to a given project in a specified time period. Like most impressions, the first contribution can be of critical importance for making the contributor feel welcome to the community. Additionally, the number of new contributions can in some cases be viewed as a reflection of the projects popularity or ability to market itself, as projects that are in the limelight could be more likely to have more contributions just because more people know about it.
