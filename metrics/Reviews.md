@@ -1,6 +1,8 @@
 # Reviews
 
-Question: What new review requests for changes to the source code occurred during a certain period? 
+Question: What new review requests for changes to the source code occurred during a certain period?
+
+_This metric is a release candidate. The 30 day comment period for this metric begins on 07/01/2020 and ends on 07/31/2020. To comment on this metric please see [Issue #337](https://github.com/chaoss/wg-evolution/issues/337). Following the comment period, this metric will be included in the release._
 
 
 ## Description
