@@ -2,11 +2,8 @@
 
 Question:  How many contributors are making their first contribution to a given project and who are they?
 
-_This metric is a release candidate. The 30 day comment period for this metric begins on 07/01/2020 and ends on 07/31/2020. To comment on this metric please see [Issue #329](https://github.com/chaoss/wg-evolution/issues/329). Following the comment period, this metric will be included in the release._
-
-
 ## Description
-This metric is an indication of how many new contributors there are to a given project in a specified time period. Like most impressions, the first contribution can be of critical importance for making the contributor feel welcome to the community. Additionally, the number of new contributions can in some cases be viewed as a reflection of the projects popularity or ability to market itself, as projects that are in the limelight could be more likely to have more contributions just because more people know about it.
+An increase or decline in new contributors can be an early indicator of project health. Understanding the behavior and barriers of new community members requires knowing who they are -- helping to welcome new contributors and thank them for their efforts.
 
 This is a specific implementation of the [Contributors](https://chaoss.community/metric-contributors/) metric.
 
