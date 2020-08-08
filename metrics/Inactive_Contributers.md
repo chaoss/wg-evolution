@@ -2,8 +2,6 @@
 
 Question: How many Contributors have gone inactive over a specific period of time?
 
-_This metric is a release candidate. The 30 day comment period for this metric begins on 07/01/2020 and ends on 07/31/2020. To comment on this metric please see [Issue #357](https://github.com/chaoss/wg-evolution/issues/357). Following the comment period, this metric will be included in the release._
-
 
 ## Description
 A metric that shows how many contributors have stopped contributing over a specific period of time. The period of time required for a contributor to be counted as inactive can be decided by a variable and this metric will display the number of contributors that have been labeled as inactive over a given time frame.
