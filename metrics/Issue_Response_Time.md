@@ -32,7 +32,7 @@ Learn about the responsiveness of an open source community.
 ![Example visualization from GrimoireLab](images/issue_response_duration_grimoirelab.png)
 
 ### Tools Providing the Metric 
-* [GrimoireLab](https://chaoss.github.io/grimoirelab-sigils/panels/github-issues-efficiency/)
+* GrimoireLab: [General for any ticketing system](https://chaoss.github.io/grimoirelab-sigils/panels/efficiency-timing-overview/), [GitHub Issues](https://chaoss.github.io/grimoirelab-sigils/panels/github-issues-efficiency/), [GitLab Issues](https://chaoss.github.io/grimoirelab-sigils/panels/gitlab-issues-efficiency/)
 * [Augur](http://augur.osshealth.io/api_docs/#api-Evolution-Issue_Response_Time_Repo_)
 
 ### Data Collection Strategies
