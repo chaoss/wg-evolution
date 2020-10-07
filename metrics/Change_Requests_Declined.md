@@ -5,7 +5,7 @@ Question: What change requestsended up being declined during a certain period?
 
 ## Description
 
-Change requests are defined as in [Change Request](https://github.com/chaoss/wg-evolution/blob/master/metrics/Change_Request.md).
+Change requests are defined as in [Change Requests](https://github.com/chaoss/wg-evolution/blob/master/metrics/Change_Requests.md).
 Declined change requests are those that are finally closed without
 being merged into the code base of the project.
 
