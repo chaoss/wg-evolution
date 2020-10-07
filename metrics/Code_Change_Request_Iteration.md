@@ -1,6 +1,6 @@
-# Code Review Iteration
+# Code Change Request Iteration
 
-Question: What is the number of iterations that occur before a merge request is accepted or declined?
+Question: What is the number of iterations that occur before a change request is accepted or declined?
 
 ## Description
 A description of what the metric is and what it captures.
