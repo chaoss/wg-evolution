@@ -4,7 +4,7 @@ Question: How many accepted change requests are present in a code change?
 
 ## Description
 
-Change requests are defined as in [Change Request](https://github.com/chaoss/wg-evolution/blob/master/metrics/Change_Request.md).
+Change requests are defined as in [Change Requests](https://github.com/chaoss/wg-evolution/blob/master/metrics/Change_Requests.md).
 Accepted change requests are those that end with the corresponding changes
 finally merged into the code base of the project.
 Accepted change requests can be linked to one or more changes to the source
