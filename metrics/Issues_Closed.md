@@ -40,6 +40,7 @@ used to track volume of coding activity.
 **Aggregators:**
 * Count. Total number of active issues during the period.
 * Ratio. Ratio of active issues over total number of issues during that period.
+* Reactions. Number of "thumb-ups" or other reactions on issues.
 
 **Parameters:**
 * Period of time. Start and finish date of the period during which issues are considered. Default: forever.  
