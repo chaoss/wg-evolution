@@ -80,7 +80,7 @@ Mandatory parameters (for GitHub):
 
 **Specific description: GitLab**
 
-In the case of GitLab, accepted reviews are defined as "merge requests
+In the case of GitLab, declined reviews are defined as "merge requests
 that are closed with their changes not being included in the git repository",
 as long as it proposes changes to source code files.
 
