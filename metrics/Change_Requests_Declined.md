@@ -36,18 +36,18 @@ declined change requests in this system.
 
 **Parameters:**
 * Period of time. Start and finish date of the period during which declined change requests are considered. Default: forever.
-* Criteria for source code. Algorithm. Default: all files are source code.  
+* Criteria for source code. Algorithm. Default: all files are source code.
     If we focus on source code, we need a criterion to decide
     whether a file belongs to the source code or not.
 
 
-### Filters 
+### Filters
 
 * By actors (submitter, reviewer, merger). Requires merging identities corresponding to the same actor.
 * By groups of actors (employer, gender... for each of the actors). Requires actor grouping, and likely, actor merging.
 
 
-### Visualizations 
+### Visualizations
 
 * Count per period over time
 * Ratio per period over time
@@ -57,7 +57,7 @@ and could be represented as bar charts, with time running in the X axis.
 Each bar would represent declined change requests during a certain period (e.g., a month).
 
 
-### Data Collection Strategies 
+### Data Collection Strategies
 
 **Specific description: GitHub**
 
@@ -77,7 +77,7 @@ Mandatory parameters (for GitHub):
 
 **Specific description: GitLab**
 
-In the case of GitLab, accepted change requests are defined as "merge requests
+In the case of GitLab, declined reviews are defined as "merge requests
 that are closed with their changes not being included in the git repository",
 as long as it proposes changes to source code files.
 
