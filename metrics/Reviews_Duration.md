@@ -99,7 +99,7 @@ Mandatory parameters (for GitLab): None.
 
 In the case of Gerrit, duration is considered for
 code reviews that are accepted and merged in the code base.
-For an individual cod review, duration starts when it is opened,
+For an individual code review, duration starts when it is opened,
 and finishes when the commits it includes
 are merged into the code base.
 
