@@ -33,6 +33,7 @@ corresponds to a single commit.
 **Aggregators:**
 * Count. Total number of accepted change requests during the period.
 * Ratio. Ratio of accepted change requests over total number of change requests during that period.
+* Reactions. Number of "thumb-ups" or other reactions on issues.
 
 **Parameters:**
 * Period of time. Start and finish date of the period during which accepted change requests are considered. Default: forever.  
