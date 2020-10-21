@@ -1,6 +1,6 @@
-# New Contributors of Code Reviews
+# New Contributors of Change Requests
 
-Question: What is the number of persons contributing with reviews of code for the first time?
+Question: What is the number of persons contributing with change requests of code for the first time?
 
 ## Description
 A description of what the metric is and what it captures.
