@@ -31,6 +31,7 @@ or in some contexts "changesets" in the case of Gerrit.
 
 **Aggregators:**
 * Count. Total number of change requests during the period.
+* Reactions. Number of "thumb-ups" or other reactions on issues.
 
 **Parameters:**
 
