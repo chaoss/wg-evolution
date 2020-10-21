@@ -33,6 +33,7 @@ declined change requests in this system.
 **Aggregators**:
 * Count. Total number of declined change requests during the period.
 * Ratio. Ratio of declined change requests over the total number of change requests during that period.
+* Reactions. Number of "thumb-ups" or other reactions on issues.
 
 **Parameters:**
 * Period of time. Start and finish date of the period during which declined change requests are considered. Default: forever.
