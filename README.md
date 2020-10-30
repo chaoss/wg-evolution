@@ -3,7 +3,7 @@ Formerly known as the Growth Maturity and Decline Working Group. This repository
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-The Evolution working group meets every other Wednesday at 9:00pm CDT in the CHAOSS Zoom room https://unomaha.zoom.us/j/720431288 (Meeting ID for [dial in](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9): 720 431 288, use US phone number 1-408-638-0968 or [international numbers](https://unomaha.zoom.us/zoomconference?m=DKGo2mmIuOv9xSjphoGZZmYKxr5HFrS9)).
+The Evolution working group meets every other Wednesday at 9:00pm CDT in the [CHAOSS Zoom room](https://zoom.us/j/4998687533).
 Our [meeting notes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit) are uploaded to the repository after each call.
 
 ## Table of Contents
