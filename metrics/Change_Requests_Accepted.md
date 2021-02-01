@@ -2,6 +2,8 @@
 
 Question: How many accepted change requests are present in a code change?
 
+### This metric is a release candidate. To comment on this metric please see [Issue #385](https://github.com/chaoss/wg-evolution/issues/385/). Following a comment period, this metric will be included in the next regular release.  
+
 ## Description
 
 Change requests are defined as in [Change Requests](https://github.com/chaoss/wg-evolution/blob/master/metrics/Change_Requests.md).
@@ -126,4 +128,3 @@ as long as they proposes changes to source code files.
 Mandatory parameters (for Gerrit): None.
 
 ## References
- 

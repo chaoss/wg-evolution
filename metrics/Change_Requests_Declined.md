@@ -2,6 +2,7 @@
 
 Question: What change requestsended up being declined during a certain period?
 
+### This metric is a release candidate. To comment on this metric please see [Issue #384](https://github.com/chaoss/wg-evolution/issues/384/). Following a comment period, this metric will be included in the next regular release.  
 
 ## Description
 
@@ -95,4 +96,3 @@ abandoned", as long as they propose changes to source code files.
 Mandatory parameters (for Gerrit): None.
 
 ## References
-
