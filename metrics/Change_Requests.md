@@ -2,8 +2,6 @@
 
 Question: What new change requests to the source code occurred during a certain period?
 
-### This metric is a release candidate. To comment on this metric please see [Issue #386](https://github.com/chaoss/wg-evolution/issues/386/). Following a comment period, this metric will be included in the next regular release.  
-
 ## Description
 When a project uses change request processes, changes are not directly
 submitted to the code base, but are first proposed for discussion

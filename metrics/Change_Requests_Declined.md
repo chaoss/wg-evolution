@@ -2,8 +2,6 @@
 
 Question: What change requestsended up being declined during a certain period?
 
-### This metric is a release candidate. To comment on this metric please see [Issue #384](https://github.com/chaoss/wg-evolution/issues/384/). Following a comment period, this metric will be included in the next regular release.  
-
 ## Description
 
 Change requests are defined as in [Change Requests](https://github.com/chaoss/wg-evolution/blob/master/metrics/Change_Requests.md).

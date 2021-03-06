@@ -1,8 +1,6 @@
 # Change Requests Duration
 
-Question: What is the duration of time between the moment a change request starts and the moment it is accepted?
-
-### This metric is a release candidate. To comment on this metric please see [Issue #383](https://github.com/chaoss/wg-evolution/issues/383/). Following a comment period, this metric will be included in the next regular release.  
+Question: What is the duration of time between the moment a change request starts and the moment it is accepted or closed?
 
 ## Description
 
