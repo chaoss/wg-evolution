@@ -15,7 +15,7 @@ The metric will take in two variables - a time period and a interval. The time p
 The metric will work by:
 1. getting a list of all contributors
 2. checking the last contribution date
-3. if the last contribution date is before the cutoff then add them to the inactivity count of the period they last contibuted in.
+3. if the last contribution date is before the cutoff then add them to the inactivity count of the period they last contributed in.
 4. create list of inactive contributors
 
 **Aggregators:**

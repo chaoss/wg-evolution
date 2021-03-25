@@ -316,7 +316,7 @@ Video: https://youtu.be/Ruf0F9Hd5wI
 * Work through open issues and PRs
 
 ## Notes
-_Current metric implementation chart temporarily ommitted for formatting's sake_
+_Current metric implementation chart temporarily omitted for formatting's sake_
 _AI Carter: Translate chart to table, perhaps separate from this document_
 
 --------------------------------
@@ -406,7 +406,7 @@ Video: https://youtu.be/V3_fb93jogU
 * #165 - Closed 
 * #159 - Closed
 
-### Pull Requestss
+### Pull requests
 * #189 - Merged
 * #197 - Typos Merged
 
@@ -704,7 +704,7 @@ Notes:
 
 ### Meeting notes
 
-We discuss whether maitain notes about the weekly meetings on Google Docs,
+We discuss whether maintain notes about the weekly meetings on Google Docs,
 instead of in GitHub.
 One long document with previous meeting notes included
 
@@ -767,7 +767,7 @@ We decide to open an issue, and follow up the discussion there.
   Merged
 
 
-# Febraury 27th, 2019
+# February 27th, 2019
 
 ## Agenda
 
@@ -830,7 +830,7 @@ Application has been accepted. We have at least one student. We are waiting on m
 * Versioning
   Conversation is happening at: https://github.com/chaoss/metrics/issues/125
 
-# Febraury 20th, 2019
+# February 20th, 2019
 
 No notes were taken
 
@@ -1588,7 +1588,7 @@ Arguments can be made in the mailing list and we can vote or reply to reach cons
 There is an existing thread on this topic.
     - Pending pull request merge: Use Case for detail metric forks
     - File name conventions and repo structure. Consensus on renaming
-    - Some commments about Kibble and CHAOSS. Kibble examples and use Cases.
+    - Some comments about Kibble and CHAOSS. Kibble examples and use Cases.
 Metric Format issues.
 Kibble already has code written and visualization so no sense in using Jupyter Notebook?
 Are there precise definitions of kibble metrics?
