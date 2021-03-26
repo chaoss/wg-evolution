@@ -5,8 +5,8 @@ How many pull requests have been submitted over a specified time period?
 
 ## 2. Use Cases
 This metric will provide an easy to view graph of how many pull requests have been submitted to the project over time.
-Stakeholders would be interested in this because a healthy community should show an increasing number of pull requests up to a point, then eventaully leveling out. An unhealthy
-community would show a steadily (or sharply) decreasing amount of pull requests, showing a lack of interest/supoprt for the project.
+Stakeholders would be interested in this because a healthy community should show an increasing number of pull requests up to a point, then eventually leveling out. An unhealthy
+community would show a steadily (or sharply) decreasing amount of pull requests, showing a lack of interest/support for the project.
 
 ## 3. Formula
 
