@@ -99,16 +99,16 @@ In the case of GitHub, closed issues are defined as "issues which are closed".
 
 **Specific description: GitLab**
 
-In the case of GitLab, active issues are defined as "issues
+In the case of GitLab, closed issues are defined as "issues
 that are closed".
 
 **Specific description: Jira**
 
-In the case of Jira, active issues are defined as "issues that change to the closed state". 
+In the case of Jira, closed issues are defined as "issues that change to the closed state". 
 
 **Specific description: Bugzilla**
 
-In the case of Bugzilla, active issues are defined as "bug reports that change to the closed state".
+In the case of Bugzilla, closed issues are defined as "bug reports that change to the closed state".
 
 ## References
 
