@@ -56,6 +56,7 @@ this metric is not the only one that should be used to track volume of coding ac
 **Aggregators:**
 * Count. Total number of new issues during the period.
 * Ratio. Ratio of new issues over total number of issues during that period.
+* Reactions. Number of "thumb-ups" or other reactions on issues.
 
 **Parameters:**
 * Period of time. Start and finish date of the period during which issues are considered. Default: forever.  
