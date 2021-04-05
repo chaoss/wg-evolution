@@ -1,4 +1,0 @@
-perceval>=0.12.18
-pandas>=0.1.9
-fpdf>=1.7.2
-matplotlib>=2.2.4
