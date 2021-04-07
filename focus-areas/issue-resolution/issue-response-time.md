@@ -29,7 +29,7 @@ Learn about the responsiveness of an open source community.
 * status of issue (e.g., only look at currently open issues)
 
 ### Visualizations
-![Example visualization from GrimoireLab](images/issue_response_duration_grimoirelab.png)
+![Example visualization from GrimoireLab](images/issue-response-time_grimoirelab.png)
 
 ### Tools Providing the Metric 
 * GrimoireLab: [General for any ticketing system](https://chaoss.github.io/grimoirelab-sigils/panels/efficiency-timing-overview/), [GitHub Issues](https://chaoss.github.io/grimoirelab-sigils/panels/github-issues-efficiency/), [GitLab Issues](https://chaoss.github.io/grimoirelab-sigils/panels/gitlab-issues-efficiency/)
