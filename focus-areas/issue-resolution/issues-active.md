@@ -69,7 +69,7 @@ during a certain period (eg, a month).
     * Metric: `Count` Aggregation, `# Issues Active` Custom Label.
     * Buckets: `Date Range` Aggregation, `metadata__updated_on` Field, `now-1M` From (or whatever interval may fit your needs), `now` To, leave Custom Label empty to see the specific dates in the legend.
     * Have a look at the time picker on the top right corner to make sure it is set to include the whole story of the data so we are not excluding any item based on its creation date.
-  - Example screenshot: ![GrimoireLab screenshot of metric issues_active](https://github.com/chaoss/wg-evolution/blob/master/metrics/images/issues_active_GrimoireLab.png).
+  - Example screenshot: ![GrimoireLab screenshot of metric issues_active](images/issues-active_grimoirelab.png).
 
 ### Data Collection Strategies 
 

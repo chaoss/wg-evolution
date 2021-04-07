@@ -37,7 +37,7 @@ Stage of engagement (e.g., opening pull request vs. getting it accepted).
 
 ### Visualizations
 
-![New Contributors Visualization from GrimoireLab](images/new_contributors.png)
+![New Contributors Visualization from GrimoireLab](images/new-contributors_1.png)
 
 ### Tools Providing the Metric
 [Augur](http://augur.osshealth.io/api_docs/#api-Evolution-New_Contributors_Repo_)

@@ -4,8 +4,8 @@ Goal: Learn about the types and frequency of activities involved in developing c
 
 Name | Question
 --- | ---
-[Code Changes](Code_Changes.md) | What changes were made to the source code during a specified period?
-[Code Changes Lines](Code_Changes_Lines.md) | What is the sum of the number of lines touched (lines added plus lines removed) in all changes to the source code during a certain period?
+[Code Changes](code-changes.md) | What changes were made to the source code during a specified period?
+[Code Changes Lines](code-changes-lines.md) | What is the sum of the number of lines touched (lines added plus lines removed) in all changes to the source code during a certain period?
 
 **Disclaimer:**
 The name/question pairs listed are not meant to represent a fully comprehensive list. It is expected that this list will evolve as people have insights and thoughts about the name/question pairs that comprise Evolution.

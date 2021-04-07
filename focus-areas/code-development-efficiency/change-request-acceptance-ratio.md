@@ -25,13 +25,13 @@ CHAOSS tools provide a number of visualizations for this metric. The first visua
 
 
 Figure One:
-![](images/closed_pr_volume.png)
+![Closed PR Volume](images/change-request-acceptance-ratio_closed-pr-volume.png)
 
 Figure Two:
-![](images/review_week.png)
+![Review/Week](images/change-request-acceptance-ratio_review-week.png)
 
 Figure Three:
-![](images/reviews_accepted_week.png)
+![Reviews Accepted/Week](images/change-request-acceptance-ratio_reviews-accepted-week.png)
 
 ### Tools Providing the Metric (optional)
 https://github.com/chaoss/augur

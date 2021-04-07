@@ -4,9 +4,9 @@ Goal: Identify the size of the project community and whether it is growing, shri
 
 Metric | Question
 --- | ---
-[New Contributors](New_Contributors.md) | What is the overall number of new contributors?
-[New Contributors Closing Issues](New_Contributor_Closing_Issues.md) | How many contributors are closing issues for the first time?
-[Inactive Contributors](Inactive_Contributors.md) | How many Contributors have gone inactive over a specific period of time?
+[New Contributors](new-contributors.md) | What is the overall number of new contributors?
+[New Contributors Closing Issues](new-contributor-closing-issues.md) | How many contributors are closing issues for the first time?
+[Inactive Contributors](inactive-contributors.md) | How many Contributors have gone inactive over a specific period of time?
 
 **Disclaimer:**
 The name/question pairs listed are not meant to represent a fully comprehensive list. It is expected that this list will evolve as people have insights and thoughts about the name/question pairs that comprise Growth-Maturity-Decline.
