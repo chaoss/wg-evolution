@@ -21,7 +21,7 @@ it will count as six different changes (three removals,
 and three additions).
 
 For this matter, we consider changes to the source code as
-defined in [Code Changes](https://github.com/chaoss/wg-evolution/blob/master/metrics/Code_Changes.md). Lines of code will
+defined in [Code Changes](https://chaoss.community/metric-code-changes/). Lines of code will
 be any line of a source code file, including comments and blank lines.
 
 
@@ -93,7 +93,7 @@ Each bar would represent a code changes during a certain period (eg, a month).
 **Specific description: Git**
 
 In the cases of git, we define "code change" and "date of a change"
-as we detail in [Code Changes](https://github.com/chaoss/wg-evolution/blob/master/metrics/Code_Changes.md).
+as we detail in [Code Changes](https://chaoss.community/metric-code-changes/).
 The date of a change can be defined (for considering it in a period or not)
 as the author date or the committer date of the corresponding git commit.
 

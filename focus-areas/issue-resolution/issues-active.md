@@ -5,7 +5,7 @@ Question: How many issues were active during a certain period?
 
 ## Description
 
-Issues are defined as in [Issues New](https://github.com/chaoss/wg-evolution/blob/master/metrics/Issues_New.md).
+Issues are defined as in [Issues New](https://chaoss.community/metric-issues-new/).
 Issues showing some activity are those that had some comment,
 or some change in state (including closing the issue),
 during a certain period.

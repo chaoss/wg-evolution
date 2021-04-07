@@ -40,8 +40,8 @@ https://github.com/chaoss/augur-community-reports
 
 ### Data Collection Strategies
 
-Accepted change requests are defined as in the [Reviews Accepted](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews_Accepted.md) metric, and
-Declined change requests are defined as in the [Reviews Declined](https://github.com/chaoss/wg-evolution/blob/master/metrics/Reviews_Accepted.md) metric.
+Accepted change requests are defined as in the [Change Requests Accepted	](https://chaoss.community/metric-change-requests-accepted/) metric, and
+Declined change requests are defined as in the [Change Requests Declined](https://chaoss.community/metric-change-requests-declined/) metric.
 
 
 ## References

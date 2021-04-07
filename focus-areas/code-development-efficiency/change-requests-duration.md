@@ -4,8 +4,8 @@ Question: What is the duration of time between the moment a change request start
 
 ## Description
 
-Change requests are defined as in [Change Requests](https://github.com/chaoss/wg-evolution/blob/master/metrics/Change_Requests.md).
-Accepted change requests are defined in [Change Requests Accepted](https://github.com/chaoss/wg-evolution/blob/master/metrics/Change_Requests_Accepted.md).
+Change requests are defined as in [Change Requests](https://chaoss.community/metric-change-requests/).
+Accepted change requests are defined in [Change Requests Accepted](https://chaoss.community/metric-change-requests-accepted/).
 
 The change request duration is the duration of the period since the
 change request started, to the moment it ended (by being accepted

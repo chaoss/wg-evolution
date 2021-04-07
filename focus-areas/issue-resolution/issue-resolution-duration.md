@@ -4,7 +4,7 @@ Question: How long does it take for an issue to be closed?
 
 ## Description
 This metric is an indication of how long an issue remains open, on average, before it is closed. 
-Issues are defined as in [Issues Closed](https://github.com/chaoss/wg-evolution/blob/master/metrics/Issues_Closed.md).
+Issues are defined as in [Issues Closed](https://chaoss.community/metric-issues-closed/).
 
 For issues that were reopened and closed again, only the last close date is relevant for this metric.
 
@@ -49,7 +49,7 @@ For each closed issue:
 
 ### Data Collection Strategies
 
-For specific descriptions of collecting data about closed issues, please refer to the [corresponding section of Issues Closed](https://github.com/chaoss/wg-evolution/blob/master/metrics/Issues_Closed.md#data-collection-strategies).
+For specific descriptions of collecting data about closed issues, please refer to the [corresponding section of Issues Closed](https://chaoss.community/metric-issues-closed/).
 
 
 ## References

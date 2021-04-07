@@ -37,6 +37,6 @@ For all open issues, get the date the issue was opened and calculate the number 
 
 ### Data Collection Strategies 
 
-For specific descriptions of collecting data about closed issues, please refer to the [corresponding section of Issues New](https://github.com/chaoss/wg-evolution/blob/master/metrics/Issues_New.md#data-collection-strategies).
+For specific descriptions of collecting data about closed issues, please refer to the [corresponding section of Issues New](https://chaoss.community/metric-issues-new/).
 
 ## References

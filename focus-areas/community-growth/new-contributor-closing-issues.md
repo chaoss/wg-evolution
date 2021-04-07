@@ -25,7 +25,7 @@ To know how contributors are moving through the [contributor funnel](https://mik
 * Timeline showing the time on the x-axis, and the aggregated metric value on the y-axis for fixed consecutive periods of time (e.g. on a monthly basis). This visualisation allows to show how the metric is evolving over time for the considered project.
 
 ### Data Collection Strategies
-Based on the [Issues Closed](https://github.com/chaoss/wg-evolution/blob/master/metrics/Issues_Closed.md) and [Contributor](https://github.com/chaoss/wg-common/blob/master/focus-areas/who/contributors.md) definitions, enrich contributors with the date of their first time closing an issue.
+Based on the [Issues Closed](https://chaoss.community/metric-issues-closed/) and [Contributor](https://chaoss.community/metric-contributors/) definitions, enrich contributors with the date of their first time closing an issue.
 
 ## References
 

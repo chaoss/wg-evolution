@@ -4,7 +4,7 @@ Question: What change requestsended up being declined during a certain period?
 
 ## Description
 
-Change requests are defined as in [Change Requests](https://github.com/chaoss/wg-evolution/blob/master/metrics/Change_Requests.md).
+Change requests are defined as in [Change Requests](https://chaoss.community/metric-change-requests/).
 Declined change requests are those that are finally closed without
 being merged into the code base of the project.
 
@@ -65,7 +65,7 @@ that are closed with their changes not being included in the git repository",
 as long as it proposes changes to source code files.
 
 See the discussion in the specific description for GitHub in
-[Change Requests Accepted](https://github.com/chaoss/wg-evolution/blob/master/metrics/Change_Requests_Accepted.md), since it applies here as well.
+[Change Requests Accepted](https://chaoss.community/metric-change-requests-accepted/), since it applies here as well.
 
 Mandatory parameters (for GitHub):
 
