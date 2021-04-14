@@ -21,7 +21,7 @@ Our [meeting notes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPH
 _Evolution_ is a working group focused on the lifecycle of open source projects. We do not valence the stages, but seek to build awareness of those stages among consumers of these metrics. Decline can be ok when a project's utility is waning; or terrible if 20% of the entire internet relies on that project. Context matters, and we are not the arbiters of your context. The "valence" of "good/bad" emerges from use cases and YOUR context.
 
 ### Goal
-Currently, the goals are structured in the following focus areas : [Code Development Activity](focus_areas/code_development_activity.md), [Code Development Efficiency](focus_areas/code_development_efficiency.md) and [Code Development Process Quality](focus_areas/code_development_process_quality.md).
+Currently, the goals are structured in the following focus areas : [Code Development Activity](focus-areas/code-development-activity), [Code Development Efficiency](focus-areas/code-development-efficiency) and [Code Development Process Quality](focus-areas/code-development-process-quality).
 
 ### Process
 For each area of interest, we're following the [goal-question-metric](https://en.wikipedia.org/wiki/GQM) methodology defining questions and metrics that help to answer them.
@@ -32,11 +32,11 @@ The evolution metrics dealt with in this working group are organized in focus ar
 
 Focus Area | Goal
 --- | ---
-[Code Development Activity](./focus_areas/code_development_activity.md) | Learn about the types and frequency of activities involved in developing code.
-[Code Development Efficiency](./focus_areas/code_development_efficiency.md) | Learn how efficiently activities around code development get resolved.
-[Code Development Process Quality](./focus_areas/code_development_process_quality.md) | Learn about the processes to improve/review quality that are used (for example: testing, code review, tagging issues, tagging a release, time to response, CII Badging).
-[Issue Resolution](./focus_areas/issue_resolution.md) | Identify how effective the community is at addressing issues identified by community participants.
-[Community Growth](./focus_areas/community_growth.md) | Identify the size of the project community and whether it is growing, shrinking, or staying the same.
+[Code Development Activity](focus-areas/code-development-activity) | Learn about the types and frequency of activities involved in developing code.
+[Code Development Efficiency](focus-areas/code-development-efficiency) | Learn how efficiently activities around code development get resolved.
+[Code Development Process Quality](focus-areas/code-development-process-quality) | Learn about the processes to improve/review quality that are used (for example: testing, code review, tagging issues, tagging a release, time to response, CII Badging).
+[Issue Resolution](focus-areas/issue-resolution) | Identify how effective the community is at addressing issues identified by community participants.
+[Community Growth](focus-areas/community-growth) | Identify the size of the project community and whether it is growing, shrinking, or staying the same.
 
 Please note that the work in the focus areas is still in progress.
 
