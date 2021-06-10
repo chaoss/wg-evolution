@@ -1,4 +1,4 @@
-### This metric is a release candidate To comment on this metric please see Issue [#410](https://github.com/chaoss/wg-evolution/issues/410). Following a comment period, this metric will be included in the next regular release.
+### This metric is a release candidate. To comment on this metric please see Issue [#410](https://github.com/chaoss/wg-evolution/issues/410). Following a comment period, this metric will be included in the next regular release.
 
 # Contribution Attribution
 
@@ -9,7 +9,7 @@ This metric evaluates who has worked on the project and specific project tasks a
 
 ## Objectives
 1. Who is working on the project?
-2. What is the ratio of volunteer work, [sponsored work](https://chaoss.community/metric-organizational-diversity/), and blended work?
+2. What is the ratio of volunteer work, sponsored work, and blended work?
 3. How many contributions are sponsored?
 4. Who is sponsoring the contributions?
 5. What [types of contributions](https://chaoss.community/metric-types-of-contributions/) are sponsored?
@@ -28,7 +28,7 @@ Most contributions can be implicitly attributed using trace data, and these attr
     * Links to contribution artifacts, like merge requests, issues, and the like, where relevant.
     * Indication of contribution types not managed in Git platforms like GitHub, GitLab, and BitBucket.
     * See also: https://chaoss.community/metric-types-of-contributions/
-* Volunteer versus sponsored - Related to [Labor Investment](https://chaoss.community/metric-labor-investment/)
+* Volunteer versus sponsored - Related to [Organizational Diversity](https://chaoss.community/metric-organizational-diversity/)and[Labor Investment](https://chaoss.community/metric-labor-investment/)
 
 ### Visualizations
 
