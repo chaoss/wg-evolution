@@ -25,12 +25,15 @@ CHAOSS tools provide a number of visualizations for this metric. The first visua
 
 
 Figure One:
+
 ![Closed PR Volume](images/change-request-acceptance-ratio_closed-pr-volume.png)
 
 Figure Two:
+
 ![Review/Week](images/change-request-acceptance-ratio_review-week.png)
 
 Figure Three:
+
 ![Reviews Accepted/Week](images/change-request-acceptance-ratio_reviews-accepted-week.png)
 
 ### Tools Providing the Metric (optional)
@@ -40,7 +43,7 @@ https://github.com/chaoss/augur-community-reports
 
 ### Data Collection Strategies
 
-Accepted change requests are defined as in the [Change Requests Accepted	](https://chaoss.community/metric-change-requests-accepted/) metric, and
+Accepted change requests are defined as in the [Change Requests Accepted](https://chaoss.community/metric-change-requests-accepted/) metric, and
 Declined change requests are defined as in the [Change Requests Declined](https://chaoss.community/metric-change-requests-declined/) metric.
 
 

@@ -1,6 +1,6 @@
 # New Contributors
 
-Question:  How many contributors are making their first contribution to a given project and who are they?
+Question: How many contributors are making their first contribution to a given project and who are they?
 
 ## Description
 An increase or decline in new contributors can be an early indicator of project health. Understanding the behavior and barriers of new community members requires knowing who they are -- helping to welcome new contributors and thank them for their efforts.

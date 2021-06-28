@@ -1,6 +1,6 @@
 # Branch Lifecycle
 
-Question:  How do projects manage the lifecycle of their version control branches?
+Question: How do projects manage the lifecycle of their version control branches?
 
 ## Description
 This metric makes the lifecycle of version control branches visible. A branch lifecycle includes acts of branch creation and deletion, as well as persistence of version control branches. When writing code, a development team may create multiple branches, focused around specific features. Subsequently, those branches may be merged into more persistent branches, such as the main branch of a repository. Some branches persist for the life of the repository, while others are deleted after code is merged into a more persistent branch.  By understanding these patterns, we can learn how branch creation, destruction, and merging reflect the development practices of a particular project.  A repository’s typical branch lifecycle and management approach can be used to help identify a project’s repository management style.
@@ -30,7 +30,6 @@ The stated advice regarding management of the branch lifecycle  for a project ma
 **Parameters:**
 - Period of time. Start and finish date of the period. Default: forever.
 - Period during which change requests are considered.
-
 
 
 ### Filters (optional)

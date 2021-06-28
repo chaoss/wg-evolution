@@ -29,6 +29,7 @@ Learn about the responsiveness of an open source community.
 * status of issue (e.g., only look at currently open issues)
 
 ### Visualizations
+
 ![Example visualization from GrimoireLab](images/issue-response-time_grimoirelab.png)
 
 ### Tools Providing the Metric 
