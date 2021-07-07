@@ -85,7 +85,9 @@ Each bar would represent a code changes during a certain period (eg, a month).
     * Y-axis 1: `Sum` Aggregation, `lines_added` Field, `Lines Added` Custom Label
     * Y-axis 2: `Sum` Aggregation, `painless_inverted_lines_removed_git` Field, `Lines Removed` Custom Label
     * X-axis: `Date Histogram` Aggregation, `grimoire_creation_date` Field, `Auto` Interval, `Time` Custom Label
-  - Example screenshot: ![GrimoireLab screenshot of metric Code_Changes_Lines](images/code-changes-lines_grimoirelab.png)
+  - Example screenshot: 
+  
+    ![GrimoireLab screenshot of metric Code_Changes_Lines](images/code-changes-lines_grimoirelab.png)
 
 
 ### Data Collection Strategies

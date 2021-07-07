@@ -67,7 +67,9 @@ during a certain period (eg, a month).
 * [Grimoirelab](https://chaoss.github.io/grimoirelab) provides this metric out of the box for GitHub Pull Requests, GitLab Merge Requests, and Gerrit Changesets.  
   - View an example on the [CHAOSS instance of Bitergia Analytics](https://chaoss.biterg.io/app/kibana#/dashboard/GitHub-Pull-Requests).  
   - Download and import a ready-to-go dashboard containing examples for this metric visualization based on GitHub Pull Requests data from the [GrimoireLab Sigils panel collection](https://chaoss.github.io/grimoirelab-sigils/panels/github-pullrequests/).
-  - Example screenshot: ![GrimoireLab screenshot of metric Reviews](images/change-requests_grimoirelab.png)
+  - Example screenshot: 
+    
+    ![GrimoireLab screenshot of metric Reviews](images/change-requests_grimoirelab.png)
 
 ### Data Collection Strategies
 
