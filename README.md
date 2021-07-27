@@ -43,7 +43,7 @@ Please note that the work in the focus areas is still in progress.
 ## Contributing
 
 A few steps as good starting points for contributing to the Evolution Working group:
-* Introduce yourself on the [CHAOSS mailing list](https://github.com/chaoss/wg-evolution#mailing-list) explaining your interest.
+* Introduce yourself on the [CHAOSS mailing list](https://lists.linuxfoundation.org/mailman/listinfo/chaoss) explaining your interest.
 * Then, you can have a look at the archives of the mailing lists, at the minutes of past meetings, and at the
     * [issues](https://github.com/chaoss/wg-evolution/issues)
     * [pull requests](https://github.com/chaoss/wg-evolution/pulls)
