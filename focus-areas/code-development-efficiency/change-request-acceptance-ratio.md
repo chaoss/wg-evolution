@@ -10,16 +10,17 @@ The ratio of change requests merged to change requests closed without merging pr
 
 ## Implementation
 **Parameters**
-Time Period Granularity (Weekly, Monthly, Annually). Change in ratio over the period of time.
-Show contributor count
-Origin of change request: branch or fork? Change requests from repository forks are more commonly from outside contributors, while branch originating change requests come from people with repository commit rights.
+* Time Period Granularity (Weekly, Monthly, Annually).
+* Change in ratio over the period of time.
+* Show contributor count
+* Origin of change request: branch or fork? Change requests from repository forks are more commonly from outside contributors, while branch originating change requests come from people with repository commit rights.
 
 **Aggregators**
-Total change requests merged (accepted)
-Total change requests closed without merge
-Total change requests in an open state
+* Total change requests merged (accepted)
+* Total change requests closed without merge
+* Total change requests in an open state
 
-### Visualizations (optional)
+### Visualizations
 
 CHAOSS tools provide a number of visualizations for this metric. The first visualization shows the accepted and declined change requests organized annually, from which ratios can be derived.
 
@@ -36,9 +37,9 @@ Figure Three:
 
 ![Reviews Accepted/Week](images/change-request-acceptance-ratio_reviews-accepted-week.png)
 
-### Tools Providing the Metric (optional)
-https://github.com/chaoss/augur
-https://github.com/chaoss/augur-community-reports
+### Tools Providing the Metric
+* https://github.com/chaoss/augur
+* https://github.com/chaoss/augur-community-reports
 
 
 ### Data Collection Strategies

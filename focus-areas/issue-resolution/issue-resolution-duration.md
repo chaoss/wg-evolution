@@ -27,8 +27,8 @@ For each closed issue:
 ### Filters
 
 * By time. Provides average issue resolution duration time starting from the provided beginning date to the provided end date.
-  - By open time. Provides information for how long issues created from the provided beginning date to the provided end date took to be resolved.
-  - By closed time. Provides information for how long old issues were that were closed from the provided beginning date to the provided end date took to be resolved.
+  - By open time. Provides information for how long issues created from the provided beginning date to the provided end date took to be resolved.(The issue may be resolved in time later than the specified time period)
+  - By closed time. Provides information for how long old issues were that were closed from the provided beginning date to the provided end date took to be resolved.(The issue may be created in time earlier than the specified time period)
 
 * By actors (submitter, commenter, closer). Requires actor merging (merging ids corresponding to the same author).
 
