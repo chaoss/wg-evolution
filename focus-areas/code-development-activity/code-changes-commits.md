@@ -1,4 +1,4 @@
-# Code Changes
+# Code Changes Commits
 
 Question: How many changes were made to the source code during a specified period? 
 
@@ -17,8 +17,8 @@ touches files considered as source code.
 ## Objectives
 
 * Volume of coding activity.
-    Code changes are a proxy for the activity in a project.
-    By counting the code changes in the set of repositories corresponding
+    Code changes commits are a proxy for the activity in a project.
+    By counting the code changes commits in the set of repositories corresponding
     to a project, you can have an idea of the overall coding activity in
     that project.
     Of course, this metric is not the only one that should be
@@ -56,7 +56,7 @@ if the commit is, for example, a fix for a bug or an improvement of a feature.
 * Count per group over time
 
 These could be represented as bar charts, with time running in the X axis.
-Each bar would represent a code changes during a certain period (eg, a month).
+Each bar would represent a code changes commits during a certain period (eg, a month).
 
 
 ### Tools Providing the Metric
@@ -73,7 +73,7 @@ Each bar would represent a code changes during a certain period (eg, a month).
   
     ![GrimoireLab screenshot of metric Code_Changes](images/code-changes_grimoirelab.png)
 
-* [Augur](http://augur.osshealth.io/) provides this metric both as [Code Changes](http://augur.osshealth.io/api_docs/#api-Evolution-code_changes_repo/) and as [Code Changes Lines](http://augur.osshealth.io/api_docs/#api-Evolution-code_changes_lines_repo). Both metrics are available in both the `repo` and the `repo_group` metric forms - more on that in the [Augur documentation](https://oss-augur.readthedocs.io/en/master/getting-started/create-a-metric/overview.html#metric-forms).
+* [Augur](http://augur.osshealth.io/) provides this metric both as [Code Changes Commits](http://augur.osshealth.io/api_docs/#api-Evolution-code_changes_repo/) and as [Code Changes Lines](http://augur.osshealth.io/api_docs/#api-Evolution-code_changes_lines_repo). Both metrics are available in both the `repo` and the `repo_group` metric forms - more on that in the [Augur documentation](https://oss-augur.readthedocs.io/en/master/getting-started/create-a-metric/overview.html#metric-forms).
 
 * [Gitdm](https://repo.or.cz/w/git-dm.git)
 
