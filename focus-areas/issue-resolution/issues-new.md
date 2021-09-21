@@ -1,4 +1,4 @@
-# New Issues
+# Issues New
 
 Question: How many new issues are created during a certain period? 
 
