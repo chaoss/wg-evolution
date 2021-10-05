@@ -71,7 +71,7 @@ Each bar would represent a code changes during a certain period (eg, a month).
     * X-axis: `Date Histogram` Aggregation, `grimoire_creation_date` Field, `Auto` Interval, `Time` Custom Label
   - Example screenshot:
   
-    ![GrimoireLab screenshot of metric Code_Changes](./images/code-changes_grimoirelab.png)
+    ![GrimoireLab screenshot of metric Code_Changes](https://github.com/chaoss/wg-evolution/edit/main/focus-areas/code-development-activity/images/code-changes_grimoirelab.png)
 
 * [Augur](http://augur.osshealth.io/) provides this metric both as [Code Changes](http://augur.osshealth.io/api_docs/#api-Evolution-code_changes_repo/) and as [Code Changes Lines](http://augur.osshealth.io/api_docs/#api-Evolution-code_changes_lines_repo). Both metrics are available in both the `repo` and the `repo_group` metric forms - more on that in the [Augur documentation](https://oss-augur.readthedocs.io/en/master/getting-started/create-a-metric/overview.html#metric-forms).
 
