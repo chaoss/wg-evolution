@@ -71,7 +71,7 @@ during a certain period (eg, a month).
     * Have a look at the time picker on the top right corner to make sure it is set to include the whole story of the data so we are not excluding any item based on its creation date.
   - Example screenshot:
     
-    ![GrimoireLab screenshot of metric issues_active](images/issues-active_grimoirelab.png).
+    ![GrimoireLab screenshot of metric issues_active](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/issue-resolution/images/issues-active_grimoirelab.png).
 
 ### Data Collection Strategies 
 
