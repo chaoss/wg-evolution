@@ -27,15 +27,15 @@ CHAOSS tools provide a number of visualizations for this metric. The first visua
 
 Figure One:
 
-![Closed PR Volume](images/change-request-acceptance-ratio_closed-pr-volume.png)
+![Closed PR Volume](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/code-development-efficiency/images/change-request-acceptance-ratio_closed-pr-volume.png)
 
 Figure Two:
 
-![Review/Week](images/change-request-acceptance-ratio_review-week.png)
+![Review/Week](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/code-development-efficiency/images/change-request-acceptance-ratio_review-week.png)
 
 Figure Three:
 
-![Reviews Accepted/Week](images/change-request-acceptance-ratio_reviews-accepted-week.png)
+![Reviews Accepted/Week](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/code-development-efficiency/images/change-request-acceptance-ratio_reviews-accepted-week.png)
 
 ### Tools Providing the Metric
 * https://github.com/chaoss/augur
