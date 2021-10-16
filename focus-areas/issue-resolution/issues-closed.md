@@ -90,7 +90,7 @@ These could be represented as bar charts, with time running in the X axis.
     * Buckets X-axis: `Date Histogram` Aggregation, `closed_at` Field, `Weekly` Interval (or whatever interval may fit your needs, depending on the whole time range you wish to visualize in the chart), `Time` Custom Label.
   - Example screenshot:
   
-    ![GrimoireLab screenshot of metric issues_closed](images/issues-closed_grimoirelab.png).
+    ![GrimoireLab screenshot of metric issues_closed](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/issue-resolution/images/issues-closed_grimoirelab.png).
 
 
 ### Data Collection Strategies 
