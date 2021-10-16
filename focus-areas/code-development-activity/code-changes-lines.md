@@ -87,7 +87,7 @@ Each bar would represent a code changes during a certain period (eg, a month).
     * X-axis: `Date Histogram` Aggregation, `grimoire_creation_date` Field, `Auto` Interval, `Time` Custom Label
   - Example screenshot: 
   
-    ![GrimoireLab screenshot of metric Code_Changes_Lines](images/code-changes-lines_grimoirelab.png)
+    ![GrimoireLab screenshot of metric Code_Changes_Lines](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/code-development-activity/images/code-changes-lines_grimoirelab.png)
 
 
 ### Data Collection Strategies
