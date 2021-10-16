@@ -69,7 +69,7 @@ during a certain period (eg, a month).
   - Download and import a ready-to-go dashboard containing examples for this metric visualization based on GitHub Pull Requests data from the [GrimoireLab Sigils panel collection](https://chaoss.github.io/grimoirelab-sigils/panels/github-pullrequests/).
   - Example screenshot: 
     
-    ![GrimoireLab screenshot of metric Reviews](images/change-requests_grimoirelab.png)
+    ![GrimoireLab screenshot of metric Reviews](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/code-development-process-quality/images/change-requests_grimoirelab.png)
 
 ### Data Collection Strategies
 
