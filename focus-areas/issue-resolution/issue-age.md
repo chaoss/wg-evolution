@@ -26,11 +26,11 @@ For all open issues, get the date the issue was opened and calculate the number 
 
 1. Summary data for open issues<br />
 
-    ![Summary data for open issues](images/issue-age_open-issue-data.png)
+    ![Summary data for open issues](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/community-growth/images/issue-age_open-issue-data.png)
 
 2. Count of open issues per day<br />
 
-    ![Count of open issues per day](images/issue-age_open-issue-count-timeseries.png)
+    ![Count of open issues per day](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/community-growth/images/issue-age_open-issue-count-timeseries.png)
 
 ### Tools Providing the Metric
 
