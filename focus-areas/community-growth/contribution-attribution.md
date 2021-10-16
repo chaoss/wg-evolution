@@ -1,8 +1,6 @@
-### This metric is a release candidate. To comment on this metric please see Issue [#410](https://github.com/chaoss/wg-evolution/issues/410). Following a comment period, this metric will be included in the next regular release.
-
 # Contribution Attribution
 
-Question: Who has contributed to an open source project and what attribution information about people and organizations is assigned for a contribution?
+Question: Who has contributed to an open source project and what attribution information about people and organizations is assigned for contributions?
 
 ## Description
 This metric evaluates who has worked on the project and specific project tasks and provides the attribution to  project contributors and affiliated organizations.  The aim is to understand, through insights into the paid contribution dynamics of a community, “how the work gets done.”
@@ -32,9 +30,9 @@ Most contributions can be implicitly attributed using trace data, and these attr
 
 ### Visualizations
 
-![Contributions by Volunteer vs Sponsored](images/contributions-by-volunteer-vs-sponsored.png)
+![Contributions by Volunteer vs Sponsored](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/community-growth/images/contributions-by-volunteer-vs-sponsored.png)
 
-![Contributions by Gender](images/contributions-by-gender.png)
+![Contributions by Gender](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/community-growth/images/contributions-by-gender.png)
 
 ### Tools Providing the Metric
 
