@@ -50,11 +50,11 @@ The evolution metrics dealt with in this working group are organized in focus ar
 
 Focus Area | Goal
 --- | ---
-[Code Development Activity](./focus-areas/blob/main/code-development-activity) | Learn about the types and frequency of activities involved in developing code.
-[Code Development Efficiency](./focus-areas/blob/main/code-development-efficiency) | Learn how efficiently activities around code development get resolved.
-[Code Development Process Quality](./tree/blob/focus-areas/code-development-process-quality) | Learn about the processes to improve/review quality that are used (for example: testing, code review, tagging issues, tagging a release, time to response, CII Badging).
-[Issue Resolution](./focus-areas/blob/main/issue-resolution) | Identify how effective the community is at addressing issues identified by community participants.
-[Community Growth](./focus-areas/blob/main/community-growth) | Identify the size of the project community and whether it is growing, shrinking, or staying the same.
+[Code Development Activity](https://github.com/chaoss/wg-evolution/focus-areas/blob/main/code-development-activity) | Learn about the types and frequency of activities involved in developing code.
+[Code Development Efficiency](https://github.com/chaoss/wg-evolution/focus-areas/blob/main/code-development-efficiency) | Learn how efficiently activities around code development get resolved.
+[Code Development Process Quality](https://github.com/chaoss/wg-evolution/tree/blob/focus-areas/code-development-process-quality) | Learn about the processes to improve/review quality that are used (for example: testing, code review, tagging issues, tagging a release, time to response, CII Badging).
+[Issue Resolution](https://github.com/chaoss/wg-evolution/focus-areas/blob/main/issue-resolution) | Identify how effective the community is at addressing issues identified by community participants.
+[Community Growth](https://github.com/chaoss/wg-evolution/focus-areas/blob/main/community-growth) | Identify the size of the project community and whether it is growing, shrinking, or staying the same.
 
 Please note that the work in the focus areas is still in progress.
 
