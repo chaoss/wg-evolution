@@ -21,7 +21,7 @@ Evolution is a working group focused on the lifecycle of open source projects. W
 
 ### Who should join this working group?
 
-All contributors are welcome to [participate](#participate) in the Evolution Working Group. The areas of interest include [Code Development Activity](https://github.com/chaoss/wg-evolution/blob/master/focus-areas/code-development-activity), [Code Development Efficiency](https://github.com/chaoss/wg-evolution/blob/master/focus-areas/code-development-efficiency), [Code Development Process Quality](https://github.com/chaoss/wg-evolution/blob/master/focus-areas/code-development-process-quality), [Issue Resolution](https://github.com/chaoss/wg-evolution/blob/master/focus-areas/issue-resolution), and [Community Growth](https://github.com/chaoss/wg-evolution/blob/master/focus-areas/community-growth).
+All contributors are welcome to [participate](#participate) in the Evolution Working Group. The areas of interest include [Code Development Activity](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-activity), [Code Development Efficiency](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-efficiency), [Code Development Process Quality](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-process-quality), [Issue Resolution](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/issue-resolution), and [Community Growth](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/community-growth).
 
 ### Background
 Formerly known as the Growth Maturity and Decline Working Group.
@@ -36,7 +36,7 @@ Further, you are welcome to participate in our video conferences. The details of
 
 Read the [agenda and meeting minutes](https://docs.google.com/document/d/1fgMT5onwvNQE6b4gPWE7oSPHRvb9q1z6XEbD51EtCFg/edit) to know the discussions of the previous meetings and find out more about the next one. 
 
-As a contributor, you can help us keep our community open and inclusive. We request you to adhere to the guidelines mentioned in the [CHAOSS Community: Code of Conduct](https://github.com/chaoss/governance/blob/master/code-of-conduct.md)
+As a contributor, you can help us keep our community open and inclusive. We request you to adhere to the guidelines mentioned in the [CHAOSS Community: Code of Conduct](https://github.com/chaoss/governance/blob/main/code-of-conduct.md)
 
 ## Contributing
 
@@ -50,11 +50,11 @@ The evolution metrics dealt with in this working group are organized in focus ar
 
 Focus Area | Goal
 --- | ---
-[Code Development Activity](./focus_areas/code_development_activity.md) | Learn about the types and frequency of activities involved in developing code.
-[Code Development Efficiency](./focus_areas/code_development_efficiency.md) | Learn how efficiently activities around code development get resolved.
-[Code Development Process Quality](./focus_areas/code_development_process_quality.md) | Learn about the processes to improve/review quality that are used (for example: testing, code review, tagging issues, tagging a release, time to response, CII Badging).
-[Issue Resolution](./focus_areas/issue_resolution.md) | Identify how effective the community is at addressing issues identified by community participants.
-[Community Growth](./focus_areas/community_growth.md) | Identify the size of the project community and whether it is growing, shrinking, or staying the same.
+[Code Development Activity](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-activity) | Learn about the types and frequency of activities involved in developing code.
+[Code Development Efficiency](https://github.com/chaoss/wg-evolution/blob/https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-activitymain/code-development-efficiency) | Learn how efficiently activities around code development get resolved.
+[Code Development Process Quality](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-process-quality) | Learn about the processes to improve/review quality that are used (for example: testing, code review, tagging issues, tagging a release, time to response, CII Badging).
+[Issue Resolution](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/issue-resolution) | Identify how effective the community is at addressing issues identified by community participants.
+[Community Growth](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/community-growth) | Identify the size of the project community and whether it is growing, shrinking, or staying the same.
 
 Please note that the work in the focus areas is still in progress.
 
