@@ -24,7 +24,7 @@ Evolution is a working group focused on the lifecycle of open source projects. W
 All contributors are welcome to [participate](#participate) in the Evolution Working Group. The areas of interest include [Code Development Activity](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-activity), [Code Development Efficiency](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-efficiency), [Code Development Process Quality](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-process-quality), [Issue Resolution](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/issue-resolution), and [Community Growth](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/community-growth).
 
 ### Background
-Formerly known as the Growth Maturity and Decline Working Group.
+Formerly known as the Growth Maturity and Decline Working Group. This working group focuses on activity metrics. 
   
 ## Participate
 
