@@ -1,4 +1,4 @@
-### This metric is a release candidate. To comment on this metric please see Issue [#[put the respective Issue Number here]](URL to issue). Following a comment period, this metric will be included in the next regular release. 
+### This metric is a release candidate. To comment on this metric please see Issue [#[440]](https://github.com/chaoss/wg-evolution/issues/440). Following a comment period, this metric will be included in the next regular release. 
 
 
 # Conversion Rate 
