@@ -21,7 +21,7 @@ Change Request Reviews can help inform the quality of the software and the effic
 Examining change request review processes and timeliness over time is helpful for characterizing the evolution of an open source software project. 
 
 ## Implementation
-__The usage and dissemination of health metrics may lead to privacy violations. Organizations may be exposed to risks. These risks may flow from compliance with the GDPR in the EU, with state law in the US, or with other law. There may also be contractual risks flowing from terms of service for data providers such as GitHub and GitLab. The usage of metrics must be examined for risk and potential data ethics problems. Please see [CHAOSS Data Ethics document](https://github.com/chaoss/metrics/blob/main/resources) for additional guidance__.
+*The usage and dissemination of health metrics may lead to privacy violations. Organizations may be exposed to risks. These risks may flow from compliance with the GDPR in the EU, with state law in the US, or with other law. There may also be contractual risks flowing from terms of service for data providers such as GitHub and GitLab. The usage of metrics must be examined for risk and potential data ethics problems. Please see [CHAOSS Data Ethics document](https://github.com/chaoss/metrics/blob/main/resources) for additional guidance*.
 
 ### Aggregators
 
