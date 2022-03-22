@@ -5,7 +5,7 @@
 Question: To what extent are [change requests](https://chaoss.community/metric-change-requests/) put through a formal review process using platform features? 
 
 ## Description
-Change requests are intended to be reviewed by other developers who assess the quality of the change, ensuring that the change matches project guidelines. Change request reviews may suggest improvements, or changes prior to merging. Software engineering research recognizes the general utility of code reviews for promoting software quality (Baker et al, 1997; Kemerer et al, 2009).  For many projects, successfully merging a change requires that the reviewers sign off on it. This metric assesses the formal review process and identifies how and to what extent change requests are reviewed before they are accepted or declined.  
+Change requests are intended to be reviewed by other community members who assess the quality of the change, ensuring that the change matches project guidelines. Change request reviews may suggest improvements, or changes prior to merging. Software engineering research recognizes the general utility of code reviews for promoting software quality (Baker et al, 1997; Kemerer et al, 2009).  For many projects, successfully merging a change requires that the reviewers sign off on it. This metric assesses the formal review process and identifies how and to what extent change requests are reviewed before they are accepted or declined.  
 
 Change request reviews include top level comments about the entire change request, file level comments asking for specific changes, and whether the change request was “accepted”, “had changes requested”, or the reasoning behind a change request being closed without getting merged. 
 
@@ -16,7 +16,7 @@ Notes:
 ## Objectives
 To understand the nature of change request review practice within a repository, and across a collection of repositories.
 
-Change Request Reviews can help inform the quality of code and the efficiency of the code development. 
+Change Request Reviews can help inform the quality of the software and the efficiency of development.
 
 Examining change request review processes and timeliness over time is helpful for characterizing the evolution of an open source software project. 
 
