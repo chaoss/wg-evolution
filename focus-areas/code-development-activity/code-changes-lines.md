@@ -21,7 +21,7 @@ it will count as six different changes (three removals,
 and three additions).
 
 For this matter, we consider changes to the source code as
-defined in [Code Changes](https://chaoss.community/metric-code-changes/). Lines of code will
+defined in [Code Changes Commits](https://chaoss.community/metric-code-changes-commits/). Lines of code will
 be any line of a source code file, including comments and blank lines.
 
 
@@ -36,6 +36,7 @@ be any line of a source code file, including comments and blank lines.
 
 
 ## Implementation
+__The usage and dissemination of health metrics may lead to privacy violations. Organizations may be exposed to risks. These risks may flow from compliance with the GDPR in the EU, with state law in the US, or with other law. There may also be contractual risks flowing from terms of service for data providers such as GitHub and GitLab. The usage of metrics must be examined for risk and potential data ethics problems. Please see [CHAOSS Data Ethics document](https://github.com/chaoss/community/blob/main/data-use-statement.md) for additional guidance.__
 
 **Aggregators:**
 * Count. Total number of lines changes (touched) during the period.
@@ -95,7 +96,7 @@ Each bar would represent a code changes during a certain period (eg, a month).
 **Specific description: Git**
 
 In the cases of git, we define "code change" and "date of a change"
-as we detail in [Code Changes](https://chaoss.community/metric-code-changes/).
+as we detail in [Code Changes Commits](https://chaoss.community/metric-code-changes-commits/).
 The date of a change can be defined (for considering it in a period or not)
 as the author date or the committer date of the corresponding git commit.
 
