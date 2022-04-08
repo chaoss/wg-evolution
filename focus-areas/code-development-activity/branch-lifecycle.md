@@ -15,6 +15,8 @@ This metric’s objective is to increase the visibility of a repository’s volu
 - How can we distinguish between branch “death” (i.e., never intended to be used again; deletion) or branch “dormancy” (i.e., inactive for long periods of time, but may be used again) in cases where branches are infrequently deleted in a repository?
 
 ## Implementation
+__The usage and dissemination of health metrics may lead to privacy violations. Organizations may be exposed to risks. These risks may flow from compliance with the GDPR in the EU, with state law in the US, or with other law. There may also be contractual risks flowing from terms of service for data providers such as GitHub and GitLab. The usage of metrics must be examined for risk and potential data ethics problems. Please see [CHAOSS Data Ethics document](https://github.com/chaoss/community/blob/main/data-use-statement.md) for additional guidance.__
+
 The stated advice regarding management of the branch lifecycle  for a project may be visible in a CONTRIBUTING.md document, and these documents can be compared across repositories using linguistic analysis, and contrasted with data derived from actual project practices to draw insights within, and across repositories. In most cases, however, the data we focus on in this metric is quantitative in nature.
 
 **Aggregators:**
