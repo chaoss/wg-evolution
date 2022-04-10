@@ -10,7 +10,7 @@ Question: What are the rates at which new contributors become more sustained con
 
 The conversion rate metric is primarily aimed at identifying how new community members become more sustained contributors over time. However, the conversion rate metric can also help understand the changing roles of contributors, how a community is growing or declining, and paths to maintainership within an open source community.  
 
-The conversion rate metric can have an impact on diversity, equity, and inclusion by indicating how new members are taking on increasingly signifcant roles in a porject. Diversity, equity, and inclusion can be better understood through the conversion rate metric in knowing how community initiatives and outreach may be  helping or hurting members in becoming more involved. 
+The conversion rate metric can have an impact on diversity, equity, and inclusion by indicating how new members are taking on increasingly signifcant roles in a project. Diversity, equity, and inclusion can be better understood through the conversion rate metric in knowing how community initiatives and outreach may be  helping or hurting members in becoming more involved. 
  
 
 ## Objectives
