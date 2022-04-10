@@ -1,6 +1,3 @@
-### This metric is a release candidate. To comment on this metric please see Issue [#[440]](https://github.com/chaoss/wg-evolution/issues/440). Following a comment period, this metric will be included in the next regular release. 
-
-
 # Conversion Rate 
 
 Question: What are the rates at which new contributors become more sustained contributors? 
@@ -23,6 +20,8 @@ The conversion rate metric can have an impact on diversity, equity, and inclusio
 - Identify casual, regular, and core contributors  
 
 ## Implementation 
+*The usage and dissemination of health metrics may lead to privacy violations. Organizations may be exposed to risks. These risks may flow from compliance with the GDPR in the EU, with state law in the US, or with other law. There may also be contractual risks flowing from terms of service for data providers such as GitHub and GitLab. The usage of metrics must be examined for risk and potential data ethics problems. Please see [CHAOSS Data Ethics document](https://github.com/chaoss/community/blob/main/data-use-statement.md) for additional guidance.*
+
 
 ### Filters
 
