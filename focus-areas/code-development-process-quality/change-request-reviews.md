@@ -12,11 +12,10 @@ Notes:
 * Change request reviews are implemented in practice in a number of different ways. For example, some projects use change request comments as a form of review, while other projects use more formalized change request review features available on major open source software development platforms. The specific review practices of a project are sometimes documented. 
 
 ## Objectives
-To understand the nature of change request review practice within a repository, and across a collection of repositories.
-
-Change Request Reviews can help inform the quality of the software and the efficiency of development.
-
-Examining change request review processes and timeliness over time is helpful for characterizing the evolution of an open source software project. 
+* To understand the nature of change request review practice within a repository, and across a collection of repositories.
+* Change Request Reviews can help inform the quality of the software and the efficiency of development.
+* Examining change request review processes and timeliness over time is helpful for characterizing the evolution of an open source software project.
+* Exploration of Change Requests Reviews along with demographics of participants may highlight issues of DEI in a projects formal review process.
 
 ## Implementation
 *The usage and dissemination of health metrics may lead to privacy violations. Organizations may be exposed to risks. These risks may flow from compliance with the GDPR in the EU, with state law in the US, or with other law. There may also be contractual risks flowing from terms of service for data providers such as GitHub and GitLab. The usage of metrics must be examined for risk and potential data ethics problems. Please see [CHAOSS Data Ethics document](https://github.com/chaoss/community/blob/main/data-use-statement.md) for additional guidance.*
