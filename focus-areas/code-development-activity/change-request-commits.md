@@ -1,10 +1,9 @@
-### This metric is a release candidate To comment on this metric please see issue # [435](https://github.com/chaoss/wg-evolution/issues/435). Following a comment period, this metric will be included in the next regular release.
-
 # Change Request Commits
 
 Question: How many [code change commits](https://chaoss.community/metric-code-change-commits/)  are included in a  [change request](https://chaoss.community/metric-change-requests/)? 
 
-Synonyms: Pull Request Commits, Merge Request Commits
+Synonyms: Pull Request Commits, Merge Request Commits  
+
 ## Description
 This metric enumerates each code change commit associated by a git platform with a change request, and lists the [contributors](https://chaoss.community/metric-contributors/) who made each commit, and any references to parent commits embedded within it. 
 
@@ -24,7 +23,7 @@ Caution for 2021: Analysis of change request commits against the main branch sho
 
 
 ## Implementation
-The usage and dissemination of health metrics may lead to privacy violations. Organizations may be exposed to risks. These risks may flow from compliance with the GDPR in the EU, with state law in the US, or with other laws. There may also be contractual risks flowing from terms of service for data providers such as GitHub and GitLab. The usage of metrics must be examined for risk and potential data ethics problems. Please see [CHAOSS Data Ethics document](https://github.com/chaoss/metrics/blob/main/resources) for additional guidance.
+*The usage and dissemination of health metrics may lead to privacy violations. Organizations may be exposed to risks. These risks may flow from compliance with the GDPR in the EU, with state law in the US, or with other laws. There may also be contractual risks flowing from terms of service for data providers such as GitHub and GitLab. The usage of metrics must be examined for risk and potential data ethics problems. Please see [CHAOSS Data Ethics document](https://github.com/chaoss/metrics/blob/main/resources) for additional guidance.*  
 
 ### Filters 
 * Lines of code added per commit
