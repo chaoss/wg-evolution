@@ -1,4 +1,4 @@
-# Issue Resolution Duration
+# Time to Issue Resolution
 
 Question: How long does it take for an issue to be closed?
 
