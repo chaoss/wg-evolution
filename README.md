@@ -70,7 +70,6 @@ The translations of these metrics are available at [chaoss/translations](https:/
 ### Chairs
 
 - [Sean Goggins](https://github.com/sgoggins)
-- [kevin Lumbard](https://github.com/klumb)
 
  Please feel free to contact our chairs in case you require any sort of assistance.
 
