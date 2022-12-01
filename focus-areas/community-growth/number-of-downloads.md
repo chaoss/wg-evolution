@@ -1,6 +1,6 @@
 # Number of Downloads
 
-### This metric is a release candidate. To comment on this metric please see Issue [TBD](TBD). Following a comment period, this metric will be included in the next regular release.
+### This metric is a release candidate. To comment on this metric please see [Issue #463](https://github.com/chaoss/wg-evolution/issues/463). Following a comment period, this metric will be included in the next regular release.
 
 Question: How many downloads occurred since the software artifact was released? 
 
