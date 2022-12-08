@@ -33,11 +33,11 @@ It is important to note that some software can be downloaded multiple times on t
 
 ### Visualizations 
 
-![example charts showing traffic activity from GitHub](images/traffic-github.png)
+![example charts showing traffic activity from GitHub](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/community-growth/images/traffic-github.png)
 
 Source: https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/viewing-traffic-to-a-repository
 
-![example chart showing number of downloads from sourceforge](images/number-of-downloads-sourceforge.png)
+![example chart showing number of downloads from sourceforge](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/community-growth/images/number-of-downloads-sourceforge.png)
 
 Source: https://sourceforge.com
 
