@@ -75,7 +75,7 @@ Requires actor grouping, and likely, actor merging.
 * Count per time period over time
 * Ratio per time period over time
 
-These could be grouped by applying the filters defined aboce.
+These could be grouped by applying the filters defined above.
 These could be represented as bar charts, with time running in the X axis.
 
 
