@@ -2,6 +2,7 @@
 
 Question: How many changes were made to the source code during a specified period? 
 
+Keywords: change request, code changes, pull requests, merged, merging, source code
 
 ## Description
 
