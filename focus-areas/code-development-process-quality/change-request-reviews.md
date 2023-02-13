@@ -2,6 +2,8 @@
 
 Question: To what extent are [change requests](https://chaoss.community/metric-change-requests/) put through a formal review process using platform features? 
 
+Keywords: change request, merge request, pull request, open, closed, formal review, code review, process
+
 ## Description
 Change requests are intended to be reviewed by other community members who assess the quality of the change, ensuring that the change matches project guidelines. Change request reviews may suggest improvements, or changes prior to merging. Software engineering research recognizes the general utility of code reviews for promoting software quality (Baker et al, 1997; Kemerer et al, 2009).  For many projects, successfully merging a change requires that the reviewers sign off on it. This metric assesses the formal review process and identifies how and to what extent change requests are reviewed before they are accepted or declined.  
 
