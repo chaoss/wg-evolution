@@ -2,6 +2,10 @@
 
 Question: How many [code change commits](https://chaoss.community/metric-code-change-commits/)  are included in a  [change request](https://chaoss.community/metric-change-requests/)? 
 
+Context tags: Contribution, Software, Lifecycle
+
+Keywords: change request, pull requests, code changes, commits, merged, merging, source code
+
 Synonyms: Pull Request Commits, Merge Request Commits  
 
 ## Description
