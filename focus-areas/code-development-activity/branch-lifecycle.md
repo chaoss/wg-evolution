@@ -15,11 +15,8 @@ This metric’s objective is to increase the visibility of a repository’s volu
 - How can we distinguish between branch “death” (i.e., never intended to be used again; deletion) or branch “dormancy” (i.e., inactive for long periods of time, but may be used again) in cases where branches are infrequently deleted in a repository?
 
 ## Implementation
-*The usage and dissemination of health metrics may lead to privacy violations. Organizations may be exposed to risks. These risks may flow from compliance with the GDPR in the EU, with state law in the US, or with other law. There may also be contractual risks flowing from terms of service for data providers such as GitHub and GitLab. The usage of metrics must be examined for risk and potential data ethics problems. Please see [CHAOSS Data Ethics document](https://github.com/chaoss/community/blob/main/data-use-statement.md) for additional guidance.*
 
-The stated advice regarding management of the branch lifecycle  for a project may be visible in a CONTRIBUTING.md document, and these documents can be compared across repositories using linguistic analysis, and contrasted with data derived from actual project practices to draw insights within, and across repositories. In most cases, however, the data we focus on in this metric is quantitative in nature.
-
-**Aggregators:**
+The stated advice regarding management of the branch lifecycle  for a project may be visible in a CONTRIBUTING.md document, and these documents can be compared across repositories using linguistic analysis, and contrasted with data derived from actual project practices to draw insights within, and across repositories. In most cases, however, the data we focus on in this metric is quantitative in nature. Potential aggregators include: 
 - Count of branches created.
 - Count of branches deleted.
 - Count of branches merged.
@@ -28,13 +25,11 @@ The stated advice regarding management of the branch lifecycle  for a project ma
 - Average age of open branches.
 - Ratio at which branches are created vs. deleted.
 
-
-**Parameters:**
+Potential parameters include: 
 - Period of time. Start and finish date of the period. Default: forever.
 - Period during which change requests are considered.
 
-
-### Filters (optional)
+### Filters
 - Collections of repositories
 - Default branch name versus descriptive name with regard to branch persistence
 
@@ -44,14 +39,7 @@ The stated advice regarding management of the branch lifecycle  for a project ma
 
 Git branching data exists at several different levels in a version control ecosystem, usually both locally on a developer’s machine as well on a hosted platform like GitHub or BitBucket. This branch data on the hosted platform may also differ from each developer’s machine, and additionally, different developers may have different branch data on their machine even for the same repository.
 
-In the specific case of Git, a significant amount of additional complexity is introduced due to Git’s design as a distributed version control system, which means that Git allows multiple remotes for a single repository (for example, a user’s fork at github.com/user/project and the upstream version at github.com/chaoss/project). More often than not, many individual contributors may work in the same branch locally, and push changes to the remote repository. The local copies, therefore, will sometimes be different than the remote, hosted internally or on platforms like GitHub, GitLab, and BitBucket, since they’re likely either being managed by different people (likely with different branching styles) or they are both being used by one person to “silo” the work they are doing.
-
-Data about Git branches can be derived from a Git log directly, or through a Git platform’s API.
-
-Is picking a “canonical” version of the repo for branching data is useful? This gives a meaningful base for comparing between instances of the repo with different data. Could also prove to
-
-`git branch -a` will list all existing branches.
-
+In the specific case of Git, a significant amount of additional complexity is introduced due to Git’s design as a distributed version control system, which means that Git allows multiple remotes for a single repository (for example, a user’s fork at github.com/user/project and the upstream version at github.com/chaoss/project). More often than not, many individual contributors may work in the same branch locally, and push changes to the remote repository. The local copies, therefore, will sometimes be different than the remote, hosted internally or on platforms like GitHub, GitLab, and BitBucket, since they’re likely either being managed by different people (likely with different branching styles) or they are both being used by one person to “silo” the work they are doing. Data about Git branches can be derived from a Git log directly, or through a Git platform’s API
 
 ## References
 Adopting a Git Branching Strategy: https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops
