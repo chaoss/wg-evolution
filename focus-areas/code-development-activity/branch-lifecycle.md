@@ -42,12 +42,7 @@ Git branching data exists at several different levels in a version control ecosy
 In the specific case of Git, a significant amount of additional complexity is introduced due to Git’s design as a distributed version control system, which means that Git allows multiple remotes for a single repository (for example, a user’s fork at github.com/user/project and the upstream version at github.com/chaoss/project). More often than not, many individual contributors may work in the same branch locally, and push changes to the remote repository. The local copies, therefore, will sometimes be different than the remote, hosted internally or on platforms like GitHub, GitLab, and BitBucket, since they’re likely either being managed by different people (likely with different branching styles) or they are both being used by one person to “silo” the work they are doing. Data about Git branches can be derived from a Git log directly, or through a Git platform’s API
 
 ## References
-Adopting a Git Branching Strategy: https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops
-
-Choose the Right Git Branching Strategy: https://www.creativebloq.com/web-design/choose-right-git-branching-strategy-121518344      
-
-The Effect of Branching Strategies on Software Quality  by Emad Shihab, Christian Bird, and Thomas Zimmermann
-https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/shihab-esem-2012.pdf
-
-OpenStack:
-https://docs.openstack.org/project-team-guide/other-branches.html
+- [Adopting a Git Branching Strategy](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops)
+- [Choose the Right Git Branching Strategy[(https://www.creativebloq.com/web-design/choose-right-git-branching-strategy-121518344)
+- [The Effect of Branching Strategies on Software Quality[(https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/shihab-esem-2012.pdf)
+- [OpenStack Branching[(https://docs.openstack.org/project-team-guide/other-branches.html)
