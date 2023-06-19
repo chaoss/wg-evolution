@@ -24,27 +24,13 @@ the action of closing an issue, is considered as a sign of activity.
     Of course, this metric is not the only one that should be
     used to track volume of coding activity.
 
-
-## Implementation
-
-**Aggregators:**
-* Count. Total number of active issues during the period.
-* Ratio. Ratio of active issues over total number of issues during that period.
-
-**Parameters:**
-* Period of time. Start and finish date of the period during which issues are considered. Default: forever.
-
-* Criteria for source code. Algorithm. Default: all issues are related to
-  source code.  
-    If we focus on source code, we need a criterion for deciding
-    whether an issue is related to the source code or not.
-
 ### Filters 
 
 * By actor (submitter, commenter, closer). Requires merging identities corresponding to the same author.
-* By groups of actors (employer, gender... for each of the actors).
-Requires actor grouping, and likely, actor merging.
-
+* By groups of actors (employer, gender... for each of the actors). Requires actor grouping, and likely, actor merging.
+* By ratio of active issues over total number of issues during that period.
+* By start and finish date of the period during which issues are considered.
+* By total number of active issues during the period.
 
 ### Visualizations 
 
@@ -99,4 +85,3 @@ In the case of Bugzilla, active issues are defined as "bug reports
 which get a comment, a change in state, a change in assigned
 person, or are closed".
 
-## References
