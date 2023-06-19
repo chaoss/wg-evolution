@@ -18,38 +18,23 @@ or in some contexts "changesets" in the case of Gerrit.
 
 
 ## Objectives
-* Volume of changes proposed to a project.
-    Change requests are a proxy for the activity in a project.
+Change requests are a proxy for the activity in a project.
     By counting change requests in the set of repositories corresponding
     to a project, you can have an idea of the overall activity in
     changes to that project.
     Of course, this metric is not the only one that should be
     used to track volume of coding activity.
 
-
 ## Implementation
 
-**Aggregators:**
-* Count. Total number of change requests during the period.
-
-**Parameters:**
-
-* Period of time. Start and finish date of the period. Default: forever.  
-    Period during which change requests are considered.
-
-* Criteria for source code. Algorithm. Default: all files are source code.  
-    If we are focused on source code, we need a criteria for deciding
-    whether a file is a part of the source code or not.
-
-
 ### Filters
-
+* By period of time. Start and finish date of the period. 
+* By source code type to apply change requests
 * By actors (submitter, reviewer, merger). Requires actor merging
 (merging ids corresponding to the same author).
 * By groups of actors (employer, gender... for each of the actors).
 Requires actor grouping, and likely, actor merging.
 * Status (open, closed)
-
 
 ### Visualizations
 
@@ -59,8 +44,6 @@ Requires actor grouping, and likely, actor merging.
 These could be represented as bar charts, with time running in the X axis.
 Each bar would represent change requests to change the code
 during a certain period (eg, a month).
-
-
 
 ### Tools Providing the Metric
 
@@ -98,5 +81,3 @@ as long as it proposes changes to source code files.
 The date of the change request can be defined (for considering it in a period or not)
 as the date in which the change request was started by submitting a
 patchset for review.
-
-## References
