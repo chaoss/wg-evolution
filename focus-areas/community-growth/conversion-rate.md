@@ -12,7 +12,8 @@ The conversion rate metric can have an impact on diversity, equity, and inclusio
 
 ## Objectives
 
-- Observe if new members are becoming more involved with an open source project  
+- Observe if new members are becoming more involved with an open source project
+- Observe if new members are becoming more involved with an open source project after an event  
 - Observe if new members are taking on leadership roles within an open source project  
 - Observe if outreach efforts are generating new contributors to an open source project 
 - Observe if outreach efforts are impacting roles of existing community members 
@@ -35,7 +36,11 @@ The conversion rate metric can have an impact on diversity, equity, and inclusio
 - Reactions (emoji)
 - Chat platform messages
 - Maillist messages
-- Meetup attendance 
+- Meetup attendance
+- Length of time of attendee’s membership with the project
+- Length of time after the first contribution from an event
+- Length of time after the last contribution from an event
+-  
 
 ### Visualizations 
 
