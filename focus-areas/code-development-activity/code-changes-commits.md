@@ -1,25 +1,24 @@
 # Code Changes Commits
 
-Question: How many changes were made to the source code during a specified period? 
+**Question:** How many changes were made to the source code during a specified period? 
 
-Keywords: change request, code changes, pull requests, merged, merging, source code
+## Overview
+Code Change Commits metric measure changes to the source code over a specific period, where a "change" represents an atomic modification made by developers, typically in the form of a commit. Each data point corresponds to a commit that alters files considered part of the source code. The potential aggregators include the Total number of changes during the period and the potential parameters includes the period of time. (Start and finish date of the period. Default: forever. Period during which changes are considered) and the criteria for source code.(Algorithm. Default: all files are source code. If focused on source code, criteria for deciding whether a file is a part of the source code or not.)
+The Code Change Commits metric helps in assessing the health and sustainability of a project by providing insights into developer activity. A higher volume of code changes indicates active development, maintenance, and responsiveness to bugs or features. However, the metric alone doesn’t capture code quality or the significance of each change. Monitoring contributions across teams can help highlight engagement disparities, ensuring all community members are equally involved in the development process of each project.
 
-## Description
+## Want to Know More?
 
-These are changes to the source code during a certain period. For "change" we consider what developers consider an atomic change to their code. In other words, a change is some change to the source code which usually is accepted and merged as a whole, and if needed, reverted as a whole too. For example, in the case of git, each "change" corresponds to a "commit", or, to be more precise, "code change" corresponds to the part of a commit which touches files considered as source code.
+<span markdown="1"><details>
+<summary>Click to read more about this metric.</summary>
 
-## Objectives
-* Volume of coding activity.
-Code changes commits are a proxy for the activity in a project. By counting the code changes commits in the set of repositories corresponding to a project, you can have an idea of the overall coding activity in that project. Of course, this metric is not the only one that should be used to track volume of coding activity.
+### Data Collection Strategies
 
-## Implementation
+**Specific description: Git**
 
-Potential aggregators include: 
-* Count. Total number of changes during the period.
-
-Potential parameters include: 
-* Period of time. Start and finish date of the period. Default: forever. Period during which changes are considered.
-* Criteria for source code. Algorithm. Default: all files are source code. If focused on source code, criteria for deciding whether a file is a part of the source code or not.
+Mandatory parameters (for Git):
+* Date type. Either author date or committer date. Default: author date. For each git commit, two dates are kept: when the commit was authored, and when it was committed to the repository. For deciding on the period, one of them has to be selected.
+* Include merge commits. Boolean. Default: True. Merge commits are those which merge a branch, and in some cases are not considered as reflecting a coding activity.
+* Include empty commits. Boolean. Default: True. Empty commits are those which do not touch files, and in some cases are not considered as reflecting a coding activity.
 
 ### Filters
 
@@ -29,31 +28,33 @@ Potential parameters include:
 * Count per month over time
 * Count per group over time
 
-### Tools Providing the Metric
+### Visualizations
 
-* [GrimoireLab](https://chaoss.github.io/grimoirelab) provides this metric out of the box.
   - View an example on the [CHAOSS instance of Bitergia Analytics](https://chaoss.biterg.io/app/kibana#/dashboard/Git).  
   - Download and import a ready-to-go dashboard containing examples for this metric visualization from the [GrimoireLab Sigils panel collection](https://chaoss.github.io/grimoirelab-sigils/panels/git/).
   - Example screenshot:
   
     ![GrimoireLab screenshot of metric Code_Changes](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-activity/images/code-changes_grimoirelab.png)
 
-* [Augur](http://augur.osshealth.io/) provides this metric both as [Code Changes Commits](http://augur.osshealth.io/api_docs/#api-Evolution-code_changes_repo/) and as [Code Changes Lines](http://augur.osshealth.io/api_docs/#api-Evolution-code_changes_lines_repo). Both metrics are available in both the `repo` and the `repo_group` metric forms - more on that in the [Augur documentation](https://oss-augur.readthedocs.io/en/master/getting-started/create-a-metric/overview.html#metric-forms).
-
-* [Gitdm](https://repo.or.cz/w/git-dm.git)
-
-### Data Collection Strategies
-
-**Specific description: Git**
-
-Mandatory parameters (for Git):
-
-* Date type. Either author date or committer date. Default: author date. For each git commit, two dates are kept: when the commit was authored, and when it was committed to the repository. For deciding on the period, one of them has to be selected.
-
-* Include merge commits. Boolean. Default: True. Merge commits are those which merge a branch, and in some cases are not considered as reflecting a coding activity.
-
-* Include empty commits. Boolean. Default: True. Empty commits are those which do not touch files, and in some cases are not considered as reflecting a coding activity.
+</details></span>
 
 ## References
 
 * https://www.odoo.com/documentation/13.0/reference/guidelines.html#tag-and-module-name
+
+## Contributors
+* Elizabeth Barron
+* Georg Link
+* Matt Germonprez
+* Peculiar C Umeh
+
+## Additional Information
+To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-activity/code-changes-commits.md)
+
+To reference this metric in software or publications please use this stable URL: [https://chaoss.community/?p=4707](https://chaoss.community/?p=4707)
+
+<!-- # For groupings in the knowledge base
+Context tags: Contribution, Software, Lifecycle
+Keyword tags: change request, code changes, pull requests, merged, merging, source code
+→
+
