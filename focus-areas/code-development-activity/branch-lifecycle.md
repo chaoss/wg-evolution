@@ -1,48 +1,56 @@
 # Branch Lifecycle
 
-Question: How do projects manage the lifecycle of their version control branches?
+**Question:** How do projects manage the lifecycle of their version control branches?
 
-## Description
-This metric makes the lifecycle of version control branches visible. A branch lifecycle includes acts of branch creation and deletion, as well as persistence of version control branches. When writing code, a development team may create multiple branches, focused around specific features. Subsequently, those branches may be merged into more persistent branches, such as the main branch of a repository. Some branches persist for the life of the repository, while others are deleted after code is merged into a more persistent branch.  By understanding these patterns, we can learn how branch creation, destruction, and merging reflect the development practices of a particular project.  A repository’s typical branch lifecycle and management approach can be used to help identify a project’s repository management style.
+## Overview
+The Branch Lifecycle metric tracks the creation, deletion, and persistence of branches within a version control system. This helps in understanding how a project manages code contributions, feature development, and repository organization. A branch's lifecycle begins with its creation, followed by its possible merging, persistence, or deletion. Some branches are short-lived, focusing on specific features, while others persist for the life of the repository. This metric can reveal patterns in how development teams organize their work and manage repository hygiene. By tracking branch lifecycles, maintainers and contributors gain insights into the health and efficiency of the repository.
 
-## Objectives
-This metric’s objective is to increase the visibility of a repository’s volume and frequency of branch creation and deletion, as well as persistence of version control branches, in the context of other project characteristics. In turn, this helps potential contributors understand how to initiate and sustain participation in a project. Questions that can be addressed through this metric include:
-- How many branches have been merged but not deleted?
-- How long has a branch been merged and not deleted?
-- How many branches have existed longer than a certain number of days, months, or years?
-- How often do projects or repositories create branches?
-- In the aggregate, how long do branches usually live?
-- How can we distinguish between branch “death” (i.e., never intended to be used again; deletion) or branch “dormancy” (i.e., inactive for long periods of time, but may be used again) in cases where branches are infrequently deleted in a repository?
+Understanding branch lifecycle patterns can also help potential contributors gauge how to engage with a project, offering insights into the repository’s management style and branching practices.
 
-## Implementation
+## Want to Know More?
 
-The stated advice regarding management of the branch lifecycle  for a project may be visible in a CONTRIBUTING.md document, and these documents can be compared across repositories using linguistic analysis, and contrasted with data derived from actual project practices to draw insights within, and across repositories. In most cases, however, the data we focus on in this metric is quantitative in nature. Potential aggregators include: 
-- Count of branches created.
-- Count of branches deleted.
-- Count of branches merged.
-- Count of branches abandoned (had unique commits, but never got merged before it was deleted)
-- Total count of branches.
-- Average age of open branches.
-- Ratio at which branches are created vs. deleted.
-
-Potential parameters include: 
-- Period of time. Start and finish date of the period. Default: forever.
-- Period during which change requests are considered.
-
-### Filters
-- Collections of repositories
-- Default branch name versus descriptive name with regard to branch persistence
+<span markdown="1"><details>
+<summary>Click to read more about this metric.</summary>
 
 ### Data Collection Strategies
 
 *Specific description: Git*
 
-Git branching data exists at several different levels in a version control ecosystem, usually both locally on a developer’s machine as well on a hosted platform like GitHub or BitBucket. This branch data on the hosted platform may also differ from each developer’s machine, and additionally, different developers may have different branch data on their machine even for the same repository.
+- **Branching Data from Version Control Systems:**  
+  In the specific case of Git, a significant amount of additional complexity is introduced due to Git’s design as a distributed version control system, which means that Git allows multiple remotes for a single repository (for example, a user’s fork at github.com/user/project and the upstream version at github.com/chaoss/project). More often than not, many individual contributors may work in the same branch locally, and push changes to the remote repository. The local copies, therefore, will sometimes be different than the remote, hosted internally or on platforms like GitHub, GitLab, and BitBucket, since they’re likely either being managed by different people (likely with different branching styles) or they are both being used by one person to “silo” the work they are doing. Data about Git branches can be derived from a Git log directly, or through a Git platform’s API.
+  
+- **Local and Remote Data:**  
+  This branch data on the hosted platform may also differ from each developer’s machine, and additionally, different developers may have different branch data on their machine even for the same repository, so it's important to account for both.
+  
+- **Document Analysis:**  
+  Guidelines in files such as `CONTRIBUTING.md` might offer insights into the intended branch management practices. 
 
-In the specific case of Git, a significant amount of additional complexity is introduced due to Git’s design as a distributed version control system, which means that Git allows multiple remotes for a single repository (for example, a user’s fork at github.com/user/project and the upstream version at github.com/chaoss/project). More often than not, many individual contributors may work in the same branch locally, and push changes to the remote repository. The local copies, therefore, will sometimes be different than the remote, hosted internally or on platforms like GitHub, GitLab, and BitBucket, since they’re likely either being managed by different people (likely with different branching styles) or they are both being used by one person to “silo” the work they are doing. Data about Git branches can be derived from a Git log directly, or through a Git platform’s API
+### Filters
+- **Collections of Repositories:** Analyze branch lifecycles across multiple repositories within a project.
+- **Branch Naming Conventions:** Compare default branch names (e.g., `main`) with descriptive branch names, especially in terms of branch persistence.
+  
+### Visualizations
+- None Specified
+
+</details></span>
 
 ## References
-- [Adopting a Git Branching Strategy](https://docs.microsoft.com/en-us/azure/devops/repos/git/git-branching-guidance?view=azure-devops)
-- [Choose the Right Git Branching Strategy[(https://www.creativebloq.com/web-design/choose-right-git-branching-strategy-121518344)
-- [The Effect of Branching Strategies on Software Quality[(https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/shihab-esem-2012.pdf)
-- [OpenStack Branching[(https://docs.openstack.org/project-team-guide/other-branches.html)
+- [Adopting a Git Branching Strategy](https://www.creativebloq.com/web-design/choose-right-git-branching-strategy-121518344)  
+- [Choose the Right Git Branching Strategy](https://www.creativebloq.com/web-design/choose-right-git-branching-strategy-121518344)
+- [The Effect of Branching Strategies on Software Quality](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/shihab-esem-2012.pdf)  
+- [OpenStack Branching](https://docs.openstack.org/project-team-guide/other-branches.html)
+
+## Contributors
+- None Specified
+
+## Additional Information
+
+- To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-activity/branch-lifecycle.md).  
+
+- To reference this metric in software or publications please use this stable URL: [https://chaoss.community/?p=3590](https://chaoss.community/?p=3590).
+
+<!--
+# For groupings in the knowledge base
+Context tags: Branch Management, Code Development, Repository Hygiene
+Keyword tags: branch creation, branch deletion, version control, Git, repository lifecycle
+-->
