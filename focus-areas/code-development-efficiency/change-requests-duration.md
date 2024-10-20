@@ -1,34 +1,16 @@
 # Change Requests Duration
 
-Question: What is the duration of time between the moment a change request starts and the moment it is accepted or closed?
+**Question: What is the duration of time between the moment a change request starts and the moment it is accepted or closed?**
 
-## Description
+## Overview
 
-Change requests are defined as in [Change Requests](https://chaoss.community/metric-change-requests/). Accepted change requests are defined in [Change Requests Accepted](https://chaoss.community/metric-change-requests-accepted/).
+Change Requests Duration measures the time from when a change request starts to when it ends (by being accepted and merged into the code base), applicable only to [accepted change requests](https://chaoss.community/metric-change-requests-accepted/). Data points here represent the duration of each accepted change request, calculated from its opening date to the date it is merged into the codebase. In case there are comments or other events after the code is merged, they are not considered for measuring the duration of the [change requests](https://chaoss.community/metric-change-requests/).  For example, in GitLab a change request starts when a developer uploads a proposal for a change in code, opening a change request. A project with a history of long change request durations may create a negative perception among contributors, and might discourage them from participating.
 
-The change request duration is the duration of the period since the change request started, to the moment it ended (by being accepted and being merged in the code base). This only applies to accepted change requests. For example, in GitLab a change request starts when a developer uploads a proposal for a change in code, opening a change request. It finishes when the change request is finally accepted and merged in the code base, closing the change request.
+## Want to Know More?
 
-In case there are comments or other events after the code is merged, they are not considered for measuring the duration of the change request.
+<span markdown="1"><details>
 
-## Objectives
-Review duration for accepted change requests is one of the indicators showing how long does a project take before accepting a contribution of code. Of course, this metric is not the only one that should be used to track volume of coding activity.
-
-## Implementation
-
-Potential aggregators include: 
-* Median. Median (50% percentile) of change request duration for all accepted change requests in the considered period of time.
-
-Potential parameters include:
-* Period of time. Start and finish date of the period. Default: forever. Period during which accepted change requests are considered. An accepted change request is considered to be in the period if its creation event is in the period.
-* Criteria for source code. Algorithm. Default: all files are source code. If we are focused on source code, we need a criteria for deciding whether a file is a part of the source code or not.
-
-### Filters
-
-* By actors (submitter, reviewer, merger). Requires actor merging (merging ids corresponding to the same author).
-* By groups of actors (employer, gender... for each of the actors). Requires actor grouping, and likely, actor merging.
-* Median per month over time
-* Median per group over time
-* Distribution of durations for a certain period
+<summary>Click to read more about this metric.</summary>
 
 ### Data Collection Strategies
 
@@ -48,4 +30,41 @@ Mandatory parameters (for GitLab): None.
 
 In the case of Gerrit, duration is considered for code reviews that are accepted and merged in the code base. For an individual code review, duration starts when it is opened, and finishes when the commits it includes are merged into the code base.
 
-Mandatory parameters (for Gerrit): None.
+*   Mandatory parameters (for Gerrit): None.
+
+Potential aggregators include:
+
+*   Median. Median (50% percentile) of change request duration for all accepted change requests in the considered period of time.
+
+Potential parameters include:
+
+*   Period of time. Start and finish date of the period. Default: forever. Period during which accepted change requests are considered. An accepted change request is considered to be in the period if its creation event is in the period.
+*   Criteria for source code. Algorithm. Default: all files are source code. If we are focused on source code, we need a criteria for deciding whether a file is a part of the source code or not.
+
+### Filters
+
+*   By actors (submitter, reviewer, merger). Requires actor merging (merging ids corresponding to the same author).
+*   By groups of actors (employer, gender... for each of the actors). Requires actor grouping, and likely, actor merging.
+*   Median per month over time
+*   Median per group over time
+*   Distribution of durations for a certain period
+
+</details></span>
+
+## Contributors
+
+*   Matt Germonprez
+*   Elizabeth Barron
+*   Kevin Lumbard
+*   Peculiar C. Umeh
+
+## Additional Information
+
+To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-efficiency/change-requests-duration.md)
+
+To reference this metric in software or publications please use this stable URL: <https://chaoss.community/?p=3587>
+
+<!-- # For groupings in the knowledge base
+Context tags: Lifecycle, Contribution, Platform
+Keyword tags: change request, accepted changes, review duration,  merged, code base, 
+→ 
