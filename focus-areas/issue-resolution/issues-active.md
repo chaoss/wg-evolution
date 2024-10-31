@@ -1,65 +1,20 @@
-# Issues Active
+# **Issues Active**
 
-Question: How many issues were active during a certain period? 
+**Question:** How many issues were active during a certain period?
 
+## Overview
+This metric measures the number of issues that showed activity during a given period. Active issues are those that had comments, status changes, or were closed during the specified time frame. These issues indicate the level of interaction and work being done on a project, particularly in managing tasks, bugs, or feature requests.
 
-## Description
+Tracking active issues can help assess project activity and progress. High numbers of active issues may suggest an engaged community, while low numbers might indicate stagnation. For projects focused on DEI (Diversity, Equity, and Inclusion), this metric may help highlight participation patterns from different contributors.
 
-Issues are defined as in [Issues New](https://chaoss.community/metric-issues-new/).
-Issues showing some activity are those that had some comment,
-or some change in state (including closing the issue),
-during a certain period.
+## Want to Know More?
 
-For example, in GitHub Issues, a comment, a new tag, or
-the action of closing an issue, is considered as a sign of activity.
+<details>
+<summary>Click to read more about this metric.</summary>
 
-
-## Objectives
-
-* Volume of active issues in a project.
-    Active issues are a proxy for the activity in a project.
-    By counting active issues related to code in the set of repositories corresponding
-    to a project, you can have an idea of the overall activity in
-    working with issues in that project.
-    Of course, this metric is not the only one that should be
-    used to track volume of coding activity.
-
-### Filters 
-
-* By actor (submitter, commenter, closer). Requires merging identities corresponding to the same author.
-* By groups of actors (employer, gender... for each of the actors). Requires actor grouping, and likely, actor merging.
-* By ratio of active issues over total number of issues during that period.
-* By start and finish date of the period during which issues are considered.
-* By total number of active issues during the period.
-
-### Visualizations 
-
-* Count per period over time
-* Ratio per period over time
-
-These could be grouped by applying the previously defined filters.
-These could be represented as bar charts, with time running in the X axis.
-Each bar would represent proposals to change the code
-during a certain period (eg, a month).
-
-
-### Tools Providing the Metric
-
-* [GrimoireLab](https://chaoss.github.io/grimoirelab) provides data for computing a metric close to the one described in this page for GitHub Issues, GitLab issues, Jira, Bugzilla and Redmine. In terms of the metric, **GrimoireLab data have only the date of the last update of each item, which limits computing this metric to time ranges ending on the current date**.
-  - Depending on the source API, the definition of what is considered an update on the issue could vary. GrimoireLab uses `metadata__updated_on` to store latest issue update, please check [Perceval documentation](https://perceval.readthedocs.io/en/latest/search.html?q=metadata_updated_on&check_keywords=yes&area=default) to look for the specific API field being used in each case and understand its limitations, if any.
-  - Currently, there is no dashboard showing this in action. Nevertheless, it is easy to build a visualization that shows the number uses which last activity occurred at some point between a date and current date (we'll do it for GitHub Issues here).
-  - Add a sample visualization to any GrimoreLab Kibiter dashboard following these instructions:
-    * Create a new `Metric` visualization.
-    * Select the `github_issues` index.
-    * Filter: `pull_request` is `false`.
-    * Metric: `Count` Aggregation, `# Issues Active` Custom Label.
-    * Buckets: `Date Range` Aggregation, `metadata__updated_on` Field, `now-1M` From (or whatever interval may fit your needs), `now` To, leave Custom Label empty to see the specific dates in the legend.
-    * Have a look at the time picker on the top right corner to make sure it is set to include the whole story of the data so we are not excluding any item based on its creation date.
-  - Example screenshot:
-    
-    ![GrimoireLab screenshot of metric issues_active](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/issue-resolution/images/issues-active_grimoirelab.png).
-
-### Data Collection Strategies 
+### Data Collection Strategies 
+- Collect data from issue tracking platforms (GitHub, GitLab, Jira, Bugzilla).
+- Gather specific data points such as comments, status changes, and issue closings.
 
 **Specific description: GitHub**
 
@@ -85,3 +40,28 @@ In the case of Bugzilla, active issues are defined as "bug reports
 which get a comment, a change in state, a change in assigned
 person, or are closed".
 
+### Filters 
+- **By Actor:** Submitter, commenter, or closer.
+- **By Group:** Group by employer, gender, or other actor attributes.
+- **By Time Period:** Specify the start and end dates for analysis.
+- **By Ratio:** Ratio of active issues to total issues.
+
+### Visualizations
+- None Specified
+
+</details>
+
+## References
+None specified
+
+## Contributors
+None specified
+
+## Additional Information
+- To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/issue-resolution/issues-active.md).  
+- To reference this metric in software or publications, please use this stable URL: [https://chaoss.community/?p=3632](https://chaoss.community/?p=3632).
+
+<!-- # For groupings in the knowledge base
+**Context tags:** issue tracking, software development, project activity  
+**Keyword tags:** active issues, issue tracking, GitHub, GitLab, Jira, Bugzilla
+-->
