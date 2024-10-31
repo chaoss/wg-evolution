@@ -2,63 +2,64 @@
 
 ### This metric is a release candidate. To comment on this metric please see [Issue #463](https://github.com/chaoss/wg-evolution/issues/463). Following a comment period, this metric will be included in the next regular release.
 
-Question: How many downloads occurred since the software artifact was released? 
+**Question:** How many downloads occurred since the software artifact was released?  
 
 Synonyms: Clones
 
-## Description
-Number of Downloads measures the relative and absolute traffic to a project’s repository on the frequency of downloaded or cloned software artifacts (this may also include downloads through package managers, e.g., homebrew, pip, apt) Maintainers can use this information to analyze the demographics of download activity of a given repository and the number of downloads per user (density of downloads).
+## Overview
+Number of Downloads captures the traffic to a project's repository by measuring the frequency of downloaded or cloned software artifacts. This may include downloads through package managers like homebrew, pip, or apt. Analyzing download activity helps maintainers understand the demographics of the user base, download patterns, and the density of downloads, which may reveal a project's reach and popularity.
 
-## Objectives
+## Want to Know More?
 
-To determine the number of downloads of software artifacts and determine the number of hosts downloading software artifacts.
+<span markdown="1"><details>
+<summary>Click to read more about this metric.</summary>
 
-While this metric is not central to an organization's KPI index, it is, however, important to understand external factors such as end-user demographics and download patterns.
-Open source software should be made available to every user who accepts the terms and conditions irrespective of their demographics, language, etc.  
+### Data Collection Strategies
+- **Platform Data**: Use download counts from hosting platforms (e.g., GitHub, SourceForge) if available.
+- **System Logs**: Retrieve logs where software downloads or updates are recorded.
+- **Web Scraping**: Gather data from web analytics, such as traffic to download pages.
+- **Package Managers**: If distributed via package managers, consult their APIs for download counts.
 
-## Implementation
-
-### Filters 
-- Time
-- Format/Platform/OS
-- Location/Channels
-- Programming languages (eg., Python, Julia)
-- Packages (eg., PyPi packages)
-- APIs (eg., cloud based such as boto3/awscli, gcloud )
-- Mobile versus Desktop
-- Versions
+### Filters
+- **Timeframe**: View download activity within a specific date range.
+- **Format/Platform/OS**: Analyze downloads by platform, such as OS or mobile vs. desktop.
+- **Geolocation/Channels**: Identify download sources by region.
+- **Programming Languages**: Track downloads of different language-specific packages (e.g., Python, Julia).
+- **Package Type**: Look at package-specific downloads (e.g., pip, PyPi packages).
+- **APIs**: (eg., cloud based such as boto3/awscli, gcloud )
+- **Version**: Examine downloads by software version to understand adoption of new updates.
+- **Mobile versus Desktop**
 
 It is important to note that some software can be downloaded multiple times on the same system, and different versions of the same software too.
 
-### Visualizations 
+### Visualizations
+- **Traffic Activity on GitHub**  
+  ![Example chart showing traffic activity from GitHub](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/community-growth/images/traffic-github.png)  
+  *Figure 1: Traffic activity visualization for GitHub repositories*
 
-![example charts showing traffic activity from GitHub](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/community-growth/images/traffic-github.png)
+- **Download Activity on SourceForge**  
+  ![Example chart showing number of downloads from SourceForge](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/community-growth/images/number-of-downloads-sourceforge.png)  
+  *Figure 2: Download activity visualization for SourceForge projects*
 
-Source: https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/viewing-traffic-to-a-repository
-
-![example chart showing number of downloads from sourceforge](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/community-growth/images/number-of-downloads-sourceforge.png)
-
-Source: https://sourceforge.com
-
-### Tools Providing the Metric
-
-- https://formulae.brew.sh/analytics/install/365d/
-- https://opensource.guide/metrics/
-
-### Data Collection Strategies
-
-- Web scraping
-- System logs
-- Platform-provided data, if project is hosted
+</details></span>
 
 ## References
+- [GitHub Repository Traffic](https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/viewing-traffic-to-a-repository)
+- [Homebrew Formula Analytics](https://formulae.brew.sh/analytics/install/365d/)
+- [Open Source Guide to Metrics](https://opensource.guide/metrics/)
 
-https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/viewing-traffic-to-a-repository
-
-
-## Known Contributors
-
+## Contributors
 - Armstrong Foundjem
 - Elizabeth Barron
+- Yigakpoa L. Ikpae
 
-***This metric was last reviewed on November 30, 2022 as part of the continuous release process.***
+## Additional Information
+To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/community-growth/number-of-downloads.md).
+To reference this metric in software or publications please use this stable URL: [https://chaoss.community/?p=4466](https://chaoss.community/?p=4466)
+
+***This metric was last reviewed on October 31, 2024 as part of the continuous release process.***
+
+<!-- # For groupings in the knowledge base
+Context tags: Software Usage, Project Health, Community Engagement, Data Collection
+Keyword tags: Downloads, Clones, User Demographics, Package Managers, Traffic Analysis, Platform Analytics
+-->
