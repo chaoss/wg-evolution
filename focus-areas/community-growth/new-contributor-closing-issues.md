@@ -1,32 +1,43 @@
-# New Contributors Closing Issues
+# **New Contributors Closing Issues**
 
-Question: How many contributors are closing issues for the first time in a given project?
+**Question:** How many contributors are closing issues for the first time in a given project?
 
-## Description
-This metric is an indication of the volume of contributors who are closing issues for their first time within a given project. When a contributor closes an issue for the first time it is some indication of "stickiness" of the individual within that project, especially for contributors who are not also committers.
+## Overview
+This metric tracks the number of contributors who close an issue for the first time in a project. Closing an issue for the first time can signal that a contributor has become more engaged in the project, indicating "stickiness" or progression along the contributor journey. It is especially relevant for non-committer contributors, as issue management is a critical activity in the health of open-source communities.
 
-## Objectives
-To know how contributors are moving through the [contributor funnel](https://mikemcquaid.com/2018/08/14/the-open-source-contributor-funnel-why-people-dont-contribute-to-your-open-source-project/) by identifying “closing issues” as a milestone in the contributor journey.
+Measuring the number of new contributors who close issues provides insight into how individuals are progressing through the contributor funnel. It helps project maintainers understand whether contributors are transitioning from participation in discussions to more involved roles, which is a good indicator of community growth and retention. This metric can also highlight opportunities for encouraging new contributors to take on more responsibilities in the project.
 
-## Implementation
+## Want to Know More?
 
-**Aggregators:**
-* Count. Total number of contributors closing issues on this project for the first time during a given time period.
-* Percentage. Proportion of contributors closing issues on this project *for the first time* during a given time period, computed against *all* contributors having closed issues on this project during the same time period.
-
-**Parameters:**
-* Period of time. Start and finish date of the period during which new issue closers are counted. Default: forever (i.e., the entire observable project lifetime)
-
-### Filters
-* Exclude reopened issues (optionally, filter if reopened in less than 1 hour)
-
-### Visualizations
-* Table with names of contributors who closed an issue for the first time and when that was.
-* Timeline showing the time on the x-axis, and the aggregated metric value on the y-axis for fixed consecutive periods of time (e.g. on a monthly basis). This visualisation allows to show how the metric is evolving over time for the considered project.
+<details>
+<summary>Click to read more about this metric.</summary>
 
 ### Data Collection Strategies
-Based on the [Issues Closed](https://chaoss.community/metric-issues-closed/) and [Contributor](https://chaoss.community/metric-contributors/) definitions, enrich contributors with the date of their first time closing an issue.
+- Based on the [Issues Closed](https://chaoss.community/metric-issues-closed/) and [Contributor](https://chaoss.community/metric-contributors/) definitions, enrich contributors with the date of their first time closing an issue.
+- Track the number of unique contributors who close an issue for the first time by collecting timestamps when contributors close an issue.
+- Use contributor information to identify first-time issue closers.
+- Enrich contributor data by adding the date they first closed an issue.
+
+### Filters 
+- **Exclude Reopened Issues:** Optionally exclude issues that were reopened within a specific period (e.g., less than one hour).
+
+### Visualizations
+- **Table:** A table showing the names of contributors who closed an issue for the first time and the date when that occurred.
+- **Timeline:** A timeline with time on the x-axis and the aggregated count of new issue closers on the y-axis, showing how the number of new contributors closing issues changes over time.
+
+</details>
 
 ## References
+- [Contributor Funnel by Mike McQuaid](https://mikemcquaid.com/2018/08/14/the-open-source-contributor-funnel-why-people-dont-contribute-to-your-open-source-project/)
 
-* [Contributor Funnel by Mike McQuaid](https://mikemcquaid.com/2018/08/14/the-open-source-contributor-funnel-why-people-dont-contribute-to-your-open-source-project/)
+## Contributors
+None specified
+
+## Additional Information
+- To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/community-growth/new-contributor-closing-issues.md).  
+- To reference this metric in software or publications, please use this stable URL: [https://chaoss.community/?p=3615](https://chaoss.community/?p=3615).
+
+<!-- # For groupings in the knowledge base
+**Context tags:** contributor retention, issue management, community growth  
+**Keyword tags:** new contributors, issue closing, contributor engagement, open source projects, community retention, contributor funnel
+ -->
