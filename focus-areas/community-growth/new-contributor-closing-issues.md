@@ -9,7 +9,7 @@ Measuring the number of new contributors who close issues provides insight into 
 
 ## Want to Know More?
 
-<details>
+<span markdown="1"><details>
 <summary>Click to read more about this metric.</summary>
 
 ### Data Collection Strategies
@@ -25,7 +25,7 @@ Measuring the number of new contributors who close issues provides insight into 
 - **Table:** A table showing the names of contributors who closed an issue for the first time and the date when that occurred.
 - **Timeline:** A timeline with time on the x-axis and the aggregated count of new issue closers on the y-axis, showing how the number of new contributors closing issues changes over time.
 
-</details>
+</details></span><br>
 
 ## References
 - [Contributor Funnel by Mike McQuaid](https://mikemcquaid.com/2018/08/14/the-open-source-contributor-funnel-why-people-dont-contribute-to-your-open-source-project/)
