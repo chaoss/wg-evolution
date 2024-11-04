@@ -32,7 +32,7 @@ Understanding branch lifecycle patterns can also help potential contributors gau
 ### Visualizations
 - None Specified
 
-</details></span>
+</details></span><br>
 
 ## References
 - [Adopting a Git Branching Strategy](https://www.creativebloq.com/web-design/choose-right-git-branching-strategy-121518344)  
