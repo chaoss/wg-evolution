@@ -1,7 +1,5 @@
 # Number of Downloads
 
-### This metric is a release candidate. To comment on this metric please see [Issue #463](https://github.com/chaoss/wg-evolution/issues/463). Following a comment period, this metric will be included in the next regular release.
-
 **Question:** How many downloads occurred since the software artifact was released?  
 
 Synonyms: Clones
@@ -41,7 +39,7 @@ It is important to note that some software can be downloaded multiple times on t
   ![Example chart showing number of downloads from SourceForge](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/community-growth/images/number-of-downloads-sourceforge.png)  
   *Figure 2: Download activity visualization for SourceForge projects*
 
-</details></span>
+</details></span><br>
 
 ## References
 - [GitHub Repository Traffic](https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/viewing-traffic-to-a-repository)
