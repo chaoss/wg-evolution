@@ -34,7 +34,7 @@ This metric measures the number of new contributors making their first contribut
 ![New Contributors Visualization from GrimoireLab](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/community-growth/images/new-contributors_1.png)
 *Figure 1: Visualization of new contributors' engagement across different project areas using GrimoireLab*
 
-</details></span>
+</details></span><br>
 
 ## References
 - https://opensource.com/article/17/4/encourage-new-contributors
