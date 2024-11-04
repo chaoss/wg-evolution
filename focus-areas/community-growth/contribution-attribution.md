@@ -38,7 +38,7 @@ Data is gathered primarily through volunteered information from contributors, wi
 ![Contributions by Gender](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/community-growth/images/contributions-by-gender.png)
 *Figure 2: Contributions by Gender*
 
-</details></span>
+</details></span><br>
 
 ## References
 - [A Method for Giving Credit to Organizations](https://dri.es/a-method-for-giving-credit-to-organizations-that-contribute-code-to-open-source)
