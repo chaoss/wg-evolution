@@ -11,7 +11,7 @@ This metric can indirectly inform Diversity, Equity, and Inclusion (DEI) by iden
 
 ## Want to Know More?
 
-<details>
+<span markdown="1"><details>
 <summary>Click to read more about this metric.</summary>
 
 ### Data Collection Strategies 
@@ -28,7 +28,7 @@ This metric can indirectly inform Diversity, Equity, and Inclusion (DEI) by iden
 ### Visualizations
 - None specified
 
-</details>
+</details></span><br>
 
 ## References
 None specified
