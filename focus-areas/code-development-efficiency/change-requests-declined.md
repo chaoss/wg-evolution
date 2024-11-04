@@ -9,7 +9,7 @@ Tracking declined change requests helps assess how many proposals or contributio
 
 ## Want to Know More?
 
-<details>
+<span markdown="1"><details>
 <summary>Click to read more about this metric.</summary>
 
 ### Data Collection Strategies 
@@ -56,7 +56,7 @@ In the case of Gerrit, declined change requests are defined as "changesets aband
 ### Visualizations
 - None Specified
 
-</details>
+</details></span><br>
 
 ## References
 None specified
