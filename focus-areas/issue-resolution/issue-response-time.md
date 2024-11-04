@@ -9,7 +9,7 @@ Tracking issue response time is valuable for assessing the effectiveness of comm
 
 ## Want to Know More?
 
-<details>
+<span markdown="1"><details>
 <summary>Click to read more about this metric.</summary>
 
 ### Data Collection Strategies
@@ -27,7 +27,7 @@ Tracking issue response time is valuable for assessing the effectiveness of comm
 ### Visualizations
 ![Example visualization from GrimoireLab](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/issue-resolution/images/issue-response-time_grimoirelab.png)
 
-</details>
+</details></span><br>
 
 ## References
 None specified
