@@ -9,7 +9,7 @@ Tracking active issues can help assess project activity and progress. High numbe
 
 ## Want to Know More?
 
-<details>
+<span markdown="1"><details>
 <summary>Click to read more about this metric.</summary>
 
 ### Data Collection Strategies 
@@ -49,7 +49,7 @@ person, or are closed".
 ### Visualizations
 - None Specified
 
-</details>
+</details></span><br>
 
 ## References
 None specified
