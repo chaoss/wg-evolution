@@ -50,7 +50,7 @@ during a certain period (eg, a month).
     ![GrimoireLab screenshot of metric Reviews](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/code-development-process-quality/images/change-requests_grimoirelab.png)
 *Figure 1: GrimoireLab screenshot of metric Reviews (Grimoirelab)*
 
-</details></span>
+</details></span><br>
 
 ## **References**
 - None Specified
