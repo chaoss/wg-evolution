@@ -1,21 +1,23 @@
 # Contribution Attribution
 
-Question: Who has contributed to an open source project and what attribution information about people and organizations is assigned for contributions?
+**Question:** Who has contributed to an open-source project, and what attribution information about people and organizations is assigned for contributions?
 
-## Description
-This metric evaluates who has worked on the project and specific project tasks and provides the attribution to  project contributors and affiliated organizations.  The aim is to understand, through insights into the paid contribution dynamics of a community, “how the work gets done.”
-
-## Objectives
+## Overview
+This metric evaluates the individuals and organizations contributing to a project and attributes specific contributions to them. By measuring who contributes and under what sponsorship (volunteer vs. sponsored), this metric offers insights into the dynamics of how work gets done in a community. Understanding contribution attribution is essential for assessing the health and sustainability of a project by recognizing active contributors and tracking the influence of organizational support on the community. Objectives include:
 1. Who is working on the project?
 2. What is the ratio of volunteer work, sponsored work, and blended work?
 3. How many contributions are sponsored?
 4. Who is sponsoring the contributions?
 5. What [types of contributions](https://chaoss.community/metric-types-of-contributions/) are sponsored?
-6. [How diverse is the community of contributors working on a project?](https://github.com/chaoss/wg-diversity-inclusion/tree/master/demographic-data)
+6. [How diverse is the community of contributors working on a project?](https://github.com/chaoss/wg-dei/tree/main/demographic-data)
 
-## Implementation
+## Want to Know More?
 
-Most contributions can be implicitly attributed using trace data, and these attributions are reflected in other metrics. However, this metric relies heavily on data that is volunteered by contributors and interpreted by project leadership. The implementation of this metric demands that the human in the loop determine what organizations, and what individual contributors a contribution is attributed to. Each individual contributor should be offered the opportunity to indicate what firm, foundation, project, and/or client paid for a particular change.
+<span markdown="1"><details>
+<summary>Click to read more about this metric.</summary>
+
+### Data Collection Strategies
+Data is gathered primarily through volunteered information from contributors, with the support of project leadership to determine appropriate attribution to organizations or individuals. Information on sponsor relationships may also be sourced from surveys or contributor profiles.
 
 ### Filters
 
@@ -30,32 +32,34 @@ Most contributions can be implicitly attributed using trace data, and these attr
 * Volunteer versus sponsored - Related to [Organizational Diversity](https://chaoss.community/metric-organizational-diversity/)and[Labor Investment](https://chaoss.community/metric-labor-investment/)
 
 ### Visualizations
-
 ![Contributions by Volunteer vs Sponsored](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/community-growth/images/contributions-by-volunteer-vs-sponsored.png)
+*Figure 1: Contributions by Volunteer vs Sponsored*
 
 ![Contributions by Gender](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/community-growth/images/contributions-by-gender.png)
+*Figure 2: Contributions by Gender*
 
-### Tools Providing the Metric
-
-1. The Drupal community built this tool, began using it in [2015](https://www.drupal.org/blog/who-sponsors-drupal-development), and has been reporting their results [annually](https://dri.es/who-sponsors-drupal-development-2020)
-2. There is an [issue open with GitLab](https://gitlab.com/gitlab-org/gitlab/-/issues/327138) to implement this functionality
-
-### Data Collection Strategies
-The Drupal Community implemented an example of how to gather information necessary for this metric to be calculated. It associates individuals, and organizations those individuals indicate as warranting attribution, for each discrete contribution.
-
-### Data Ethics Considerations
-Although this metric requires the capture of a relationship between individuals and the contributions they make, the intent of this metric is NOT to measure individuals. The aim is to enable a wider understanding of how contributions to this project are motivated. Explicitly, it is not the intent of this metric to contribute to gamification of individual contributor work.
+</details></span><br>
 
 ## References
-* https://dri.es/a-method-for-giving-credit-to-organizations-that-contribute-code-to-open-source
-* https://www.drupal.org/blog/who-sponsors-drupal-development
-* https://dri.es/who-sponsors-drupal-development-2020
-* https://gitlab.com/gitlab-org/gitlab/-/issues/327138
+- [A Method for Giving Credit to Organizations](https://dri.es/a-method-for-giving-credit-to-organizations-that-contribute-code-to-open-source)
+- [Who Sponsors Drupal Development](https://www.drupal.org/blog/who-sponsors-drupal-development)
+- [Annual Report on Sponsors](https://dri.es/who-sponsors-drupal-development-2020)
+- [GitLab Issue for Contribution Attribution](https://gitlab.com/gitlab-org/gitlab/-/issues/327138)
 
 ## Contributors
-* Matthew Tift
-* Sean Goggins
-* Elizabeth Barron
-* Vinod Ahuja
-* Armstrong Foundjem
-* Kevin Lumbard
+- Matthew Tift
+- Sean Goggins
+- Elizabeth Barron
+- Vinod Ahuja
+- Armstrong Foundjem
+- Kevin Lumbard
+- Yigakpoa L. Ikpae
+
+## Additional Information
+To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/community-growth/contribution-attribution.md)
+To reference this metric in software or publications, please use this stable URL: [https://chaoss.community/?p=3616](https://chaoss.community/?p=3616)
+
+<!-- # For groupings in the knowledge base
+Context tags: open-source contributions, attribution, contributor diversity, sponsorship
+Keyword tags: contribution attribution, sponsor, organization, volunteer, role
+-->
