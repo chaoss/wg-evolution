@@ -25,7 +25,7 @@ This metric may inform the diversity and inclusiveness of a project through expl
 - **Contributors per Commit**
 
 ### Visualizations
-![augur_api](https://github.com/chaoss/wg-evolution/focus-areas/code-development-activity/images/change-request-commits_augur-api.png)  
+![augur_api](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-activity/images/change-request-commits_augur-api.png)
 *Figure X: Change Request Commits Visualization (Augur)*
 
 </details></span><br>
