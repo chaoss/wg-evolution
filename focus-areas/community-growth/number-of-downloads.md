@@ -55,8 +55,6 @@ It is important to note that some software can be downloaded multiple times on t
 To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/community-growth/number-of-downloads.md).
 To reference this metric in software or publications please use this stable URL: [https://chaoss.community/?p=4466](https://chaoss.community/?p=4466)
 
-***This metric was last reviewed on October 31, 2024 as part of the continuous release process.***
-
 <!-- # For groupings in the knowledge base
 Context tags: Software Usage, Project Health, Community Engagement, Data Collection
 Keyword tags: Downloads, Clones, User Demographics, Package Managers, Traffic Analysis, Platform Analytics
