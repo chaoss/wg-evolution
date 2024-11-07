@@ -9,7 +9,7 @@ This metric evaluates the individuals and organizations contributing to a projec
 3. How many contributions are sponsored?
 4. Who is sponsoring the contributions?
 5. What [types of contributions](https://chaoss.community/metric-types-of-contributions/) are sponsored?
-6. [How diverse is the community of contributors working on a project?](https://github.com/chaoss/wg-diversity-inclusion/tree/master/demographic-data)
+6. [How diverse is the community of contributors working on a project?](https://github.com/chaoss/wg-dei/tree/main/demographic-data)
 
 ## Want to Know More?
 
