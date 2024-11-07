@@ -1,43 +1,45 @@
-# Issue Response Time
+# **Issue Response Time**
 
-Question: How much time passes between the opening of an issue and a response in the issue thread from another contributor?
+**Question:** How much time passes between the opening of an issue and a response in the issue thread from another contributor?
 
-## Description
-This metric is an indication of how much time passes between the opening of an issues and a response from other contributors. 
+## Overview
+This metric measures the time taken for an issue to receive its first response from a contributor other than the author. Issue response time is a key indicator of a project’s responsiveness and its ability to engage contributors. A fast response time can indicate a healthy, active community, while longer response times may highlight potential issues in managing community contributions.
 
-This metric is a specific case of the [Time to First Reponse metric](https://chaoss.community/metric-time-to-first-response/) in the [Common working group](https://github.com/chaoss/wg-common). 
+Tracking issue response time is valuable for assessing the effectiveness of communication and collaboration in a project. It also helps project maintainers understand their capacity to address contributor needs and provide support. This metric can also inform Diversity, Equity, and Inclusion (DEI) efforts by indicating whether responses vary depending on the type of contributor (e.g., new contributors vs. long-time participants).
 
+## Want to Know More?
 
-## Objectives
-Learn about the responsiveness of an open source community. 
-
-## Implementation
-
-**Aggregators:**
-* Average. Average response time in days.
-* Median. Median response time in days. 
-
-**Parameters:**
-* Period of time. Start and finish date of the period. Default: forever.
-*  Period during which responses are counted.
-
-### Filters
-* response from role in project (e.g., first maintainer response)
-* bot versus human (e.g., filter out automated “welcome first contributor messages”)
-* opened by role in project (e.g., responsiveness to new contributors versus long-timers)
-* date issue was opened
-* status of issue (e.g., only look at currently open issues)
-
-### Visualizations
-
-![Example visualization from GrimoireLab](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/issue-resolution/images/issue-response-time_grimoirelab.png)
-
-### Tools Providing the Metric 
-* GrimoireLab: [General for any ticketing system](https://chaoss.github.io/grimoirelab-sigils/panels/efficiency-timing-overview/), [GitHub Issues](https://chaoss.github.io/grimoirelab-sigils/panels/github-issues-efficiency/), [GitLab Issues](https://chaoss.github.io/grimoirelab-sigils/panels/gitlab-issues-efficiency/)
-* [Augur](http://augur.osshealth.io/api_docs/#api-Evolution-Issue_Response_Time_Repo_)
+<span markdown="1"><details>
+<summary>Click to read more about this metric.</summary>
 
 ### Data Collection Strategies
+- Look at the [Issues New](https://chaoss.community/metric-issues-new/) metric for a definition of “issues.”
+- Collect timestamps for when issues are opened and when the first response (by a different contributor) is posted.
+- Exclude responses by the issue author, and focus on responses from other contributors.
 
-Look at the [Issues New](https://chaoss.community/metric-issues-new/) metric for a definiton of “issues.” Subtract the issue opened timestamp from the first response timestamp. Do not count responses if created by the author of the issue.
+### Filters 
+- **By Role:** Filter responses based on the role of the responder (e.g., maintainer or other contributors).
+- **By Bot vs. Human:** Exclude automated responses or bot-generated messages.
+- **By Issue Opener's Role:** Track responses based on whether the issue was opened by a new contributor or a long-time participant.
+- **By Date:** Filter issues by their creation date.
+- **By Issue Status:** Option to focus only on currently open issues.
+
+### Visualizations
+![Example visualization from GrimoireLab](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/issue-resolution/images/issue-response-time_grimoirelab.png)
+
+</details></span><br>
 
 ## References
+None specified
+
+## Contributors
+None specified
+
+## Additional Information
+- To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/issue-resolution/issue-response-time.md).  
+- To reference this metric in software or publications, please use this stable URL: [https://chaoss.community/?p=3631](https://chaoss.community/?p=3631).
+
+<!-- # For groupings in the knowledge base
+**Context tags:** issue tracking, project responsiveness, open source contribution  
+**Keyword tags:** issue response time, issue handling, contributor engagement, GitHub Issues, GitLab Issues, GrimoireLab, Augur
+-->
