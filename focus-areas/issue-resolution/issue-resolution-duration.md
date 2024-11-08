@@ -1,6 +1,6 @@
 # Issue Resolution Duration
 
-**Question: How long does it take for an issue to be closed?**
+**Question:** How long does it take for an issue to be closed?
 
 ## Overview
 
@@ -31,11 +31,11 @@ Issue Resolution Duration measures  how long an issue remains open, on average, 
 *   Average amount of time (in days, by default) for an issue in the repository to be closed.
 *   Period of time: Start and finish date of the period. Default: forever.
 
-</details></span>
+</details></span><br>
 
 ## References
 
-*   http://augur.osshealth.io/api\_docs/#api-Evolution-Closed\_Issue\_Resolution\_Duration\_Repo\_
+*   <http://augur.osshealth.io/api\\_docs/#api-Evolution-Closed\\_Issue\\_Resolution\\_Duration\\_Repo\\>
 
 ## Contributors
 
@@ -54,4 +54,4 @@ To reference this metric in software or publications please use this stable URL:
 <!-- # For groupings in the knowledge base
 Context tags: Lifecycle, Platform, Contribution
 Keyword tags: bug report, problems, issues, duration, time
-→ 
+--> 
