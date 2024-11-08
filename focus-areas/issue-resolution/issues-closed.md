@@ -1,6 +1,6 @@
 # Issues Closed
 
-**Question: How many issues were closed during a certain period?**
+**Question:** How many issues were closed during a certain period?
 
 ## Overview
 
@@ -72,7 +72,7 @@ These could be grouped by applying the filters defined above or represented as b
 [GrimoireLab](https://chaoss.github.io/grimoirelab)
 ![GrimoireLab](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/issue-resolution/images/issues-closed_grimoirelab.png).
 
-</details></span>
+</details></span><br>
 
 ## Contributors
 
@@ -90,4 +90,4 @@ To reference this metric in software or publications please use this stable URL:
 <!-- # For groupings in the knowledge base
 Context tags: Platform, Contribution, Lifecycle
 Keyword tags: bug report, problems, issues, closed
-→
+-->
