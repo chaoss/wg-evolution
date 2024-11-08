@@ -1,6 +1,6 @@
 # Inactive Contributors
 
-**Question: How many Contributors have gone inactive over a specific period of time?**
+**Question:** How many Contributors have gone inactive over a specific period of time?
 
 ## Overview
 
@@ -24,7 +24,7 @@ Inactive Contributors measures how many contributors have stopped contributing o
 *   Start date/End date
 *   Period of graph
 
-</details></span>
+</details></span><br>
 
 ## Contributors
 
@@ -41,4 +41,4 @@ To reference this metric in software or publications please use this stable URL:
 <!-- # For groupings in the knowledge base
 Context tags: Contributor, Community
 Keyword tags: Inactive contributor, contributor
-→ 
+-->
