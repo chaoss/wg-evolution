@@ -1,6 +1,6 @@
 # Code Changes Lines
 
-**Question: What is the sum of the number of lines touched (lines added plus lines removed) in all changes to the source code during a certain period?**
+**Question:** What is the sum of the number of lines touched (lines added plus lines removed) in all changes to the source code during a certain period?
 
 ## Overview
 
@@ -56,7 +56,7 @@ Potential parameters for the Code Changes Lines metric include:
 *   [GrimoireLab](https://chaoss.github.io/grimoirelab)
     ![GrimoireLab screenshot of metric Code\_Changes\_Lines](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/code-development-activity/images/code-changes-lines_grimoirelab.png)
 
-</details></span>
+</details></span><br>
 
 ## References
 
@@ -80,4 +80,4 @@ To reference this metric in software or publications please use this stable URL:
 <!-- # For groupings in the knowledge base
 Context tags: Contribution, Software, Lifecycle
 Keyword tags: lines added, lines deleted, code changes, source code changes, coding activity, source code, merge commits, pull request changes
--→ 
+-->
