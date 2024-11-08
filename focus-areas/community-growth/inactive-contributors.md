@@ -1,33 +1,44 @@
 # Inactive Contributors
 
-Question: How many Contributors have gone inactive over a specific period of time?
+**Question:** How many Contributors have gone inactive over a specific period of time?
 
+## Overview
 
-## Description
-A metric that shows how many contributors have stopped contributing over a specific period of time. The period of time required for a contributor to be counted as inactive can be decided by a variable and this metric will display the number of contributors that have been labeled as inactive over a given time frame.
+Inactive Contributors measures how many contributors have stopped contributing over a specific period of time. The period of time required for a contributor to be counted as inactive can be decided by a variable and this metric will display the number of contributors that have been labelled as inactive over a given time frame. The variables are 1. a time period and 2. a interval. The time period will be the period over which the number of inactive members will be displayed. For example if time period = year, then it will display the number of contributors that have gone inactive each year. The interval will determine how long it takes for a contributor to be labeled as inactive. If a contributor has not made a contribution for a length of time longer than the interval, they will be counted as inactive. The metric will work by: getting a list of all contributors, checking the last contribution date, if the last contribution date is before the cutoff then add them to the inactivity count of the period they last contributed in and create list of inactive contributors
 
-## Objectives
-The objective is to determine how many people have stopped contributing actively. This could be useful for community managers to determine if key members are losing interest, or are taking a break.
+## Want to Know More?
 
-## Implementation
+<span markdown="1"><details>
 
-The metric will take in two variables - a time period and a interval. The time period will be the period over which the number of inactive members will be displayed. For example if time period=year then it will display the number of contributors that have gone inactive each year. The interval will determine how long it takes for a contributor to be labeled as inactive. If a contributor has not made a contribution for a length of time longer than the interval, they will be counted as inactive.
-
-The metric will work by:
-1. getting a list of all contributors
-2. checking the last contribution date
-3. if the last contribution date is before the cutoff then add them to the inactivity count of the period they last contributed in.
-4. create list of inactive contributors
-
-**Aggregators:**
-- inactive: number of inactive contributors
-
-### Filters
-- Minimum contributions required to be considered active
-- Period of time to determine inactivity
-- Start date/End date
-- Period of graph
+<summary>Click to read more about this metric.</summary>
 
 ### Data Collection Strategies
-The list of contributors can be collected using the existing contributors metric.
-To determine the last contribution date new code may be needed.
+
+*   The list of contributors can be collected using the existing contributors metric.
+*   To determine the last contribution date new code may be needed.
+
+### Filters
+
+*   Minimum contributions required to be considered active
+*   Period of time to determine inactivity
+*   Start date/End date
+*   Period of graph
+
+</details></span><br>
+
+## Contributors
+
+*   Vinod K. Ahuja
+*   Kevin Lumbard
+*   Peculiar C Umeh
+
+## Additional Information
+
+To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/community-growth/inactive-contributors.md)
+
+To reference this metric in software or publications please use this stable URL: <https://chaoss.community/?p=3614>
+
+<!-- # For groupings in the knowledge base
+Context tags: Contributor, Community
+Keyword tags: Inactive contributor, contributor
+-->
