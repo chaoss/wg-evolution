@@ -33,10 +33,6 @@ Issue Resolution Duration measures  how long an issue remains open, on average, 
 
 </details></span><br>
 
-## References
-
-*   <http://augur.osshealth.io/api\\_docs/#api-Evolution-Closed\\_Issue\\_Resolution\\_Duration\\_Repo\\>
-
 ## Contributors
 
 *   Sean P. Goggins
