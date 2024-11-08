@@ -1,6 +1,6 @@
 # Change Requests Duration
 
-**Question: What is the duration of time between the moment a change request starts and the moment it is accepted or closed?**
+**Question:** What is the duration of time between the moment a change request starts and the moment it is accepted or closed?
 
 ## Overview
 
@@ -49,7 +49,11 @@ Potential parameters include:
 *   Median per group over time
 *   Distribution of durations for a certain period
 
-</details></span>
+</details></span><br>
+
+## Reference
+
+None Specified
 
 ## Contributors
 
@@ -67,4 +71,4 @@ To reference this metric in software or publications please use this stable URL:
 <!-- # For groupings in the knowledge base
 Context tags: Lifecycle, Contribution, Platform
 Keyword tags: change request, accepted changes, review duration,  merged, code base, 
-→ 
+-->
