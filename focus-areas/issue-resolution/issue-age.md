@@ -1,6 +1,6 @@
 # Issue Age
 
-**Question: How long have open issues been left open?**
+**Question:** How long have open issues been left open?
 
 ## Overview
 
@@ -38,7 +38,7 @@ For specific descriptions of collecting data about closed issues, please refer t
 
     ![Count of open issues per day](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/issue-resolution/images/issue-age_open-issue-count-timeseries.png)
 
-</details></span>
+</details></span><br>
 
 ## References
 
@@ -61,4 +61,4 @@ To reference this metric in software or publications please use this stable URL:
 <!-- # For groupings in the knowledge base
 Context tags: Lifecycle, Platform, Contribution
 Keyword tags: bug report, problems, issues, time, age
-→ 
+-->
