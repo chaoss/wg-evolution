@@ -1,6 +1,6 @@
 # Change Request Acceptance Ratio
 
-**Question: What is the ratio of change requests accepted to change requests closed without being merged?**
+**Question:** What is the ratio of change requests accepted to change requests closed without being merged?
 
 ## Overview
 
@@ -37,7 +37,7 @@ CHAOSS tools provide a number of visualizations for this metric. The first visua
 
 ![Reviews Accepted/Week](https://raw.githubusercontent.com/chaoss/wg-evolution/main/focus-areas/code-development-efficiency/images/change-request-acceptance-ratio_reviews-accepted-week.png)
 
-</details></span>
+</details></span><br>
 
 ## References
 
@@ -61,4 +61,4 @@ To reference this metric in software or publications please use this stable URL:
 <!-- # For groupings in the knowledge base
 Context tags: Platform, Contribution
 Keyword tags: change request, acceptance ratio, change requests closed, code review, declined, change request merged
--→ 
+-->
