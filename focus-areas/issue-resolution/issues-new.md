@@ -1,6 +1,6 @@
 # Issues New
 
-**Question: How many new issues are created during a certain period?**
+**Question:** How many new issues are created during a certain period?
 
 ## Overview
 
@@ -78,7 +78,7 @@ These could be represented as bar charts, with time running in the X axis.
 Each bar would represent proposals to change the code
 during a certain period (eg, a month).
 
-</details></span>
+</details></span><br>
 
 ## Contributors
 
@@ -96,4 +96,4 @@ To reference this metric in software or publications please use this stable URL:
 <!-- # For groupings in the knowledge base
 Context tags: Lifecycle, Contribution, Platform
 Keyword tags: change request, accepted changes, review duration,  merged, code base, 
-→ 
+-->
