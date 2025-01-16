@@ -5,7 +5,7 @@
 ## Overview
 
 Issues Closed measures issues  that changed to state closed during a certain period. Issues are defined as in [Issues New](https://chaoss.community/metric-issues-new/). Data points consist of the count of issues that transitioned to a closed state during the measurement period.  Some projects may use different states or tags, such as 'fixed,' to indicate a closed issue. In most issue trackers, closed issues can be reopened after they are closed. Reopening an issue can be considered as opening a new issue, or making void the previous close (see parameters, below).
-A high volume of closed issues indicates a productive and engaged community actively resolving issues.  By tracking code-related closed issues, you can gain insights into the overall activity level of a project in completing its work. This metric is not the only one that should be used to track volume of coding activitY.
+A high volume of closed issues indicates a productive and engaged community actively resolving issues.  By tracking code-related closed issues, you can gain insights into the overall activity level of a project in completing its work. This metric is not the only one that should be used to track volume of coding activity.
 
 ## Want to Know More?
 
