@@ -58,8 +58,9 @@ None specified
 None specified
 
 ## Additional Information
-- To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/issue-resolution/issues-active.md).  
-- To reference this metric in software or publications, please use this stable URL: [https://chaoss.community/?p=3632](https://chaoss.community/?p=3632).
+To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/issue-resolution/issues-active.md).  
+
+To reference this metric in software or publications, please use this stable URL: [https://chaoss.community/?p=3632](https://chaoss.community/?p=3632).
 
 <!-- # For groupings in the knowledge base
 **Context tags:** issue tracking, software development, project activity  
