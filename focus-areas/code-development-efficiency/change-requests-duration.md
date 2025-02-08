@@ -64,8 +64,7 @@ None Specified
 
 ## Additional Information
 
-To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-efficiency/change-requests-duration.md)
-
+To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-efficiency/change-requests-duration.md)<br>
 To reference this metric in software or publications please use this stable URL: <https://chaoss.community/?p=3587>
 
 <!-- # For groupings in the knowledge base
