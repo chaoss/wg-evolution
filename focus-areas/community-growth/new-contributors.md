@@ -47,6 +47,7 @@ This metric measures the number of new contributors making their first contribut
 
 ## Additional Information
 To edit this metric, please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/community-growth/new-contributors.md)
+
 To reference this metric in software or publications, please use this stable URL: https://chaoss.community/?p=3613
 
 <!-- # For groupings in the knowledge base
