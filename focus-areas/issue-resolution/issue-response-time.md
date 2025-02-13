@@ -36,8 +36,8 @@ None specified
 None specified
 
 ## Additional Information
-- To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/issue-resolution/issue-response-time.md).  
-- To reference this metric in software or publications, please use this stable URL: [https://chaoss.community/?p=3631](https://chaoss.community/?p=3631).
+To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/issue-resolution/issue-response-time.md).  
+To reference this metric in software or publications, please use this stable URL: [https://chaoss.community/?p=3631](https://chaoss.community/?p=3631).
 
 <!-- # For groupings in the knowledge base
 **Context tags:** issue tracking, project responsiveness, open source contribution  
