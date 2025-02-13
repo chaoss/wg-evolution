@@ -54,8 +54,7 @@ CHAOSS tools provide a number of visualizations for this metric. The first visua
 
 ## Additional Information
 
-To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-efficiency/change-request-acceptance-ratio.md)
-
+To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-efficiency/change-request-acceptance-ratio.md)<br>
 To reference this metric in software or publications please use this stable URL: <https://chaoss.community/?p=3598>
 
 <!-- # For groupings in the knowledge base
