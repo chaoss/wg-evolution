@@ -61,6 +61,7 @@ In the case of Bugzilla, closed issues are defined as "bug reports that change t
 
 *   By actors (submitter, commenter, closer). Requires merging identities corresponding to the same author.
 *   By groups of actors (employer, gender... for each of the actors). Requires actor grouping, and likely, actor merging.
+*   By label (bug, security, feature). Requires consistent label application by the project.
 
 ### Visualizations
 
