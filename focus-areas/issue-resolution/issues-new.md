@@ -90,7 +90,7 @@ during a certain period (eg, a month).
 
 To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-efficiency/change-requests-duration.md)
 
-To reference this metric in software or publications please use this stable URL: <https://chaoss.community/?p=3587>
+To reference this metric in software or publications please use this stable URL: <https://chaoss.community/?p=3634>
 
 <!-- # For groupings in the knowledge base
 Context tags: Lifecycle, Contribution, Platform
