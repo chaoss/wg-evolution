@@ -60,7 +60,7 @@ during a certain period (eg, a month).
 
 ## **Additional Information**
 - To edit this metric please [submit a Change Request here](https://github.com/chaoss/wg-evolution/blob/main/focus-areas/code-development-process-quality/change-requests.md).  
-- To reference this metric in software or publications, please use this stable URL: [https://chaoss.community/?p=361](https://chaoss.community/?p=361).
+- To reference this metric in software or publications, please use this stable URL: [https://chaoss.community/?p=361](https://chaoss.community/?p=3610).
 
 <!--
 # For groupings in the knowledge base
